@@ -1,4 +1,5 @@
 /** biome-ignore-all lint/complexity/noForEach: js */
+/** biome-ignore-all lint/nursery/useNamedCaptureGroup: js */
 /** biome-ignore-all lint/performance/useTopLevelRegex: js */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -6,19 +7,19 @@ import path from 'node:path'
 const FLAGS_DIR = path.resolve('packages/ui/src/components/icons/flags')
 
 const toPascalCase = str =>
-  str.replace(/\.svg$/, '').replace(/(^\w|-\w)/g, m => m.replace('-', '').toUpperCase())
+  str.replace(/\.svg$/u, '').replace(/(^\w|-\w)/gu, m => m.replace('-', '').toUpperCase())
 
 const toJsxAttrs = svg =>
   svg
-    .replace(/stroke-width=/g, 'strokeWidth=')
-    .replace(/fill-rule=/g, 'fillRule=')
-    .replace(/clip-rule=/g, 'clipRule=')
-    .replace(/xmlns:xlink=/g, 'xmlnsXlink=')
-    .replace(/xlink:href=/g, 'xlinkHref=')
-    .replace(/stop-color=/g, 'stopColor=')
+    .replace(/stroke-width=/gu, 'strokeWidth=')
+    .replace(/fill-rule=/gu, 'fillRule=')
+    .replace(/clip-rule=/gu, 'clipRule=')
+    .replace(/xmlns:xlink=/gu, 'xmlnsXlink=')
+    .replace(/xlink:href=/gu, 'xlinkHref=')
+    .replace(/stop-color=/gu, 'stopColor=')
 
 const namespaceIds = (svg, prefix) => {
-  const ids = [...svg.matchAll(/id="([^"]+)"/g)].map(m => m[1])
+  const ids = [...svg.matchAll(/id="([^"]+)"/gu)].map(m => m[1])
 
   ids.forEach(id => {
     const namespaced = `${prefix}-${id}`
@@ -41,18 +42,18 @@ fs.readdirSync(FLAGS_DIR)
     const baseName = file.replace('.svg', '').toLowerCase()
     const componentName = `${toPascalCase(file)}Flag`
 
-    const svgMatch = raw.match(/<svg[\s\S]*?>[\s\S]*?<\/svg>/)
+    const svgMatch = raw.match(/<svg[\s\S]*?>[\s\S]*?<\/svg>/u)
     if (!svgMatch) {
       return
     }
 
-    let svg = svgMatch[0]
+    let [svg] = svgMatch
 
     // ❌ eliminar comentarios XML/HTML
-    svg = svg.replace(/<!--[\s\S]*?-->/g, '')
+    svg = svg.replace(/<!--[\s\S]*?-->/gu, '')
 
     // ❌ eliminar <desc>
-    svg = svg.replace(/<desc>[\s\S]*?<\/desc>/g, '')
+    svg = svg.replace(/<desc>[\s\S]*?<\/desc>/gu, '')
 
     // JSX attrs
     svg = toJsxAttrs(svg)
@@ -61,7 +62,7 @@ fs.readdirSync(FLAGS_DIR)
     svg = namespaceIds(svg, baseName)
 
     // Inyectar props + className
-    svg = svg.replace(/<svg([^>]*)>/, `<svg$1 {...props} className={className} role="img">`)
+    svg = svg.replace(/<svg([^>]*)>/u, `<svg$1 {...props} className={className} role="img">`)
 
     const component = `import type { SVGProps } from 'react'
 

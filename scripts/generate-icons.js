@@ -1,4 +1,5 @@
 /** biome-ignore-all lint/performance/useTopLevelRegex: no */
+/** biome-ignore-all lint/nursery/useNamedCaptureGroup: no */
 /** biome-ignore-all lint/style/noParameterAssign: no */
 /** biome-ignore-all lint/complexity/noForEach: no */
 /** biome-ignore-all lint/suspicious/noConsole: no */
@@ -14,27 +15,27 @@ const ICONS_OUT = path.resolve('./src/components/icons/ui')
 const JSX_EXCEPTIONS = new Set(['viewBox', 'xmlns', 'xmlns:xlink', 'xml:space'])
 
 function toPascalCase(str) {
-  return str.replace(/(^\w|-\w)/g, clear => clear.replace(/-/, '').toUpperCase())
+  return str.replace(/(^\w|-\w)/gu, clear => clear.replace(/-/u, '').toUpperCase())
 }
 
 function extractSvg(source) {
-  const match = source.match(/<svg[\s\S]*?<\/svg>/)
+  const match = source.match(/<svg[\s\S]*?<\/svg>/u)
   return match ? match[0] : null
 }
 
 // --- Utilidades: Generación de React JSX ---
 function svgAttrsToJsx(svg) {
-  return svg.replace(/([a-z]+-[a-z-]+)=/gi, (match, attr) => {
+  return svg.replace(/([a-z]+-[a-z-]+)=/giu, (match, attr) => {
     if (JSX_EXCEPTIONS.has(attr)) {
       return match
     }
-    const camel = attr.replace(/-([a-z])/g, (_, c) => c.toUpperCase())
+    const camel = attr.replace(/-([a-z])/gu, (_, c) => c.toUpperCase())
     return `${camel}=`
   })
 }
 
 function injectReactProps(svg) {
-  return svg.replace(/<svg([^>]*)>/, (_match, attrs) => {
+  return svg.replace(/<svg([^>]*)>/u, (_match, attrs) => {
     return `<svg${attrs} className={cn('text-primary pointer-events-none shrink-0', className)} {...props}>`
   })
 }
@@ -48,7 +49,7 @@ function normalizeSvg(svg) {
 // --- Utilidades: Generación de Preview (JSDoc) ---
 function injectWhiteBackground(svg) {
   // Insertamos rect blanco justo después del <svg ...>
-  return svg.replace(/<svg([^>]*)>/, `<svg$1><rect width="100%" height="100%" fill="white"/>`)
+  return svg.replace(/<svg([^>]*)>/u, `<svg$1><rect width="100%" height="100%" fill="white"/`)
 }
 
 function svgToBase64(svg) {
