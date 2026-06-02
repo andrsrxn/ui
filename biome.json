@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.4.9/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.4.16/schema.json",
   "vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
   "files": {
     "ignoreUnknown": false,
@@ -8,6 +8,7 @@
       "!**/dist",
       "!**/*.mjs",
       "!**/*.cjs",
+      "!**/.agents",
       "!**/node_modules",
       "!**/pnpm-lock.yaml",
       "!**/*.lock"
@@ -148,6 +149,7 @@
         "useIndexOf": "error"
       },
       "correctness": {
+        "noUnresolvedImports": "off",
         "noNextAsyncClientComponent": "error",
         "noPrivateImports": "error",
         "noUnknownTypeSelector": "error",
@@ -189,10 +191,7 @@
         "noUnsafeFinally": "error",
         "noUnsafeOptionalChaining": "error",
         "noUnusedFunctionParameters": "error",
-        "noUnusedImports": {
-          "level": "error",
-          "fix": "unsafe"
-        },
+        "noUnusedImports": "off",
         "noUnusedLabels": "error",
         "noUnusedPrivateClassMembers": "error",
         "noVoidTypeReturn": "error",
@@ -461,6 +460,72 @@
         "useIterableCallbackReturn": "error"
       },
       "nursery": {
+        "noMisleadingReturnType": "error",
+        "noUnnecessaryTemplateExpression": "error",
+        "noUselessReturn": "error",
+        "useBaseline": "off",
+        "noExcessiveClassesPerFile": "off",
+        "noExcessiveLinesPerFile": "off",
+        "noExcessiveNestedCallbacks": "error",
+        "noExcessiveSelectorClasses": "error",
+        "noHexColors": "off",
+        "noInlineStyles": "off",
+        "useConsistentEnumValueType": "error",
+        "useGlobalThis": "off",
+        "useThisInClassMethods": "error",
+        "noBaseToString": "error",
+        "noComponentHookFactories": "error",
+        "noConditionalExpect": "error",
+        "noDivRegex": "error",
+        "noDrizzleDeleteWithoutWhere": "error",
+        "noDrizzleUpdateWithoutWhere": "error",
+        "noDeprecatedMediaType": "error",
+        "noDuplicateArgumentNames": "error",
+        "noDuplicateAttributes": "error",
+        "noDuplicateEnumValueNames": "error",
+        "noDuplicateEnumValues": "error",
+        "noDuplicateFieldDefinitionNames": "error",
+        "noDuplicateInputFieldNames": "error",
+        "noDuplicateSelectors": "error",
+        "noDuplicateVariableNames": "error",
+        "noEmptyObjectKeys": "error",
+        "noFloatingClasses": "error",
+        "noIdenticalTestTitle": "error",
+        "noImpliedEval": "error",
+        "noJsxLeakedDollar": "error",
+        "noLoopFunc": "error",
+        "noNestedPromises": "error",
+        "noReactStringRefs": "error",
+        "noRedundantDefaultExport": "error",
+        "noRootType": "error",
+        "noTopLevelLiterals": "error",
+        "noUnsafePlusOperands": "error",
+        "noUntrustedLicenses": "error",
+        "useUnicodeRegex": "error",
+        "useStringStartsEndsWith": "error",
+        "useReactAsyncServerFunction": "error",
+        "useRegexpTest": "error",
+        "useRequiredScripts": "error",
+        "useNamedCaptureGroup": "error",
+        "useMathMinMax": "error",
+        "useTestHooksInOrder": "error",
+        "useImportsFirst": "error",
+        "useArraySome": "error",
+        "useConsistentTestIt": "error",
+        "useDestructuring": "error",
+        "useDisposables": "error",
+        "useDomNodeTextContent": "error",
+        "useDomQuerySelector": "off",
+        "useErrorCause": "error",
+        "noUselessTypeConversion": "error",
+        "useConsistentMethodSignatures": "error",
+        "useExpect": "error",
+        "useInlineScriptId": "error",
+        "useReduceTypeParameter": "error",
+        "useIframeSandbox": "error",
+        "useNullishCoalescing": "error",
+        "useRegexpExec": "error",
+        "useTestHooksOnTop": "error",
         "noAmbiguousAnchorText": "error",
         "noMultiAssign": "error",
         "noReturnAssign": "error",
@@ -559,7 +624,30 @@
         }
       }
     },
+    {
+      "includes": ["**/env.ts", "**/env-client.ts", "**/__tests__/**"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noProcessGlobal": "off"
+          },
 
+          "style": {
+            "noProcessEnv": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["**/env.ts", "**/env-client.ts", "**/schemas/**"],
+      "linter": {
+        "rules": {
+          "performance": {
+            "noNamespaceImport": "off"
+          }
+        }
+      }
+    },
     {
       "includes": ["src/**"],
       "linter": {
