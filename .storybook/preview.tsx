@@ -1,9 +1,9 @@
-import '@fontsource/fira-sans/300.css'
-import '@fontsource/fira-sans/400.css'
-import '@fontsource/fira-sans/600.css'
-import '@fontsource/fira-sans/700.css'
 import '@fontsource/fira-mono/400.css'
 import '@fontsource/fira-mono/500.css'
+import '@fontsource/fira-sans/300.css'
+import '@fontsource/fira-sans/500.css'
+import '@fontsource/fira-sans/600.css'
+import '@fontsource/fira-sans/700.css'
 
 import addonA11y from '@storybook/addon-a11y'
 import addonDocs from '@storybook/addon-docs'
@@ -52,8 +52,9 @@ export default definePreview({
     },
     controls: {
       matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/i,
+        // biome-ignore lint/nursery/useNamedCaptureGroup: not necessary
+        color: /(background|color)$/iu,
+        date: /Date$/iu,
       },
     },
 
