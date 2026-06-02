@@ -1,0 +1,20 @@
+import type { Icon } from '../../../lib/types/icon'
+import { cn } from '../../../lib/utils/theme'
+
+/**
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTYuMjEgOC42NTJhLjc1Ljc1IDAgMCAxIDEuMDU5IDEuMDYybC0uOTEzLjkxMmMtLjY4My42ODEtMS4xNDEgMS4xNC0xLjQzOCAxLjUyN2wtLjAxNi4wMjRoMTEuMjc2Yy45NjQgMCAxLjYxMi0uMDAyIDIuMDk1LS4wNjcuNDYxLS4wNjIuNjYtLjE3Ljc5LS4zLjEzLS4xMy4yMzctLjMyOC4yOTktLjc4OS4wNjUtLjQ4My4wNjYtMS4xMy4wNjYtMi4wOTR2LS43MDhhLjc1Ljc1IDAgMCAxIDEuNSAwdi43MDhjMCAuOTIxLjAwMyAxLjY4OC0uMDc5IDIuMjk0LS4wODQuNjI4LS4yNyAxLjE5NC0uNzI2IDEuNjUtLjQ1NS40NTUtMS4wMjIuNjQxLTEuNjUuNzI1LS42MDYuMDgyLTEuMzczLjA4LTIuMjk1LjA4SDQuOTA2bC4wMTIuMDE4Yy4yOTYuMzg4Ljc1NC44NDcgMS40MzYgMS41M2wuOTE1LjkxNWEuNzUxLjc1MSAwIDAgMS0xLjA2IDEuMDYybC0uOTE3LS45MTZjLS42NTItLjY1Mi0xLjE5Ni0xLjE5NC0xLjU2Ny0xLjY4LS4zODQtLjUwNS0uNjU0LTEuMDM4LS42NTMtMS42ODIgMC0uNjQ1LjI3LTEuMTc4LjY1NS0xLjY4MS4zNzItLjQ4Ni45MTctMS4wMjcgMS41Ny0xLjY3OWwuOTEyLS45MVoiLz48L3N2Zz4=)
+ */
+export const IconKeyEnter: Icon = ({ className, ...props }) => {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='currentColor'
+      viewBox='0 0 24 24'
+      className={cn('text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path d='M6.21 8.652a.75.75 0 0 1 1.059 1.062l-.913.912c-.683.681-1.141 1.14-1.438 1.527l-.016.024h11.276c.964 0 1.612-.002 2.095-.067.461-.062.66-.17.79-.3.13-.13.237-.328.299-.789.065-.483.066-1.13.066-2.094v-.708a.75.75 0 0 1 1.5 0v.708c0 .921.003 1.688-.079 2.294-.084.628-.27 1.194-.726 1.65-.455.455-1.022.641-1.65.725-.606.082-1.373.08-2.295.08H4.906l.012.018c.296.388.754.847 1.436 1.53l.915.915a.751.751 0 0 1-1.06 1.062l-.917-.916c-.652-.652-1.196-1.194-1.567-1.68-.384-.505-.654-1.038-.653-1.682 0-.645.27-1.178.655-1.681.372-.486.917-1.027 1.57-1.679l.912-.91Z' />
+    </svg>
+  )
+}

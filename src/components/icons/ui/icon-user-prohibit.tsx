@@ -1,0 +1,28 @@
+import type { Icon } from '../../../lib/types/icon'
+import { cn } from '../../../lib/utils/theme'
+
+/**
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PGcgb3BhY2l0eT0iLjIiPjxwYXRoIGQ9Ik0xNi44MDcgOC4yNjFhNC44MDcgNC44MDcgMCAxIDEtOS42MTQgMCA0LjgwNyA0LjgwNyAwIDAgMSA5LjYxNCAwWiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTQuNTkgMTkuNTQ4Yy41MDYtMy43NjQgMy44MzgtNi40OCA3LjQxLTYuNDggMi4yMTYgMCA0LjM0IDEuMDQ2IDUuNzU1IDIuNzRhMi42MzMgMi42MzMgMCAwIDAtLjg2NiA0LjczOEg1LjUyM2MtLjU1MyAwLTEuMDA4LS40NS0uOTM0LS45OThaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L2c+PHBhdGggZD0iTTE5LjkyNiAxNy45MWEyLjAxNiAyLjAxNiAwIDAgMC0yLjgxLTEuODU1bDIuNjQ4IDIuNjQ4YTIuMDEgMi4wMSAwIDAgMCAuMTYyLS43OTNabS0zLjg3LTkuNjQ5YTQuMDU3IDQuMDU3IDAgMSAwLTQuMjY1IDQuMDUybC4yMS4wMDUuMjA4LS4wMDVhNC4wNTcgNC4wNTcgMCAwIDAgMy44NDgtNC4wNTJabS0uMTYyIDkuNjQ5YTIuMDE3IDIuMDE3IDAgMCAwIDIuODEgMS44NTNsLTIuNjQ4LTIuNjQ2YTIuMDEgMi4wMSAwIDAgMC0uMTYyLjc5M1ptNS41MzIgMGEzLjUxNiAzLjUxNiAwIDEgMS03LjAzMyAwIDMuNTE2IDMuNTE2IDAgMCAxIDcuMDMzIDBabS0zLjg3LTkuNjQ5YTUuNTUxIDUuNTUxIDAgMCAxLTIuNTY1IDQuNjgyLjc0OC43NDggMCAwIDEtLjcyNyAxLjI4NkE2LjUzMyA2LjUzMyAwIDAgMCAxMiAxMy44MThjLTMuNDkxIDAtNi43MjcgMi44OTQtNi43MjcgNi43MjdhLjc1Ljc1IDAgMCAxLTEuNSAwYzAtMy41NTYgMi4yNTUtNi40MyA1LjE5Ni03LjYyN2E1LjU1NyA1LjU1NyAwIDEgMSA4LjU4OC00LjY1N1oiLz48L3N2Zz4=)
+ */
+export const IconUserProhibit: Icon = ({ className, ...props }) => {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='currentColor'
+      viewBox='0 0 24 24'
+      className={cn('text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <g opacity='.2'>
+        <path d='M16.807 8.261a4.807 4.807 0 1 1-9.614 0 4.807 4.807 0 0 1 9.614 0Z' />
+        <path
+          fillRule='evenodd'
+          d='M4.59 19.548c.506-3.764 3.838-6.48 7.41-6.48 2.216 0 4.34 1.046 5.755 2.74a2.633 2.633 0 0 0-.866 4.738H5.523c-.553 0-1.008-.45-.934-.998Z'
+          clipRule='evenodd'
+        />
+      </g>
+      <path d='M19.926 17.91a2.016 2.016 0 0 0-2.81-1.855l2.648 2.648a2.01 2.01 0 0 0 .162-.793Zm-3.87-9.649a4.057 4.057 0 1 0-4.265 4.052l.21.005.208-.005a4.057 4.057 0 0 0 3.848-4.052Zm-.162 9.649a2.017 2.017 0 0 0 2.81 1.853l-2.648-2.646a2.01 2.01 0 0 0-.162.793Zm5.532 0a3.516 3.516 0 1 1-7.033 0 3.516 3.516 0 0 1 7.033 0Zm-3.87-9.649a5.551 5.551 0 0 1-2.565 4.682.748.748 0 0 1-.727 1.286A6.533 6.533 0 0 0 12 13.818c-3.491 0-6.727 2.894-6.727 6.727a.75.75 0 0 1-1.5 0c0-3.556 2.255-6.43 5.196-7.627a5.557 5.557 0 1 1 8.588-4.657Z' />
+    </svg>
+  )
+}

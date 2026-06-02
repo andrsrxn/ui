@@ -1,0 +1,20 @@
+import type { Icon } from '../../../lib/types/icon'
+import { cn } from '../../../lib/utils/theme'
+
+/**
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTEyLjc0NSAxOC41di02LjYyNGgtNy40OVYxOC41YS43NS43NSAwIDAgMS0xLjUgMFYzLjc1YS43NS43NSAwIDAgMSAxLjUgMHY2LjYyNmg3LjQ5VjMuNzVhLjc1Ljc1IDAgMCAxIDEuNSAwVjE4LjVhLjc1Ljc1IDAgMCAxLTEuNSAwWm02LjkwOC4wMzRjMC0uNjA4LS40NTYtLjkzOC0uNzczLS45MzhoLTEuMjgzYy0uMjE0IDAtLjQ1LjAwMi0uNjQ4LS4wMjVhMS4yNCAxLjI0IDAgMCAxLS43MzYtLjM0MSAxLjI0IDEuMjQgMCAwIDEtLjM0LS43MzZjLS4wMjctLjE5Ny0uMDI2LS40MzQtLjAyNi0uNjQ4VjE0LjgxYzAtLjIxNS0uMDAxLS40NTEuMDI2LS42NDkuMDMtLjIyLjEwNS0uNS4zNC0uNzM1LjIzNi0uMjM2LjUxNy0uMzEyLjczNi0uMzQxLjE5Ny0uMDI3LjQzNC0uMDI1LjY0OC0uMDI1aDIuODA2YS43NS43NSAwIDAgMSAwIDEuNWgtMy4wNTV2MS41MzRsLjI1LjAwMmgxLjI4MmMxLjIwNiAwIDIuMjczIDEuMDY0IDIuMjczIDIuNDM4IDAgLjU3Ny0uMTEzIDEuMjA0LS40OTUgMS43LS40MS41MzMtMS4wMzMuNzkxLTEuNzc4Ljc5MWgtMi4yODNhLjc1Ljc1IDAgMSAxIDAtMS41aDIuMjgzYy4zOCAwIC41Mi0uMTE1LjU5LS4yMDYuMDk3LS4xMjYuMTgzLS4zNy4xODMtLjc4NVoiLz48L3N2Zz4=)
+ */
+export const IconTextHeading5: Icon = ({ className, ...props }) => {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='currentColor'
+      viewBox='0 0 24 24'
+      className={cn('text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path d='M12.745 18.5v-6.624h-7.49V18.5a.75.75 0 0 1-1.5 0V3.75a.75.75 0 0 1 1.5 0v6.626h7.49V3.75a.75.75 0 0 1 1.5 0V18.5a.75.75 0 0 1-1.5 0Zm6.908.034c0-.608-.456-.938-.773-.938h-1.283c-.214 0-.45.002-.648-.025a1.24 1.24 0 0 1-.736-.341 1.24 1.24 0 0 1-.34-.736c-.027-.197-.026-.434-.026-.648V14.81c0-.215-.001-.451.026-.649.03-.22.105-.5.34-.735.236-.236.517-.312.736-.341.197-.027.434-.025.648-.025h2.806a.75.75 0 0 1 0 1.5h-3.055v1.534l.25.002h1.282c1.206 0 2.273 1.064 2.273 2.438 0 .577-.113 1.204-.495 1.7-.41.533-1.033.791-1.778.791h-2.283a.75.75 0 1 1 0-1.5h2.283c.38 0 .52-.115.59-.206.097-.126.183-.37.183-.785Z' />
+    </svg>
+  )
+}

@@ -1,0 +1,20 @@
+import type { Icon } from '../../../lib/types/icon'
+import { cn } from '../../../lib/utils/theme'
+
+/**
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTQuNTUyIDkuNzZWNy44MDNjMC0uOTY1LjAwMi0xLjYxMy4wNjctMi4wOTdsLjAwNC0uMDIgMTMuNjkgMTMuNjktLjAyLjAwNGMtLjQ4My4wNjUtMS4xMzIuMDY3LTIuMDk3LjA2N2gtMS45NTlhLjc1Ljc1IDAgMCAwIDAgMS41aDEuOTZjLjkyMiAwIDEuNjg5LjAwMiAyLjI5NS0uMDguNjI4LS4wODQgMS4xOTYtLjI3IDEuNjUyLS43MjYuNDU1LS40NTYuNjQtMS4wMjQuNzI0LTEuNjUzLjA2MS0uNDU1LjA3NS0xIC4wNzctMS42MzNsLjAwMS0uNjYyLS4wMDItMS45NTRhLjc1Ljc1IDAgMCAwLTEuNS4wMDFsLjAwMiAxLjk1M2MuMDAxLjk2NSAwIDEuNjE0LS4wNjQgMi4wOTdsLS4wMDQuMDNMNS42OCA0LjYybC4wMy0uMDA0Yy40ODMtLjA2NCAxLjEzMS0uMDY1IDIuMDk2LS4wNjRsMS45NTMuMDAyYS43NS43NSAwIDAgMCAwLTEuNWwtMS45NTItLjAwMmMtLjkyMi0uMDAxLTEuNjktLjAwMy0yLjI5Ni4wNzgtLjYyOC4wODQtMS4xOTYuMjY5LTEuNjUyLjcyNS0uNDU2LjQ1NS0uNjQzIDEuMDIzLS43MjcgMS42NTEtLjA4Mi42MDctLjA4IDEuMzc0LS4wOCAyLjI5NlY5Ljc2YS43NS43NSAwIDAgMCAxLjUgMFoiLz48L3N2Zz4=)
+ */
+export const IconArrowsDiagonalLeft: Icon = ({ className, ...props }) => {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='currentColor'
+      viewBox='0 0 24 24'
+      className={cn('text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path d='M4.552 9.76V7.803c0-.965.002-1.613.067-2.097l.004-.02 13.69 13.69-.02.004c-.483.065-1.132.067-2.097.067h-1.959a.75.75 0 0 0 0 1.5h1.96c.922 0 1.689.002 2.295-.08.628-.084 1.196-.27 1.652-.726.455-.456.64-1.024.724-1.653.061-.455.075-1 .077-1.633l.001-.662-.002-1.954a.75.75 0 0 0-1.5.001l.002 1.953c.001.965 0 1.614-.064 2.097l-.004.03L5.68 4.62l.03-.004c.483-.064 1.131-.065 2.096-.064l1.953.002a.75.75 0 0 0 0-1.5l-1.952-.002c-.922-.001-1.69-.003-2.296.078-.628.084-1.196.269-1.652.725-.456.455-.643 1.023-.727 1.651-.082.607-.08 1.374-.08 2.296V9.76a.75.75 0 0 0 1.5 0Z' />
+    </svg>
+  )
+}

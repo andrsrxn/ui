@@ -1,0 +1,25 @@
+import type { Icon } from '../../../lib/types/icon'
+import { cn } from '../../../lib/utils/theme'
+
+/**
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTE2LjE3OSAzLjY0M0g3LjgyQTQuMTc5IDQuMTc5IDAgMCAwIDMuNjQzIDcuODJ2OC4zNThhNC4xNzkgNC4xNzkgMCAwIDAgNC4xNzggNC4xNzhoOC4zNThhNC4xNzkgNC4xNzkgMCAwIDAgNC4xNzgtNC4xNzhWNy44MmE0LjE3OSA0LjE3OSAwIDAgMC00LjE3OC00LjE3OFpNMTIgMTUuNDgzYTMuNDgyIDMuNDgyIDAgMSAxIDAtNi45NjUgMy40ODIgMy40ODIgMCAwIDEgMCA2Ljk2NFoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggZD0iTTE5LjUxOCA3Ljg3YTMuMzg4IDMuMzg4IDAgMCAwLTMuMzg5LTMuMzg4SDcuODcxYTMuMzg4IDMuMzg4IDAgMCAwLTMuMzg5IDMuMzg5djguMjU4YTMuMzg4IDMuMzg4IDAgMCAwIDMuMzg5IDMuMzg5aDguMjU4YTMuMzg4IDMuMzg4IDAgMCAwIDMuMzg5LTMuMzg5VjcuODcxWk0yMSAxNi4xM0E0Ljg3IDQuODcgMCAwIDEgMTYuMTMgMjFINy44N0E0Ljg3IDQuODcgMCAwIDEgMyAxNi4xM1Y3Ljg3QTQuODcgNC44NyAwIDAgMSA3Ljg3IDNoOC4yNkE0Ljg3IDQuODcgMCAwIDEgMjEgNy44N3Y4LjI2WiIvPjxwYXRoIGQ9Ik0xNC43IDEyYTIuNyAyLjcgMCAxIDAtNS40IDAgMi43IDIuNyAwIDAgMCA1LjQgMFptMS40ODMgMGE0LjE4MyA0LjE4MyAwIDEgMS04LjM2NiAwIDQuMTgzIDQuMTgzIDAgMCAxIDguMzY2IDBabS4yOTEtMy40NDFhMS4wMzIgMS4wMzIgMCAxIDAgMC0yLjA2NSAxLjAzMiAxLjAzMiAwIDAgMCAwIDIuMDY1WiIvPjwvc3ZnPg==)
+ */
+export const IconLogoInstagram: Icon = ({ className, ...props }) => {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='currentColor'
+      viewBox='0 0 24 24'
+      className={cn('text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        d='M16.179 3.643H7.82A4.179 4.179 0 0 0 3.643 7.82v8.358a4.179 4.179 0 0 0 4.178 4.178h8.358a4.179 4.179 0 0 0 4.178-4.178V7.82a4.179 4.179 0 0 0-4.178-4.178ZM12 15.483a3.482 3.482 0 1 1 0-6.965 3.482 3.482 0 0 1 0 6.964Z'
+        opacity='.2'
+      />
+      <path d='M19.518 7.87a3.388 3.388 0 0 0-3.389-3.388H7.871a3.388 3.388 0 0 0-3.389 3.389v8.258a3.388 3.388 0 0 0 3.389 3.389h8.258a3.388 3.388 0 0 0 3.389-3.389V7.871ZM21 16.13A4.87 4.87 0 0 1 16.13 21H7.87A4.87 4.87 0 0 1 3 16.13V7.87A4.87 4.87 0 0 1 7.87 3h8.26A4.87 4.87 0 0 1 21 7.87v8.26Z' />
+      <path d='M14.7 12a2.7 2.7 0 1 0-5.4 0 2.7 2.7 0 0 0 5.4 0Zm1.483 0a4.183 4.183 0 1 1-8.366 0 4.183 4.183 0 0 1 8.366 0Zm.291-3.441a1.032 1.032 0 1 0 0-2.065 1.032 1.032 0 0 0 0 2.065Z' />
+    </svg>
+  )
+}

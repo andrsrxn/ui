@@ -1,0 +1,20 @@
+import type { Icon } from '../../../lib/types/icon'
+import { cn } from '../../../lib/utils/theme'
+
+/**
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTEyLjY4OCAxMS4yNzZjLTEuMzc4LS40NjMtMi44OTctLjk3NC00LjQ4Mi0uOTc0QTcuNjc0IDcuNjc0IDAgMCAwIDQuMzcgMTEuMzVhNy44ODIgNy44ODIgMCAwIDAtMS4zMzEuOTY2Yy0uMDM0LjAzMS0uMTEzLjExLS4xMTMuMTFhLjc1Ljc1IDAgMCAwIDEuMDc3IDEuMDQ0bC4wMS0uMDA5LjA0OC0uMDQ2YTQuMzQgNC4zNCAwIDAgMSAuMjEtLjE4MyA2LjM4IDYuMzggMCAwIDEgLjg0OS0uNTgzIDYuMTc0IDYuMTc0IDAgMCAxIDMuMDg3LS44NDhjMS4zMTIgMCAyLjYxLjQyOCA0LjA0My45MSAxLjM4Ny40NjUgMi45MTIuOTg2IDQuNDkyLjk4NiAxLjYxNiAwIDIuNzI4LS41MzkgMy40NDMtMS4xMTRhNC4zNCA0LjM0IDAgMCAwIC43NjUtLjc5Yy4wODEtLjExLjI2LS40MTQuMjYtLjQxNGEuNzUuNzUgMCAwIDAtMS4zNDYtLjY2NGwtLjAwMS4wMDMtLjAwMS4wMDFhMS45MDkgMS45MDkgMCAwIDEtLjEyLjE4MiAyLjc1IDIuNzUgMCAwIDEtLjQ5Ny41MTRjLS40NjQuMzczLTEuMjQ5Ljc4Mi0yLjUwMy43ODItMS4yOTIgMC0yLjU3OS0uNDI2LTQuMDE0LS45MDlsLS4wNC0uMDEzWiIvPjwvc3ZnPg==)
+ */
+export const IconTilde: Icon = ({ className, ...props }) => {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='currentColor'
+      viewBox='0 0 24 24'
+      className={cn('text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path d='M12.688 11.276c-1.378-.463-2.897-.974-4.482-.974A7.674 7.674 0 0 0 4.37 11.35a7.882 7.882 0 0 0-1.331.966c-.034.031-.113.11-.113.11a.75.75 0 0 0 1.077 1.044l.01-.009.048-.046a4.34 4.34 0 0 1 .21-.183 6.38 6.38 0 0 1 .849-.583 6.174 6.174 0 0 1 3.087-.848c1.312 0 2.61.428 4.043.91 1.387.465 2.912.986 4.492.986 1.616 0 2.728-.539 3.443-1.114a4.34 4.34 0 0 0 .765-.79c.081-.11.26-.414.26-.414a.75.75 0 0 0-1.346-.664l-.001.003-.001.001a1.909 1.909 0 0 1-.12.182 2.75 2.75 0 0 1-.497.514c-.464.373-1.249.782-2.503.782-1.292 0-2.579-.426-4.014-.909l-.04-.013Z' />
+    </svg>
+  )
+}

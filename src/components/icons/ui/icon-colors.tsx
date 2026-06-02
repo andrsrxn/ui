@@ -1,0 +1,26 @@
+import type { Icon } from '../../../lib/types/icon'
+import { cn } from '../../../lib/utils/theme'
+
+/**
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTYuMTUzIDEwLjY2NmE0LjU0NCA0LjU0NCAwIDEgMC04LjMwNyAwQTQuNTQ1IDQuNTQ1IDAgMSAwIDEyIDE3LjkwOGE0LjUyNCA0LjUyNCAwIDAgMS0uOTA5LTIuNzI3QTQuNTMgNC41MyAwIDAgMSAxMiAxMi40NTRhNC41MzcgNC41MzcgMCAwIDEgNC4xNTMtMS43ODhaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii4yIi8+PHBhdGggZD0iTTEwLjM0MSAxNS4xOGMwLS40NDIuMDU2LS44NzMuMTU5LTEuMjg1QTUuMyA1LjMgMCAwIDEgNy40MzYgMTEuNWEzLjc5NSAzLjc5NSAwIDAgMCAuOTI5IDcuNDc2IDMuNzggMy43OCAwIDAgMCAyLjY5Ni0xLjEyOCA1LjI3NCA1LjI3NCAwIDAgMS0uNzItMi42NjdabTEuNSAwYTMuNzg4IDMuNzg4IDAgMCAwIDMuNzk0IDMuNzk1IDMuNzk1IDMuNzk1IDAgMSAwLTMuNzk0LTMuNzk0Wm0zLjk1NC02LjM2YTMuNzk1IDMuNzk1IDAgMSAwLTQuNzI2IDMuNjc4aC4wMDJhNS4yODkgNS4yODkgMCAwIDEgNC41NjUtMi42MTFoLjAwNWMuMS0uMzM4LjE1My0uNjk2LjE1NC0xLjA2OFptMS41IDBjMCAuNDQxLS4wNTcuODcxLS4xNiAxLjI4MkE1LjI5NSA1LjI5NSAwIDEgMSAxMiAxOS4wM2E1LjI5NSA1LjI5NSAwIDEgMS01LjEzNi04LjkyNyA1LjI5NSA1LjI5NSAwIDEgMSAxMC40My0xLjI4M1oiLz48L3N2Zz4=)
+ */
+export const IconColors: Icon = ({ className, ...props }) => {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='currentColor'
+      viewBox='0 0 24 24'
+      className={cn('text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        fillRule='evenodd'
+        d='M16.153 10.666a4.544 4.544 0 1 0-8.307 0A4.545 4.545 0 1 0 12 17.908a4.524 4.524 0 0 1-.909-2.727A4.53 4.53 0 0 1 12 12.454a4.537 4.537 0 0 1 4.153-1.788Z'
+        clipRule='evenodd'
+        opacity='.2'
+      />
+      <path d='M10.341 15.18c0-.442.056-.873.159-1.285A5.3 5.3 0 0 1 7.436 11.5a3.795 3.795 0 0 0 .929 7.476 3.78 3.78 0 0 0 2.696-1.128 5.274 5.274 0 0 1-.72-2.667Zm1.5 0a3.788 3.788 0 0 0 3.794 3.795 3.795 3.795 0 1 0-3.794-3.794Zm3.954-6.36a3.795 3.795 0 1 0-4.726 3.678h.002a5.289 5.289 0 0 1 4.565-2.611h.005c.1-.338.153-.696.154-1.068Zm1.5 0c0 .441-.057.871-.16 1.282A5.295 5.295 0 1 1 12 19.03a5.295 5.295 0 1 1-5.136-8.927 5.295 5.295 0 1 1 10.43-1.283Z' />
+    </svg>
+  )
+}

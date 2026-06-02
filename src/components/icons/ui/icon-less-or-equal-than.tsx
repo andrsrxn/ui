@@ -1,0 +1,20 @@
+import type { Icon } from '../../../lib/types/icon'
+import { cn } from '../../../lib/utils/theme'
+
+/**
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTE5LjI3NCAxOS41MThhLjc1Ljc1IDAgMCAxIDAgMS41SDQuNzJhLjc1Ljc1IDAgMSAxIDAtMS41aDE0LjU1NFptLS40ODMtMTYuNTA2YS43NS43NSAwIDAgMSAuNDIzIDEuNDRsLTUuNzMgMS42ODRjLTIuNzUyLjgxLTQuNzQxIDEuMzk2LTYuMDU2IDEuOTc2LS42NTUuMjktMS4wOC41NS0xLjMzNS43OTItLjIzNS4yMjMtLjI5OC40LS4zMDIuNTY2LS4wMDUuMTY1LjA0OS4zNDQuMjcyLjU4LjI0Mi4yNTQuNjUyLjUzOCAxLjI5MS44NjIgMS4yODIuNjQ5IDMuMjM3IDEuMzQxIDUuOTQzIDIuMjk2bDUuOTU1IDIuMTAxYS43NS43NSAwIDAgMS0uNSAxLjQxNWwtNS45NTUtMi4xMDJjLTIuNjYtLjkzOS00LjczLTEuNjY3LTYuMTItMi4zNzEtLjY5Ny0uMzUzLTEuMjg1LS43My0xLjcwMi0xLjE2OC0uNDM1LS40NTgtLjctMS4wMDctLjY4My0xLjY1My4wMTctLjY0Ny4zMTItMS4xOC43Ny0xLjYxNS40NC0uNDE2IDEuMDQ3LS43NiAxLjc2MS0xLjA3NiAxLjQyNi0uNjI5IDMuNTMyLTEuMjQ2IDYuMjM4LTIuMDQybDUuNzMtMS42ODVaIi8+PC9zdmc+)
+ */
+export const IconLessOrEqualThan: Icon = ({ className, ...props }) => {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='currentColor'
+      viewBox='0 0 24 24'
+      className={cn('text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path d='M19.274 19.518a.75.75 0 0 1 0 1.5H4.72a.75.75 0 1 1 0-1.5h14.554Zm-.483-16.506a.75.75 0 0 1 .423 1.44l-5.73 1.684c-2.752.81-4.741 1.396-6.056 1.976-.655.29-1.08.55-1.335.792-.235.223-.298.4-.302.566-.005.165.049.344.272.58.242.254.652.538 1.291.862 1.282.649 3.237 1.341 5.943 2.296l5.955 2.101a.75.75 0 0 1-.5 1.415l-5.955-2.102c-2.66-.939-4.73-1.667-6.12-2.371-.697-.353-1.285-.73-1.702-1.168-.435-.458-.7-1.007-.683-1.653.017-.647.312-1.18.77-1.615.44-.416 1.047-.76 1.761-1.076 1.426-.629 3.532-1.246 6.238-2.042l5.73-1.685Z' />
+    </svg>
+  )
+}

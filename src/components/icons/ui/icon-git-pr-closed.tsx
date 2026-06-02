@@ -1,0 +1,24 @@
+import type { Icon } from '../../../lib/types/icon'
+import { cn } from '../../../lib/utils/theme'
+
+/**
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTkgNi41YTIuNSAyLjUgMCAxIDEtNSAwIDIuNSAyLjUgMCAwIDEgNSAwWm0wIDExYTIuNSAyLjUgMCAxIDEtNSAwIDIuNSAyLjUgMCAwIDEgNSAwWm0xMSAwYTIuNSAyLjUgMCAxIDEtNSAwIDIuNSAyLjUgMCAwIDEgNSAwWiIgb3BhY2l0eT0iLjIiLz48cGF0aCBkPSJNOC4yNSAxNy41YTEuNzUgMS43NSAwIDEgMC0zLjUgMCAxLjc1IDEuNzUgMCAwIDAgMy41IDBabTExIDBhMS43NSAxLjc1IDAgMSAwLTMuNSAwIDEuNzUgMS43NSAwIDAgMCAzLjUgMFptLS4xNDgtMTQuMjQzYS43NS43NSAwIDAgMSAxLjA2MSAxLjA2TDE4LjU2MSA1LjkybDEuNjAyIDEuNjAzYS43NS43NSAwIDAgMS0xLjA2IDEuMDZMMTcuNSA2Ljk4MmwtMS42MDIgMS42MDNhLjc1Ljc1IDAgMSAxLTEuMDYxLTEuMDYxbDEuNjAyLTEuNjAzLTEuNjAyLTEuNjAyYS43NS43NSAwIDEgMSAxLjA2LTEuMDZMMTcuNSA0Ljg2bDEuNjAyLTEuNjAzWk04LjI1IDYuNWExLjc1IDEuNzUgMCAxIDAtMy41IDAgMS43NSAxLjc1IDAgMCAwIDMuNSAwWm0xMi41IDExYTMuMjUgMy4yNSAwIDEgMS00LTMuMTYydi00LjA4YS43NS43NSAwIDAgMSAxLjUgMHY0LjA4YTMuMjUgMy4yNSAwIDAgMSAyLjUgMy4xNjJabS0xMS0xMWEzLjI1IDMuMjUgMCAwIDEtMi41IDMuMTYydjQuNjc1YTMuMjUgMy4yNSAwIDEgMS0xLjUgMFY5LjY2M2EzLjI1IDMuMjUgMCAxIDEgNC0zLjE2MloiLz48L3N2Zz4=)
+ */
+export const IconGitPrClosed: Icon = ({ className, ...props }) => {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='currentColor'
+      viewBox='0 0 24 24'
+      className={cn('text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        d='M9 6.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm0 11a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm11 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z'
+        opacity='.2'
+      />
+      <path d='M8.25 17.5a1.75 1.75 0 1 0-3.5 0 1.75 1.75 0 0 0 3.5 0Zm11 0a1.75 1.75 0 1 0-3.5 0 1.75 1.75 0 0 0 3.5 0Zm-.148-14.243a.75.75 0 0 1 1.061 1.06L18.561 5.92l1.602 1.603a.75.75 0 0 1-1.06 1.06L17.5 6.982l-1.602 1.603a.75.75 0 1 1-1.061-1.061l1.602-1.603-1.602-1.602a.75.75 0 1 1 1.06-1.06L17.5 4.86l1.602-1.603ZM8.25 6.5a1.75 1.75 0 1 0-3.5 0 1.75 1.75 0 0 0 3.5 0Zm12.5 11a3.25 3.25 0 1 1-4-3.162v-4.08a.75.75 0 0 1 1.5 0v4.08a3.25 3.25 0 0 1 2.5 3.162Zm-11-11a3.25 3.25 0 0 1-2.5 3.162v4.675a3.25 3.25 0 1 1-1.5 0V9.663a3.25 3.25 0 1 1 4-3.162Z' />
+    </svg>
+  )
+}

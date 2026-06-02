@@ -1,0 +1,26 @@
+import type { Icon } from '../../../lib/types/icon'
+import { cn } from '../../../lib/utils/theme'
+
+/**
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTE4LjUxNyAxMS41ODVhNy4zMSA3LjMxIDAgMSAxLTE0LjYyIDAgNy4zMSA3LjMxIDAgMCAxIDE0LjYyIDBaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTExLjkzNCAxNC4wOTVabS4wMS4wMTYtLjAwNC0uMDA3LjAwNS4wMDhaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy44NCAxMS41ODVhNi42MzIgNi42MzIgMCAxIDAtMi42MzEgNS4yODljLS44NjItLjMwMy0xLjU2LS44Mi0yLjA3Mi0xLjMwN2E3LjcxMyA3LjcxMyAwIDAgMS0xLjExOC0xLjMzNiAyLjYzMSAyLjYzMSAwIDAgMS0uMDYxLS4wOTlsLS4wMTQtLjAyLS4wMDQtLjAwOC0uMDA2LS4wMS0uMDM1LS4wNjdhLjY3OC42NzggMCAwIDEgMS4xNjctLjY3NWwuMDM4LjA1OC4wMS4wMTUuMDQzLjA3Yy4wNC4wNi4xMDIuMTUzLjE4NC4yNjQuMTY2LjIyNC40MTEuNTI0LjcyOC44MjUuNTgzLjU1MyAxLjM2IDEuMDYzIDIuMjkyIDEuMTc1YTYuNjA1IDYuNjA1IDAgMCAwIDEuNDc4LTQuMTc0Wm0uMDM0IDQuNDAxYTcuOTg4IDcuOTg4IDAgMSAwLS45NDggMS4xNzVjLjkxNi4xMiAxLjY4LjYyNSAyLjI1NyAxLjE3MWE2LjM1OCA2LjM1OCAwIDAgMSAuOTEzIDEuMDlsLjA0Mi4wNjkuMDEuMDE1YS42NzguNjc4IDAgMSAwIDEuMTcyLS42ODFsLS4wMDctLjAxMi0uMDA4LS4wMTMtLjAxLS4wMTZhNi42MyA2LjYzIDAgMCAwLS4yOTQtLjQzMyA3LjcwOSA3LjcwOSAwIDAgMC0uODg1LTEuMDAyYy0uNTQ2LS41MTgtMS4zMDEtMS4wNzEtMi4yNDItMS4zNjNaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)
+ */
+export const IconCurrencyGtq: Icon = ({ className, ...props }) => {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='currentColor'
+      viewBox='0 0 24 24'
+      className={cn('text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path d='M18.517 11.585a7.31 7.31 0 1 1-14.62 0 7.31 7.31 0 0 1 14.62 0Z' opacity='.2' />
+      <path fillRule='evenodd' d='M11.934 14.095Zm.01.016-.004-.007.005.008Z' clipRule='evenodd' />
+      <path
+        fillRule='evenodd'
+        d='M17.84 11.585a6.632 6.632 0 1 0-2.631 5.289c-.862-.303-1.56-.82-2.072-1.307a7.713 7.713 0 0 1-1.118-1.336 2.631 2.631 0 0 1-.061-.099l-.014-.02-.004-.008-.006-.01-.035-.067a.678.678 0 0 1 1.167-.675l.038.058.01.015.043.07c.04.06.102.153.184.264.166.224.411.524.728.825.583.553 1.36 1.063 2.292 1.175a6.605 6.605 0 0 0 1.478-4.174Zm.034 4.401a7.988 7.988 0 1 0-.948 1.175c.916.12 1.68.625 2.257 1.171a6.358 6.358 0 0 1 .913 1.09l.042.069.01.015a.678.678 0 1 0 1.172-.681l-.007-.012-.008-.013-.01-.016a6.63 6.63 0 0 0-.294-.433 7.709 7.709 0 0 0-.885-1.002c-.546-.518-1.301-1.071-2.242-1.363Z'
+        clipRule='evenodd'
+      />
+    </svg>
+  )
+}

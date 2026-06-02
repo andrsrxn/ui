@@ -1,0 +1,20 @@
+import type { Icon } from '../../../lib/types/icon'
+import { cn } from '../../../lib/utils/theme'
+
+/**
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTE5LjQ0NiA5Ljc2VjcuODAzYzAtLjk2NS0uMDAyLTEuNjEzLS4wNjctMi4wOTcgMC0uMDA3LS4wMDMtLjAxMy0uMDA0LS4wMmwtMTMuNjkgMTMuNjkuMDIuMDA0Yy40ODQuMDY1IDEuMTMyLjA2NyAyLjA5Ny4wNjdIOS43NmEuNzUuNzUgMCAxIDEgMCAxLjVINy44Yy0uOTIxIDAtMS42ODguMDAyLTIuMjk1LS4wOC0uNjI4LS4wODQtMS4xOTYtLjI3LTEuNjUxLS43MjYtLjQ1Ni0uNDU2LS42NDEtMS4wMjQtLjcyNS0xLjY1My0uMDYtLjQ1NS0uMDc0LTEtLjA3Ny0xLjYzM2wtLjAwMS0uNjYyLjAwMi0xLjk1NGEuNzUuNzUgMCAwIDEgMS41LjAwMWwtLjAwMiAxLjk1M2MtLjAwMS45NjUgMCAxLjYxNC4wNjQgMi4wOTdsLjAwNC4wM0wxOC4zMiA0LjYybC0uMDMtLjAwNGMtLjQ4My0uMDY0LTEuMTMyLS4wNjUtMi4wOTctLjA2NGwtMS45NTMuMDAyYS43NS43NSAwIDAgMSAwLTEuNWwxLjk1My0uMDAyYy45MjItLjAwMSAxLjY4OS0uMDAzIDIuMjk1LjA3OC42MjkuMDg0IDEuMTk3LjI2OSAxLjY1My43MjUuNDU2LjQ1NS42NDIgMS4wMjMuNzI2IDEuNjUxLjA4Mi42MDcuMDggMS4zNzQuMDggMi4yOTZWOS43NmEuNzUuNzUgMCAwIDEtMS41IDBaIi8+PC9zdmc+)
+ */
+export const IconArrowsDiagonalRight: Icon = ({ className, ...props }) => {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='currentColor'
+      viewBox='0 0 24 24'
+      className={cn('text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path d='M19.446 9.76V7.803c0-.965-.002-1.613-.067-2.097 0-.007-.003-.013-.004-.02l-13.69 13.69.02.004c.484.065 1.132.067 2.097.067H9.76a.75.75 0 1 1 0 1.5H7.8c-.921 0-1.688.002-2.295-.08-.628-.084-1.196-.27-1.651-.726-.456-.456-.641-1.024-.725-1.653-.06-.455-.074-1-.077-1.633l-.001-.662.002-1.954a.75.75 0 0 1 1.5.001l-.002 1.953c-.001.965 0 1.614.064 2.097l.004.03L18.32 4.62l-.03-.004c-.483-.064-1.132-.065-2.097-.064l-1.953.002a.75.75 0 0 1 0-1.5l1.953-.002c.922-.001 1.689-.003 2.295.078.629.084 1.197.269 1.653.725.456.455.642 1.023.726 1.651.082.607.08 1.374.08 2.296V9.76a.75.75 0 0 1-1.5 0Z' />
+    </svg>
+  )
+}

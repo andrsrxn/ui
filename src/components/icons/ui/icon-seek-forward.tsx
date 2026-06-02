@@ -1,0 +1,32 @@
+import type { Icon } from '../../../lib/types/icon'
+import { cn } from '../../../lib/utils/theme'
+
+/**
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTEyLjg1MiAxMS4zOGExLjc1OCAxLjc1OCAwIDEgMSAzLjUxNiAwdjIuNjY0YTEuNzU4IDEuNzU4IDAgMCAxLTMuNTE2IDBWMTEuMzhaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE5Ljk3MyAzLjM5OGMuMTMzLjU1Ny4yODQgMS4yLjMzOSAxLjU5NS4wNjIuNDQ3LjA2OC44NzYtLjA3NSAxLjMwMyIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZD0iTTE1LjcwNCAxMS4zNzNhMS4wMDkgMS4wMDkgMCAwIDAtMi4wMTcgMHYyLjY2NWExLjAwOSAxLjAwOSAwIDEgMCAyLjAxNyAwdi0yLjY2NVptMS41IDIuNjY1YTIuNTEgMi41MSAwIDAgMS01LjAxNyAwdi0yLjY2NWEyLjUwOCAyLjUwOCAwIDAgMSA1LjAxNyAwdjIuNjY1WiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEwLjI3IDguODY1Wm0uNTMuMjJaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBkPSJNMTAuNDgzIDguODk1Yy4zMS4wOTIuNTM3LjM4LjUzNy43MnY2LjE4MWEuNzUuNzUgMCAwIDEtMS41IDB2LTQuMzdsLS44NzQuODc0YS43NS43NSAwIDEgMS0xLjA2LTEuMDYxTDkuNzQgOS4wODVhLjc1Ljc1IDAgMCAxIC43NDMtLjE5WiIvPjxwYXRoIGQ9Ik0xOS45NzMgMy4zOThhLjc1Ljc1IDAgMSAwLTEuNDU5LjM0OGMuMTU4LjY2Mi4zMjkgMS41OTIuMzI5IDEuNTkyLS4wMDQtLjA0My4wMDcuMDUgMCAwbC0xLjc4LTEuMDkzLS4zNzYtLjIxNmE5LjEyMiA5LjEyMiAwIDEgMCAzLjM5NiAxMi44NjIuNzUuNzUgMCAxIDAtMS4yNzEtLjc5NSA3LjYyMiA3LjYyMiAwIDEgMS0yLjgzOS0xMC43NDhsLjMxNS4xOCAxLjcxMSAxLjA1MmMtLjMzMS4xMTQtLjgwMy4yMjktMS40NjMuMzg2YS43NTEuNzUxIDAgMCAwIC4zNDYgMS40NmMuNjEtLjE0NSAxLjE3LS4yNzggMS41NzUtLjQxNy40MjctLjE0Ni44MTItLjMzNCAxLjEyOC0uNjU1YTIuNzUgMi43NSAwIDAgMCAuNjUyLTEuMDU4Yy4xNDMtLjQyNy4xMzctLjg1Ni4wNzUtMS4zMDMtLjA1NS0uMzk2LS4yMDYtMS4wMzgtLjM0LTEuNTk1WiIvPjwvc3ZnPg==)
+ */
+export const IconSeekForward: Icon = ({ className, ...props }) => {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='currentColor'
+      viewBox='0 0 24 24'
+      className={cn('text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        d='M12.852 11.38a1.758 1.758 0 1 1 3.516 0v2.664a1.758 1.758 0 0 1-3.516 0V11.38Z'
+        opacity='.2'
+      />
+      <path
+        fillRule='evenodd'
+        d='M19.973 3.398c.133.557.284 1.2.339 1.595.062.447.068.876-.075 1.303'
+        clipRule='evenodd'
+      />
+      <path d='M15.704 11.373a1.009 1.009 0 0 0-2.017 0v2.665a1.009 1.009 0 1 0 2.017 0v-2.665Zm1.5 2.665a2.51 2.51 0 0 1-5.017 0v-2.665a2.508 2.508 0 0 1 5.017 0v2.665Z' />
+      <path fillRule='evenodd' d='M10.27 8.865Zm.53.22Z' clipRule='evenodd' />
+      <path d='M10.483 8.895c.31.092.537.38.537.72v6.181a.75.75 0 0 1-1.5 0v-4.37l-.874.874a.75.75 0 1 1-1.06-1.061L9.74 9.085a.75.75 0 0 1 .743-.19Z' />
+      <path d='M19.973 3.398a.75.75 0 1 0-1.459.348c.158.662.329 1.592.329 1.592-.004-.043.007.05 0 0l-1.78-1.093-.376-.216a9.122 9.122 0 1 0 3.396 12.862.75.75 0 1 0-1.271-.795 7.622 7.622 0 1 1-2.839-10.748l.315.18 1.711 1.052c-.331.114-.803.229-1.463.386a.751.751 0 0 0 .346 1.46c.61-.145 1.17-.278 1.575-.417.427-.146.812-.334 1.128-.655a2.75 2.75 0 0 0 .652-1.058c.143-.427.137-.856.075-1.303-.055-.396-.206-1.038-.34-1.595Z' />
+    </svg>
+  )
+}
