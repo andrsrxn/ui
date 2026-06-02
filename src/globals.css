@@ -202,7 +202,6 @@
   --radius-base: 8px;
   --radius-lg: 12px;
 
-  /* biome-ignore lint/correctness/noUnknownProperty: new property */
   @supports (corner-shape: squircle) {
     --radius-sm: 12px;
     --radius-base: 16px;
@@ -1023,8 +1022,8 @@
   --shadow-*: initial;
   --drop-shadow-*: initial;
   --text-shadow-*: initial;
-  --shadow-2xl: 0 14px 20px var(--color-shadow);
-  --shadow-xl: 0 12px 12px var(--color-shadow);
+  --shadow-2xl: 0 18px 22px var(--color-shadow);
+  --shadow-xl: 0 12px 14px var(--color-shadow);
   --shadow-lg: 0 8px 10px var(--color-shadow);
   --shadow-base: 0 4px 8px var(--color-shadow);
   --shadow-sm: 0 2px 4px var(--color-shadow);
@@ -1525,7 +1524,6 @@
   [class*='last:rounded-']:not([class*='last:rounded-full']):not([class*='last:rounded-none']),
   [class*='first:rounded-']:not([class*='first:rounded-full']):not([class*='first:rounded-none']),
   [class*='rounded-']:not([class*='rounded-full']):not([class*='rounded-none']) {
-    /* biome-ignore lint/correctness/noUnknownProperty: new property */
     corner-shape: squircle;
   }
 
@@ -1618,12 +1616,14 @@
 }
 
 @utility no-password-icon {
+  /* biome-ignore lint/nursery/noDuplicateSelectors: not duplicated */
   &::-ms-clear {
     display: none;
     width: 0;
     height: 0;
   }
 
+  /* biome-ignore lint/nursery/noDuplicateSelectors: not duplicated */
   &::-ms-reveal {
     display: none;
     width: 0;
@@ -1649,6 +1649,7 @@
 }
 
 @utility scrollbar-visible {
+  /* biome-ignore lint/nursery/noDuplicateSelectors: not duplicated */
   &::-webkit-scrollbar {
     display: block;
   }
