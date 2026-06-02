@@ -649,12 +649,19 @@
       }
     },
     {
-      "includes": ["src/**"],
+      "includes": ["src/stories/**"],
       "linter": {
         "rules": {
           "complexity": {
             "noExcessiveLinesPerFunction": "off"
-          },
+          }
+        }
+      }
+    },
+    {
+      "includes": ["src/**"],
+      "linter": {
+        "rules": {
           "correctness": {
             "useUniqueElementIds": "off"
           },

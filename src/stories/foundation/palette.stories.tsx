@@ -38,7 +38,6 @@ const ColorSwatch = ({
 )
 
 export const Primitives = meta.story({
-  // biome-ignore lint/complexity/noExcessiveLinesPerFunction: content
   render: () => (
     <div className='grid gap-20'>
       {/* Brand */}
