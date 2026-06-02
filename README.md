@@ -1,1 +1,3 @@
-Blueprint Design System - Available soon
+# Blueprint Design System
+
+Available soon...
