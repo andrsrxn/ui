@@ -649,7 +649,7 @@
       }
     },
     {
-      "includes": ["src/stories/**"],
+      "includes": ["src/stories/**", "src/components/icons/**"],
       "linter": {
         "rules": {
           "complexity": {
@@ -658,6 +658,7 @@
         }
       }
     },
+
     {
       "includes": ["src/**"],
       "linter": {
