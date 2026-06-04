@@ -2,24 +2,10 @@ import type { Icon } from '../../../lib/types/icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTE3LjE1NCAxMC4yOTJhNi44NzMgNi44NzMgMCAxIDEtMTMuNzQ2IDAgNi44NzMgNi44NzMgMCAwIDEgMTMuNzQ2IDBaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIGQ9Ik0xNi42NTMgMTAuNTU2YTYuMTIzIDYuMTIzIDAgMSAwLTEyLjI0NiAwIDYuMTIzIDYuMTIzIDAgMCAwIDEyLjI0NiAwWm0xLjUgMGE3LjU5MiA3LjU5MiAwIDAgMS0xLjY4MiA0Ljc3Nmw0LjQwMiA0LjQwMmEuNzUuNzUgMCAwIDEtMS4wNiAxLjA2bC00LjM5Mi00LjM5YTcuNjIzIDcuNjIzIDAgMSAxIDIuNzMyLTUuODQ3WiIvPjxwYXRoIGQ9Ik05Ljc1NiAxMy45MDJ2LTIuNTM4SDcuMjA4YS43NS43NSAwIDAgMSAwLTEuNWgyLjU0OFY3LjMxNmEuNzUuNzUgMCAxIDEgMS41IDB2Mi41NDhoMi41MzdhLjc1Ljc1IDAgMSAxIDAgMS41aC0yLjUzN3YyLjUzN2EuNzUuNzUgMCAwIDEtMS41IDBaIi8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE3LjMzNyAxMC41NDZhNi44NzMgNi44NzMgMCAxIDEtMTMuNzQ2IDAgNi44NzMgNi44NzMgMCAwIDEgMTMuNzQ2IDBaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNNy4xNzEgMTAuNTQ2aDYuNTg1bS0zLjI5Mi0zLjI5M3Y2LjU4NW00LjkxMiAxLjUxNWE2Ljg3MyA2Ljg3MyAwIDEgMC05LjgyNC05LjYxNSA2Ljg3MyA2Ljg3MyAwIDAgMCA5LjgyNCA5LjYxNVptMCAwIDQuOSA0LjkiLz48L3N2Zz4=)
  */
 export const IconSearchPlus: Icon = ({ className, ...props }) => {
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      fill='currentColor'
-      viewBox='0 0 24 24'
-      className={cn('text-primary pointer-events-none shrink-0', className)}
-      {...props}>
-      <path
-        d='M17.154 10.292a6.873 6.873 0 1 1-13.746 0 6.873 6.873 0 0 1 13.746 0Z'
-        opacity='.2'
-      />
-      <path d='M16.653 10.556a6.123 6.123 0 1 0-12.246 0 6.123 6.123 0 0 0 12.246 0Zm1.5 0a7.592 7.592 0 0 1-1.682 4.776l4.402 4.402a.75.75 0 0 1-1.06 1.06l-4.392-4.39a7.623 7.623 0 1 1 2.732-5.847Z' />
-      <path d='M9.756 13.902v-2.538H7.208a.75.75 0 0 1 0-1.5h2.548V7.316a.75.75 0 1 1 1.5 0v2.548h2.537a.75.75 0 1 1 0 1.5h-2.537v2.537a.75.75 0 0 1-1.5 0Z' />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M17.337 10.546a6.873 6.873 0 1 1-13.746 0 6.873 6.873 0 0 1 13.746 0Z" opacity=".2"/><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M7.171 10.546h6.585m-3.292-3.293v6.585m4.912 1.515a6.873 6.873 0 1 0-9.824-9.615 6.873 6.873 0 0 0 9.824 9.615Zm0 0 4.9 4.9"/></svg>
   )
 }

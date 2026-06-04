@@ -2,19 +2,10 @@ import type { Icon } from '../../../lib/types/icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTIwLjI0IDUuMTU1YS43Ni43NiAwIDAgMSAwIDEuNTIxSDguOTlhLjc2Ljc2IDAgMCAxIDAtMS41MjFoMTEuMjVabTAgNi4wODVhLjc2Ljc2IDAgMCAxIDAgMS41Mkg4Ljk5YS43Ni43NiAwIDAgMSAwLTEuNTJoMTEuMjVabTAgNi4wODRhLjc2Ljc2IDAgMCAxIDAgMS41MjFIOC45OWEuNzYuNzYgMCAxIDEgMC0xLjUyMWgxMS4yNVpNNi4yNjMgNS45MTZhMS42MzEgMS42MzEgMCAxIDEtMy4yNjMgMCAxLjYzMSAxLjYzMSAwIDAgMSAzLjI2MyAwWm0wIDYuMDg0QTEuNjMxIDEuNjMxIDAgMSAxIDMgMTJhMS42MzEgMS42MzEgMCAwIDEgMy4yNjMgMFptMCA2LjA4NGExLjYzMSAxLjYzMSAwIDEgMS0zLjI2MyAwIDEuNjMxIDEuNjMxIDAgMCAxIDMuMjYzIDBaIi8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNOC42NTYgNmgxMS42MDlNOC42NTYgMTJoMTEuNjA5TTguNjU2IDE4aDExLjYwOU01LjQ0IDZhLjc3OS43NzkgMCAxIDEtMS41NTggMEEuNzc5Ljc3OSAwIDAgMSA1LjQ0IDZabTAgNi4wMDRhLjc3OS43NzkgMCAxIDEtMS41NTggMCAuNzc5Ljc3OSAwIDAgMSAxLjU1OCAwWm0wIDYuMDAzYS43NzkuNzc5IDAgMSAxLTEuNTU4IDAgLjc3OS43NzkgMCAwIDEgMS41NTggMFoiLz48L3N2Zz4=)
  */
 export const IconListUnordered: Icon = ({ className, ...props }) => {
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      fill='currentColor'
-      viewBox='0 0 24 24'
-      className={cn('text-primary pointer-events-none shrink-0', className)}
-      {...props}>
-      <path d='M20.24 5.155a.76.76 0 0 1 0 1.521H8.99a.76.76 0 0 1 0-1.521h11.25Zm0 6.085a.76.76 0 0 1 0 1.52H8.99a.76.76 0 0 1 0-1.52h11.25Zm0 6.084a.76.76 0 0 1 0 1.521H8.99a.76.76 0 1 1 0-1.521h11.25ZM6.263 5.916a1.631 1.631 0 1 1-3.263 0 1.631 1.631 0 0 1 3.263 0Zm0 6.084A1.631 1.631 0 1 1 3 12a1.631 1.631 0 0 1 3.263 0Zm0 6.084a1.631 1.631 0 1 1-3.263 0 1.631 1.631 0 0 1 3.263 0Z' />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M8.656 6h11.609M8.656 12h11.609M8.656 18h11.609M5.44 6a.779.779 0 1 1-1.558 0A.779.779 0 0 1 5.44 6Zm0 6.004a.779.779 0 1 1-1.558 0 .779.779 0 0 1 1.558 0Zm0 6.003a.779.779 0 1 1-1.558 0 .779.779 0 0 1 1.558 0Z"/></svg>
   )
 }

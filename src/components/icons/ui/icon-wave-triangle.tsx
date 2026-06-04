@@ -2,19 +2,10 @@ import type { Icon } from '../../../lib/types/icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTUuNjQ0IDQuOTJjLjQ3Ni0uMzk3IDEuMDI0LS43IDEuNjk4LS42My42NzUuMDY5IDEuMTQ5LjQ3NyAxLjUzNC45NjQuMzc0LjQ3My43NiAxLjE0NiAxLjIyMSAxLjk0NWw1LjEzMiA4Ljg5Yy40NzYuODI2Ljc5NCAxLjM3MiAxLjA3OCAxLjczMS4yNzMuMzQ1LjQxNS4zODguNTAyLjM5OC4wODcuMDEuMjM2IDAgLjU4LS4yNzYuMzU3LS4yODcuNzg4LS43NDcgMS40MzctMS40NDVsLjk0NS0xLjAxOGEuNzUuNzUgMCAwIDEgMS4wOTkgMS4wMjJsLS45NDYgMS4wMThjLS42MTYuNjYyLTEuMTM0IDEuMjIxLTEuNTk3IDEuNTkzLS40NzguMzg0LTEuMDIxLjY3Mi0xLjY4Ni41OTctLjY2NS0uMDc1LTEuMTMxLS40NzktMS41MS0uOTU5LS4zNjktLjQ2Ni0uNzQ4LTEuMTI3LTEuMi0xLjkxTDguNzk3IDcuOTQ4Yy0uNDg1LS44NC0uODEtMS4zOTgtMS4xLTEuNzY0LS4yMDgtLjI2NC0uMzQxLS4zNTMtLjQzMi0uMzg1bC0uMDc4LS4wMThjLS4wODctLjAwOS0uMjM4LjAwMi0uNTgyLjI5LS4zNTguMy0uNzg5Ljc4LTEuNDM2IDEuNTA0TDQuMjQgOC42MmEuNzUuNzUgMCAxIDEtMS4xMi0uOTk5bC45MzItMS4wNDRjLjYxNS0uNjg4IDEuMTMtMS4yNjggMS41OTMtMS42NTVaIi8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJtMy42NTQgOC4wOTMuOTM5LTEuMDU5YzEuMjY0LTEuNDI3IDEuODk2LTIuMTQgMi42NjEtMi4wNjIuNzY2LjA3OSAxLjI0LjkwNiAyLjE4NyAyLjU2bDUuMTYzIDkuMDEzYy45MyAxLjYyMyAxLjM5NSAyLjQzNCAyLjE1IDIuNTIuNzU1LjA4NSAxLjM5LS42MDMgMi42NTgtMS45NzdsLjk1MS0xLjAzMSIvPjwvc3ZnPg==)
  */
 export const IconWaveTriangle: Icon = ({ className, ...props }) => {
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      fill='currentColor'
-      viewBox='0 0 24 24'
-      className={cn('text-primary pointer-events-none shrink-0', className)}
-      {...props}>
-      <path d='M5.644 4.92c.476-.397 1.024-.7 1.698-.63.675.069 1.149.477 1.534.964.374.473.76 1.146 1.221 1.945l5.132 8.89c.476.826.794 1.372 1.078 1.731.273.345.415.388.502.398.087.01.236 0 .58-.276.357-.287.788-.747 1.437-1.445l.945-1.018a.75.75 0 0 1 1.099 1.022l-.946 1.018c-.616.662-1.134 1.221-1.597 1.593-.478.384-1.021.672-1.686.597-.665-.075-1.131-.479-1.51-.959-.369-.466-.748-1.127-1.2-1.91L8.797 7.948c-.485-.84-.81-1.398-1.1-1.764-.208-.264-.341-.353-.432-.385l-.078-.018c-.087-.009-.238.002-.582.29-.358.3-.789.78-1.436 1.504L4.24 8.62a.75.75 0 1 1-1.12-.999l.932-1.044c.615-.688 1.13-1.268 1.593-1.655Z' />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="m3.654 8.093.939-1.059c1.264-1.427 1.896-2.14 2.661-2.062.766.079 1.24.906 2.187 2.56l5.163 9.013c.93 1.623 1.395 2.434 2.15 2.52.755.085 1.39-.603 2.658-1.977l.951-1.031"/></svg>
   )
 }

@@ -2,23 +2,10 @@ import type { Icon } from '../../../lib/types/icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTE0LjcyIDYuMjk0QTIuNzEzIDIuNzEzIDAgMCAxIDEyIDlhMi43MTMgMi43MTMgMCAwIDEtMi43Mi0yLjcwNkEyLjcxMyAyLjcxMyAwIDAgMSAxMiAzLjU4OGEyLjcxMyAyLjcxMyAwIDAgMSAyLjcyIDIuNzA2Wm0wIDExLjQxMkEyLjcxMyAyLjcxMyAwIDAgMSAxMiAyMC40MTJhMi43MTMgMi43MTMgMCAwIDEtMi43Mi0yLjcwNkEyLjcxMyAyLjcxMyAwIDAgMSAxMiAxNWEyLjcxMyAyLjcxMyAwIDAgMSAyLjcyIDIuNzA2WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBkPSJNMTMuOTcgMTcuNzA2QTEuOTYzIDEuOTYzIDAgMCAwIDEyIDE1Ljc1Yy0xLjA5MSAwLTEuOTcuODc4LTEuOTcgMS45NTUgMCAxLjA3Ni44NzkgMS45NTYgMS45NyAxLjk1NiAxLjA5MiAwIDEuOTctLjg4IDEuOTctMS45NTZabTYuNDY3LTYuNDU1YS43NS43NSAwIDAgMSAwIDEuNUgzLjU2NGEuNzUuNzUgMCAwIDEgMC0xLjVoMTYuODczWk0xMy45NyA2LjI5NEExLjk2MyAxLjk2MyAwIDAgMCAxMiA0LjMzOGMtMS4wOTEgMC0xLjk3Ljg4LTEuOTcgMS45NTYgMCAxLjA3Ny44NzkgMS45NTYgMS45NyAxLjk1NnMxLjk3LS44OCAxLjk3LTEuOTU2Wm0xLjUgMTEuNDEyQTMuNDYzIDMuNDYzIDAgMCAxIDEyIDIxLjE2MmEzLjQ2MyAzLjQ2MyAwIDAgMS0zLjQ3LTMuNDU2QTMuNDYyIDMuNDYyIDAgMCAxIDEyIDE0LjI1YTMuNDYzIDMuNDYzIDAgMCAxIDMuNDcgMy40NTVabTAtMTEuNDEyQTMuNDYyIDMuNDYyIDAgMCAxIDEyIDkuNzVhMy40NjIgMy40NjIgMCAwIDEtMy40Ny0zLjQ1NkEzLjQ2MyAzLjQ2MyAwIDAgMSAxMiAyLjgzOGEzLjQ2MyAzLjQ2MyAwIDAgMSAzLjQ3IDMuNDU2WiIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE0LjE2IDYuMTZhMi4xNiAyLjE2IDAgMSAxLTQuMzIgMCAyLjE2IDIuMTYgMCAwIDEgNC4zMiAwWm0wIDExLjY4YTIuMTYgMi4xNiAwIDEgMS00LjMyIDAgMi4xNiAyLjE2IDAgMCAxIDQuMzIgMFoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0zLjYzNiAxMmgxNi43MjhNMTQuMTYgNi4xNmEyLjE2IDIuMTYgMCAxIDEtNC4zMiAwIDIuMTYgMi4xNiAwIDAgMSA0LjMyIDBabTAgMTEuNjhhMi4xNiAyLjE2IDAgMSAxLTQuMzIgMCAyLjE2IDIuMTYgMCAwIDEgNC4zMiAwWiIvPjwvc3ZnPg==)
  */
 export const IconDivide: Icon = ({ className, ...props }) => {
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      fill='currentColor'
-      viewBox='0 0 24 24'
-      className={cn('text-primary pointer-events-none shrink-0', className)}
-      {...props}>
-      <path
-        d='M14.72 6.294A2.713 2.713 0 0 1 12 9a2.713 2.713 0 0 1-2.72-2.706A2.713 2.713 0 0 1 12 3.588a2.713 2.713 0 0 1 2.72 2.706Zm0 11.412A2.713 2.713 0 0 1 12 20.412a2.713 2.713 0 0 1-2.72-2.706A2.713 2.713 0 0 1 12 15a2.713 2.713 0 0 1 2.72 2.706Z'
-        opacity='.2'
-      />
-      <path d='M13.97 17.706A1.963 1.963 0 0 0 12 15.75c-1.091 0-1.97.878-1.97 1.955 0 1.076.879 1.956 1.97 1.956 1.092 0 1.97-.88 1.97-1.956Zm6.467-6.455a.75.75 0 0 1 0 1.5H3.564a.75.75 0 0 1 0-1.5h16.873ZM13.97 6.294A1.963 1.963 0 0 0 12 4.338c-1.091 0-1.97.88-1.97 1.956 0 1.077.879 1.956 1.97 1.956s1.97-.88 1.97-1.956Zm1.5 11.412A3.463 3.463 0 0 1 12 21.162a3.463 3.463 0 0 1-3.47-3.456A3.462 3.462 0 0 1 12 14.25a3.463 3.463 0 0 1 3.47 3.455Zm0-11.412A3.462 3.462 0 0 1 12 9.75a3.462 3.462 0 0 1-3.47-3.456A3.463 3.463 0 0 1 12 2.838a3.463 3.463 0 0 1 3.47 3.456Z' />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M14.16 6.16a2.16 2.16 0 1 1-4.32 0 2.16 2.16 0 0 1 4.32 0Zm0 11.68a2.16 2.16 0 1 1-4.32 0 2.16 2.16 0 0 1 4.32 0Z" opacity=".2"/><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M3.636 12h16.728M14.16 6.16a2.16 2.16 0 1 1-4.32 0 2.16 2.16 0 0 1 4.32 0Zm0 11.68a2.16 2.16 0 1 1-4.32 0 2.16 2.16 0 0 1 4.32 0Z"/></svg>
   )
 }

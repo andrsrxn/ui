@@ -2,19 +2,10 @@ import type { Icon } from '../../../lib/types/icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTIwLjUzNCAxOC44MzZhLjc1Ljc1IDAgMCAxIDAgMS41SDMuNDY1YS43NS43NSAwIDAgMSAwLTEuNWgxNy4wNjdaTTguNTI2IDE2Ljcxdi0yLjQ5N0g0LjVhLjk1Ljk1IDAgMCAxLS43NDMtMS41NGw0LjU3NC01Ljc2LjExMi0uMTJjLjU4NS0uNTMzIDEuNTgyLS4xMzMgMS41ODMuNzF2NS4yMWguNDc4YS43NS43NSAwIDAgMSAwIDEuNWgtLjQ3OHYyLjQ5N2EuNzUuNzUgMCAwIDEtMS41IDBabTMuODQ1IDBWNy4yM2EuNzUuNzUgMCAwIDEgMS41IDB2My4wNDJsMy43MjctMy4zOTZhLjc1Ljc1IDAgMCAxIDEuMDEgMS4xMDlsLTQuMzggMy45OSA0LjM3NiA0LjA2MmEuNzUuNzUgMCAxIDEtMS4wMiAxLjA5OWwtMy43MTMtMy40NDZ2My4wMjFhLjc1Ljc1IDAgMCAxLTEuNSAwWk01LjY0IDEyLjcxM2gyLjg4NlY5LjA4TDUuNjQgMTIuNzEzWm0xNC44OTMtOS4wNDlhLjc1Ljc1IDAgMCAxIDAgMS41SDMuNDY2YS43NS43NSAwIDAgMSAwLTEuNWgxNy4wNjdaIi8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMy41NDIgNC40ODFoMTYuOTE2TTMuNTQyIDE5LjUyaDE2LjkxNk05LjMgMTMuNDVINC41NzFhLjIuMiAwIDAgMS0uMTU3LS4zMjRsNC41MjktNS43MDJhLjIuMiAwIDAgMSAuMzU2LjEyNHY1LjkwMlptMCAwaDEuMjE5bS0xLjIxOSAwdjMuMjE5bTMuODEyLTkuMzk4djQuNjk5bTAgMHY0LjY5OW0wLTQuNyA0LjkzOC00LjVtLTQuOTM4IDQuNSA0LjkyOSA0LjU3NiIvPjwvc3ZnPg==)
  */
 export const Icon4k: Icon = ({ className, ...props }) => {
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      fill='currentColor'
-      viewBox='0 0 24 24'
-      className={cn('text-primary pointer-events-none shrink-0', className)}
-      {...props}>
-      <path d='M20.534 18.836a.75.75 0 0 1 0 1.5H3.465a.75.75 0 0 1 0-1.5h17.067ZM8.526 16.71v-2.497H4.5a.95.95 0 0 1-.743-1.54l4.574-5.76.112-.12c.585-.533 1.582-.133 1.583.71v5.21h.478a.75.75 0 0 1 0 1.5h-.478v2.497a.75.75 0 0 1-1.5 0Zm3.845 0V7.23a.75.75 0 0 1 1.5 0v3.042l3.727-3.396a.75.75 0 0 1 1.01 1.109l-4.38 3.99 4.376 4.062a.75.75 0 1 1-1.02 1.099l-3.713-3.446v3.021a.75.75 0 0 1-1.5 0ZM5.64 12.713h2.886V9.08L5.64 12.713Zm14.893-9.049a.75.75 0 0 1 0 1.5H3.466a.75.75 0 0 1 0-1.5h17.067Z' />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3.542 4.481h16.916M3.542 19.52h16.916M9.3 13.45H4.571a.2.2 0 0 1-.157-.324l4.529-5.702a.2.2 0 0 1 .356.124v5.902Zm0 0h1.219m-1.219 0v3.219m3.812-9.398v4.699m0 0v4.699m0-4.7 4.938-4.5m-4.938 4.5 4.929 4.576"/></svg>
   )
 }

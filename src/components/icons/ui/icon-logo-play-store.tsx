@@ -2,23 +2,10 @@ import type { Icon } from '../../../lib/types/icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTEzLjcyNCAxMi4wNDUgNS4wNzYgMy44NmEuNTkuNTkgMCAwIDAtLjE5Ny40NDZ2MTUuNDc1YS41OTEuNTkxIDAgMCAwIC4xOTcuNDQ2bDguNjQ4LTguMTgzWiIgb3BhY2l0eT0iLjIiLz48cGF0aCBkPSJtNS42MzQgMTguNjc4IDcuMDEtNi42MzQtNy4wMS02LjYzM3YxMy4yNjdabTIuNjg1LS40OTcgNi44NzQtMy43MjQtMS40Ny0xLjM5TDguMzIgMTguMThabTYuNDg1LTYuMTM3IDEuNzYzIDEuNjY4IDMuMDgtMS42NjgtMy4wOC0xLjY2OC0xLjc2MyAxLjY2OFptLTEuMDgtMS4wMjIgMS40Ny0xLjM5LTYuODc1LTMuNzI1IDUuNDA1IDUuMTE1Wm03LjU2IDEuMDIzYzAgLjI1LS4wNzIuNDkyLS4yMDYuNzA0YTEuMzggMS4zOCAwIDAgMS0uNTMxLjQ4M2wuMDAxLjAwMS0xNC4yNzUgNy43MzJoLS4wMDFhMS40ODMgMS40ODMgMCAwIDEtMS40MDkuMDEgMS40MzIgMS40MzIgMCAwIDEtLjI1NC0uMTc1Ljc2OC43NjggMCAwIDEtLjA3Mi0uMDYxLjc2Ljc2IDAgMCAxLS4wNTQtLjA2MiAxLjMzMyAxLjMzMyAwIDAgMS0uMzU5LS44ODNWNC4yOTZsLjAxNi0uMTgyYTEuMzQgMS4zNCAwIDAgMSAuMTktLjUwOGwuMTA4LS4xNDdjLjAxMy0uMDE2LjAzLS4wMy4wNDQtLjA0NmEuNzQ1Ljc0NSAwIDAgMSAuMTQtLjEzM2MuMDc2LS4wNjIuMTU1LS4xMi4yNDEtLjE2NmwuMTY5LS4wNzZjLjE3Mi0uMDY1LjM1Ni0uMDk4LjU0Mi0uMDk2bC4xODUuMDEzYy4xOC4wMjQuMzU0LjA4Mi41MTMuMTd2LS4wMDFsMTQuMjc2IDcuNzMyaC0uMDAxYy4yMTcuMTEzLjQuMjguNTMuNDg0LjEzNS4yMTIuMjA2LjQ1Ni4yMDYuNzA1WiIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEzLjkwNyAxMiA1LjYxMyAzLjcwNmEuNjI4LjYyOCAwIDAgMC0uMTkuNDUydjE1LjY4NGEuNjI4LjYyOCAwIDAgMCAuMTkuNDUyTDEzLjkwNyAxMloiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik01LjYxNCAzLjcwNyAxNi41MTcgMTQuNjFNNS42MTQgMjAuMjkzIDE2LjUxNSA5LjM5Mk01LjQyNCAxOS44NDJhLjY1My42NTMgMCAwIDAgLjk4My41NTJsMTMuNjktNy44MzZhLjYzMi42MzIgMCAwIDAgMC0xLjExNkw2LjQwNyAzLjYwNmEuNjUzLjY1MyAwIDAgMC0uOTgzLjU1MnYxNS42ODRaIi8+PC9zdmc+)
  */
 export const IconLogoPlayStore: Icon = ({ className, ...props }) => {
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      fill='currentColor'
-      viewBox='0 0 24 24'
-      className={cn('text-primary pointer-events-none shrink-0', className)}
-      {...props}>
-      <path
-        d='M13.724 12.045 5.076 3.86a.59.59 0 0 0-.197.446v15.475a.591.591 0 0 0 .197.446l8.648-8.183Z'
-        opacity='.2'
-      />
-      <path d='m5.634 18.678 7.01-6.634-7.01-6.633v13.267Zm2.685-.497 6.874-3.724-1.47-1.39L8.32 18.18Zm6.485-6.137 1.763 1.668 3.08-1.668-3.08-1.668-1.763 1.668Zm-1.08-1.022 1.47-1.39-6.875-3.725 5.405 5.115Zm7.56 1.023c0 .25-.072.492-.206.704a1.38 1.38 0 0 1-.531.483l.001.001-14.275 7.732h-.001a1.483 1.483 0 0 1-1.409.01 1.432 1.432 0 0 1-.254-.175.768.768 0 0 1-.072-.061.76.76 0 0 1-.054-.062 1.333 1.333 0 0 1-.359-.883V4.296l.016-.182a1.34 1.34 0 0 1 .19-.508l.108-.147c.013-.016.03-.03.044-.046a.745.745 0 0 1 .14-.133c.076-.062.155-.12.241-.166l.169-.076c.172-.065.356-.098.542-.096l.185.013c.18.024.354.082.513.17v-.001l14.276 7.732h-.001c.217.113.4.28.53.484.135.212.206.456.206.705Z' />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M13.907 12 5.613 3.706a.628.628 0 0 0-.19.452v15.684a.628.628 0 0 0 .19.452L13.907 12Z" opacity=".2"/><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M5.614 3.707 16.517 14.61M5.614 20.293 16.515 9.392M5.424 19.842a.653.653 0 0 0 .983.552l13.69-7.836a.632.632 0 0 0 0-1.116L6.407 3.606a.653.653 0 0 0-.983.552v15.684Z"/></svg>
   )
 }

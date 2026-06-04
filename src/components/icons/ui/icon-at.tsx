@@ -2,20 +2,10 @@ import type { Icon } from '../../../lib/types/icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTE1Ljg2IDEyYTMuODYgMy44NiAwIDEgMS03LjcyIDAgMy44NiAzLjg2IDAgMCAxIDcuNzIgMFoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggZD0iTTEyIDcuMzlhNC41OSA0LjU5IDAgMCAxIDMuMTUzIDEuMjQ5VjcuODNhLjc1Ljc1IDAgMCAxIDEuNSAwdjcuM2wuMDAyLjA0M2EyLjMzIDIuMzMgMCAwIDAgLjE1Ni43MTNjLjA3Ni4xODQuMTczLjMyNi4yODcuNDE5LjEwMS4wODIuMjU0LjE1OC41MTUuMTU4LjM0MyAwIC43MDYtLjI2MSAxLjA1OS0uODM5LjY4My0xLjExOC45MTgtMi4yNjUuOTE4LTMuNjI0YTcuNTkgNy41OSAwIDEgMC00Ljc0NCA3LjAzOC43NS43NSAwIDAgMSAuNTYzIDEuMzlBOS4wOSA5LjA5IDAgMSAxIDIxLjA5IDEyYzAgMS41NTMtLjI3MiAyLjk5My0xLjEzOCA0LjQwOC0uNDIuNjg2LTEuMTcyIDEuNTU2LTIuMzM4IDEuNTU2LS41OTMgMC0xLjA4Mi0uMTg2LTEuNDYtLjQ5NGEyLjUyOSAyLjUyOSAwIDAgMS0uNzMtMS4wMTQgMy43MyAzLjczIDAgMCAxLS4yNTctMS4xMDdBNC42MSA0LjYxIDAgMSAxIDEyIDcuMzlaTTguODkgMTJhMy4xMSAzLjExIDAgMSAwIDYuMjE5IDAgMy4xMSAzLjExIDAgMCAwLTYuMjE4IDBaIi8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE1Ljg2IDEyYTMuODYgMy44NiAwIDEgMS03LjcyIDAgMy44NiAzLjg2IDAgMCAxIDcuNzIgMFoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0xNS4xMjcgMTkuNzM0QTguMzQgOC4zNCAwIDEgMSAyMC4zNCAxMmMwIDEuNDU2LS4yNTQgMi43NS0xLjAyOSA0LjAxNi0uMzg2LjYzMS0uOTQzIDEuMTk2LTEuNjk3IDEuMTk2LTEuNzEgMC0xLjcxLTIuMDg1LTEuNzEtMi4wODVWNy44M00xNS44NiAxMmEzLjg2IDMuODYgMCAxIDEtNy43MiAwIDMuODYgMy44NiAwIDAgMSA3LjcyIDBaIi8+PC9zdmc+)
  */
 export const IconAt: Icon = ({ className, ...props }) => {
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      fill='currentColor'
-      viewBox='0 0 24 24'
-      className={cn('text-primary pointer-events-none shrink-0', className)}
-      {...props}>
-      <path d='M15.86 12a3.86 3.86 0 1 1-7.72 0 3.86 3.86 0 0 1 7.72 0Z' opacity='.2' />
-      <path d='M12 7.39a4.59 4.59 0 0 1 3.153 1.249V7.83a.75.75 0 0 1 1.5 0v7.3l.002.043a2.33 2.33 0 0 0 .156.713c.076.184.173.326.287.419.101.082.254.158.515.158.343 0 .706-.261 1.059-.839.683-1.118.918-2.265.918-3.624a7.59 7.59 0 1 0-4.744 7.038.75.75 0 0 1 .563 1.39A9.09 9.09 0 1 1 21.09 12c0 1.553-.272 2.993-1.138 4.408-.42.686-1.172 1.556-2.338 1.556-.593 0-1.082-.186-1.46-.494a2.529 2.529 0 0 1-.73-1.014 3.73 3.73 0 0 1-.257-1.107A4.61 4.61 0 1 1 12 7.39ZM8.89 12a3.11 3.11 0 1 0 6.219 0 3.11 3.11 0 0 0-6.218 0Z' />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M15.86 12a3.86 3.86 0 1 1-7.72 0 3.86 3.86 0 0 1 7.72 0Z" opacity=".2"/><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15.127 19.734A8.34 8.34 0 1 1 20.34 12c0 1.456-.254 2.75-1.029 4.016-.386.631-.943 1.196-1.697 1.196-1.71 0-1.71-2.085-1.71-2.085V7.83M15.86 12a3.86 3.86 0 1 1-7.72 0 3.86 3.86 0 0 1 7.72 0Z"/></svg>
   )
 }

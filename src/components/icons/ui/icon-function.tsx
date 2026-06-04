@@ -2,23 +2,10 @@ import type { Icon } from '../../../lib/types/icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTcuNDY3IDQuMzI5Yy4xMi4xMzQuMjQ1LjM4Ny4yNDUuODE4IDAgLjM5NS4zMzYuNzE1Ljc1LjcxNi40MTQgMCAuNzUtLjMyLjc1LS43MTYgMC0uNjk1LS4yMDQtMS4zMDItLjYwNS0xLjc1YTIuMTM0IDIuMTM0IDAgMCAwLTEuNTU4LS43MDFjLTEuMTgtLjAyNi0yLjMwMS44MDgtMi44MzQgMi4xODRsLS4wMDYuMDE2YTc0Ni44NjYgNzQ2Ljg2NiAwIDAgMS0xLjgwMyA0Ljk4M0g4Ljg4MmMtLjQxNSAwLS43NS4zMi0uNzUuNzE1IDAgLjM5Ni4zMzUuNzE2Ljc1LjcxNmgyLjk5NWMtLjE2Ny40NS0uMzMyLjg5LS40OTQgMS4zMTgtLjkxNiAyLjQyNC0xLjcxNyA0LjQwNi0yLjIxIDUuMzM4LS44OTUgMS42OTItMS44MDQgMS45NTQtMi4xODIgMS44OTktLjMxMy0uMDQ2LS44MTgtLjQzMi0uNjg0LTEuNDkuMDUtLjM5My0uMjQzLS43NDktLjY1NC0uNzk2LS40MTItLjA0OC0uNzg2LjIzMi0uODM1LjYyNC0uMTg3IDEuNDcuNTA4IDIuODY1IDEuOTQ1IDMuMDc2IDEuMzcyLjIwMiAyLjc2My0uODAyIDMuNzUtMi42NjguNTQyLTEuMDI1IDEuMzczLTMuMDk0IDIuMjgxLTUuNDk2LjIyLS41ODMuNDQ2LTEuMTg3LjY3NS0xLjgwNWgzLjQ4MmMuNDE0IDAgLjc1LS4zMi43NS0uNzE2IDAtLjM5NS0uMzM2LS43MTUtLjc1LS43MTVoLTIuOTU2YTgxNy42MiA4MTcuNjIgMCAwIDAgMS42MjctNC41MDNjLjM3Ny0uOTc1IDEuMDI3LTEuMjU4IDEuMzkyLTEuMjVhLjYwNS42MDUgMCAwIDEgLjQ1My4yMDNaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNNS4wOTggMTguMjYzYy0uMzkzIDEuMDQyLjQzMiAyLjI3IDEuNzQzIDIuMjcgMi42NDMgMCA0LjM1Ni0zLjc0MSA2LjEwNi0xMC4wNDYgMS40MjYtNS4xMzcgMi41NzMtNy4wMiA0LjE0NC03LjAyIDEuNDQzIDAgMi4xNjguODM3IDIgMi4wODdtLTEuODI2IDUuMDE3aC04LjY0Ii8+PC9zdmc+)
  */
 export const IconFunction: Icon = ({ className, ...props }) => {
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      fill='currentColor'
-      viewBox='0 0 24 24'
-      className={cn('text-primary pointer-events-none shrink-0', className)}
-      {...props}>
-      <path
-        fillRule='evenodd'
-        d='M17.467 4.329c.12.134.245.387.245.818 0 .395.336.715.75.716.414 0 .75-.32.75-.716 0-.695-.204-1.302-.605-1.75a2.134 2.134 0 0 0-1.558-.701c-1.18-.026-2.301.808-2.834 2.184l-.006.016a746.866 746.866 0 0 1-1.803 4.983H8.882c-.415 0-.75.32-.75.715 0 .396.335.716.75.716h2.995c-.167.45-.332.89-.494 1.318-.916 2.424-1.717 4.406-2.21 5.338-.895 1.692-1.804 1.954-2.182 1.899-.313-.046-.818-.432-.684-1.49.05-.393-.243-.749-.654-.796-.412-.048-.786.232-.835.624-.187 1.47.508 2.865 1.945 3.076 1.372.202 2.763-.802 3.75-2.668.542-1.025 1.373-3.094 2.281-5.496.22-.583.446-1.187.675-1.805h3.482c.414 0 .75-.32.75-.716 0-.395-.336-.715-.75-.715h-2.956a817.62 817.62 0 0 0 1.627-4.503c.377-.975 1.027-1.258 1.392-1.25a.605.605 0 0 1 .453.203Z'
-        clipRule='evenodd'
-      />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M5.098 18.263c-.393 1.042.432 2.27 1.743 2.27 2.643 0 4.356-3.741 6.106-10.046 1.426-5.137 2.573-7.02 4.144-7.02 1.443 0 2.168.837 2 2.087m-1.826 5.017h-8.64"/></svg>
   )
 }

@@ -2,20 +2,10 @@ import type { Icon } from '../../../lib/types/icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTE0LjgyMiAxMmEyLjgyMiAyLjgyMiAwIDEgMS01LjY0NCAwIDIuODIyIDIuODIyIDAgMCAxIDUuNjQ0IDBaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIGQ9Ik0xMiA2LjE2YzMuODIgMCA3LjAyOCAyLjYwNCA4LjU5MSA0LjEyOC45NzUuOTUuOTcxIDIuNDc0LS4wMDUgMy40MjEtMS41NjkgMS41MjItNC43ODggNC4xMzEtOC41ODYgNC4xMzEtMy43OTkgMC03LjAxNy0yLjYwOS04LjU4Ni00LjEzYTIuMzY2IDIuMzY2IDAgMCAxLS4wMDYtMy40MjJDNC45NyA4Ljc2NCA4LjE3OCA2LjE2MSAxMiA2LjE2Wm0wIDEuNWMtMy4xOTIgMC02LjAyNCAyLjIyLTcuNTQ0IDMuNzAzYS44NjcuODY3IDAgMCAwIC4wMDIgMS4yN0M1Ljk4NyAxNC4xMTcgOC44MyAxNi4zNCAxMiAxNi4zNGMzLjE2OCAwIDYuMDEzLTIuMjIzIDcuNTQzLTMuNzA3LjM3LS4zNi4zNy0uOTExLjAwMi0xLjI3QzE4LjAyNCA5Ljg4IDE1LjE5IDcuNjYgMTIgNy42NlpNMTQuMDcyIDEyYTIuMDcyIDIuMDcyIDAgMSAwLTQuMTQ0IDAgMi4wNzIgMi4wNzIgMCAwIDAgNC4xNDQgMFptMS41IDBhMy41NzIgMy41NzIgMCAxIDEtNy4xNDUgMCAzLjU3MiAzLjU3MiAwIDAgMSA3LjE0NSAwWiIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE0Ljc3MyAxMmEyLjc3MyAyLjc3MyAwIDEgMS01LjU0NiAwIDIuNzczIDIuNzczIDAgMCAxIDUuNTQ2IDBaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTEyIDdjLTMuNDMgMC02LjM4NiAyLjM0OC03LjkwNiAzLjgyNmExLjYxMiAxLjYxMiAwIDAgMCAuMDA0IDIuMzQ0QzUuNjI2IDE0LjY0OCA4LjU5MyAxNyAxMiAxN3M2LjM3NC0yLjM1MiA3LjkwMi0zLjgzYy42NzUtLjY1Mi42NzctMS42OS4wMDQtMi4zNDRDMTguMzg2IDkuMzQ4IDE1LjQzIDcgMTIgN1oiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0xNC43NzMgMTJhMi43NzMgMi43NzMgMCAxIDEtNS41NDUgMCAyLjc3MyAyLjc3MyAwIDAgMSA1LjU0NSAwWiIvPjwvc3ZnPg==)
  */
 export const IconEye: Icon = ({ className, ...props }) => {
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      fill='currentColor'
-      viewBox='0 0 24 24'
-      className={cn('text-primary pointer-events-none shrink-0', className)}
-      {...props}>
-      <path d='M14.822 12a2.822 2.822 0 1 1-5.644 0 2.822 2.822 0 0 1 5.644 0Z' opacity='.2' />
-      <path d='M12 6.16c3.82 0 7.028 2.604 8.591 4.128.975.95.971 2.474-.005 3.421-1.569 1.522-4.788 4.131-8.586 4.131-3.799 0-7.017-2.609-8.586-4.13a2.366 2.366 0 0 1-.006-3.422C4.97 8.764 8.178 6.161 12 6.16Zm0 1.5c-3.192 0-6.024 2.22-7.544 3.703a.867.867 0 0 0 .002 1.27C5.987 14.117 8.83 16.34 12 16.34c3.168 0 6.013-2.223 7.543-3.707.37-.36.37-.911.002-1.27C18.024 9.88 15.19 7.66 12 7.66ZM14.072 12a2.072 2.072 0 1 0-4.144 0 2.072 2.072 0 0 0 4.144 0Zm1.5 0a3.572 3.572 0 1 1-7.145 0 3.572 3.572 0 0 1 7.145 0Z' />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M14.773 12a2.773 2.773 0 1 1-5.546 0 2.773 2.773 0 0 1 5.546 0Z" opacity=".2"/><path stroke="currentColor" strokeWidth="1.5" d="M12 7c-3.43 0-6.386 2.348-7.906 3.826a1.612 1.612 0 0 0 .004 2.344C5.626 14.648 8.593 17 12 17s6.374-2.352 7.902-3.83c.675-.652.677-1.69.004-2.344C18.386 9.348 15.43 7 12 7Z"/><path stroke="currentColor" strokeWidth="1.5" d="M14.773 12a2.773 2.773 0 1 1-5.545 0 2.773 2.773 0 0 1 5.545 0Z"/></svg>
   )
 }
