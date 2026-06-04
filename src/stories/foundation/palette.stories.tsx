@@ -30,9 +30,13 @@ const ColorSwatch = ({
   <div className='bg-surface border-base flex w-full flex-col overflow-hidden rounded-lg border'>
     <div className={cn('h-20 w-full', className)} />
     <div className='flex flex-col gap-6 px-2 py-4'>
-      <span className='text-body-base text-primary block w-max leading-none'>{color}</span>
-      <span className='text-body-xs text-secondary block w-max leading-none'>{hslColor}</span>
-      <span className='text-body-xs text-secondary block w-max leading-none'>{hexColor}</span>
+      <span className='text-label-base text-primary block w-max leading-none'>{color}</span>
+      <span className='text-body-xs text-secondary block w-max leading-none tabular-nums'>
+        {hslColor}
+      </span>
+      <span className='text-body-xs text-secondary block w-max leading-none tabular-nums'>
+        {hexColor}
+      </span>
     </div>
   </div>
 )
