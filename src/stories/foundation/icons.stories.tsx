@@ -490,7 +490,7 @@ import {
   IconLayers,
   IconLeaf,
   IconLessOrEqualThan,
-  IconLessOrGreaterThan,
+  IconGreaterOrEqualThan,
   IconLessThan,
   IconLightning,
   IconLike,
@@ -505,7 +505,7 @@ import {
   IconLogoAndroid,
   IconLogoApple,
   IconLogoApplePodcast,
-  IconLogoAppleStore,
+  IconLogoAppStore,
   IconLogoBehance,
   IconLogoBoldAfterEffects,
   IconLogoBoldAhrefs,
@@ -575,7 +575,6 @@ import {
   IconLogoSandbox,
   IconLogoSlack,
   IconLogoSnapchat,
-  IconLogoSoundcloud,
   IconLogoSpotify,
   IconLogoStackOverflow,
   IconLogoStripe,
@@ -824,7 +823,7 @@ export const Base = meta.story({
   render: () => (
     <div className='flex flex-col gap-10'>
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>Arrows</span>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>Arrows</span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
           <div title='IconArrowDown'>
             <IconArrowDown />
@@ -896,7 +895,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>Chevrons</span>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>Chevrons</span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
           <div title='IconChevronDown'>
             <IconChevronDown />
@@ -929,7 +928,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>Alignment</span>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>Alignment</span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
           <div title='IconAlignBottom'>
             <IconAlignBottom />
@@ -965,7 +964,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Layout & Panels
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -1060,7 +1059,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Typography & Text
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -1155,7 +1154,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Shapes & Design
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -1221,7 +1220,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Files & Folders
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -1310,7 +1309,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Media & Audio
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -1417,7 +1416,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Waves & Signals
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -1464,7 +1463,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Communication
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -1517,7 +1516,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>Phone</span>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>Phone</span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
           <div title='IconPhone'>
             <IconPhone />
@@ -1541,7 +1540,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>Devices</span>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>Devices</span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
           <div title='IconCpu'>
             <IconCpu />
@@ -1583,7 +1582,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Input & Cursor
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -1648,7 +1647,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>Security</span>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>Security</span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
           <div title='IconBarricade'>
             <IconBarricade />
@@ -1687,7 +1686,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Users & People
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -1740,7 +1739,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Finance & Commerce
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -1823,7 +1822,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Calendar & Time
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -1870,7 +1869,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Charts & Analytics
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -1902,7 +1901,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Navigation & Maps
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -1949,7 +1948,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Development & Code
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -2014,7 +2013,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Mathematics & Logic
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -2039,8 +2038,8 @@ export const Base = meta.story({
           <div title='IconLessOrEqualThan'>
             <IconLessOrEqualThan />
           </div>
-          <div title='IconLessOrGreaterThan'>
-            <IconLessOrGreaterThan />
+          <div title='IconGreaterOrEqualThan'>
+            <IconGreaterOrEqualThan />
           </div>
           <div title='IconMaths'>
             <IconMaths />
@@ -2103,7 +2102,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Battery & Power
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -2135,7 +2134,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Editing & Actions
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -2197,7 +2196,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Upload & Download
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -2220,7 +2219,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Lists & Organization
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -2267,7 +2266,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Emojis & Reactions
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -2323,7 +2322,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Nature & Weather
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -2346,7 +2345,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Warnings & Status
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -2375,7 +2374,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Stars, Awards & Ratings
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -2410,7 +2409,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Business & Work
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -2460,7 +2459,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Books & Reading
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -2486,7 +2485,7 @@ export const Base = meta.story({
       </div>
 
       <div>
-        <span className='text-secondary mb-3 block font-mono text-sm font-medium'>
+        <span className='text-secondary mb-3 block font-mono text-label-base'>
           Miscellaneous
         </span>
         <div className='[&_svg]:size-icon-3xl flex flex-wrap items-center gap-4'>
@@ -2547,8 +2546,8 @@ export const Brands = meta.story({
       <div title='IconLogoApplePodcast'>
         <IconLogoApplePodcast />
       </div>
-      <div title='IconLogoAppleStore'>
-        <IconLogoAppleStore />
+      <div title='IconLogoAppStore'>
+        <IconLogoAppStore />
       </div>
       <div title='IconLogoBehance'>
         <IconLogoBehance />
@@ -2640,9 +2639,6 @@ export const Brands = meta.story({
       </div>
       <div title='IconLogoSnapchat'>
         <IconLogoSnapchat />
-      </div>
-      <div title='IconLogoSoundcloud'>
-        <IconLogoSoundcloud />
       </div>
       <div title='IconLogoSpotify'>
         <IconLogoSpotify />
