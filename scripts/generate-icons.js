@@ -11,6 +11,8 @@ import process from 'node:process'
 const ICONS_DIR = path.resolve('./src/components/icons/raw')
 const ICONS_OUT = path.resolve('./src/components/icons/ui')
 
+const CLASSNAME = 'bp-icon text-primary pointer-events-none shrink-0'
+
 // Excepciones para la conversión de SVG a JSX
 const JSX_EXCEPTIONS = new Set(['viewBox', 'xmlns', 'xmlns:xlink', 'xml:space'])
 
@@ -36,7 +38,7 @@ function svgAttrsToJsx(svg) {
 
 function injectReactProps(svg) {
   return svg.replace(/<svg([^>]*)>/u, (_match, attrs) => {
-    return `<svg${attrs} className={cn('text-primary pointer-events-none shrink-0', className)} {...props}>`
+    return `<svg${attrs} className={cn('${CLASSNAME}', className)} {...props}>`
   })
 }
 
@@ -49,7 +51,7 @@ function normalizeSvg(svg) {
 // --- Utilidades: Generación de Preview (JSDoc) ---
 function injectWhiteBackground(svg) {
   // Insertamos rect blanco justo después del <svg ...>
-  return svg.replace(/<svg([^>]*)>/u, `<svg$1><rect width="100%" height="100%" fill="white"/`)
+  return svg.replace(/<svg([^>]*)>/u, `<svg$1><rect width="100%" height="100%" fill="white"/>`)
 }
 
 function svgToBase64(svg) {
