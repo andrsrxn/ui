@@ -221,6 +221,7 @@
   --text-tertiary-static: var(--color-neutral-400);
   --text-inverted-static: var(--color-neutral-100);
   /* Text Applications */
+
   --text-selectable: var(--text-secondary);
   --text-selectable-hover: var(--text-primary);
   --text-selected: var(--color-info-700);
@@ -507,6 +508,7 @@
   --text-tertiary-static: var(--color-neutral-400);
   --text-inverted-static: var(--color-neutral-100);
   /* Text Applications */
+
   --text-selectable: var(--text-secondary);
   --text-selectable-hover: var(--text-primary);
   --text-selected: var(--color-info-300);
@@ -789,8 +791,8 @@
   --typography-scale-sm: 0.875rem; /* 14px */
   --typography-scale-base: 1rem; /* 16px */
   --typography-scale-lg: 1.125rem; /* 18px */
-  --typography-scale-xl: 1.5rem; /* 24px */
-  --typography-scale-2xl: 1.75rem; /* 28px */
+  --typography-scale-xl: 1.25rem; /* 20px */
+  --typography-scale-2xl: 1.5rem; /* 24px */
   --typography-scale-3xl: 2rem; /* 32px */
   --typography-scale-4xl: 2.5rem; /* 40px */
   --typography-scale-5xl: 3rem; /* 48px */
@@ -811,7 +813,8 @@
     'Courier New', monospace;
 
   /* Weights */
-  --font-weight-normal: 300;
+  --font-weight-normal: 400;
+  --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
@@ -854,15 +857,15 @@
   --text-label-xs--letter-spacing: var(--tracking-body);
   --text-label-sm: var(--typography-scale-sm);
   --text-label-sm--line-height: var(--leading-xs);
-  --text-label-sm--font-weight: var(--font-weight-semibold);
+  --text-label-sm--font-weight: var(--font-weight-medium);
   --text-label-sm--letter-spacing: var(--tracking-body);
   --text-label-base: var(--typography-scale-base);
   --text-label-base--line-height: var(--leading-xs);
-  --text-label-base--font-weight: var(--font-weight-semibold);
+  --text-label-base--font-weight: var(--font-weight-medium);
   --text-label-base--letter-spacing: var(--tracking-body);
   --text-label-lg: var(--typography-scale-lg);
   --text-label-lg--line-height: var(--leading-xs);
-  --text-label-lg--font-weight: var(--font-weight-semibold);
+  --text-label-lg--font-weight: var(--font-weight-medium);
   --text-label-lg--letter-spacing: var(--tracking-body);
   --text-label-xl: var(--typography-scale-xl);
   --text-label-xl--line-height: var(--leading-xs);
@@ -870,15 +873,15 @@
   --text-label-xl--letter-spacing: var(--tracking-body);
   --text-label-2xl: var(--typography-scale-2xl);
   --text-label-2xl--line-height: var(--leading-xs);
-  --text-label-2xl--font-weight: var(--font-weight-bold);
+  --text-label-2xl--font-weight: var(--font-weight-semibold);
   --text-label-2xl--letter-spacing: var(--tracking-heading);
   --text-label-3xl: var(--typography-scale-3xl);
   --text-label-3xl--line-height: var(--leading-xs);
-  --text-label-3xl--font-weight: var(--font-weight-bold);
+  --text-label-3xl--font-weight: var(--font-weight-semibold);
   --text-label-3xl--letter-spacing: var(--tracking-heading);
   --text-label-4xl: var(--typography-scale-4xl);
   --text-label-4xl--line-height: var(--leading-xs);
-  --text-label-4xl--font-weight: var(--font-weight-bold);
+  --text-label-4xl--font-weight: var(--font-weight-semibold);
   --text-label-4xl--letter-spacing: var(--tracking-heading);
 
   /* Text Heading */
