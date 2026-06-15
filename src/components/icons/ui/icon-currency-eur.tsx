@@ -6,6 +6,6 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconCurrencyEur: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><g clipPath="url(#a)"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4.5 10.5h9m-9 3H12m6 5.032A6.75 6.75 0 0 1 6.75 13.5v-3A6.75 6.75 0 0 1 18 5.468"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><g clipPath="url(#a)"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4.5 10.5h9m-9 3H12m6 5.032A6.75 6.75 0 0 1 6.75 13.5v-3A6.75 6.75 0 0 1 18 5.468"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></svg>
   )
 }

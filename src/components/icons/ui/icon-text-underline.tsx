@@ -6,6 +6,6 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconTextUnderline: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M17 6.971C17 5.3 14.384 3.86 12 3.86c-2.561 0-5 1.146-5 4.027 0 5.952 10 1.907 10 8.563 0 2.633-2.135 3.81-5 3.81s-5-1.763-5-3.81M4 12h16"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M17 6.971C17 5.3 14.384 3.86 12 3.86c-2.561 0-5 1.146-5 4.027 0 5.952 10 1.907 10 8.563 0 2.633-2.135 3.81-5 3.81s-5-1.763-5-3.81M4 12h16"/></svg>
   )
 }

@@ -6,6 +6,6 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconMenu: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M3.613 9.214h16.774M3.613 14.786h16.774"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M3.613 9.214h16.774M3.613 14.786h16.774"/></svg>
   )
 }

@@ -38,7 +38,7 @@ function svgAttrsToJsx(svg) {
 
 function injectReactProps(svg) {
   return svg.replace(/<svg([^>]*)>/u, (_match, attrs) => {
-    return `<svg${attrs} className={cn('${CLASSNAME}', className)} {...props}>`
+    return `<svg${attrs} aria-hidden="true" focusable="false" className={cn('${CLASSNAME}', className)} {...props}>`
   })
 }
 
@@ -62,7 +62,6 @@ function createPreviewJSDoc(base64) {
   return `/**\n * @preview ![img](data:image/svg+xml;base64,${base64})\n */`
 }
 
-// --- Generador Principal ---
 function generateComponent(fileName, svgContent) {
   const componentName = toPascalCase(fileName.replace('.svg', ''))
 
@@ -71,15 +70,15 @@ function generateComponent(fileName, svgContent) {
     return null
   }
 
-  // 1. Generar el Preview usando el SVG original (antes de mutarlo a JSX)
+  // Generate Preview using original SVG (before mutating to JSX)
   const previewSvg = injectWhiteBackground(rawSvg)
   const base64 = svgToBase64(previewSvg)
   const jsDocPreview = createPreviewJSDoc(base64)
 
-  // 2. Generar el JSX normalizado para el componente de React
+  // Generate JSX normalizado para el componente de React
   const jsxSvg = normalizeSvg(rawSvg)
 
-  // 3. Ensamblar y retornar el contenido del archivo .tsx
+  // Return the content of the .tsx file
   return `import type { Icon } from '../../../lib/types/icon'
 import { cn } from '../../../lib/utils/theme'
 
@@ -92,7 +91,6 @@ export const ${componentName}: Icon = ({ className, ...props }) => {
 `
 }
 
-// --- Ejecución ---
 function main() {
   if (!fs.existsSync(ICONS_DIR)) {
     console.error(`Directory not found: ${ICONS_DIR}`)
@@ -110,11 +108,11 @@ function main() {
     const filePath = path.join(ICONS_DIR, file)
     const svgContent = fs.readFileSync(filePath, 'utf-8')
 
-    // Generar el contenido del componente
+    // Generate the content of the component
     const componentContent = generateComponent(file, svgContent)
 
     if (componentContent) {
-      // Ruta de salida: mismo directorio, extensión .tsx
+      // Output path: same directory, .tsx extension
       const outputFilePath = path.join(ICONS_OUT, file.replace('.svg', '.tsx'))
 
       fs.writeFileSync(outputFilePath, componentContent)

@@ -6,6 +6,6 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconTextTwoColumns: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M4 4.975h6.376m3.35 0H20M4 9.658h6.376m3.35 0H20M4 14.342h6.376m3.35 0H20M4 19.025h6.376m3.35 0H20"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M4 4.975h6.376m3.35 0H20M4 9.658h6.376m3.35 0H20M4 14.342h6.376m3.35 0H20M4 19.025h6.376m3.35 0H20"/></svg>
   )
 }

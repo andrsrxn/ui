@@ -6,6 +6,6 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconParenthesis: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M15.604 3.754s3.879 2.132 3.879 8.317c0 6.185-3.879 8.175-3.879 8.175M8.418 3.754S4.54 5.886 4.54 12.07c0 6.185 3.88 8.175 3.88 8.175"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M15.604 3.754s3.879 2.132 3.879 8.317c0 6.185-3.879 8.175-3.879 8.175M8.418 3.754S4.54 5.886 4.54 12.07c0 6.185 3.88 8.175 3.88 8.175"/></svg>
   )
 }

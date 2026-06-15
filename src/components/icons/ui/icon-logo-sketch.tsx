@@ -6,6 +6,6 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconLogoSketch: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M8.32 10.124 12 4.98h4.293l4.294 5.144L12 19.77l-3.68-9.646Z" opacity=".2"/><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3.413 10.124 12 19.77l8.587-9.646-4.294-5.144H7.707l-4.294 5.144Zm17.174 0H3.413M12 19.77l3.68-9.646L12 4.98l-3.68 5.144L12 19.77Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M8.32 10.124 12 4.98h4.293l4.294 5.144L12 19.77l-3.68-9.646Z" opacity=".2"/><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3.413 10.124 12 19.77l8.587-9.646-4.294-5.144H7.707l-4.294 5.144Zm17.174 0H3.413M12 19.77l3.68-9.646L12 4.98l-3.68 5.144L12 19.77Z"/></svg>
   )
 }

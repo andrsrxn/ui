@@ -6,6 +6,6 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconLogoGoogle: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" fillOpacity=".2" fillRule="evenodd" d="M16.145 14.51a4.928 4.928 0 1 1-.43-5.875l2.596-2.097a8.362 8.362 0 1 0 2.038 5.321h-8.832v2.65h4.628Z" clipRule="evenodd"/><path stroke="currentColor" strokeLinejoin="round" strokeWidth="1.5" d="M16.145 14.51a4.928 4.928 0 1 1-.43-5.875l2.596-2.097a8.362 8.362 0 1 0 2.038 5.321h-8.832v2.65h4.628Z" clipRule="evenodd"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" fillOpacity=".2" fillRule="evenodd" d="M16.145 14.51a4.928 4.928 0 1 1-.43-5.875l2.596-2.097a8.362 8.362 0 1 0 2.038 5.321h-8.832v2.65h4.628Z" clipRule="evenodd"/><path stroke="currentColor" strokeLinejoin="round" strokeWidth="1.5" d="M16.145 14.51a4.928 4.928 0 1 1-.43-5.875l2.596-2.097a8.362 8.362 0 1 0 2.038 5.321h-8.832v2.65h4.628Z" clipRule="evenodd"/></svg>
   )
 }

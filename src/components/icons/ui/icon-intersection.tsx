@@ -6,6 +6,6 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconIntersection: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M18.387 19v-8.334c0-1.01-.242-2.006-.707-2.903-2.25-4.34-8.37-4.579-10.952-.428l-.141.227a6.458 6.458 0 0 0-.975 3.411V19"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M18.387 19v-8.334c0-1.01-.242-2.006-.707-2.903-2.25-4.34-8.37-4.579-10.952-.428l-.141.227a6.458 6.458 0 0 0-.975 3.411V19"/></svg>
   )
 }
