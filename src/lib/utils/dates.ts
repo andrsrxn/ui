@@ -1,6 +1,6 @@
 import { TZDate } from '@date-fns/tz'
 import { format } from 'date-fns'
-import type { TimeZone } from '../constants/countries'
+import type { TimeZone } from '../constants/geo'
 
 export const formatDate = ({
   includeWeekDay,

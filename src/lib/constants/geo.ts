@@ -1914,11 +1914,11 @@ export const COUNTRIES = [
 
 export const CURRENCIES = Object.values(COUNTRIES).map(data => data.currency)
 export const COUNTRY_CODES = Object.values(COUNTRIES).map(data => data.code)
-export const TIMEZONES = Array.from(
+export const TIME_ZONES = Array.from(
   new Set(Object.values(COUNTRIES).flatMap(data => data.timezones))
 )
 
 export type Country = (typeof COUNTRIES)[number]
 export type CountryCode = (typeof COUNTRY_CODES)[number]
 export type Currency = (typeof CURRENCIES)[number]
-export type TimeZone = (typeof TIMEZONES)[number] | 'UTC'
+export type TimeZone = (typeof TIME_ZONES)[number] | 'UTC'

@@ -1,4 +1,4 @@
-import type { Currency } from '../constants/countries'
+import type { Currency } from '../constants/geo'
 
 type CompactDisplay = Intl.NumberFormatOptions['compactDisplay']
 type CurrencyDisplay = Intl.NumberFormatOptions['currencyDisplay']
