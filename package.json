@@ -1,11 +1,32 @@
 {
-  "name": "blueprint-design-system",
+  "name": "blueprint-ui",
   "private": true,
   "version": "0.0.1",
-  "description": "Opinionated Design System and Component Library for React",
-  "author": "andrsrxn",
+  "description": "Opinionated design system and component library for React",
+  "author": {
+    "name": "andrsrxn",
+    "email": "info@andrsrxn.com",
+    "url": "https://blueprintui.andrsrxn.com"
+  },
+  "keywords": [
+    "ui",
+    "components",
+    "react",
+    "library-components",
+    "design-system",
+    "tailwind",
+    "library"
+  ],
   "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrsrxn/blueprint-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andrsrxn/blueprint-ui/issues"
+  },
+  "homepage": "https://blueprint-ui.com",
   "scripts": {
     "dev": "vite",
     "build": "tsdown && pnpm run build:styles && echo Build styles finished.",

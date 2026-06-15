@@ -1,6 +1,6 @@
 export const COMPANY = {
-  name: 'Blueprint Design System',
-  description: 'Opinionated Design System and Component Library for React',
+  name: 'Blueprint UI',
+  description: 'Opinionated design system and component library for React',
   author: {
     name: 'Andres Raxón',
     username: 'andrsrxn',
@@ -10,10 +10,10 @@ export const COMPANY = {
   },
   license: {
     name: 'MIT',
-    url: 'https://github.com/andrsrxn/blueprint-design-system/LICENSE.md',
+    url: 'https://github.com/andrsrxn/blueprint-ui/LICENSE.md',
   },
   repository: {
-    name: 'blueprint-design-system',
-    url: 'https://github.com/andrsrxn/blueprint-design-system',
+    name: 'blueprint-ui',
+    url: 'https://github.com/andrsrxn/blueprint-ui',
   },
 }
