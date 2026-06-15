@@ -1,0 +1,23 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title='Foundations/Spacing guide' />
+
+# Spacing guide
+
+- **Semantic spacing:** Prefer semantic scales (`p-md`, `gap-sm`) or default Tailwind multiples of 4 over arbitrary pixel brackets.
+  - **Correct:** `<div className="p-md gap-sm">`
+  - **Incorrect:** `<div className="p-[16px] gap-[8px]">`
+- **Icon sizing:** Strictly use the predefined icon spacing scales (e.g., `size-icon-sm`, `size-icon-base`).
+- **Touch targets:** For interactive elements that might be visually small, use the `@utility touch-target` (or the equivalent Tailwind `touch-target` class) to ensure compliance with a minimum 44x44px hit area.
+
+## Spacing scales
+
+Our system provides standard numeric and semantic scales.
+
+### Numeric scale
+
+Standard multiples of 4px: `px`, `0.5`, `1`, `2`, `3`, `4`, `5`, `6`, `8`, `10`, `12`, `16`, `20`, `24`, `28`, `32`, `36`, `40`, `44`, `48`, `56`.
+
+### Semantic scale
+
+Semantic container sizes: `3xs`, `2xs`, `xs`, `sm`, `md`, `lg`, `xl`, `2xl`, `3xl`, `4xl`, `5xl`, `6xl`, `7xl`.

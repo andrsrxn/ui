@@ -1,0 +1,24 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title='Foundations/Elevation guide' />
+
+# Elevation guide
+
+Elevation in our design system relies on shadows to create depth, establishing a visual hierarchy.
+
+## Shadow Scales
+
+Use standard Tailwind shadow utilities mapped to our semantic variables:
+
+- **Extra Small (`shadow-xs`)**: Very subtle depth for flat elements like buttons.
+- **Small (`shadow-sm`)**: Standard depth for dropdowns or tooltips.
+- **Base (`shadow-base` / `shadow-md`)**: Standard card elevation.
+- **Large (`shadow-lg`)**: Elevated elements like dialogs and modals.
+- **Extra Large (`shadow-xl`)**: Prominent floating elements like notifications.
+- **2X Large (`shadow-2xl`)**: Highest elevation for critical overlays.
+- **Inner (`shadow-inner`)**: Inset shadow for depressed elements.
+
+## Additional Effects
+
+- **Drop Shadows (`drop-shadow-*`)**: Useful for non-rectangular elements or PNGs with transparency.
+- **Text Shadows (`text-shadow-*`)**: Used selectively to improve readability over busy backgrounds.

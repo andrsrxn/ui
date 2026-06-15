@@ -1,0 +1,20 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title='Foundations/Motion guide' />
+
+# Motion guide
+
+- **Semantic durations:** Use mapped timing variables over hardcoded millisecond values.
+  - **Faster**: `100ms`
+  - **Fast**: `250ms`
+  - **Base**: `400ms`
+  - **Slow**: `650ms`
+  - **Slower**: `1000ms`
+- **Easing curves:** Use standard design system easing functions. Do not write custom `cubic-bezier` curves directly in components.
+  - **Linear**: `linear`
+  - **Base**: `cubic-bezier(0.28, 0.1, 0.34, 1)`
+  - **Out**: `cubic-bezier(0.16, 1, 0.3, 1)`
+  - **Elastic**: `cubic-bezier(0.76, 0, 0.24, 1)`
+- **Reduced motion:** All UI animations must respect system preferences. Do not hardcode manual `@media` queries into React components.
+  - **Correct:** `<div className="transition-all duration-fast ease-base">`
+  - **Incorrect:** `<div className="transition-all duration-[250ms] ease-[cubic-bezier(0.28,0.1,0.34,1)]">`

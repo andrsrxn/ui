@@ -2,13 +2,13 @@ import preview from '../../../.storybook/preview'
 import { cn } from '../../lib/utils/theme'
 
 const meta = preview.meta({
-  title: 'Foundations/Palette',
-
+  title: 'Foundations/Color',
   parameters: {
     layout: 'padded',
     docs: {
       description: {
-        component: 'Palette colors',
+        component:
+          'The color system is built on a foundation of **primary** (blue), **accent**, and **neutral** colors. Each color is available in a range of **50 to 950** shades, providing a comprehensive palette for designing visually harmonious and accessible user interfaces.',
       },
     },
   },

@@ -1,0 +1,28 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title='Foundations/Background guide' />
+
+# Background guide
+
+Our background system uses semantic variables mapped to the core color palette.
+
+## Semantic layers
+
+- **Base (`bg-base`)**: The primary background color for the application.
+- **Base Alt (`bg-base-alt`)**: An alternative background for contrast (e.g., sidebars or alternating sections).
+- **Surface (`bg-surface`)**: Used for elevated elements like cards or modals placed on top of the base.
+- **Surface Alt (`bg-surface-alt`)**: An alternative surface color for nested elements.
+- **Base Accent (`bg-base-accent`)**: Used for active or highlighted states over the base background.
+
+## Interactive states
+
+Most background colors have corresponding hover and active states to provide interactive feedback:
+
+- Use `-hover` suffixes (e.g., `bg-base-hover`, `bg-surface-hover`).
+- Use `-active` suffixes (e.g., `bg-base-active`, `bg-surface-active`).
+
+## Thematic backgrounds
+
+- **Brand:** Use `bg-brand`, `bg-brand-subtlest` for primary actions or highlights.
+- **Feedback:** Use `bg-info`, `bg-success`, `bg-warning`, `bg-danger` for validation states.
+- **Details:** Use `bg-details` or `bg-details-bold` for informational containers.
