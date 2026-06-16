@@ -131,7 +131,7 @@ import { Meta } from '@storybook/addon-docs/blocks'
 - **Evolution pipeline:** Draft proposal -> Storybook sandbox -> Stable core integration -> Deprecation.
 - **Deprecation and breaking changes:**
   - **Graceful deprecation alerts:** Component structural APIs cannot be removed abruptly. If a component token or full element is replaced, it must be tagged with a `@deprecated` JSDoc property annotation alerting active engineering instances in their IDE windows.
-  - **Semantic versioning compliance:** Blueprint UI strictly tracks the **SemVer** convention matrix:
+  - **Semantic versioning compliance:** The design system strictly tracks the **SemVer** convention matrix:
     - **Patch changes (`0.0.X`):** Internal logic optimizations or documentation updates. Zero API changes.
     - **Minor changes (`0.X.0`):** Introduction of brand new components, features, or optional parameters. Fully backwards compatible.
     - **Major changes (`X.0.0`):** Breaking structural re-architectures, changing core prop tokens, or removing deprecated component sub-nodes completely. Requires a formal migration manual.

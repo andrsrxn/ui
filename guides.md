@@ -1,10 +1,10 @@
-# Blueprint UI: General guides
+# andrsrxn/ui: General guides
 
 ## About
 
 Opinionated design system and component library for React.
 
-It is correct to reference Blueprint UI as "the design system" or "the component library". Do not reference it as "Blueprint", "BPUI" or similar.
+It is correct to reference andrsrxn/ui as "the design system" or "the component library". Do not reference it as "the ui", "andrsrxn-ui", "ANDRSRXN" or similar.
 
 ## Voice and tone
 
@@ -27,7 +27,7 @@ It is correct to reference Blueprint UI as "the design system" or "the component
 
 - **Direct:** For neutral states, tooltips, standard system feedback, and repetitive workflows. Get straight to the point.
   - **Correct:** Component library updated. Changes are ready to be published.
-  - **Incorrect:** Great news! Blueprint just saved your awesome progress automatically.
+  - **Incorrect:** Great news! The app just saved your awesome progress automatically.
 - **Encouraging:** For empty states, onboarding flows, and success messages. Be welcoming and highlight value.
   - **Correct:** Deployment successful. Your application is now live.
   - **Incorrect:** Hurray! You did it! Your app is finally live out there on the web!
@@ -49,8 +49,8 @@ It is correct to reference Blueprint UI as "the design system" or "the component
   - **Correct:** The background task runs daily (at midnight).
   - **Incorrect:** The background task runs daily (At midnight).
 - **Default to active voice:** Structure sentences with the subject performing the action.
-  - **Correct:** Blueprint UI improves your app development process.
-  - **Incorrect:** Your app development process will be improved by Blueprint UI.
+  - **Correct:** The design system improves your app development process.
+  - **Incorrect:** Your app development process will be improved by the design system.
 - **Use plain language:** Avoid hyper-technical jargon, corporate lingo, and complex terminology.
   - **Correct:** Connect your account to start.
   - **Incorrect:** Leverage your account for high-throughput synchronization and optimized workflow.
@@ -137,8 +137,8 @@ It is correct to reference Blueprint UI as "the design system" or "the component
 ### Naming, compliance and restrictions
 
 - **File naming convention:** Use `snake_case` or `kebab-case`. English only. No special characters/spaces. Lowercase extensions. `vX.X` suffix for versions.
-  - **Correct:** `blueprint_button-v1.2.tsx`
-  - **Incorrect:** `Botón de Blueprint versión 1.2!.TSX`
+  - **Correct:** `user-report-v1.2.csv`
+  - **Incorrect:** `userReport_1 2.csv`
 - **Age specifications:** Omit a user's age unless required for compliance or functionality.
   - **Correct**: Verify that you are over 18 to proceed.
   - **Incorrect**: Juan, who is 25 years old, approved the request.
@@ -186,14 +186,14 @@ It is correct to reference Blueprint UI as "the design system" or "the component
 ### Verb tenses
 
 - **Present tense:** Primary narrative mode. For UI copy, descriptions, buttons, tooltips.
-  - **Correct:** Blueprint UI centralizes your workspace in one place.
-  - **Incorrect:** Blueprint UI will centralize your workspace in one place.
+  - **Correct:** The design system centralizes your workspace in one place.
+  - **Incorrect:** The design system will centralize your workspace in one place.
 - **Past tense:** For completed actions, logs, and system state changes.
   - **Correct:** The system reduced rendering times by 40%.
   - **Incorrect:** The system reduces rendering times by 40% (when referring to an event that already occurred).
 - **Future tense:** Only for automated, scheduled tasks, legal deadlines, or future phases.
   - **Correct:** The background task will execute at 00:00 UTC.
-  - **Incorrect:** Blueprint UI will help you scale your apps soon.
+  - **Incorrect:** The design system will help you scale your apps soon.
 
 ### Calls to Action (CTAs)
 
@@ -457,7 +457,7 @@ To ensure clarity, here are explicit examples combining dates, times, numbers, a
 
 ### Accessibility (a11y)
 
-- **WCAG compliance:** Blueprint UI guarantees full compliance with **WCAG 2.2 AA** and always strives for **WCAG AAA** standards.
+- **WCAG compliance:** The design system guarantees full compliance with **WCAG 2.2 AA** and always strives for **WCAG AAA** standards.
 - **Color contrast:** Maintain a minimum contrast ratio of 4.5:1 for normal text and 3:1 for large text/UI components (AA). Aim for 7:1 for normal text (AAA) whenever possible.
 - **Semantic DOM and form layouts:** Priority 1 is semantic native elements (`<main>`, `<nav>`, `<button>`). `<label>` must encapsulate a readable string and use a matching `htmlFor`. Non-text icons require descriptive captions via `title`, `aria-label`, or a `Tooltip`.
 - **Behavioral controls:** Active elements must be naturally focusable. Bind `onFocus`/`onBlur` with `onMouseOver`/`onMouseOut` for pointer device synchronization. Avoid arbitrary `accessKey` handlers.
@@ -501,14 +501,14 @@ To ensure clarity, here are explicit examples combining dates, times, numbers, a
 - **Evolution pipeline:** Draft proposal -> Storybook sandbox -> Stable core integration -> Deprecation.
 - **Deprecation and breaking changes:**
   - **Graceful deprecation alerts:** Component structural APIs cannot be removed abruptly. If a component token or full element is replaced, it must be tagged with a `@deprecated` JSDoc property annotation alerting active engineering instances in their IDE windows.
-  - **Semantic versioning compliance:** Blueprint UI strictly tracks the **SemVer** convention matrix:
+  - **Semantic versioning compliance:** The design system strictly tracks the **SemVer** convention matrix:
     - **Patch changes (`0.0.X`):** Internal logic optimizations or documentation updates. Zero API changes.
     - **Minor changes (`0.X.0`):** Introduction of brand new components, features, or optional parameters. Fully backwards compatible.
     - **Major changes (`X.0.0`):** Breaking structural re-architectures, changing core prop tokens, or removing deprecated component sub-nodes completely. Requires a formal migration manual.
 
 ## Design tokens
 
-Blueprint UI leverages Tailwind CSS v4 and a highly structured CSS variable token system (`globals.css`). Never use raw CSS values or arbitrary brackets for spacing, colors, or typography.
+The design system leverages Tailwind CSS v4 and a highly structured CSS variable token system (`globals.css`). Never use raw CSS values or arbitrary brackets for spacing, colors, or typography.
 
 ### Colors and themes
 
@@ -533,13 +533,13 @@ Blueprint UI leverages Tailwind CSS v4 and a highly structured CSS variable toke
 - **Semantic typography:** Do not compose fonts manually via `text-sm font-bold leading-tight`. Use the consolidated token roles mapping to `globals.css` scales.
   - **Correct:** `<h2 className="text-heading-2-base">`
   - **Incorrect:** `<h2 className="text-3xl font-extrabold tracking-heading">`
-- **Corner shapes:** Blueprint UI enforces "squircle" radiuses progressively on supporting browsers. Use standard `rounded-sm`, `rounded-base`, or `rounded-lg` tokens exclusively.
+- **Corner shapes:** The design system enforces "squircle" radiuses progressively on supporting browsers. Use standard `rounded-sm`, `rounded-base`, or `rounded-lg` tokens exclusively.
 
 ### Motion and transitions
 
 - **Semantic durations:** Use mapped timing variables (`duration-fast`, `duration-base`, `duration-slow`) over hardcoded millisecond values.
 - **Easing curves:** Use standard design system easing functions (`ease-base`, `ease-out`, `ease-elastic`). Do not write custom `cubic-bezier` curves directly in components.
-- **Reduced motion:** All UI animations must respect system preferences. Blueprint UI handles this globally via CSS `@media (prefers-reduced-motion: reduce)`, instantly snapping durations to `0.01ms`. Do not hardcode manual `@media` queries into React components.
+- **Reduced motion:** All UI animations must respect system preferences. The design system handles this globally via CSS `@media (prefers-reduced-motion: reduce)`, instantly snapping durations to `0.01ms`. Do not hardcode manual `@media` queries into React components.
   - **Correct:** `<div className="transition-all duration-fast ease-base">`
   - **Incorrect:** `<div className="transition-all duration-[250ms] ease-[cubic-bezier(0.28,0.1,0.34,1)]">`
 

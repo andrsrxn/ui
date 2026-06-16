@@ -633,7 +633,8 @@
           },
 
           "style": {
-            "noProcessEnv": "off"
+            "noProcessEnv": "off",
+            "noMagicNumbers": "off"
           }
         }
       }

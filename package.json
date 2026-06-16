@@ -1,12 +1,12 @@
 {
-  "name": "blueprint-ui",
+  "name": "@andrsrxn/ui",
   "private": true,
   "version": "0.0.1",
   "description": "Opinionated design system and component library for React",
   "author": {
     "name": "andrsrxn",
     "email": "info@andrsrxn.com",
-    "url": "https://blueprintui.andrsrxn.com"
+    "url": "https://ui.andrsrxn.com"
   },
   "keywords": [
     "ui",
@@ -21,12 +21,12 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andrsrxn/blueprint-ui.git"
+    "url": "git+https://github.com/andrsrxn/ui.git"
   },
   "bugs": {
-    "url": "https://github.com/andrsrxn/blueprint-ui/issues"
+    "url": "https://github.com/andrsrxn/ui/issues"
   },
-  "homepage": "https://blueprint-ui.com",
+  "homepage": "https://ui.andrsrxn.com",
   "scripts": {
     "dev": "vite",
     "build": "tsdown && pnpm run build:styles && echo Build styles finished.",
@@ -39,7 +39,7 @@
     "sb": "storybook dev -p 6006 --no-open",
     "build:sb": "storybook build",
     "build:styles": "postcss ./src/globals.css -o ./dist/styles.css && echo Build styles finished.",
-    "test": "turbo run test",
+    "test": "vitest",
     "doctor": "pnpm dlx react-doctor@latest . && echo Doctor finished.",
     "generate-icons": "node ./scripts/generate-icons.js && node ./scripts/generate-icons-index.js"
   },
@@ -85,6 +85,7 @@
     "@vitest/coverage-v8": "4.1.8",
     "cssnano": "7.1.9",
     "globals": "17.6.0",
+    "happy-dom": "20.10.4",
     "playwright": "1.60.0",
     "postcss-cli": "11.0.1",
     "prettier": "3.8.3",

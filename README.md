@@ -1,4 +1,6 @@
-# Blueprint UI
+<img src="https://res.cloudinary.com/dq5nfyajn/image/upload/v1781545765/symbol_p9zdmn.svg" alt="andrsrxn/ui symbol" width="52" height="64" />
+
+# andrsrxn/ui
 
 Opinionated design system and component library for React
 
@@ -12,13 +14,13 @@ Opinionated design system and component library for React
 ## Installation
 
 ```bash
-pnpm add blueprint-ui
+pnpm add @andrsrxn/ui
 ```
 
 ## Usage
 
 ```tsx
-import { Button } from 'blueprint-ui'
+import { Button } from '@andrsrxn/ui'
 
 export function App() {
   return (

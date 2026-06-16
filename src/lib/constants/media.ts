@@ -1,28 +1,23 @@
 export const IMAGES = {
   brand: {
     bannerOg: {
-      png: 'https://res.cloudinary.com/dq5nfyajn/image/upload/v1779723725/banner-og_i4d90b.png',
-    },
-    logo: {
-      svg: 'https://res.cloudinary.com/dq5nfyajn/image/upload/v1779582458/logo_m4f7wq.svg',
-    },
-    logoAlternative: {
-      svg: 'https://res.cloudinary.com/dq5nfyajn/image/upload/v1779582459/logo-alternative_okerpa.svg',
+      png: '',
     },
     symbol: {
-      svg: 'https://res.cloudinary.com/dq5nfyajn/image/upload/v1779582458/symbol_a0gvnv.svg',
+      svg: 'https://res.cloudinary.com/dq5nfyajn/image/upload/v1781545765/symbol_p9zdmn.svg',
     },
     favicon: {
-      ico: 'https://res.cloudinary.com/dq5nfyajn/image/upload/v1779582636/favicon_oic2gh.ico',
+      ico: 'https://res.cloudinary.com/dq5nfyajn/image/upload/v1781545859/favicon_m2cvum.ico',
+      svg: 'https://res.cloudinary.com/dq5nfyajn/image/upload/v1781545765/favicon_ihdgkn.svg'
     },
     appleTouchIcon: {
-      png: 'https://res.cloudinary.com/dq5nfyajn/image/upload/v1779582458/apple-touch-icon_jqamt4.png',
+      png: 'https://res.cloudinary.com/dq5nfyajn/image/upload/v1781546434/apple-touch-icon_rfrcfi.png',
     },
     webAppManifest192: {
-      png: 'https://res.cloudinary.com/dq5nfyajn/image/upload/v1779582459/web-app-manifest-192x192_j4u3hk.png',
+      png: 'https://res.cloudinary.com/dq5nfyajn/image/upload/v1781546433/web-app-manifest-192x192_rajy7d.png',
     },
     webAppManifest512: {
-      png: 'https://res.cloudinary.com/dq5nfyajn/image/upload/v1779582458/web-app-manifest-512x512_ljfeof.png',
+      png: 'https://res.cloudinary.com/dq5nfyajn/image/upload/v1781546434/web-app-manifest-512x512_ui5pae.png',
     },
   },
 }
