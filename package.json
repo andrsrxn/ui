@@ -27,22 +27,6 @@
     "url": "https://github.com/andrsrxn/ui/issues"
   },
   "homepage": "https://ui.andrsrxn.com",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsdown && pnpm run build:styles && echo Build styles finished.",
-    "format": "prettier --write . && echo Format finished.",
-    "lint": "biome check && echo Lint finished.",
-    "typecheck": "tsc --noEmit --project tsconfig.app.json && tsc --noEmit --project tsconfig.node.json && echo Typecheck finished.",
-    "typecoverage": "pnpm dlx type-coverage -at-least=99 && echo Typecoverage finished.",
-    "depcheck": "pnpm dlx knip && echo Depcheck finished.",
-    "preview": "vite preview",
-    "sb": "storybook dev -p 6006 --no-open",
-    "build:sb": "storybook build",
-    "build:styles": "postcss ./src/globals.css -o ./dist/styles.css && echo Build styles finished.",
-    "test": "vitest",
-    "doctor": "pnpm dlx react-doctor@latest . && echo Doctor finished.",
-    "generate-icons": "node ./scripts/generate-icons.js && node ./scripts/generate-icons-index.js"
-  },
   "sideEffects": [
     "**/*.css"
   ],
@@ -50,6 +34,27 @@
     "dist",
     "./src/globals.css"
   ],
+  "engines": {
+    "node": "^24",
+    "pnpm": "^10"
+  },
+  "packageManager": "pnpm@10.33.4",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "build": "pnpm run build:styles && tsdown && echo Build styles finished.",
+    "build:sb": "storybook build",
+    "build:styles": "postcss ./src/globals.css -o ./dist/styles.css && echo Build styles finished.",
+    "format": "prettier --write . && echo Format finished.",
+    "lint": "biome check && echo Lint finished.",
+    "typecheck": "tsc --noEmit --project tsconfig.app.json && tsc --noEmit --project tsconfig.node.json && echo Typecheck finished.",
+    "sb": "storybook dev -p 6006 --no-open",
+    "generate-icons": "node ./scripts/generate-icons.js && node ./scripts/generate-icons-index.js",
+    "typecoverage": "pnpm dlx type-coverage -at-least=99 && echo Typecoverage finished.",
+    "depcheck": "pnpm dlx knip && echo Depcheck finished.",
+    "test": "vitest",
+    "doctor": "pnpm dlx react-doctor@latest . && echo Doctor finished."
+  },
   "dependencies": {
     "@date-fns/tz": "1.5.0",
     "@fontsource/fira-mono": "5.2.7",
@@ -62,10 +67,6 @@
     "server-only": "0.0.1",
     "tailwind-merge": "3.6.0",
     "zod": "4.4.3"
-  },
-  "engines": {
-    "node": "^24",
-    "pnpm": "^10"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.16",
