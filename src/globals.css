@@ -195,6 +195,12 @@
   --color-idle-900: var(--color-neutral-900);
   --color-idle-950: var(--color-neutral-950);
 
+  /* Typography fonts */
+  --font-heading: 'Fira Sans';
+  --font-label: 'Fira Sans';
+  --font-body: 'Fira Sans';
+  --font-mono: 'Fira Mono';
+
   /* Typography scales*/
   --typography-scale-xs: 0.75rem; /* 12px */
   --typography-scale-sm: 0.875rem; /* 14px */
@@ -747,17 +753,18 @@
 /* Tailwind variables */
 @theme inline {
   /* Fonts */
+  --font-inherit: inherit;
   --font-heading:
-    'Fira Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji';
+    var(--font-heading), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-body:
-    'Fira Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    var(--font-body), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
   --font-label:
-    'Fira Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    var(--font-label), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
   --font-mono:
-    'Fira Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
     'Courier New', monospace;
 
   /* Weights */
@@ -899,12 +906,12 @@
   --text-heading-1-display-base--letter-spacing: var(--tracking-heading);
 
   /* Breakpoints */
-  --breakpoint-xs: 360px;
-  --breakpoint-sm: 480px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 1024px;
-  --breakpoint-xl: 1280px;
-  --breakpoint-2xl: 1536px;
+  --breakpoint-mobile-sm: 360px;
+  --breakpoint-mobile-md: 480px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-desktop: 1280px;
+  --breakpoint-display: 1536px;
 
   /* Custom spacing, the rest remains on multiples of 4 */
   --spacing-none: 0rem;
