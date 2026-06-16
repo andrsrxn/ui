@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,27 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconGitCommit: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M15.324 12a3.324 3.324 0 1 1-6.648 0 3.324 3.324 0 0 1 6.648 0Z" opacity=".2"/><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M8.676 12a3.324 3.324 0 0 1 6.648 0m-6.648 0a3.324 3.324 0 1 0 6.648 0m-6.648 0H4m11.324 0h5.171"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        fill='currentColor'
+        d='M15.324 12a3.324 3.324 0 1 1-6.648 0 3.324 3.324 0 0 1 6.648 0Z'
+        opacity='.2'
+      />
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeWidth='1.5'
+        d='M8.676 12a3.324 3.324 0 0 1 6.648 0m-6.648 0a3.324 3.324 0 1 0 6.648 0m-6.648 0H4m11.324 0h5.171'
+      />
+    </svg>
   )
 }

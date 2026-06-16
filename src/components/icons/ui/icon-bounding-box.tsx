@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,26 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconBoundingBox: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M7.496 5.487a2.01 2.01 0 1 1-4.02 0 2.01 2.01 0 0 1 4.02 0Zm0 13.027a2.01 2.01 0 1 1-4.019 0 2.01 2.01 0 0 1 4.02 0Zm13.027 0a2.01 2.01 0 1 1-4.019 0 2.01 2.01 0 0 1 4.02 0Zm0-13.027a2.01 2.01 0 1 1-4.02 0 2.01 2.01 0 0 1 4.02 0Z" opacity=".2"/><path stroke="currentColor" strokeWidth="1.5" d="M7.496 5.487c0 1.11-.9 2.01-2.01 2.01m2.01-2.01a2.01 2.01 0 1 0-2.01 2.01m2.01-2.01h9.008M5.487 7.497v8.996m2.01 2.02a2.01 2.01 0 1 1-4.02 0 2.01 2.01 0 0 1 4.02 0Zm0 0h9.007m0 0a2.01 2.01 0 1 0 4.02 0 2.01 2.01 0 0 0-4.02 0Zm2.01-11.017a2.01 2.01 0 1 0-2.01-2.01m2.01 2.01c-1.11 0-2.01-.9-2.01-2.01m2.01 2.01v8.997"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        fill='currentColor'
+        d='M7.496 5.487a2.01 2.01 0 1 1-4.02 0 2.01 2.01 0 0 1 4.02 0Zm0 13.027a2.01 2.01 0 1 1-4.019 0 2.01 2.01 0 0 1 4.02 0Zm13.027 0a2.01 2.01 0 1 1-4.019 0 2.01 2.01 0 0 1 4.02 0Zm0-13.027a2.01 2.01 0 1 1-4.02 0 2.01 2.01 0 0 1 4.02 0Z'
+        opacity='.2'
+      />
+      <path
+        stroke='currentColor'
+        strokeWidth='1.5'
+        d='M7.496 5.487c0 1.11-.9 2.01-2.01 2.01m2.01-2.01a2.01 2.01 0 1 0-2.01 2.01m2.01-2.01h9.008M5.487 7.497v8.996m2.01 2.02a2.01 2.01 0 1 1-4.02 0 2.01 2.01 0 0 1 4.02 0Zm0 0h9.007m0 0a2.01 2.01 0 1 0 4.02 0 2.01 2.01 0 0 0-4.02 0Zm2.01-11.017a2.01 2.01 0 1 0-2.01-2.01m2.01 2.01c-1.11 0-2.01-.9-2.01-2.01m2.01 2.01v8.997'
+      />
+    </svg>
   )
 }

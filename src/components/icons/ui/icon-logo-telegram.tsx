@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,33 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconLogoTelegram: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><g opacity=".2"><path fill="currentColor" d="m8.323 12.53 11.93-8.55a.083.083 0 0 0-.065 0L3.332 10.574a.518.518 0 0 0 .083.992l4.908.962Z"/><path fill="currentColor" d="m12.014 15.766-2.546 2.642a.666.666 0 0 1-1.145-.46v-5.419l3.691 3.237Z"/></g><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m8.323 12.53 7.509 6.582a.666.666 0 0 0 1.089-.35l3.381-14.689a.083.083 0 0 0-.067-.1.083.083 0 0 0-.044.005L3.332 10.575a.518.518 0 0 0 .083.992l4.908.962Zm0 0 11.93-8.55m-11.93 8.55v5.417a.665.665 0 0 0 1.145.461l2.546-2.642"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <g opacity='.2'>
+        <path
+          fill='currentColor'
+          d='m8.323 12.53 11.93-8.55a.083.083 0 0 0-.065 0L3.332 10.574a.518.518 0 0 0 .083.992l4.908.962Z'
+        />
+        <path
+          fill='currentColor'
+          d='m12.014 15.766-2.546 2.642a.666.666 0 0 1-1.145-.46v-5.419l3.691 3.237Z'
+        />
+      </g>
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth='1.5'
+        d='m8.323 12.53 7.509 6.582a.666.666 0 0 0 1.089-.35l3.381-14.689a.083.083 0 0 0-.067-.1.083.083 0 0 0-.044.005L3.332 10.575a.518.518 0 0 0 .083.992l4.908.962Zm0 0 11.93-8.55m-11.93 8.55v5.417a.665.665 0 0 0 1.145.461l2.546-2.642'
+      />
+    </svg>
   )
 }

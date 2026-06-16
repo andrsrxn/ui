@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,22 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconCheck: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="m4.239 12.986 1.936 2.871c1.516 2.25 2.275 3.374 3.345 3.369 1.07-.006 1.817-1.138 3.31-3.403l6.932-10.51"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeWidth='1.5'
+        d='m4.239 12.986 1.936 2.871c1.516 2.25 2.275 3.374 3.345 3.369 1.07-.006 1.817-1.138 3.31-3.403l6.932-10.51'
+      />
+    </svg>
   )
 }

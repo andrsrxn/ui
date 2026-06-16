@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,27 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconClosedCaptioning: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M3.712 10.487c0-1.886 0-2.828.586-3.414.586-.586 1.528-.586 3.414-.586h8.576c1.886 0 2.828 0 3.414.586.586.586.586 1.528.586 3.414v3.026c0 1.886 0 2.829-.586 3.414-.586.586-1.529.586-3.414.586H7.712c-1.886 0-2.828 0-3.414-.586-.586-.585-.586-1.528-.586-3.414v-3.026Z" opacity=".2"/><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M10.534 9.544c-1.665 0-3.434 0-3.434 2.456s1.848 2.456 3.434 2.456m5.88-4.912c-1.665 0-3.434 0-3.434 2.456s1.847 2.456 3.434 2.456m-8.702 3.057h8.576c1.886 0 2.828 0 3.414-.586.586-.585.586-1.528.586-3.414v-3.026c0-1.886 0-2.828-.586-3.414-.586-.586-1.529-.586-3.414-.586H7.712c-1.886 0-2.828 0-3.414.586-.586.586-.586 1.528-.586 3.414v3.026c0 1.886 0 2.829.586 3.414.586.586 1.528.586 3.414.586Z"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        fill='currentColor'
+        d='M3.712 10.487c0-1.886 0-2.828.586-3.414.586-.586 1.528-.586 3.414-.586h8.576c1.886 0 2.828 0 3.414.586.586.586.586 1.528.586 3.414v3.026c0 1.886 0 2.829-.586 3.414-.586.586-1.529.586-3.414.586H7.712c-1.886 0-2.828 0-3.414-.586-.586-.585-.586-1.528-.586-3.414v-3.026Z'
+        opacity='.2'
+      />
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeWidth='1.5'
+        d='M10.534 9.544c-1.665 0-3.434 0-3.434 2.456s1.848 2.456 3.434 2.456m5.88-4.912c-1.665 0-3.434 0-3.434 2.456s1.847 2.456 3.434 2.456m-8.702 3.057h8.576c1.886 0 2.828 0 3.414-.586.586-.585.586-1.528.586-3.414v-3.026c0-1.886 0-2.828-.586-3.414-.586-.586-1.529-.586-3.414-.586H7.712c-1.886 0-2.828 0-3.414.586-.586.586-.586 1.528-.586 3.414v3.026c0 1.886 0 2.829.586 3.414.586.586 1.528.586 3.414.586Z'
+      />
+    </svg>
   )
 }

@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,28 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconCurrencyKrw: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M5.984 12.75 7.99 19 12 6.5 16.01 19l2.006-6.25H5.984Z" opacity=".2"/><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3.979 6.5 7.989 19 12 6.5 16.01 19l4.011-12.5M3.362 12.75h17.276"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        fill='currentColor'
+        d='M5.984 12.75 7.99 19 12 6.5 16.01 19l2.006-6.25H5.984Z'
+        opacity='.2'
+      />
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth='1.5'
+        d='M3.979 6.5 7.989 19 12 6.5 16.01 19l4.011-12.5M3.362 12.75h17.276'
+      />
+    </svg>
   )
 }

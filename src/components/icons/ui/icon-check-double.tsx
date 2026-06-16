@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,22 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconCheckDouble: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="m3.798 13.565.612 1.221c1.576 3.144 2.364 4.716 3.605 4.71 1.24-.005 2.015-1.584 3.563-4.742l4.627-9.442m-8.41 8.253.612 1.221c1.576 3.144 2.364 4.716 3.604 4.71 1.241-.005 2.015-1.584 3.563-4.742l4.628-9.442"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeWidth='1.5'
+        d='m3.798 13.565.612 1.221c1.576 3.144 2.364 4.716 3.605 4.71 1.24-.005 2.015-1.584 3.563-4.742l4.627-9.442m-8.41 8.253.612 1.221c1.576 3.144 2.364 4.716 3.604 4.71 1.241-.005 2.015-1.584 3.563-4.742l4.628-9.442'
+      />
+    </svg>
   )
 }

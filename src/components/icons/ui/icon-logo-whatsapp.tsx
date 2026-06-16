@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,35 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconLogoWhatsapp: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M12 3.755a8.246 8.246 0 0 0-7.138 12.374L3.79 19.34a.687.687 0 0 0 .869.87l3.211-1.072A8.246 8.246 0 1 0 12 3.755Zm2.061 13.055a6.871 6.871 0 0 1-6.87-6.871A2.749 2.749 0 0 1 9.938 7.19l1.374 2.749-1.058 1.586a4.14 4.14 0 0 0 2.22 2.22l1.586-1.058 2.749 1.375a2.749 2.749 0 0 1-2.749 2.748Z" opacity=".2"/><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M7.19 9.939A2.749 2.749 0 0 1 9.94 7.19l1.374 2.749-1.058 1.586a4.14 4.14 0 0 0 2.22 2.22l1.586-1.058 2.749 1.375a2.748 2.748 0 0 1-2.749 2.748 6.871 6.871 0 0 1-6.87-6.871Z"/><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M7.871 19.139a8.246 8.246 0 1 0-3.006-3.007L3.791 19.34a.687.687 0 0 0 .869.87l3.211-1.072Z"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        fill='currentColor'
+        d='M12 3.755a8.246 8.246 0 0 0-7.138 12.374L3.79 19.34a.687.687 0 0 0 .869.87l3.211-1.072A8.246 8.246 0 1 0 12 3.755Zm2.061 13.055a6.871 6.871 0 0 1-6.87-6.871A2.749 2.749 0 0 1 9.938 7.19l1.374 2.749-1.058 1.586a4.14 4.14 0 0 0 2.22 2.22l1.586-1.058 2.749 1.375a2.749 2.749 0 0 1-2.749 2.748Z'
+        opacity='.2'
+      />
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth='1.5'
+        d='M7.19 9.939A2.749 2.749 0 0 1 9.94 7.19l1.374 2.749-1.058 1.586a4.14 4.14 0 0 0 2.22 2.22l1.586-1.058 2.749 1.375a2.748 2.748 0 0 1-2.749 2.748 6.871 6.871 0 0 1-6.87-6.871Z'
+      />
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth='1.5'
+        d='M7.871 19.139a8.246 8.246 0 1 0-3.006-3.007L3.791 19.34a.687.687 0 0 0 .869.87l3.211-1.072Z'
+      />
+    </svg>
   )
 }

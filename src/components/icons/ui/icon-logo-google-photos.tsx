@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,28 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconLogoGooglePhotos: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M12 12V3.703A5.106 5.106 0 0 1 15.99 12H12Zm0 0v8.297A5.106 5.106 0 0 1 8.01 12H12Z" opacity=".2"/><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 12V3.703A5.106 5.106 0 0 1 15.99 12M12 12H3.703A5.106 5.106 0 0 1 12 8.01M12 12v8.297A5.106 5.106 0 0 1 8.01 12M12 12h8.297A5.106 5.106 0 0 1 12 15.99"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        fill='currentColor'
+        d='M12 12V3.703A5.106 5.106 0 0 1 15.99 12H12Zm0 0v8.297A5.106 5.106 0 0 1 8.01 12H12Z'
+        opacity='.2'
+      />
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth='1.5'
+        d='M12 12V3.703A5.106 5.106 0 0 1 15.99 12M12 12H3.703A5.106 5.106 0 0 1 12 8.01M12 12v8.297A5.106 5.106 0 0 1 8.01 12M12 12h8.297A5.106 5.106 0 0 1 12 15.99'
+      />
+    </svg>
   )
 }

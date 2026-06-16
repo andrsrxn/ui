@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,27 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconControls: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M6.852 8.157a2.213 2.213 0 1 0 4.426 0 2.213 2.213 0 0 0-4.426 0Zm10.312 7.675a2.229 2.229 0 1 1-4.457 0 2.229 2.229 0 0 1 4.457 0Z" opacity=".2"/><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M11.3 8.161a2.222 2.222 0 1 0-4.444 0m4.444 0a2.222 2.222 0 1 1-4.444 0m4.444 0h8.93m-13.374 0H3.769m8.931 7.671a2.222 2.222 0 1 1 4.444 0m-4.444 0a2.222 2.222 0 0 0 4.444 0m-4.444 0H3.77m13.374 0h3.087"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        fill='currentColor'
+        d='M6.852 8.157a2.213 2.213 0 1 0 4.426 0 2.213 2.213 0 0 0-4.426 0Zm10.312 7.675a2.229 2.229 0 1 1-4.457 0 2.229 2.229 0 0 1 4.457 0Z'
+        opacity='.2'
+      />
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeWidth='1.5'
+        d='M11.3 8.161a2.222 2.222 0 1 0-4.444 0m4.444 0a2.222 2.222 0 1 1-4.444 0m4.444 0h8.93m-13.374 0H3.769m8.931 7.671a2.222 2.222 0 1 1 4.444 0m-4.444 0a2.222 2.222 0 0 0 4.444 0m-4.444 0H3.77m13.374 0h3.087'
+      />
+    </svg>
   )
 }

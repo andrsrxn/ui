@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,22 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconChevronLeft: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="m14.956 19.576-4.935-4.664c-1.442-1.363-2.162-2.044-2.163-2.905 0-.86.72-1.543 2.16-2.906l4.938-4.678"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeWidth='1.5'
+        d='m14.956 19.576-4.935-4.664c-1.442-1.363-2.162-2.044-2.163-2.905 0-.86.72-1.543 2.16-2.906l4.938-4.678'
+      />
+    </svg>
   )
 }

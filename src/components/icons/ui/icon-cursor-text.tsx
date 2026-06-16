@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,22 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconCursorText: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M8.882 20.335c1.05 0 1.575 0 1.981-.192a2 2 0 0 0 .952-.952c.192-.406.192-.931.192-1.981V6.79c0-1.05 0-1.575-.192-1.981a2 2 0 0 0-.952-.952c-.406-.193-.931-.193-1.981-.193m6.236 16.671c-1.05 0-1.575 0-1.981-.192a2 2 0 0 1-.952-.952c-.192-.406-.192-.931-.192-1.981V6.79c0-1.05 0-1.575.192-1.981a2 2 0 0 1 .952-.952c.406-.193.931-.193 1.981-.193"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeWidth='1.5'
+        d='M8.882 20.335c1.05 0 1.575 0 1.981-.192a2 2 0 0 0 .952-.952c.192-.406.192-.931.192-1.981V6.79c0-1.05 0-1.575-.192-1.981a2 2 0 0 0-.952-.952c-.406-.193-.931-.193-1.981-.193m6.236 16.671c-1.05 0-1.575 0-1.981-.192a2 2 0 0 1-.952-.952c-.192-.406-.192-.931-.192-1.981V6.79c0-1.05 0-1.575.192-1.981a2 2 0 0 1 .952-.952c.406-.193.931-.193 1.981-.193'
+      />
+    </svg>
   )
 }

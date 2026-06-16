@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,28 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconLogoX: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M4.844 4.129h4.294L19.156 19.87h-4.294L4.844 4.13Z" opacity=".2"/><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m10.737 13.39-5.893 6.48M19.156 4.13l-5.893 6.482M4.844 4.129h4.294L19.156 19.87h-4.294L4.844 4.13Z"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        fill='currentColor'
+        d='M4.844 4.129h4.294L19.156 19.87h-4.294L4.844 4.13Z'
+        opacity='.2'
+      />
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth='1.5'
+        d='m10.737 13.39-5.893 6.48M19.156 4.13l-5.893 6.482M4.844 4.129h4.294L19.156 19.87h-4.294L4.844 4.13Z'
+      />
+    </svg>
   )
 }

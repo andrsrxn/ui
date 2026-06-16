@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,22 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconKeyEnter: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M19.485 8.572v.475c0 1.886 0 2.829-.586 3.415-.585.585-1.528.585-3.414.585H3.98M6.71 9.49l-.727.726c-1.336 1.334-2.004 2-2.004 2.83 0 .828.666 1.495 2.001 2.83l.73.73"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeWidth='1.5'
+        d='M19.485 8.572v.475c0 1.886 0 2.829-.586 3.415-.585.585-1.528.585-3.414.585H3.98M6.71 9.49l-.727.726c-1.336 1.334-2.004 2-2.004 2.83 0 .828.666 1.495 2.001 2.83l.73.73'
+      />
+    </svg>
   )
 }

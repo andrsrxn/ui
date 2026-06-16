@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,28 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconLogoBehance: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M14.52 13.85a3.085 3.085 0 0 1 6.168 0H14.52Zm-5.09-2.158h-.308a2.313 2.313 0 0 0 0-4.627H4.649v9.87H9.43a2.621 2.621 0 1 0 0-5.243Z" opacity=".2"/><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15.136 8.299h4.935M4.65 11.692h4.473m-4.473 0v5.243h4.78a2.622 2.622 0 1 0 0-5.243h-.308m-4.473 0V7.065h4.473a2.313 2.313 0 1 1 0 4.627m10.95 4.01a3.084 3.084 0 0 1-5.552-1.851m0 0a3.085 3.085 0 0 1 6.168 0H14.52Z"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        fill='currentColor'
+        d='M14.52 13.85a3.085 3.085 0 0 1 6.168 0H14.52Zm-5.09-2.158h-.308a2.313 2.313 0 0 0 0-4.627H4.649v9.87H9.43a2.621 2.621 0 1 0 0-5.243Z'
+        opacity='.2'
+      />
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth='1.5'
+        d='M15.136 8.299h4.935M4.65 11.692h4.473m-4.473 0v5.243h4.78a2.622 2.622 0 1 0 0-5.243h-.308m-4.473 0V7.065h4.473a2.313 2.313 0 1 1 0 4.627m10.95 4.01a3.084 3.084 0 0 1-5.552-1.851m0 0a3.085 3.085 0 0 1 6.168 0H14.52Z'
+      />
+    </svg>
   )
 }

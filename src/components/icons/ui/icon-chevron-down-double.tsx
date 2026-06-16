@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,22 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconChevronDownDouble: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="m19.577 12.388-4.665 4.936c-1.363 1.441-2.044 2.162-2.905 2.162-.86 0-1.543-.72-2.906-2.16l-4.678-4.938m15.154-8-4.665 4.936c-1.363 1.441-2.044 2.162-2.905 2.162-.86 0-1.543-.72-2.906-2.16L4.423 4.389"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeWidth='1.5'
+        d='m19.577 12.388-4.665 4.936c-1.363 1.441-2.044 2.162-2.905 2.162-.86 0-1.543-.72-2.906-2.16l-4.678-4.938m15.154-8-4.665 4.936c-1.363 1.441-2.044 2.162-2.905 2.162-.86 0-1.543-.72-2.906-2.16L4.423 4.389'
+      />
+    </svg>
   )
 }

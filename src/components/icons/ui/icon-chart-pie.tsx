@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,28 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconChartPie: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" fillRule="evenodd" d="M12 3.567a8.433 8.433 0 0 0-5.963 14.396L12 12V3.567Z" clipRule="evenodd" opacity=".2"/><path stroke="currentColor" strokeWidth="1.5" d="M12 3.567a8.433 8.433 0 1 0 0 16.866 8.433 8.433 0 0 0 0-16.866Zm0 0v6.776c0 .818 0 1.226-.152 1.594-.153.368-.442.657-1.02 1.235l-4.693 4.693"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        fill='currentColor'
+        fillRule='evenodd'
+        d='M12 3.567a8.433 8.433 0 0 0-5.963 14.396L12 12V3.567Z'
+        clipRule='evenodd'
+        opacity='.2'
+      />
+      <path
+        stroke='currentColor'
+        strokeWidth='1.5'
+        d='M12 3.567a8.433 8.433 0 1 0 0 16.866 8.433 8.433 0 0 0 0-16.866Zm0 0v6.776c0 .818 0 1.226-.152 1.594-.153.368-.442.657-1.02 1.235l-4.693 4.693'
+      />
+    </svg>
   )
 }

@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,26 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconPanelsRight: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M20 8c0-1.886 0-2.828-.586-3.414C18.828 4 17.886 4 16 4h-4v16h4c1.886 0 2.828 0 3.414-.586C20 18.828 20 17.886 20 16V8Z" opacity=".2"/><path stroke="currentColor" strokeWidth="1.5" d="M12 4H8c-1.886 0-2.828 0-3.414.586C4 5.172 4 6.114 4 8v8c0 1.886 0 2.828.586 3.414C5.172 20 6.114 20 8 20h4m0-16h4c1.886 0 2.828 0 3.414.586C20 5.172 20 6.114 20 8v8c0 1.886 0 2.828-.586 3.414C18.828 20 17.886 20 16 20h-4m0-16v16"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        fill='currentColor'
+        d='M20 8c0-1.886 0-2.828-.586-3.414C18.828 4 17.886 4 16 4h-4v16h4c1.886 0 2.828 0 3.414-.586C20 18.828 20 17.886 20 16V8Z'
+        opacity='.2'
+      />
+      <path
+        stroke='currentColor'
+        strokeWidth='1.5'
+        d='M12 4H8c-1.886 0-2.828 0-3.414.586C4 5.172 4 6.114 4 8v8c0 1.886 0 2.828.586 3.414C5.172 20 6.114 20 8 20h4m0-16h4c1.886 0 2.828 0 3.414.586C20 5.172 20 6.114 20 8v8c0 1.886 0 2.828-.586 3.414C18.828 20 17.886 20 16 20h-4m0-16v16'
+      />
+    </svg>
   )
 }

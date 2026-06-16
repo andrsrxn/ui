@@ -79,7 +79,7 @@ function generateComponent(fileName, svgContent) {
   const jsxSvg = normalizeSvg(rawSvg)
 
   // Return the content of the .tsx file
-  return `import type { Icon } from '../../../lib/types/icon'
+  return `import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 ${jsDocPreview}

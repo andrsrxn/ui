@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,22 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconListUnordered: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M8.656 6h11.609M8.656 12h11.609M8.656 18h11.609M5.44 6a.779.779 0 1 1-1.558 0A.779.779 0 0 1 5.44 6Zm0 6.004a.779.779 0 1 1-1.558 0 .779.779 0 0 1 1.558 0Zm0 6.003a.779.779 0 1 1-1.558 0 .779.779 0 0 1 1.558 0Z"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeWidth='1.5'
+        d='M8.656 6h11.609M8.656 12h11.609M8.656 18h11.609M5.44 6a.779.779 0 1 1-1.558 0A.779.779 0 0 1 5.44 6Zm0 6.004a.779.779 0 1 1-1.558 0 .779.779 0 0 1 1.558 0Zm0 6.003a.779.779 0 1 1-1.558 0 .779.779 0 0 1 1.558 0Z'
+      />
+    </svg>
   )
 }

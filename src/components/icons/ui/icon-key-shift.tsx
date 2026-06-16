@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,27 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconKeyShift: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path fill="currentColor" d="M15.65 10.732a.5.5 0 0 1 .5-.5h1.417c.888 0 1.333-.954.705-1.512l-5.567-4.95a1.087 1.087 0 0 0-1.41 0L5.728 8.72c-.628.558-.183 1.512.705 1.512h1.416a.5.5 0 0 1 .5.5v6.425c0 1.383 0 2.074.41 2.55a1.9 1.9 0 0 0 .372.331c.536.365 1.314.365 2.869.365 1.555 0 2.332 0 2.869-.365a1.9 1.9 0 0 0 .372-.33c.41-.477.41-1.168.41-2.551v-6.425Z" opacity=".2"/><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M15.65 10.732a.5.5 0 0 1 .5-.5h1.417c.888 0 1.333-.954.705-1.512l-5.567-4.95a1.087 1.087 0 0 0-1.41 0L5.728 8.72c-.628.558-.183 1.512.705 1.512h1.416a.5.5 0 0 1 .5.5v6.425c0 1.383 0 2.074.41 2.55a1.9 1.9 0 0 0 .372.331c.536.365 1.314.365 2.869.365 1.555 0 2.332 0 2.869-.365a1.9 1.9 0 0 0 .372-.33c.41-.477.41-1.168.41-2.551v-6.425Z"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        fill='currentColor'
+        d='M15.65 10.732a.5.5 0 0 1 .5-.5h1.417c.888 0 1.333-.954.705-1.512l-5.567-4.95a1.087 1.087 0 0 0-1.41 0L5.728 8.72c-.628.558-.183 1.512.705 1.512h1.416a.5.5 0 0 1 .5.5v6.425c0 1.383 0 2.074.41 2.55a1.9 1.9 0 0 0 .372.331c.536.365 1.314.365 2.869.365 1.555 0 2.332 0 2.869-.365a1.9 1.9 0 0 0 .372-.33c.41-.477.41-1.168.41-2.551v-6.425Z'
+        opacity='.2'
+      />
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeWidth='1.5'
+        d='M15.65 10.732a.5.5 0 0 1 .5-.5h1.417c.888 0 1.333-.954.705-1.512l-5.567-4.95a1.087 1.087 0 0 0-1.41 0L5.728 8.72c-.628.558-.183 1.512.705 1.512h1.416a.5.5 0 0 1 .5.5v6.425c0 1.383 0 2.074.41 2.55a1.9 1.9 0 0 0 .372.331c.536.365 1.314.365 2.869.365 1.555 0 2.332 0 2.869-.365a1.9 1.9 0 0 0 .372-.33c.41-.477.41-1.168.41-2.551v-6.425Z'
+      />
+    </svg>
   )
 }

@@ -1,4 +1,4 @@
-import type { Icon } from '../../../lib/types/icon'
+import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
@@ -6,6 +6,22 @@ import { cn } from '../../../lib/utils/theme'
  */
 export const IconChartCombined: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M7.28 14.158v3.389m7.35-4.717v4.717m-3.675-5.91v5.91m7.348-6.92v6.92M3.89 4v14.611a1.5 1.5 0 0 0 1.5 1.5H20M6.699 11.638l3.761-3.762a1 1 0 0 1 1.424.01L13.6 9.652a1 1 0 0 0 1.438-.004l4.315-4.49"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeWidth='1.5'
+        d='M7.28 14.158v3.389m7.35-4.717v4.717m-3.675-5.91v5.91m7.348-6.92v6.92M3.89 4v14.611a1.5 1.5 0 0 0 1.5 1.5H20M6.699 11.638l3.761-3.762a1 1 0 0 1 1.424.01L13.6 9.652a1 1 0 0 0 1.438-.004l4.315-4.49'
+      />
+    </svg>
   )
 }
