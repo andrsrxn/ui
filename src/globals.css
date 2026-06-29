@@ -28,8 +28,8 @@
   --color-neutral-100: #ebedf9;
   --color-neutral-200: #daddf1;
   --color-neutral-300: #c1c6e1;
-  --color-neutral-400: #8f96b7;
-  --color-neutral-500: #6f769b;
+  --color-neutral-400: #8991b3;
+  --color-neutral-500: #656a86;
   --color-neutral-600: #323648;
   --color-neutral-700: #1f222d;
   --color-neutral-800: #191a24;
@@ -196,9 +196,9 @@
   --color-idle-950: var(--color-neutral-950);
 
   /* Typography fonts */
-  --font-heading: 'Fira Sans';
-  --font-label: 'Fira Sans';
-  --font-body: 'Fira Sans';
+  --font-heading: 'Hanken Grotesk Variable';
+  --font-label: 'Hanken Grotesk Variable';
+  --font-body: 'Hanken Grotesk Variable';
   --font-mono: 'Fira Mono';
 
   /* Typography scales*/
@@ -233,6 +233,7 @@
 
 /* Themes */
 .light {
+  --typography-weigth-regular: 400;
   /* Text */
   --text-primary: var(--color-neutral-800);
   --text-secondary: var(--color-neutral-500);
@@ -248,6 +249,7 @@
   --text-selectable-hover: var(--text-primary);
   --text-selected: var(--color-info-700);
   --text-link: var(--color-brand-600);
+  --text-link-hover: var(--color-brand-700);
   --text-details: var(--color-brand-700);
   --text-details-subtle: var(--color-brand-300);
   --text-content: var(--text-inverted-static);
@@ -291,7 +293,7 @@
 
   /* Border applications */
   --border-background-base: var(--background-base);
-  --border-background-base-alt: var(--background-base-alt);
+  --border-surface: var(--background-surface);
   --border-input: var(--border-base);
   --border-focus: var(--color-brand-400);
   --border-ring: var(--color-brand-100);
@@ -320,15 +322,9 @@
   --background-base: var(--color-neutral-50);
   --background-base-hover: var(--color-neutral-100);
   --background-base-active: var(--color-neutral-200);
-  --background-base-alt: var(--color-neutral-0);
-  --background-base-alt-hover: var(--color-neutral-50);
-  --background-base-alt-active: var(--color-neutral-100);
-  --background-base-accent: var(--color-neutral-100);
-  --background-base-accent-hover: var(--color-neutral-200);
-  --background-base-accent-active: var(--color-neutral-300);
-  --background-base-accent-alt: var(--color-neutral-100);
-  --background-base-accent-alt-hover: var(--color-neutral-200);
-  --background-base-accent-alt-active: var(--color-neutral-300);
+  --background-base-accent: var(--color-neutral-200);
+  --background-base-accent-hover: var(--color-neutral-300);
+  --background-base-accent-active: var(--color-neutral-400);
   --background-base-inverted: var(--color-neutral-950);
   --background-to-alpha: var(--color-neutral-500);
   --background-to-overlay: var(--color-neutral-600);
@@ -355,9 +351,6 @@
   --background-selected-bold: var(--color-brand-600);
   --background-selected-bold-hover: var(--color-brand-700);
   --background-selected-bold-active: var(--color-brand-800);
-  --background-selected-alt: var(--background-base-accent);
-  --background-selected-alt-hover: var(--background-base-accent-hover);
-  --background-selected-alt-active: var(--background-base-accent-active);
   --background-scrollbar: var(--color-alpha-0);
   --background-scrollbar-thumb: var(--color-neutral-200);
   --background-scrollbar-thumb-hover: var(--color-neutral-300);
@@ -492,6 +485,7 @@
 }
 
 .dark {
+  --typography-weigth-regular: 300;
   /* Text */
   --text-primary: var(--color-neutral-100);
   --text-secondary: var(--color-neutral-400);
@@ -507,6 +501,7 @@
   --text-selectable-hover: var(--text-primary);
   --text-selected: var(--color-info-300);
   --text-link: var(--color-brand-400);
+  --text-link-hover: var(--color-brand-300);
   --text-details: var(--color-brand-300);
   --text-details-subtle: var(--color-brand-700);
   --text-content: var(--text-inverted-static);
@@ -544,13 +539,13 @@
   --text-accent-orange-content: var(--color-accent-orange-200);
 
   /* Border */
-  --border-base-alt: var(--color-neutral-700);
   --border-base: var(--color-neutral-600);
+  --border-base-alt: var(--color-neutral-700);
   --border-inverted: var(--color-neutral-100);
 
   /* Border Applications */
   --border-background-base: var(--background-base);
-  --border-background-base-alt: var(--background-base-alt);
+  --border-surface: var(--background-surface);
   --border-input: var(--border-base);
   --border-focus: var(--color-brand-600);
   --border-ring: var(--color-brand-900);
@@ -579,15 +574,9 @@
   --background-base: var(--color-neutral-950);
   --background-base-hover: var(--color-neutral-900);
   --background-base-active: var(--color-neutral-800);
-  --background-base-alt: var(--color-neutral-900);
-  --background-base-alt-hover: var(--color-neutral-800);
-  --background-base-alt-active: var(--color-neutral-700);
   --background-base-accent: var(--color-neutral-900);
   --background-base-accent-hover: var(--color-neutral-800);
   --background-base-accent-active: var(--color-neutral-700);
-  --background-base-accent-alt: var(--color-neutral-950);
-  --background-base-accent-alt-hover: var(--color-neutral-900);
-  --background-base-accent-alt-active: var(--color-neutral-800);
   --background-base-inverted: var(--color-neutral-50);
   --background-to-alpha: var(--color-neutral-400);
   --background-to-overlay: var(--color-neutral-950);
@@ -755,21 +744,21 @@
   /* Fonts */
   --font-inherit: inherit;
   --font-heading:
-    var(--font-heading), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    var(--font-heading), 'Inter', system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
   --font-body:
-    var(--font-body), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    var(--font-body), 'Inter', system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
   --font-label:
-    var(--font-label), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    var(--font-label), 'Inter', system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
   --font-mono:
     var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
     'Courier New', monospace;
 
   /* Weights */
-  --font-weight-normal: 400;
-  --font-weight-regular: 400;
+  --font-weight-normal: var(--typography-weigth-regular);
+  --font-weight-regular: var(--typography-weigth-regular);
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
@@ -778,12 +767,17 @@
   --tracking-heading: -0.015em;
 
   /* Line heights */
+  --leading-none: 1;
   --leading-xs: 1.1;
   --leading-sm: 1.2;
   --leading-base: 1.5;
 
   /* Typography scales */
   /* Body */
+  --text-body-inherit: inherit;
+  --text-body-inherit--line-height: inherit;
+  --text-body-inherit--font-weight: inherit;
+  --text-body-inherit--letter-spacing: inherit;
   --text-body-xs: var(--typography-scale-xs);
   --text-body-xs--line-height: var(--leading-base);
   --text-body-xs--font-weight: var(--font-weight-regular);
@@ -808,35 +802,35 @@
   /* Text Label */
   --text-label-xs: var(--typography-scale-xs);
   --text-label-xs--line-height: var(--leading-xs);
-  --text-label-xs--font-weight: var(--font-weight-medium);
+  --text-label-xs--font-weight: var(--font-weight-semibold);
   --text-label-xs--letter-spacing: var(--tracking-body);
   --text-label-sm: var(--typography-scale-sm);
   --text-label-sm--line-height: var(--leading-xs);
-  --text-label-sm--font-weight: var(--font-weight-medium);
+  --text-label-sm--font-weight: var(--font-weight-semibold);
   --text-label-sm--letter-spacing: var(--tracking-body);
   --text-label-base: var(--typography-scale-base);
   --text-label-base--line-height: var(--leading-xs);
-  --text-label-base--font-weight: var(--font-weight-medium);
+  --text-label-base--font-weight: var(--font-weight-semibold);
   --text-label-base--letter-spacing: var(--tracking-body);
   --text-label-lg: var(--typography-scale-lg);
   --text-label-lg--line-height: var(--leading-xs);
-  --text-label-lg--font-weight: var(--font-weight-medium);
+  --text-label-lg--font-weight: var(--font-weight-semibold);
   --text-label-lg--letter-spacing: var(--tracking-body);
   --text-label-xl: var(--typography-scale-xl);
   --text-label-xl--line-height: var(--leading-xs);
-  --text-label-xl--font-weight: var(--font-weight-semibold);
+  --text-label-xl--font-weight: var(--font-weight-bold);
   --text-label-xl--letter-spacing: var(--tracking-body);
   --text-label-2xl: var(--typography-scale-2xl);
   --text-label-2xl--line-height: var(--leading-xs);
-  --text-label-2xl--font-weight: var(--font-weight-semibold);
+  --text-label-2xl--font-weight: var(--font-weight-bold);
   --text-label-2xl--letter-spacing: var(--tracking-heading);
   --text-label-3xl: var(--typography-scale-3xl);
   --text-label-3xl--line-height: var(--leading-xs);
-  --text-label-3xl--font-weight: var(--font-weight-semibold);
+  --text-label-3xl--font-weight: var(--font-weight-bold);
   --text-label-3xl--letter-spacing: var(--tracking-heading);
   --text-label-4xl: var(--typography-scale-4xl);
   --text-label-4xl--line-height: var(--leading-xs);
-  --text-label-4xl--font-weight: var(--font-weight-semibold);
+  --text-label-4xl--font-weight: var(--font-weight-bold);
   --text-label-4xl--letter-spacing: var(--tracking-heading);
 
   /* Text Heading */
@@ -924,7 +918,7 @@
   --spacing-icon-3xl: var(--text-label-3xl);
   --spacing-icon-4xl: var(--text-label-4xl);
   --spacing-icon-5xl: var(--text-label-5xl);
-  --spacing-icon-responsive: 1.1em;
+  --spacing-icon-responsive: 1.15em;
 
   --spacing-3xs: var(--container-3xs);
   --spacing-2xs: var(--container-2xs);
@@ -1017,7 +1011,7 @@
   --text-color-selectable-hover: var(--text-selectable-hover);
   --text-color-selected: var(--text-selected);
   --text-color-link: var(--text-link);
-  --text-color-link-active: var(--text-link-active);
+  --text-color-link-hover: var(--text-link-hover);
   --text-color-details: var(--text-details);
   --text-color-details-subtle: var(--text-details-subtle);
   --text-color-content: var(--text-content);
@@ -1058,7 +1052,7 @@
   --border-color-inverted: var(--border-inverted);
 
   --border-color-background-base: var(--border-background-base);
-  --border-color-background-base-alt: var(--border-background-base-alt);
+  --border-color-surface: var(--border-surface);
   --border-color-input: var(--border-input);
   --border-color-focus: var(--border-focus);
   --border-color-ring: var(--border-ring);
@@ -1081,12 +1075,12 @@
   --border-color-accent-yellow: var(--border-accent-yellow);
   --border-color-accent-red: var(--border-accent-red);
 
-  --outline-color-base-alt: var(--border-base-alt);
   --outline-color-base: var(--border-base);
+  --outline-color-base-alt: var(--border-base-alt);
   --outline-color-inverted: var(--border-inverted);
 
   --outline-color-background-base: var(--border-background-base);
-  --outline-color-background-base-alt: var(--border-background-base-alt);
+  --outline-color-surface: var(--border-surface);
   --outline-color-input: var(--border-input);
   --outline-color-focus: var(--border-focus);
   --outline-color-ring: var(--border-ring);
@@ -1113,15 +1107,9 @@
   --background-color-base: var(--background-base);
   --background-color-base-hover: var(--background-base-hover);
   --background-color-base-active: var(--background-base-active);
-  --background-color-base-alt: var(--background-base-alt);
-  --background-color-base-alt-hover: var(--background-base-alt-hover);
-  --background-color-base-alt-active: var(--background-base-alt-active);
   --background-color-base-accent: var(--background-base-accent);
   --background-color-base-accent-hover: var(--background-base-accent-hover);
   --background-color-base-accent-active: var(--background-base-accent-active);
-  --background-color-base-accent-alt: var(--background-base-accent-alt);
-  --background-color-base-accent-alt-hover: var(--background-base-accent-alt-hover);
-  --background-color-base-accent-alt-active: var(--background-base-accent-alt-active);
   --background-color-base-inverted: var(--background-base-inverted);
 
   --background-color-alpha-0: transparent;
@@ -1443,13 +1431,14 @@
     @apply bg-scrollbar-thumb-bold hover:bg-scrollbar-thumb-bold-hover active:bg-scrollbar-thumb-bold-active size-2 rounded-full;
   }
 
-  *:not(html) {
-    @apply scrollbar-gutter-stable;
-  }
-
   body {
     @apply ease-base duration-fast bg-base font-body text-body-base text-primary selection:bg-details selection:text-details transition-theme min-h-dvh;
   }
+
+  body[data-scroll-locked] {
+    @apply mr-0!;
+  }
+
   html {
     @apply overscroll-contain scroll-smooth text-[100%] antialiased;
   }
@@ -1491,10 +1480,6 @@
 
   .ReactCrop .ReactCrop__drag-elements .ReactCrop__drag-handle {
     @apply bg-surface size-8;
-  }
-
-  body[data-scroll-locked] {
-    margin-right: 0 !important;
   }
 
   @media (prefers-reduced-motion: reduce) {
