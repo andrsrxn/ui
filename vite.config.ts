@@ -14,29 +14,30 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   test: {
     environment: 'happy-dom',
-
-    projects: [
-      {
-        // extends: true,
-        // plugins: [
-        //   storybookTest({
-        //     configDir: path.join(dirname, '.storybook'),
-        //   }),
-        // ],
-        // test: {
-        //   name: 'storybook',
-        //   browser: {
-        //     enabled: true,
-        //     headless: true,
-        //     provider: playwright({}),
-        //     instances: [
-        //       {
-        //         browser: 'chromium',
-        //       },
-        //     ],
-        //   },
-        // },
-      },
-    ],
+    setupFiles: ['./__tests__/setup.ts'],
+    include: ['./__tests__/**/*.test.(ts|tsx)'],
+    // projects: [
+    // {
+    // extends: true,
+    // plugins: [
+    //   storybookTest({
+    //     configDir: path.join(dirname, '.storybook'),
+    //   }),
+    // ],
+    // test: {
+    //   name: 'storybook',
+    //   browser: {
+    //     enabled: true,
+    //     headless: true,
+    //     provider: playwright({}),
+    //     instances: [
+    //       {
+    //         browser: 'chromium',
+    //       },
+    //     ],
+    //   },
+    // },
+    // },
+    // ],
   },
 })
