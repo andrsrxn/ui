@@ -1,4 +1,4 @@
-<img src="https://res.cloudinary.com/dq5nfyajn/image/upload/v1781545765/symbol_p9zdmn.svg" alt="andrsrxn/ui symbol" width="52" height="64" />
+<img src="https://res.cloudinary.com/dq5nfyajn/image/upload/v1781545765/symbol_p9zdmn.svg" alt="andrsrxn/ui symbol" width="64" height="64" />
 
 # andrsrxn/ui
 
@@ -20,7 +20,7 @@ pnpm add @andrsrxn/ui
 ## Usage
 
 ```tsx
-import { Button } from '@andrsrxn/ui'
+import { Button } from '@andrsrxn/ui/button'
 
 export function App() {
   return (
