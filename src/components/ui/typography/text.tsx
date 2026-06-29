@@ -1,8 +1,8 @@
-import { cva } from 'class-variance-authority'
 import type { ComponentProps } from 'react'
 import { cn, type NonNullableVariantProps } from '../../../lib/utils/theme'
+import { cva } from 'class-variance-authority'
 
-export const textVariants = cva('font-body text-pretty transition-theme', {
+export const textVariants = cva('font-body max-w-prose text-pretty transition-theme', {
   variants: {
     center: {
       true: 'text-center w-full mx-auto',
@@ -20,6 +20,7 @@ export const textVariants = cva('font-body text-pretty transition-theme', {
       warning: 'text-warning',
       info: 'text-info',
     },
+
     size: {
       xs: true,
       sm: true,
@@ -173,19 +174,19 @@ export interface TextProps
   extends ComponentProps<'p'>, NonNullableVariantProps<typeof textVariants> {}
 
 export const Text = ({
-  className,
+  variant,
+  size,
   center,
   tablet,
   laptop,
   display,
-  variant,
-
-  size,
   desktop,
+  className,
   ...props
 }: TextProps) => {
   return (
     <p
+      data-slot='text'
       className={cn(
         textVariants({
           tablet,
@@ -196,7 +197,6 @@ export const Text = ({
           variant,
           size,
         }),
-
         className
       )}
       {...props}
