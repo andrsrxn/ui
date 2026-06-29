@@ -1,0 +1,139 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title='Foundations/Development' />
+
+# Development guide
+
+## Component architecture and React standards
+
+- **Functional scoping:** Use arrow functions for components. Use `function` for pure utilities.
+- **Composition pattern:** Default to **Compound Components** for complex nodes (Select, Modal, Tabs).
+- **Encapsulation:** Export compound component, children, and types from a single file.
+- **Properties and state contracts:**
+  - Prefix boolean configuration props with `include` or `should`.
+  - Avoid `is` prefixes for internal DOM/boolean states in JSX properties. Only parent states should use `is`.
+  - Never inject JSX code block comments `{/* ... */}` inside the tree template. Prefer semantic HTML over React Fragments `<></>`.
+  - Avoid prefixing interface names with `I`. Reserve `Type` for single line types.
+  - **Correct:**
+    ```tsx
+    interface ButtonProps {
+      includeSeparator?: boolean
+    }
+    export const Button = ({ includeSeparator = false }: ButtonProps) => {
+      const disabled = useButtonState()
+      return (
+        <button disabled={disabled}>
+          {includeSeparator andand <span className='separator' />}
+          <slot />
+        </button>
+      )
+    }
+    ```
+  - **Incorrect:**
+    ```tsx
+    export function CustomButton(props: { isDisabled: boolean }) {
+      return (
+        <>
+          {/* check if disabled */}
+          <button disabled={props.isDisabled}>Click</button>
+        </>
+      )
+    }
+    ```
+
+## Logic and control flow
+
+- **Parameter signatures:** Enforce object destructuring for 2+ arguments. Single args are implicit.
+- **Hoisting:** Define functions before invocation.
+- **Code comments:** Only explain complex logic or architectural decisions.
+- **Form inputs and labels:** Do not explicitly add `*` or `Required` text on input labels, only specify which are optional.
+- **Complexity caps:** Max cognitive complexity score of 15.
+- **Switch-cases:** Favor object/record lookup maps over `switch` statements.
+- **Control nesting:** Max 2 nested ternaries. Use early returns over deep `else` branches.
+  - **Correct:**
+
+    ```typescript
+    const statusMap = {
+      success: 'text-emerald-500',
+      error: 'text-rose-500',
+      pending: 'text-amber-500',
+    } as const
+
+    const getStatusStyle = (status: keyof typeof statusMap) => statusMap[status]
+    ```
+
+  - **Incorrect:**
+    ```typescript
+    function getStatusStyle(status) {
+      switch (status) {
+        case 'success':
+          return 'text-emerald-500'
+        /* ... */
+      }
+    }
+    ```
+
+## Strict TypeScript and type safety
+
+- **Zero-tolerance:** Prohibit `any`. Use `unknown` for unsafe parsing.
+- **Location mapping:** Export types at the same relative level as literal values/components.
+- **Null pointer safety:** Do not use non-null assertions (`!`). Use strict optional properties (`?`).
+- **Enums disallowed:** Use `as const` object literals instead of `enum`.
+  - **Correct:**
+    ```typescript
+    export const ThemeType = { Light: 'light', Dark: 'dark' } as const
+    type Theme = (typeof ThemeType)[keyof typeof ThemeType]
+    ```
+  - **Incorrect:**
+    ```typescript
+    enum Theme {
+      Light = 'light',
+      Dark = 'dark',
+    }
+    ```
+
+## JavaScript and Node.js engine standards
+
+- **Native modules:** Prefix core imports with `node:`.
+- **Loop optimizations:** Use `for...of` over `Array.prototype.forEach` in intensive loops.
+- **String processing:** Use template literals exclusively over string concatenation (`+`).
+- **Object integrity:** Never use `delete`. Use object destructuring to omit keys.
+- **Error handling:** Use `new Error()`. Never resolve catch-blocks empty. Use `console.error` or a logger.
+- **Async flow:** Use `async/await` syntax over raw `Promise` `.then()` chaining. Do not mix both paradigms in the same block.
+- **Runtime environments:** Validate environment variables using schema parsers (e.g. Zod) at initialization. Do not query raw `process.env` downstream.
+- **ESM absolute paths:** Prohibit `__dirname` or `__filename`. Use `import.meta.url`.
+
+## System safety and execution performance
+
+- **Strict assertions:** Use triple-equals (`===`).
+- **Browser sandbox:** `target="_blank"` requires `rel="noopener noreferrer"`.
+- **Storage guardrails:** Do not mutate `document.cookie` directly.
+- **Iteration iterators:** React list `key`s must be mathematically unique. Do not use array `index`.
+
+## Documentation and testing
+
+- **Quality gate workflow:** Write code + JSDoc -> Storybook -> Vitest (95% cov) -> Playwright (a11y validation).
+- **JSDoc:** Every custom component, hook, and utility needs a JSDoc definition.
+  ```typescript
+  /**
+   * A highly accessible, custom interactive switch element.
+   * @component
+   * @param {string} label - The descriptive structural text linked to the switch element.
+   * @param {boolean} checked - The runtime state control indicator flag.
+   * @param {() => void} onChange - Callback triggered when the switch value changes.
+   */
+  ```
+- **Storybook:** Every UI component must have a `.stories.tsx` sandbox using Storybook Controls.
+- **Testing:** 95% coverage in Vitest for utilities. Components use semantic queries (e.g., `screen.getByRole`). Zero a11y violations in Playwright.
+- **Test assertions:** Avoid brittle UI snapshot tests. Use explicit assertions to test component behaviors and state changes.
+- **Mocking:** Always mock external API boundaries and third-party dependencies during unit tests to prevent network flakiness.
+
+## Governance
+
+- **Evolution pipeline:** Draft proposal -> Storybook sandbox -> Stable core integration -> Deprecation.
+- **Deprecation and breaking changes:**
+  - **Graceful deprecation alerts:** Component structural APIs cannot be removed abruptly. If a component token or full element is replaced, it must be tagged with a `@deprecated` JSDoc property annotation alerting active engineering instances in their IDE windows.
+  - **Semantic versioning compliance:** The design system strictly tracks the **SemVer** convention matrix:
+    - **Patch changes (`0.0.X`):** Internal logic optimizations or documentation updates. Zero API changes.
+    - **Minor changes (`0.X.0`):** Introduction of brand new components, features, or optional parameters. Fully backwards compatible.
+    - **Major changes (`X.0.0`):** Breaking structural re-architectures, changing core prop tokens, or removing deprecated component sub-nodes completely. Requires a formal migration manual.

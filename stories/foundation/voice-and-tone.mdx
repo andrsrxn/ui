@@ -1,0 +1,68 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title='Foundations/Voice and tone' />
+
+# Voice and tone guide
+
+## Voice attributes
+
+- **Authoritative yet approachable:** Be professional, accessible, and avoid complex language.
+  - **Do:** Write simple, technical sentences anyone can understand.
+  - **Don't:** Sound like a rigid corporate contract or a detached robot.
+- **Intentionally concise:** Get straight to the point.
+  - **Do:** Provide immediate information and an obvious next action.
+  - **Don't:** Write walls of descriptive text where a single sentence would suffice.
+- **Supportively grounded:** Set realistic expectations.
+  - **Do:** State exactly what a feature executes and what its clear dependencies are.
+  - **Don't:** Use hyperbolic marketing buzzwords like _"magical," "revolutionary,"_ or _"unbelievable."_
+- **Globally inclusive:** Avoid regional slang, idioms, or assumptions.
+  - **Do:** Use simple, translatable verbs and nouns.
+  - **Don't:** Inject cultural jokes, colloquial expressions, or metaphors.
+
+## Adapting tone by purpose
+
+- **Direct:** For neutral states, tooltips, standard system feedback, and repetitive workflows. Get straight to the point.
+  - **Correct:** Component library updated. Changes are ready to be published.
+  - **Incorrect:** Great news! You just saved your awesome progress automatically.
+- **Encouraging:** For empty states, onboarding flows, and success messages. Be welcoming and highlight value.
+  - **Correct:** Deployment successful. Your application is now live.
+  - **Incorrect:** Hurray! You did it! Your app is finally live out there on the web!
+- **Formal:** For security alerts, legal disclaimers, compliance messages, and critical destructive actions. Remain calm, objective, and highly precise.
+  - **Correct:** This action cannot be undone. All repository data will be permanently deleted.
+  - **Incorrect:** Watch out! You're about to delete everything forever!
+- **Empathetic:** For system errors, validation failures, and workflow blockers. Never blame the user. Clearly state what went wrong and provide an actionable path forward.
+  - **Correct:** The design tokens could not be loaded. Please verify your theme configuration and try again.
+  - **Incorrect:** Token load failed! You entered the wrong configuration values!
+
+## Language and communication
+
+### Perspectives
+
+- **Product-to-User (UI):**
+  - **1st person singular (I / my):** User ownership (e.g. settings, contracts).
+    - **Correct:** I accept the terms of service. / My workspace.
+    - **Incorrect:** The user accepts the terms of service.
+  - **2nd person singular (You / your):** General UI communication, alerts.
+    - **Correct:** You are the administrator of this project.
+    - **Incorrect:** The user is the administrator of this project.
+  - **3rd person (It / they / passive):** Background processes, documentation.
+    - **Correct:** A weekly usage report is generated automatically.
+    - **Incorrect:** They generate a weekly usage report.
+- **Corporate-to-Client (Support, marketing):**
+  - **1st person plural (We / our / us):** Company addressing client.
+    - **Correct:** Our team is here to help you.
+    - **Incorrect:** The company is here to help you.
+  - **2nd person (You / your):** Direct address to client.
+    - **Correct:** We look forward to hearing your feedback.
+    - **Incorrect:** The company looks forward to hearing your feedback.
+  - **3rd person (It / they / passive):** Service catalogs, architecture statements.
+    - **Correct:** The platform is under scheduled maintenance.
+    - **Incorrect:** We are under continuous maintenance.
+
+- **Pronouns and gender neutrality:** Avoid gendered pronouns (he/she) unless referencing verified profile data.
+  - **Correct:** A team member updated the component.
+  - **Incorrect:** She updated the component.
+- **Contractions:** Use standard contractions (e.g., don't, you're). Exception: Avoid in critical error/legal contexts.
+  - **Correct (Standard):** You're currently editing a shared component.
+  - **Correct (Alert):** You are not authorized to access this repository.
+  - **Incorrect**: You don't have permission to edit this component.

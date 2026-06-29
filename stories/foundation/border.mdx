@@ -1,0 +1,36 @@
+import { Canvas, Meta, Stories } from '@storybook/addon-docs/blocks'
+import * as GuideStories from './border.stories'
+
+<Meta of={GuideStories} />
+
+# Border guide
+
+Our border system provides consistent framing and separation across the UI.
+
+## Border widths
+
+- **1px (`border`)**: The default border width for most elements.
+- **2px (`border-2`)**: For stronger emphasis or focused states.
+- **3px (`border-3`)**: For heavy visual separation.
+
+## Border radius (squircle support)
+
+We support Apple-like squircle corners automatically using CSS `@supports (corner-shape: squircle)`.
+
+- **Small (`rounded-sm`)**: 4px standard, 12px squircle.
+- **Base (`rounded-base` / `rounded-md`)**: 8px standard, 16px squircle.
+- **Large (`rounded-lg`)**: 12px standard, 24px squircle.
+
+## Border colors
+
+- **Default (`border-base`)**: Standard border color.
+- **Inverted (`border-inverted`)**: High contrast border.
+- **Input (`border-input`)**: Specifically for form elements.
+- **Focus (`border-focus` / `border-ring`)**: For keyboard accessibility and focus rings.
+- **States (`border-selected`, `border-selectable`)**: For interactive components like selectable cards.
+- **Brand (`border-brand`)**: Primary brand color for borders.
+- **Feedback (`border-info`, `border-success`, `border-warning`, `border-danger`)**: For validation states.
+
+<hr class='my-10' />
+
+<Stories />

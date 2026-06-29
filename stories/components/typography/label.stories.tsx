@@ -1,0 +1,142 @@
+import preview from '../../../.storybook/preview'
+import { IconColors, IconDashboard, IconLayers, IconTool } from '../../../src/components/icons'
+import { Label } from '../../../src/components/ui/typography/label'
+import { Text } from '../../../src/components/ui/typography/text'
+import { BrandDecorator, InvertedDecorator } from '../../shared/decorators'
+
+const meta = preview.meta({
+  title: 'Components/Typography/Label',
+  component: Label,
+  parameters: {
+    layout: 'centered',
+    docs: {
+      description: {
+        component: 'The semantic `<span>` inline for labels which are not headings.',
+      },
+    },
+  },
+  args: {
+    children: 'Label text',
+    variant: 'primary',
+    center: false,
+    size: 'base',
+  },
+})
+
+/**
+ * Used when the text is the main content of a component, section, or page
+ */
+export const Primary = meta.story({
+  render: args => (
+    <div className='grid gap-1'>
+      <Label {...args}>Label text</Label>
+      <Text variant='secondary'>Supporting long text or description</Text>
+    </div>
+  ),
+})
+
+/**
+ * Used for supporting label, when is not the only label in a list or a sidebar.
+ */
+export const Secondary = meta.story({
+  render: args => (
+    <div>
+      <Label {...args} variant='secondary'>
+        General
+      </Label>
+      <ul className='mt-4 grid gap-2'>
+        <li className='flex items-center gap-2'>
+          <IconDashboard className='size-icon-responsive' /> Dashboard
+        </li>
+        <li className='flex items-center gap-2'>
+          <IconLayers className='size-icon-responsive' /> Components
+        </li>
+        <li className='flex items-center gap-2'>
+          <IconColors className='size-icon-responsive' /> Colors
+        </li>
+        <li className='flex items-center gap-2'>
+          <IconTool className='size-icon-responsive' /> Utilities
+        </li>
+      </ul>
+    </div>
+  ),
+})
+
+export const Content = meta.story({
+  args: {
+    variant: 'content',
+  },
+  decorators: [
+    STORY => {
+      return (
+        <BrandDecorator>
+          <STORY />
+        </BrandDecorator>
+      )
+    },
+  ],
+})
+
+export const Inverted = meta.story({
+  args: {
+    variant: 'inverted',
+    className: 'light',
+  },
+  decorators: [
+    STORY => (
+      <InvertedDecorator>
+        <STORY />
+      </InvertedDecorator>
+    ),
+  ],
+})
+
+export const Sizes = meta.story({
+  render: args => (
+    <div className='flex flex-col gap-4'>
+      <Label {...args} size='xs'>
+        Text x-small
+      </Label>
+      <Label {...args} size='sm'>
+        Text small
+      </Label>
+      <Label {...args} size='base'>
+        Text base
+      </Label>
+      <Label {...args} size='lg'>
+        Text large
+      </Label>
+      <Label {...args} size='xl'>
+        Text x-large
+      </Label>
+      <Label {...args} size='2xl'>
+        Text 2x-large
+      </Label>
+      <Label {...args} size='3xl'>
+        Text 3x-large
+      </Label>
+      <Label {...args} size='4xl'>
+        Text 4x-large
+      </Label>
+    </div>
+  ),
+})
+
+export const Responsive = meta.story({
+  args: {
+    size: 'sm',
+    tablet: 'lg',
+    laptop: 'xl',
+    desktop: '2xl',
+    display: '4xl',
+  },
+})
+
+export const Centered = meta.story({
+  args: {
+    center: true,
+  },
+  parameters: {
+    layout: 'padded',
+  },
+})

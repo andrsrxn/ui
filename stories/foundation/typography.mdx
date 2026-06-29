@@ -1,0 +1,31 @@
+import { Canvas, Meta, Stories } from '@storybook/addon-docs/blocks'
+import * as GuideStories from './typography.stories'
+
+<Meta of={GuideStories} />
+
+# Typography guide
+
+- **Semantic typography:** Do not compose fonts manually via `text-sm font-bold leading-tight`. Use the consolidated token roles mapping to `globals.css` scales.
+  - **Correct:** `<h2 className="text-heading-2-base">`
+  - **Incorrect:** `<h2 className="text-3xl font-extrabold tracking-heading">`
+
+## Typography scales
+
+Our system provides unified typography classes that combine font-size, line-height, and font-weight.
+
+### Headings
+
+- **Display:** `text-heading-1-display-base`, `text-heading-1-display-sm`, `text-heading-2-display-base`, `text-heading-2-display-sm`
+- **Headings 1 to 6:** Available in `-base` and `-sm` variants (e.g., `text-heading-1-base`, `text-heading-3-sm`).
+
+### Labels
+
+Used for UI elements, buttons, and short descriptors.
+
+- Available from `text-label-xs` up to `text-label-4xl`.
+
+### Body text
+
+Used for long-form content and standard text.
+
+- Available from `text-body-xs` to `text-body-xl`.

@@ -1,0 +1,29 @@
+import { Canvas, Meta, Stories } from '@storybook/addon-docs/blocks'
+import * as GuideStories from './elevation.stories'
+
+<Meta of={GuideStories} />
+
+# Elevation guide
+
+Elevation in our design system relies on shadows to create depth, establishing a visual hierarchy.
+
+## Elevation scales
+
+Use standard Tailwind shadow utilities mapped to our semantic variables:
+
+- **Extra small (`shadow-xs`)**: Very subtle depth for flat elements like buttons.
+- **Small (`shadow-sm`)**: Standard depth for dropdowns or tooltips.
+- **Base (`shadow-base` / `shadow-md`)**: Standard card elevation.
+- **Large (`shadow-lg`)**: Elevated elements like dialogs and modals.
+- **Extra large (`shadow-xl`)**: Prominent floating elements like notifications.
+- **2X Large (`shadow-2xl`)**: Highest elevation for critical overlays.
+- **Inner (`shadow-inner`)**: Inset shadow for depressed elements.
+
+## Additional effects
+
+- **Drop shadows (`drop-shadow-*`)**: Useful for non-rectangular elements or PNGs with transparency.
+- **Text shadows (`text-shadow-*`)**: Used selectively to improve readability over busy backgrounds.
+
+<hr class='my-10' />
+
+<Stories />

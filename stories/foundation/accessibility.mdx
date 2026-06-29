@@ -1,0 +1,15 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title='Foundations/Accessibility' />
+
+# Accessibility guide
+
+- **WCAG compliance:** The design system guarantees full compliance with **WCAG 2.2 AA** and always strives for **WCAG AAA** standards.
+- **Color contrast:** Maintain a minimum contrast ratio of 4.5:1 for normal text and 3:1 for large text/UI components (AA). Aim for 7:1 for normal text (AAA) whenever possible.
+- **Semantic DOM and form layouts:** Priority 1 is semantic native elements (`<main>`, `<nav>`, `<button>`). `<label>` must encapsulate a readable string and use a matching `htmlFor`. Non-text icons require descriptive captions via `title`, `aria-label`, or a `Tooltip`.
+- **Behavioral controls:** Active elements must be naturally focusable. Bind `onFocus`/`onBlur` with `onMouseOver`/`onMouseOut` for pointer device synchronization. Avoid arbitrary `accessKey` handlers.
+- **Keyboard navigation:** Ensure all interactive features are operable through a keyboard interface without requiring specific timings. Never use `aria-hidden="true"` on focused coordinates or enforce non-interactive element tab indexing (`tabIndex={1}`).
+- **Screen readers:** Use `aria-live` for dynamic content updates (e.g., toasts, errors). Provide `.sr-only` utility classes for visually hidden but structurally required text.
+- **Aria-label:**
+  - When a call to action is visually represented by an icon or other non-text element, it must include an accessible name provided through `aria-label` and an optional `Tooltip` component.
+  - Form elements must include a descriptino through `aria-label` in order to recognize it as `role='form'`.

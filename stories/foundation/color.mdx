@@ -1,0 +1,18 @@
+import { Canvas, Meta, Stories } from '@storybook/addon-docs/blocks'
+import * as GuideStories from './color.stories'
+
+<Meta of={GuideStories} />
+
+# Color guide
+
+- **Semantic variables:** Always use functional role-based color variables (e.g., `bg-background-brand`, `text-text-inverted`, `border-border-danger`) instead of raw primitives (`bg-brand-600`).
+  - **Correct:** `<div className="bg-background-brand text-text-inverted">`
+  - **Incorrect:** `<div className="bg-brand-600 text-neutral-100">`
+- **Dark mode:** Do not manually toggle `dark:` utility prefixes in components. Rely exclusively on CSS semantic variables which automatically respond to the `.dark` class scope.
+  - **Correct:** `<div className="border-border-base">` (automatically handles light/dark via CSS variables).
+  - **Incorrect:** `<div className="border-neutral-200 dark:border-neutral-600">`
+- **Feedback and status:** Exclusively use `info`, `success`, `warning`, `danger`, and `idle` prefixes for system state indicators, rather than arbitrary brand colors.
+
+<hr class='my-10' />
+
+<Stories />

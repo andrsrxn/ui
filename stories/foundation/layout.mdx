@@ -1,0 +1,26 @@
+import { Canvas, Meta, Stories } from '@storybook/addon-docs/blocks'
+import * as GuideStories from './layout.stories'
+
+<Meta of={GuideStories} />
+
+# Layout guide
+
+Our responsive layout system uses standardized breakpoints to ensure consistency across devices.
+
+## Breakpoints
+
+- **Mobile Small (`xs`)**: 360px
+- **Mobile Medium (`sm`)**: 480px
+- **Tablet (`md`)**: 768px
+- **Laptop (`lg`)**: 1024px
+- **Desktop (`xl`)**: 1280px
+- **Display (`2xl`)**: 1536px
+
+## Containers and utilities
+
+- Instead of the default Tailwind `container` class, use the `wrapper` utility class (which applies responsive 5% x-padding with auto-centered layout and max-width based on breakpoints) to wrap main page content.
+- Rely on Tailwind's responsive prefixes (e.g., `md:flex`, `lg:grid`) to adjust layouts per screen size.
+
+<hr class='my-10' />
+
+<Stories />

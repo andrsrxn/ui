@@ -1,0 +1,10 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title='Foundations/i18n' />
+
+# i18n guide
+
+- **The 30% expansion rule:** Strings expand up to 35% when translated. Avoid fixed widths; use fluid widths or max-width.
+- **Never concatenate dynamic strings:** Use templates with injection slots to respect different language syntaxes.
+  - **Correct:** `translate('user_joined_team', { user: name, team: teamName })`
+  - **Incorrect:** `name + translate(' joined ') + teamName`
