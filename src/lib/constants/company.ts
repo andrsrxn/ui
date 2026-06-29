@@ -16,4 +16,4 @@ export const COMPANY = {
     name: 'ui',
     url: 'https://github.com/andrsrxn/ui',
   },
-}
+} as const
