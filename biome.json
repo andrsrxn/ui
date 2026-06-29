@@ -650,11 +650,23 @@
       }
     },
     {
-      "includes": ["src/stories/**", "src/components/icons/**"],
+      "includes": ["./stories/**", "src/components/icons/**"],
       "linter": {
         "rules": {
           "complexity": {
             "noExcessiveLinesPerFunction": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["./stories/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "useNamingConvention": {
+              "level": "off"
+            }
           }
         }
       }

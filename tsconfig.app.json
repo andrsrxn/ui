@@ -41,5 +41,5 @@
 
     "skipDefaultLibCheck": true
   },
-  "include": ["./src"]
+  "include": ["./src", "./stories"]
 }
