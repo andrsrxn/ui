@@ -2,6 +2,15 @@ import { type ClassValue, clsx } from 'clsx'
 import { extendTailwindMerge } from 'tailwind-merge'
 import type { VariantProps } from 'class-variance-authority'
 
+type ExcludeNull<T> = { [P in keyof T]: Exclude<T[P], null> }
+
+/**
+ * Removes null from CVA variants to accept only undefined
+ */
+export type NonNullableVariantProps<Comp extends (...args: never) => unknown> = ExcludeNull<
+  VariantProps<Comp>
+>
+
 const twMerge = extendTailwindMerge({
   extend: {
     theme: {
@@ -33,6 +42,7 @@ const twMerge = extendTailwindMerge({
       ],
       font: ['heading', 'label', 'body', 'mono', 'inherit'],
       text: [
+        'body-inherit',
         'body-xs',
         'body-sm',
         'body-base',
@@ -79,9 +89,3 @@ const twMerge = extendTailwindMerge({
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
-
-type ExcludeNull<T> = { [P in keyof T]: Exclude<T[P], null> }
-
-export type NonNullableVariantProps<Comp extends (...args: never) => unknown> = ExcludeNull<
-  VariantProps<Comp>
->
