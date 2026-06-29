@@ -1,8 +1,5 @@
 import '@fontsource/fira-mono/500.css'
-import '@fontsource/fira-sans/400.css'
-import '@fontsource/fira-sans/500.css'
-import '@fontsource/fira-sans/600.css'
-import '@fontsource/fira-sans/700.css'
+import '@fontsource-variable/hanken-grotesk/wght.css'
 
 import addonA11y from '@storybook/addon-a11y'
 import addonDocs from '@storybook/addon-docs'
@@ -18,7 +15,7 @@ import addonThemes, { withThemeByClassName } from '@storybook/addon-themes'
 import addonVitest from '@storybook/addon-vitest'
 import { definePreview } from '@storybook/react-vite'
 import type { PartialStoryFn } from 'storybook/internal/types'
-import { themes } from 'storybook/theming'
+import theme from './theme'
 import '../src/globals.css'
 
 // biome-ignore lint/style/useNamingConvention: component rendering
@@ -44,8 +41,22 @@ const decorators = [
 export default definePreview({
   addons: [addonThemes(), addonVitest(), addonA11y(), addonDocs()],
   decorators,
+  // globalTypes: {
+  //   theme: {
+  //     description: 'Global theme for components',
+  //     toolbar: {
+  //       title: 'Theme',
+  //       icon: 'circlehollow',
+  //       items: ['light', 'dark'],
+  //       dynamicTitle: true,
+  //     },
+  //   },
+  // },
+  // initialGlobals: {
+  //   theme: 'light',
+  // },
+  tags: ['autodocs'],
   parameters: {
-    tags: ['autodocs'],
     backgrounds: {
       disable: true,
     },
@@ -58,7 +69,7 @@ export default definePreview({
     },
 
     docs: {
-      theme: themes.light,
+      theme,
       codePanel: true,
       toc: {
         disable: false,
@@ -82,4 +93,82 @@ export default definePreview({
       test: 'error',
     },
   },
+  // To automatically detect the controls based on types even when using CVA
+  argTypesEnhancers: [
+    ({ argTypes }) => {
+      for (const [key, argType] of Object.entries(argTypes)) {
+        const isBooleanUnion = argType.type?.raw === 'boolean' || argType.type?.name === 'boolean'
+
+        if (isBooleanUnion) {
+          // Convert the CVA generated true/false union to a proper switch toggle instead radio
+          argTypes[key] = {
+            ...argType,
+
+            control: {
+              type: 'boolean',
+            },
+          }
+        }
+
+        // set always select type if has more than two options
+        const hasMoreThanTwoOptions =
+          (argType.type?.name === 'array' || argType.type?.name === 'enum') &&
+          'length' in argType.type.value &&
+          argType.type.value.length >= 2 &&
+          argType.type.raw?.includes('|')
+
+        if (!isBooleanUnion && hasMoreThanTwoOptions) {
+          argTypes[key] = {
+            ...argType,
+
+            control: {
+              type: 'select',
+            },
+          }
+        }
+
+        if (argType.type?.raw === 'string') {
+          argTypes[key] = {
+            ...argType,
+
+            control: {
+              type: 'text',
+            },
+          }
+        }
+      }
+      return argTypes
+    },
+  ],
+  // To automatically set default values if set on the component default props
+  argsEnhancers: [
+    ({ argTypes, initialArgs }) => {
+      const newArgs = { ...initialArgs }
+
+      for (const [key, argType] of Object.entries(argTypes)) {
+        // Skip if the story already provides an explicit value
+        if (newArgs[key] !== undefined) {
+          continue
+        }
+
+        const defaultSummary = argType.table?.defaultValue?.summary
+        if (defaultSummary === undefined || defaultSummary === null) {
+          continue
+        }
+
+        const isBooleanType = argType.type?.raw === 'boolean' || argType.type?.name === 'boolean'
+        if (isBooleanType) {
+          newArgs[key] = defaultSummary === 'true' || defaultSummary
+        } else {
+          // For enums/strings, strip surrounding quotes from the summary
+          const stripped =
+            typeof defaultSummary === 'string'
+              ? defaultSummary.replace(/^['"]|['"]$/gu, '')
+              : defaultSummary
+          newArgs[key] = stripped
+        }
+      }
+      return newArgs
+    },
+  ],
 })

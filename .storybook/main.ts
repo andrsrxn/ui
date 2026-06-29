@@ -10,6 +10,23 @@ export default defineMain({
     '@storybook/addon-a11y',
     '@storybook/addon-docs',
   ],
+
+  typescript: {
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      shouldExtractLiteralValuesFromEnum: true,
+      shouldExtractValuesFromUnion: true,
+      shouldRemoveUndefinedFromOptional: true,
+      compilerOptions: {
+        allowSyntheticDefaultImports: true,
+        esModuleInterop: true,
+      },
+
+      // biome-ignore lint/performance/useTopLevelRegex: only read once per session
+      propFilter: prop => (prop.parent ? !/node_modules/u.test(prop.parent.fileName) : true),
+    },
+  },
+
   framework: '@storybook/react-vite',
   core: {
     disableTelemetry: true,
