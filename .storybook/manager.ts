@@ -1,18 +1,18 @@
 import { addons } from 'storybook/manager-api'
-import { themes } from 'storybook/theming'
+import theme from './theme'
 
 addons.setConfig({
   navSize: 112,
-  bottomPanelHeight: 192,
+  bottomPanelHeight: 200,
   rightPanelWidth: 112,
   panelPosition: 'top',
   enableShortcuts: true,
   showToolbar: true,
-  theme: themes.dark,
+  theme,
   selectedPanel: undefined,
   initialActive: 'sidebar',
   sidebar: {
-    showRoots: false,
+    showRoots: true,
     collapsedRoots: ['other'],
   },
 })

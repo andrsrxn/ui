@@ -1,0 +1,13 @@
+<style>
+  label:has(input[type='checkbox']) {
+    border: 1px solid #daddf1 !important;
+
+    & span {
+      border: 1px solid transparent !important;
+    }
+    & input:checked ~ span:last-of-type,
+    & input:not(:checked) ~ span:first-of-type {
+      border: 1px solid #daddf1 !important;
+    }
+  }
+</style>
