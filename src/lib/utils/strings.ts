@@ -1,27 +1,27 @@
-export const capitalizeFirstLetter = (str: string) =>
-  str ? str.charAt(0).toUpperCase() + str.slice(1) : ''
-
-export const capitalizeAllWords = (str: string) =>
-  str ? str.split(' ').map(capitalizeFirstLetter).join(' ') : ''
-
 const NON_ALPHANUMERIC_REGEX = /[^a-z0-9-]/gu
-const MULTIPLE_DASHES_REGEX = /--+/gu
+const MULTIPLE_DASHES_REGEX = /-+/gu
 const LEADING_DASHES_REGEX = /^-+/u
 const TRAILING_DASHES_REGEX = /-+$/u
 
-const CHAR_REPLACEMENTS: Record<string, string> = {
+const CHAR_REPLACEMENTS = {
   '\u00E4': 'ae', // ä
   '\u00F6': 'oe', // ö
   '\u00FC': 'ue', // ü
   '\u00DF': 'ss', // ß
-  '\u00F1': 'n', // ñ
-  '\u00E7': 'c', // ç
   '\u00E6': 'ae', // æ
   '\u0153': 'oe', // œ
-}
+  '\u00F8': 'o', // ø
+  '\u00E7': 'c', // ç
+  '\u00F1': 'n', // ñ
+  '\u0142': 'l', // ł
+  '\u00FE': 'th', // þ
+  '\u00F0': 'd', // ð
+} as const
 
 const replaceSpecialChars = (text: string): string => {
   let output = text
+  console.log(output)
+
   for (const [char, replacement] of Object.entries(CHAR_REPLACEMENTS)) {
     output = output.replace(new RegExp(char, 'gu'), replacement)
   }
@@ -34,24 +34,23 @@ const replaceSpecialChars = (text: string): string => {
  * such as documentation articles, blog posts, or resource names within the platform.
  * It handles special characters, diacritics, and ensures proper separation using hyphens.
  */
-export const slugify = ({ text, locale }: { text: string; locale?: string }): string => {
+export const slugify = (text: string) => {
+  // biome-ignore lint/style/noMagicNumbers: max length
+  const slugFallback = Math.random().toString(36).slice(2, 9)
+
   if (!text) {
-    return ''
+    return slugFallback
   }
 
-  let slug = replaceSpecialChars(text)
+  const slug = replaceSpecialChars(text)
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/gu, '')
+    .trim()
+    .replace(NON_ALPHANUMERIC_REGEX, '-')
+    .replace(MULTIPLE_DASHES_REGEX, '-')
+    .replace(LEADING_DASHES_REGEX, '')
+    .replace(TRAILING_DASHES_REGEX, '')
 
-  slug = slug
-    .toLocaleLowerCase(locale)
-    .normalize('NFKD') // Decompose accented characters
-    .replace(/[\u0300-\u036f]/gu, '') // Remove accented characters
-    .trim() // Remove leading/trailing spaces
-
-  slug = slug
-    .replace(NON_ALPHANUMERIC_REGEX, '-') // Replace non-alphanumeric characters with hyphens
-    .replace(MULTIPLE_DASHES_REGEX, '-') // Replace multiple hyphens with a single hyphen
-    .replace(LEADING_DASHES_REGEX, '') // Remove leading hyphens
-    .replace(TRAILING_DASHES_REGEX, '') // Remove trailing hyphens
-
-  return slug || `slug-${crypto.randomUUID()}`
+  return slug || `slug-${slugFallback}`
 }
