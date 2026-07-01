@@ -625,6 +625,19 @@
       }
     },
     {
+      "includes": ["**/__tests__/**"],
+      "linter": {
+        "rules": {
+          "performance": {
+            "useTopLevelRegex": "off"
+          },
+          "complexity": {
+            "noExcessiveLinesPerFunction": "off"
+          }
+        }
+      }
+    },
+    {
       "includes": ["**/env.ts", "**/env-client.ts", "**/__tests__/**"],
       "linter": {
         "rules": {
