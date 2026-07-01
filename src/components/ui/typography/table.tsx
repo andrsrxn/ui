@@ -73,7 +73,7 @@ export const TableRow = ({ className, ...props }: ComponentProps<'tr'>) => (
   <tr
     data-slot='table-row'
     className={cn(
-      'transition-theme hover:duration-none duration-fastest data-[state=selected]:bg-selected! data-[state=selected]:border-selected data-[state=selected]:text-selected! data-[state=selected]:hover:bg-selected-hover! border-base tran sition-colors has-[+[data-state=selected]]:border-selected border-b data-[state=selected]:relative data-[state=selected]:border-t',
+      'transition-theme hover:duration-none duration-faster data-[state=selected]:bg-selected! data-[state=selected]:border-selected data-[state=selected]:text-selected! data-[state=selected]:hover:bg-selected-hover! border-base tran sition-colors has-[+[data-state=selected]]:border-selected border-b data-[state=selected]:relative data-[state=selected]:border-t',
       className
     )}
     {...props}
