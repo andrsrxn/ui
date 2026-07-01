@@ -11,6 +11,9 @@ export type NonNullableVariantProps<Comp extends (...args: never) => unknown> = 
   VariantProps<Comp>
 >
 
+/**
+ * Allow and recognize custom design system naming and overrides
+ */
 const twMerge = extendTailwindMerge({
   extend: {
     theme: {
