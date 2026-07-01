@@ -1,24 +1,16 @@
 import type { CSSProperties } from 'react'
 
-export const LABELS = {
+export const DEFAULT_LABELS = {
   imageCropper: {
     cropArea: 'Use the arrow keys to move the crop area',
-    eDragHandle:
-      'Use the arrow keys to move the east drag handle to change the crop area',
-    nDragHandle:
-      'Use the arrow keys to move the north drag handle to change the crop area',
-    sDragHandle:
-      'Use the arrow keys to move the south drag handle to change the crop area',
-    wDragHandle:
-      'Use the arrow keys to move the west drag handle to change the crop area',
-    nwDragHandle:
-      'Use the arrow keys to move the north-west drag handle to change the crop area',
-    neDragHandle:
-      'Use the arrow keys to move the north-east drag handle to change the crop area',
-    seDragHandle:
-      'Use the arrow keys to move the south-east drag handle to change the crop area',
-    swDragHandle:
-      'Use the arrow keys to move the south-west drag handle to change the crop area',
+    eDragHandle: 'Use the arrow keys to move the east drag handle to change the crop area',
+    nDragHandle: 'Use the arrow keys to move the north drag handle to change the crop area',
+    sDragHandle: 'Use the arrow keys to move the south drag handle to change the crop area',
+    wDragHandle: 'Use the arrow keys to move the west drag handle to change the crop area',
+    nwDragHandle: 'Use the arrow keys to move the north-west drag handle to change the crop area',
+    neDragHandle: 'Use the arrow keys to move the north-east drag handle to change the crop area',
+    seDragHandle: 'Use the arrow keys to move the south-east drag handle to change the crop area',
+    swDragHandle: 'Use the arrow keys to move the south-west drag handle to change the crop area',
     imageCropped: 'Image cropped',
   },
   removeTag: 'Remove',
@@ -125,21 +117,51 @@ export const LABELS = {
   },
 }
 
-export const COPIED_DELAY = 1000
-export const ANIMATED_NUMBER_DURATION = 1000
-export const TOAST_DURATION = 3000
-export const POPOVER_OFFSET = 4
-export const TOOLTIP_OPEN_DELAY = 100
-export const TOOLTIP_CLOSE_DELAY = 0
-export const SCROLLBAR_CLOSE_DELAY = 0
-export const MAX_TEXTAREA_LENGTH = 500
-export const MAX_HISTORY_DEPTH = 50
-export const SCROLL_SPY_THRESHOLD = 0.2 // 20%
-// biome-ignore lint/style/noMagicNumbers: amount of items per page
-export const DATA_TABLE_SIZES = [10, 20, 30, 40, 50]
-export const MAX_PROGRESS_LIMIT = 100
-export const MIN_PROGRESS_LIMIT = 0
-export const MAP_ZOOM = 13
+export const DEFAULT_CONFIG = {
+  tooltip: {
+    openDelay: 100,
+    closeDelay: 0,
+    offset: 4,
+  },
+
+  toast: {
+    duration: 3000,
+  },
+
+  copy: {
+    feedbackDuration: 1000,
+  },
+
+  animatedNumber: {
+    duration: 1000,
+  },
+
+  textarea: {
+    maxLength: 500,
+  },
+
+  history: {
+    maxDepth: 50,
+  },
+
+  progress: {
+    min: 0,
+    max: 100,
+  },
+
+  scrollSpy: {
+    threshold: 0.2,
+  },
+
+  dataTable: {
+    // biome-ignore lint/style/noMagicNumbers: amount of items per page
+    pageSizes: [10, 20, 30, 40, 50],
+  },
+
+  map: {
+    defaultZoom: 13,
+  },
+} as const
 
 export const CODE_THEME = {
   'code[class*="language-"]': {

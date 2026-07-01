@@ -448,10 +448,10 @@ export const COUNTRIES = [
     timezones: ['America/Costa_Rica'],
   },
   {
-    name: "Cote D'Ivoire (Ivory Coast)",
+    name: 'Ivory Coast',
     code: 'CI',
     currency: 'XOF',
-    nativeName: null,
+    nativeName: "Cote D'Ivoire",
     timezones: ['Africa/Abidjan'],
   },
   {
@@ -487,7 +487,7 @@ export const COUNTRIES = [
     code: 'CZ',
     currency: 'CZK',
     nativeName: 'Česká republika',
-    timezones: null,
+    timezones: ['Europe/Prague'],
   },
   {
     name: 'Democratic Republic of the Congo',
@@ -1912,13 +1912,390 @@ export const COUNTRIES = [
   },
 ] as const
 
-export const CURRENCIES = Object.values(COUNTRIES).map(data => data.currency)
-export const COUNTRY_CODES = Object.values(COUNTRIES).map(data => data.code)
-export const TIME_ZONES = Array.from(
+export const LOCALES = {
+  // Generic language-only tags (no region — valid BCP 47)
+  en: 'en', // English
+  es: 'es', // Spanish
+  pt: 'pt', // Portuguese
+  fr: 'fr', // French
+  de: 'de', // German
+  it: 'it', // Italian
+  nl: 'nl', // Dutch
+  ar: 'ar', // Arabic
+  zh: 'zh', // Chinese (defaults to Simplified)
+  ja: 'ja', // Japanese
+  ko: 'ko', // Korean
+  ru: 'ru', // Russian
+  hi: 'hi', // Hindi
+  bn: 'bn', // Bengali
+  ur: 'ur', // Urdu
+  ta: 'ta', // Tamil
+  te: 'te', // Telugu
+  mr: 'mr', // Marathi
+  gu: 'gu', // Gujarati
+  kn: 'kn', // Kannada
+  ml: 'ml', // Malayalam
+  pa: 'pa', // Punjabi
+  ps: 'ps', // Pashto
+  sd: 'sd', // Sindhi
+  si: 'si', // Sinhala
+  ne: 'ne', // Nepali
+  tr: 'tr', // Turkish
+  fa: 'fa', // Persian / Farsi
+  he: 'he', // Hebrew
+  el: 'el', // Greek
+  pl: 'pl', // Polish
+  uk: 'uk', // Ukrainian
+  cs: 'cs', // Czech
+  sk: 'sk', // Slovak
+  hu: 'hu', // Hungarian
+  ro: 'ro', // Romanian
+  bg: 'bg', // Bulgarian
+  hr: 'hr', // Croatian
+  sr: 'sr', // Serbian
+  bs: 'bs', // Bosnian
+  sl: 'sl', // Slovenian
+  mk: 'mk', // Macedonian
+  sq: 'sq', // Albanian
+  lt: 'lt', // Lithuanian
+  lv: 'lv', // Latvian
+  et: 'et', // Estonian
+  sv: 'sv', // Swedish
+  nb: 'nb', // Norwegian Bokmål
+  nn: 'nn', // Norwegian Nynorsk
+  no: 'no', // Norwegian (generic)
+  da: 'da', // Danish
+  fi: 'fi', // Finnish
+  is: 'is', // Icelandic
+  id: 'id', // Indonesian
+  ms: 'ms', // Malay
+  th: 'th', // Thai
+  vi: 'vi', // Vietnamese
+  fil: 'fil', // Filipino
+  km: 'km', // Khmer
+  lo: 'lo', // Lao
+  my: 'my', // Burmese
+  sw: 'sw', // Swahili
+  am: 'am', // Amharic
+  so: 'so', // Somali
+  ti: 'ti', // Tigrinya
+  om: 'om', // Oromo
+  rw: 'rw', // Kinyarwanda
+  wo: 'wo', // Wolof
+  ff: 'ff', // Fula
+  ha: 'ha', // Hausa
+  ig: 'ig', // Igbo
+  yo: 'yo', // Yoruba
+  zu: 'zu', // Zulu
+  xh: 'xh', // Xhosa
+  kk: 'kk', // Kazakh
+  uz: 'uz', // Uzbek
+  ky: 'ky', // Kyrgyz
+  tk: 'tk', // Turkmen
+  tg: 'tg', // Tajik
+  az: 'az', // Azerbaijani
+  hy: 'hy', // Armenian
+  ka: 'ka', // Georgian
+  mn: 'mn', // Mongolian
+  ca: 'ca', // Catalan
+  gl: 'gl', // Galician
+  eu: 'eu', // Basque
+  af: 'af', // Afrikaans
+  mt: 'mt', // Maltese
+  ga: 'ga', // Irish
+  cy: 'cy', // Welsh
+  lb: 'lb', // Luxembourgish
+  qu: 'qu', // Quechua
+  gn: 'gn', // Guaraní
+  mi: 'mi', // Māori
+  sm: 'sm', // Samoan
+
+  // English
+  enUS: 'en-US', // United States
+  enGB: 'en-GB', // United Kingdom
+  enCA: 'en-CA', // Canada
+  enAU: 'en-AU', // Australia
+  enNZ: 'en-NZ', // New Zealand
+  enIE: 'en-IE', // Ireland
+  enZA: 'en-ZA', // South Africa
+  enIN: 'en-IN', // India
+  enSG: 'en-SG', // Singapore
+  enHK: 'en-HK', // Hong Kong
+  enMY: 'en-MY', // Malaysia
+  enNG: 'en-NG', // Nigeria
+  enGH: 'en-GH', // Ghana
+  enKE: 'en-KE', // Kenya
+  enPK: 'en-PK', // Pakistan
+  enTT: 'en-TT', // Trinidad and Tobago
+  enPH: 'en-PH', // Philippines
+
+  // Spanish
+  esES: 'es-ES', // Spain
+  esMX: 'es-MX', // Mexico
+  esAR: 'es-AR', // Argentina
+  esCO: 'es-CO', // Colombia
+  esCL: 'es-CL', // Chile
+  esPE: 'es-PE', // Peru
+  esVE: 'es-VE', // Venezuela
+  esEC: 'es-EC', // Ecuador
+  esBO: 'es-BO', // Bolivia
+  esPY: 'es-PY', // Paraguay
+  esUY: 'es-UY', // Uruguay
+  esCR: 'es-CR', // Costa Rica
+  esPR: 'es-PR', // Puerto Rico
+  esDO: 'es-DO', // Dominican Republic
+  esPA: 'es-PA', // Panama
+  esGT: 'es-GT', // Guatemala
+  esCU: 'es-CU', // Cuba
+  esHN: 'es-HN', // Honduras
+  esSV: 'es-SV', // El Salvador
+  esNI: 'es-NI', // Nicaragua
+  esUS: 'es-US', // United States (Spanish)
+
+  // Portuguese
+  ptBR: 'pt-BR', // Brazil
+  ptPT: 'pt-PT', // Portugal
+  ptAO: 'pt-AO', // Angola
+  ptMZ: 'pt-MZ', // Mozambique
+
+  // French
+  frFR: 'fr-FR', // France
+  frCA: 'fr-CA', // Canada
+  frBE: 'fr-BE', // Belgium
+  frCH: 'fr-CH', // Switzerland
+  frLU: 'fr-LU', // Luxembourg
+  frMA: 'fr-MA', // Morocco
+  frSN: 'fr-SN', // Senegal
+  frCI: 'fr-CI', // Ivory Coast
+  frDZ: 'fr-DZ', // Algeria
+  frTN: 'fr-TN', // Tunisia
+  frHT: 'fr-HT', // Haiti
+
+  // German
+  deDE: 'de-DE', // Germany
+  deAT: 'de-AT', // Austria
+  deCH: 'de-CH', // Switzerland
+  deLU: 'de-LU', // Luxembourg
+  deBE: 'de-BE', // Belgium (German)
+
+  // Italian
+  itIT: 'it-IT', // Italy
+  itCH: 'it-CH', // Switzerland
+
+  // Dutch
+  nlNL: 'nl-NL', // Netherlands
+  nlBE: 'nl-BE', // Belgium
+  nlSR: 'nl-SR', // Suriname
+
+  // Arabic
+  arSA: 'ar-SA', // Saudi Arabia
+  arEG: 'ar-EG', // Egypt
+  arAE: 'ar-AE', // United Arab Emirates
+  arMA: 'ar-MA', // Morocco
+  arDZ: 'ar-DZ', // Algeria
+  arTN: 'ar-TN', // Tunisia
+  arIQ: 'ar-IQ', // Iraq
+  arSY: 'ar-SY', // Syria
+  arJO: 'ar-JO', // Jordan
+  arLB: 'ar-LB', // Lebanon
+  arKW: 'ar-KW', // Kuwait
+  arQA: 'ar-QA', // Qatar
+  arBH: 'ar-BH', // Bahrain
+  arOM: 'ar-OM', // Oman
+  arYE: 'ar-YE', // Yemen
+  arLY: 'ar-LY', // Libya
+  arSD: 'ar-SD', // Sudan
+  arPS: 'ar-PS', // Palestine
+
+  // Chinese
+  zhCN: 'zh-CN', // China (Simplified)
+  zhTW: 'zh-TW', // Taiwan (Traditional)
+  zhHK: 'zh-HK', // Hong Kong (Traditional)
+  zhSG: 'zh-SG', // Singapore (Simplified)
+  zhMO: 'zh-MO', // Macau (Traditional)
+  zhMY: 'zh-MY', // Malaysia (Simplified)
+
+  // Japanese
+  jaJP: 'ja-JP', // Japan
+
+  // Korean
+  koKR: 'ko-KR', // South Korea
+  koKP: 'ko-KP', // North Korea
+
+  // Russian
+  ruRU: 'ru-RU', // Russia
+  ruUA: 'ru-UA', // Ukraine (Russian)
+  ruKZ: 'ru-KZ', // Kazakhstan
+  ruBY: 'ru-BY', // Belarus
+
+  // Hindi & Indian subcontinent
+  hiIN: 'hi-IN', // Hindi (India)
+  bnBD: 'bn-BD', // Bengali (Bangladesh)
+  bnIN: 'bn-IN', // Bengali (India)
+  urPK: 'ur-PK', // Urdu (Pakistan)
+  urIN: 'ur-IN', // Urdu (India)
+  taIN: 'ta-IN', // Tamil (India)
+  taLK: 'ta-LK', // Tamil (Sri Lanka)
+  teIN: 'te-IN', // Telugu (India)
+  mrIN: 'mr-IN', // Marathi (India)
+  guIN: 'gu-IN', // Gujarati (India)
+  knIN: 'kn-IN', // Kannada (India)
+  mlIN: 'ml-IN', // Malayalam (India)
+  paIN: 'pa-IN', // Punjabi (India)
+  paPK: 'pa-PK', // Punjabi (Pakistan)
+  psPK: 'ps-PK', // Pashto (Pakistan)
+  psAF: 'ps-AF', // Pashto (Afghanistan)
+  sdPK: 'sd-PK', // Sindhi (Pakistan)
+  siLK: 'si-LK', // Sinhala (Sri Lanka)
+  neNP: 'ne-NP', // Nepali (Nepal)
+
+  // Turkish
+  trTR: 'tr-TR', // Turkey
+
+  // Persian / Farsi
+  faIR: 'fa-IR', // Iran
+  faAF: 'fa-AF', // Afghanistan (Dari)
+
+  // Hebrew
+  heIL: 'he-IL', // Israel
+
+  // Greek
+  elGR: 'el-GR', // Greece
+  elCY: 'el-CY', // Cyprus
+
+  // Polish
+  plPL: 'pl-PL', // Poland
+
+  // Ukrainian
+  ukUA: 'uk-UA', // Ukraine
+
+  // Czech
+  csCZ: 'cs-CZ', // Czech Republic
+
+  // Slovak
+  skSK: 'sk-SK', // Slovakia
+
+  // Hungarian
+  huHU: 'hu-HU', // Hungary
+
+  // Romanian
+  roRO: 'ro-RO', // Romania
+  roMD: 'ro-MD', // Moldova
+
+  // Bulgarian
+  bgBG: 'bg-BG', // Bulgaria
+
+  // Croatian
+  hrHR: 'hr-HR', // Croatia
+  hrBA: 'hr-BA', // Bosnia and Herzegovina
+
+  // Serbian
+  srRS: 'sr-RS', // Serbia (Cyrillic)
+  srBA: 'sr-BA', // Bosnia (Cyrillic)
+  srLatnRS: 'sr-Latn-RS', // Serbia (Latin)
+
+  // Bosnian
+  bsBA: 'bs-BA', // Bosnia
+
+  // Slovenian
+  slSI: 'sl-SI', // Slovenia
+
+  // Macedonian
+  mkMK: 'mk-MK', // North Macedonia
+
+  // Albanian
+  sqAL: 'sq-AL', // Albania
+  sqXK: 'sq-XK', // Kosovo
+  sqMK: 'sq-MK', // North Macedonia
+
+  // Baltic
+  ltLT: 'lt-LT', // Lithuania
+  lvLV: 'lv-LV', // Latvia
+  etEE: 'et-EE', // Estonia
+
+  // Scandinavian
+  svSE: 'sv-SE', // Sweden
+  svFI: 'sv-FI', // Finland (Swedish)
+  nbNO: 'nb-NO', // Norway (Bokmål)
+  nnNO: 'nn-NO', // Norway (Nynorsk)
+  daDK: 'da-DK', // Denmark
+  fiFI: 'fi-FI', // Finland
+  isIS: 'is-IS', // Iceland
+
+  // Southeast Asian
+  idID: 'id-ID', // Indonesia
+  msMY: 'ms-MY', // Malaysia
+  msSG: 'ms-SG', // Singapore (Malay)
+  thTH: 'th-TH', // Thailand
+  viVN: 'vi-VN', // Vietnam
+  filPH: 'fil-PH', // Philippines (Filipino)
+  kmKH: 'km-KH', // Cambodia
+  loLA: 'lo-LA', // Laos
+  myMM: 'my-MM', // Myanmar
+
+  // East African
+  swKE: 'sw-KE', // Swahili (Kenya)
+  swTZ: 'sw-TZ', // Swahili (Tanzania)
+  swUG: 'sw-UG', // Swahili (Uganda)
+  swRW: 'sw-RW', // Swahili (Rwanda)
+  amET: 'am-ET', // Amharic (Ethiopia)
+  soSO: 'so-SO', // Somali (Somalia)
+  soET: 'so-ET', // Somali (Ethiopia)
+  soKE: 'so-KE', // Somali (Kenya)
+  tiET: 'ti-ET', // Tigrinya (Ethiopia)
+  tiER: 'ti-ER', // Tigrinya (Eritrea)
+  omET: 'om-ET', // Oromo (Ethiopia)
+  rwRW: 'rw-RW', // Kinyarwanda (Rwanda)
+  woSN: 'wo-SN', // Wolof (Senegal)
+  ffSN: 'ff-SN', // Fula (Senegal)
+  haNG: 'ha-NG', // Hausa (Nigeria)
+  igNG: 'ig-NG', // Igbo (Nigeria)
+  yoNG: 'yo-NG', // Yoruba (Nigeria)
+  zuZA: 'zu-ZA', // Zulu (South Africa)
+  xhZA: 'xh-ZA', // Xhosa (South Africa)
+
+  // Central Asian
+  kkKZ: 'kk-KZ', // Kazakh
+  uzUZ: 'uz-UZ', // Uzbek
+  kyKG: 'ky-KG', // Kyrgyz
+  tkTM: 'tk-TM', // Turkmen
+  tgTJ: 'tg-TJ', // Tajik
+  azAZ: 'az-AZ', // Azerbaijani
+  hyAM: 'hy-AM', // Armenian
+  kaGE: 'ka-GE', // Georgian
+  mnMN: 'mn-MN', // Mongolian
+
+  // Other European
+  caES: 'ca-ES', // Catalan (Spain)
+  glES: 'gl-ES', // Galician (Spain)
+  euES: 'eu-ES', // Basque (Spain)
+  afZA: 'af-ZA', // Afrikaans (South Africa)
+  mtMT: 'mt-MT', // Maltese
+  gaIE: 'ga-IE', // Irish
+  cyGB: 'cy-GB', // Welsh
+  lbLU: 'lb-LU', // Luxembourgish
+
+  // South American indigenous / additional
+  quPE: 'qu-PE', // Quechua (Peru)
+  quBO: 'qu-BO', // Quechua (Bolivia)
+  gnPY: 'gn-PY', // Guaraní (Paraguay)
+
+  // Pacific
+  miNZ: 'mi-NZ', // Māori (New Zealand)
+  smWS: 'sm-WS', // Samoan
+} as const
+
+export const LOCALES_LIST = Object.values(LOCALES)
+export const CURRENCY_LIST = Array.from(
+  new Set(Object.values(COUNTRIES).flatMap(data => data.currency))
+)
+export const COUNTRY_CODE_LIST = Object.values(COUNTRIES).map(data => data.code)
+export const TIME_ZONE_LIST = Array.from(
   new Set(Object.values(COUNTRIES).flatMap(data => data.timezones))
 )
 
+export type Locale = (typeof LOCALES)[keyof typeof LOCALES]
 export type Country = (typeof COUNTRIES)[number]
-export type CountryCode = (typeof COUNTRY_CODES)[number]
-export type Currency = (typeof CURRENCIES)[number]
-export type TimeZone = (typeof TIME_ZONES)[number] | 'UTC'
+export type CountryCode = (typeof COUNTRY_CODE_LIST)[number]
+export type Currency = (typeof CURRENCY_LIST)[number]
+export type TimeZone = (typeof TIME_ZONE_LIST)[number] | 'UTC'
