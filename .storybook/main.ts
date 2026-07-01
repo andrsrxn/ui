@@ -1,7 +1,7 @@
 import { defineMain } from '@storybook/react-vite/node'
 
 export default defineMain({
-  stories: ['../src/stories/**/*.mdx', '../src/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
+  stories: ['../stories/**/*.mdx', '../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
 
   addons: [
     '@chromatic-com/storybook',

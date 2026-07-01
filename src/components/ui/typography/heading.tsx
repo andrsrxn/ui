@@ -1,10 +1,12 @@
+'use client'
+
 import { createElement, useMemo, type ComponentProps } from 'react'
 import { cn, type NonNullableVariantProps } from '../../../lib/utils/theme'
 import { cva } from 'class-variance-authority'
 import { slugify } from '../../../lib/utils/strings'
 import { IconLink } from '../../icons'
-import { LABELS } from '../../../lib/constants/components'
 import { Link } from './link'
+import { useUI } from '../../../lib/hooks/use-ui'
 
 export const headingVariants = cva(
   'font-heading text-balance whitespace-normal block transition-theme',
@@ -513,6 +515,7 @@ export const headingVariants = cva(
 export interface HeadingProps
   extends ComponentProps<'h1'>, NonNullableVariantProps<typeof headingVariants> {
   includeAnchor?: boolean
+  children?: string
 }
 
 export const Heading = ({
@@ -530,8 +533,9 @@ export const Heading = ({
   id,
   ...props
 }: HeadingProps) => {
+  const { labels } = useUI()
   const slug = useMemo(
-    () => (typeof children === 'string' ? slugify({ text: children }) : undefined),
+    () => (children && children !== '' ? slugify(children) : undefined),
     [children]
   )
   const headingId = id ?? slug
@@ -569,7 +573,7 @@ export const Heading = ({
       {id !== undefined && (
         <Link
           unstyled
-          aria-label={LABELS.permanetLink}
+          aria-label={labels.permanetLink}
           data-slot='heading-permanent-link'
           className={cn(
             'duration-faster ease-base absolute top-0 right-full flex items-center transition-opacity! focus-visible:opacity-100 focus-visible:ring-0 active:scale-98',

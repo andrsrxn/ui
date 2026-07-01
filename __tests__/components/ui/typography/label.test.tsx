@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen } from '../../../../stories/utils/tests'
 import { describe, it, expect } from 'vitest'
 import { Label } from '../../../../src/components/ui/typography/label'
 
@@ -14,12 +14,20 @@ describe('Label Component', () => {
   })
 
   it('renders with custom sizes, variants, and responsive utilities', () => {
-    const { rerender } = render(<Label size="sm" variant="secondary">Text</Label>)
+    const { rerender } = render(
+      <Label size='sm' variant='secondary'>
+        Text
+      </Label>
+    )
     let element = screen.getByText('Text')
     expect(element.className).toContain('text-label-sm')
     expect(element.className).toContain('text-secondary')
 
-    rerender(<Label size="2xl" tablet="3xl" laptop="4xl" desktop="xs" display="lg">Text</Label>)
+    rerender(
+      <Label size='2xl' tablet='3xl' laptop='4xl' desktop='xs' display='lg'>
+        Text
+      </Label>
+    )
     element = screen.getByText('Text')
     expect(element.className).toContain('text-label-2xl')
     expect(element.className).toContain('tablet:text-label-3xl')
@@ -36,13 +44,17 @@ describe('Label Component', () => {
   })
 
   it('applies custom className', () => {
-    render(<Label className="custom-label">Content</Label>)
+    render(<Label className='custom-label'>Content</Label>)
     const element = screen.getByText('Content')
     expect(element.className).toContain('custom-label')
   })
 
   it('forwards HTML props', () => {
-    render(<Label id="label-id" data-custom="value">Content</Label>)
+    render(
+      <Label id='label-id' data-custom='value'>
+        Content
+      </Label>
+    )
     const element = screen.getByText('Content')
     expect(element.id).toBe('label-id')
     expect(element.getAttribute('data-custom')).toBe('value')

@@ -34,10 +34,5 @@
     "noImplicitThis": true,
     "noPropertyAccessFromIndexSignature": true
   },
-  "include": [
-    "vite.config.ts",
-    ".storybook/**/*.{ts,tsx}",
-    "tsdown.config.ts",
-    "__tests__/**/*.{ts,tsx}"
-  ]
+  "include": ["vite.config.ts", ".storybook/**/*.{ts,tsx}", "tsdown.config.ts"]
 }

@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen } from '../../../../stories/utils/tests'
 import { describe, it, expect } from 'vitest'
 import { Code } from '../../../../src/components/ui/typography/code'
 
@@ -14,28 +14,36 @@ describe('Code Component', () => {
   })
 
   it('renders with custom sizes and variants', () => {
-    const { rerender } = render(<Code size="lg" variant="secondary">code</Code>)
+    const { rerender } = render(
+      <Code size='lg' variant='secondary'>
+        code
+      </Code>
+    )
     let element = screen.getByText('code')
     expect(element.className).toContain('text-body-base') // size lg -> text-body-base
     expect(element.className).toContain('bg-surface-alt') // variant secondary -> bg-surface-alt
 
-    rerender(<Code size="sm">code</Code>)
+    rerender(<Code size='sm'>code</Code>)
     element = screen.getByText('code')
     expect(element.className).toContain('text-body-xs') // size sm -> text-body-xs
 
-    rerender(<Code size="inline">code</Code>)
+    rerender(<Code size='inline'>code</Code>)
     element = screen.getByText('code')
     expect(element.className).toContain('text-[0.9em]') // size inline -> text-[0.9em]
   })
 
   it('applies custom className', () => {
-    render(<Code className="custom-code">my code</Code>)
+    render(<Code className='custom-code'>my code</Code>)
     const element = screen.getByText('my code')
     expect(element.className).toContain('custom-code')
   })
 
   it('forwards HTML props', () => {
-    render(<Code id="my-code-id" data-test="true">my code</Code>)
+    render(
+      <Code id='my-code-id' data-test='true'>
+        my code
+      </Code>
+    )
     const element = screen.getByText('my code')
     expect(element.id).toBe('my-code-id')
     expect(element.getAttribute('data-test')).toBe('true')

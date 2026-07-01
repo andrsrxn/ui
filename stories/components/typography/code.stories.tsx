@@ -1,7 +1,7 @@
 import preview from '../../../.storybook/preview'
 import { Code } from '../../../src/components/ui/typography/code'
 import { Text } from '../../../src/components/ui/typography/text'
-import { COMPANY } from '../../../src/lib/constants/company'
+import { COMPANY } from '../../constants/company'
 
 const meta = preview.meta({
   title: 'Components/Typography/Code',

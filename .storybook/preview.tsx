@@ -17,13 +17,14 @@ import { definePreview } from '@storybook/react-vite'
 import type { PartialStoryFn } from 'storybook/internal/types'
 import theme from './theme'
 import '../src/globals.css'
+import { UIProvider } from '../src/components/providers/ui-provider'
 
 // biome-ignore lint/style/useNamingConvention: component rendering
 const LayoutDecorator = (Story: PartialStoryFn) => (
-  <div>
+  <UIProvider>
     <Story />
-    {/* <Toaster /> */}
-  </div>
+    {/* TODO: <Toaster /> */}
+  </UIProvider>
 )
 
 const decorators = [
@@ -87,13 +88,10 @@ export default definePreview({
       ),
     },
     a11y: {
-      // 'todo' - show a11y violations in the test UI only
-      // 'error' - fail CI on a11y violations
-      // 'off' - skip a11y checks entirely
       test: 'error',
     },
   },
-  // To automatically detect the controls based on types even when using CVA
+  // Automatically detect the controls based on types even when using CVA
   argTypesEnhancers: [
     ({ argTypes }) => {
       for (const [key, argType] of Object.entries(argTypes)) {
@@ -140,7 +138,7 @@ export default definePreview({
       return argTypes
     },
   ],
-  // To automatically set default values if set on the component default props
+  // Automatically set default values if set on the component default props
   argsEnhancers: [
     ({ argTypes, initialArgs }) => {
       const newArgs = { ...initialArgs }

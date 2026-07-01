@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen } from '../../../../stories/utils/tests'
 import { describe, it, expect } from 'vitest'
 import { Bold } from '../../../../src/components/ui/typography/bold'
 
@@ -12,14 +12,18 @@ describe('Bold Component', () => {
   })
 
   it('applies custom className', () => {
-    render(<Bold className="my-bold-class">Text</Bold>)
+    render(<Bold className='my-bold-class'>Text</Bold>)
     const element = screen.getByText('Text')
     expect(element.className).toContain('my-bold-class')
     expect(element.className).toContain('font-semibold')
   })
 
   it('forwards additional HTML attributes', () => {
-    render(<Bold id="bold-item" data-custom="value">Text</Bold>)
+    render(
+      <Bold id='bold-item' data-custom='value'>
+        Text
+      </Bold>
+    )
     const element = screen.getByText('Text')
     expect(element.id).toBe('bold-item')
     expect(element.getAttribute('data-custom')).toBe('value')

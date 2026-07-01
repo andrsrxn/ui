@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen, fireEvent } from '../../../../stories/utils/tests'
 import { describe, it, expect } from 'vitest'
 import { Image } from '../../../../src/components/ui/typography/image'
 

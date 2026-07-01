@@ -10,7 +10,7 @@ import {
   TableHeader,
   TableRow,
 } from '../../../src/components/ui/typography/table'
-import { formatCurrency } from '../../../src/lib/utils/numbers'
+import { formatCurrency } from '../../utils/numbers'
 
 const data = [
   {
@@ -56,6 +56,7 @@ const data = [
     paymentMethod: 'Credit card',
   },
 ]
+const totalData = data.reduce((acc, invoice) => acc + invoice.totalAmount, 0)
 
 const meta = preview.meta({
   title: 'Components/Typography/Table',
@@ -97,7 +98,7 @@ const meta = preview.meta({
               <TableCell>{invoice.paymentStatus}</TableCell>
               <TableCell>{invoice.paymentMethod}</TableCell>
               <TableCell className='text-right tabular-nums'>
-                {formatCurrency(invoice.totalAmount, { currency: 'GTQ', locale: 'es-GT' })}
+                {formatCurrency(invoice.totalAmount)}
               </TableCell>
             </TableRow>
           ))}
@@ -105,13 +106,7 @@ const meta = preview.meta({
         <TableFooter>
           <TableRow>
             <TableFoot colSpan={3}>Total</TableFoot>
-            <TableFoot className='text-right tabular-nums'>
-              {/** biome-ignore lint/style/noMagicNumbers: total amount */}
-              {formatCurrency(2500, {
-                currency: 'GTQ',
-                locale: 'es-GT',
-              })}
-            </TableFoot>
+            <TableFoot className='text-right tabular-nums'>{formatCurrency(totalData)}</TableFoot>
           </TableRow>
         </TableFooter>
         <TableCaption>Your recent invoices.</TableCaption>
@@ -155,7 +150,7 @@ export const Selected = meta.story({
               <TableCell>{invoice.paymentStatus}</TableCell>
               <TableCell>{invoice.paymentMethod}</TableCell>
               <TableCell className='text-right tabular-nums'>
-                {formatCurrency(invoice.totalAmount, { currency: 'GTQ', locale: 'es-GT' })}
+                {formatCurrency(invoice.totalAmount)}
               </TableCell>
             </TableRow>
           ))}
@@ -163,13 +158,7 @@ export const Selected = meta.story({
         <TableFooter>
           <TableRow>
             <TableFoot colSpan={3}>Total</TableFoot>
-            <TableFoot className='text-right tabular-nums'>
-              {/** biome-ignore lint/style/noMagicNumbers: total amount */}
-              {formatCurrency(2500, {
-                currency: 'GTQ',
-                locale: 'es-GT',
-              })}
-            </TableFoot>
+            <TableFoot className='text-right tabular-nums'>{formatCurrency(totalData)}</TableFoot>
           </TableRow>
         </TableFooter>
         <TableCaption>Your recent invoices.</TableCaption>

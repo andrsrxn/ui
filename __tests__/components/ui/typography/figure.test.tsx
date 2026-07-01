@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen } from '../../../../stories/utils/tests'
 import { describe, it, expect, vi } from 'vitest'
 import { Figure, FigureCaption } from '../../../../src/components/ui/typography/figure'
 import type { IconProps } from '../../../../src/components/icons/icon'

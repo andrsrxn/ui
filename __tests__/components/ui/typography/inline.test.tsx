@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen } from '../../../../stories/utils/tests'
 import { describe, it, expect } from 'vitest'
 import { Inline } from '../../../../src/components/ui/typography/inline'
 
@@ -14,12 +14,20 @@ describe('Inline Component', () => {
   })
 
   it('renders with custom sizes, variants, and responsive utilities', () => {
-    const { rerender } = render(<Inline size="sm" variant="brand">Text</Inline>)
+    const { rerender } = render(
+      <Inline size='sm' variant='brand'>
+        Text
+      </Inline>
+    )
     let element = screen.getByText('Text')
     expect(element.className).toContain('text-body-sm')
     expect(element.className).toContain('text-brand')
 
-    rerender(<Inline size="lg" tablet="xl" laptop="xs" desktop="sm" display="base">Text</Inline>)
+    rerender(
+      <Inline size='lg' tablet='xl' laptop='xs' desktop='sm' display='base'>
+        Text
+      </Inline>
+    )
     element = screen.getByText('Text')
     expect(element.className).toContain('text-body-lg')
     expect(element.className).toContain('tablet:text-body-xl')
@@ -37,13 +45,17 @@ describe('Inline Component', () => {
   })
 
   it('applies custom className', () => {
-    render(<Inline className="my-inline-class">Content</Inline>)
+    render(<Inline className='my-inline-class'>Content</Inline>)
     const element = screen.getByText('Content')
     expect(element.className).toContain('my-inline-class')
   })
 
   it('forwards HTML props', () => {
-    render(<Inline id="inline-id" data-custom="value">Content</Inline>)
+    render(
+      <Inline id='inline-id' data-custom='value'>
+        Content
+      </Inline>
+    )
     const element = screen.getByText('Content')
     expect(element.id).toBe('inline-id')
     expect(element.getAttribute('data-custom')).toBe('value')

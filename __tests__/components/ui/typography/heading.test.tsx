@@ -1,7 +1,7 @@
-import { render, screen } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
 import { Heading } from '../../../../src/components/ui/typography/heading'
 import type { IconProps } from '../../../../src/components/icons/icon'
+import { render, screen } from '../../../../stories/utils/tests'
 
 // Mock the IconLink from icons
 vi.mock('../../../../src/components/icons', () => ({
