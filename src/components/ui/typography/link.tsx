@@ -5,7 +5,7 @@ import { cn, type NonNullableVariantProps } from '../../../lib/utils/theme'
 import { IconChevronRight, IconDownload, IconExternalLink } from '../../icons'
 
 export const linkVariants = cva(
-  'focus-visible:outline-2 outline-offset-3 rounded-base font-medium leading-inherit focus-visible:outline-focus hover:text-link-hover text-body-inherit font-body active:scale-98 disabled:disabled duration-faster ease-base decoration-1 underline-offset-2 underline transition-theme',
+  'focus-visible:outline-2 outline-offset-3 rounded-base font-medium leading-inherit focus-visible:outline-focus text-body-inherit font-body active:scale-98 disabled:disabled duration-faster ease-base decoration-1 underline-offset-2 underline transition-theme',
   {
     variants: {
       full: {
@@ -69,8 +69,6 @@ export const Link = ({
   download,
   ...props
 }: LinkProps) => {
-  const iconColor = variant === 'primary' ? 'text-info' : 'text-inherit'
-
   const Comp = asChild ? Slot.Root : 'a'
 
   const RenderLink = (
@@ -87,16 +85,18 @@ export const Link = ({
       <Slot.Slottable>{children}</Slot.Slottable>
 
       {download !== undefined && includeIcon ? (
-        <IconDownload className={`size-icon-responsive ${iconColor}`} />
+        <IconDownload className={'size-icon-responsive text-inherit'} />
       ) : null}
 
       {target === '_blank' && download === undefined && includeIcon ? (
-        <IconExternalLink className={`size-icon-responsive ${iconColor}`} />
+        <IconExternalLink className={'size-icon-responsive text-inherit'} />
       ) : null}
 
       {target !== '_blank' && download === undefined && includeIcon ? (
         <IconChevronRight
-          className={`size-icon-responsive duration-fast ease-base -ml-0.5 transition-transform group-hover:translate-x-1 ${iconColor}`}
+          className={cn(
+            'size-icon-responsive duration-fast ease-base -ms-0.5 text-inherit transition-transform group-hover:translate-x-1 rtl:-scale-x-100 rtl:group-hover:-translate-x-1'
+          )}
         />
       ) : null}
     </Comp>

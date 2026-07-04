@@ -4,7 +4,7 @@ import { cn } from '../../../lib/utils/theme'
 import { Text, type TextProps } from './text'
 
 export const blockquoteVariants = cva(
-  'relative my-4 border-l-3 border-brand pl-4 max-w-prose transition-theme'
+  'relative my-4 border-s-3 border-brand ps-4 max-w-prose transition-theme'
 )
 
 export interface BlockquoteProps

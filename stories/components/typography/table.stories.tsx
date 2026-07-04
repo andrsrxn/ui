@@ -88,7 +88,7 @@ const meta = preview.meta({
             <TableHead>Invoice</TableHead>
             <TableHead>Status</TableHead>
             <TableHead>Method</TableHead>
-            <TableHead className='text-right'>Amount</TableHead>
+            <TableHead className='text-end'>Amount</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -97,7 +97,7 @@ const meta = preview.meta({
               <TableCell className='font-medium'>{invoice.invoice}</TableCell>
               <TableCell>{invoice.paymentStatus}</TableCell>
               <TableCell>{invoice.paymentMethod}</TableCell>
-              <TableCell className='text-right tabular-nums'>
+              <TableCell className='text-end tabular-nums'>
                 {formatCurrency(invoice.totalAmount)}
               </TableCell>
             </TableRow>
@@ -106,7 +106,7 @@ const meta = preview.meta({
         <TableFooter>
           <TableRow>
             <TableFoot colSpan={3}>Total</TableFoot>
-            <TableFoot className='text-right tabular-nums'>{formatCurrency(totalData)}</TableFoot>
+            <TableFoot className='text-end tabular-nums'>{formatCurrency(totalData)}</TableFoot>
           </TableRow>
         </TableFooter>
         <TableCaption>Your recent invoices.</TableCaption>
@@ -137,7 +137,7 @@ export const Selected = meta.story({
             <TableHead>Invoice</TableHead>
             <TableHead>Status</TableHead>
             <TableHead>Method</TableHead>
-            <TableHead className='text-right'>Amount</TableHead>
+            <TableHead className='text-end'>Amount</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -149,7 +149,7 @@ export const Selected = meta.story({
               <TableCell className='font-medium'>{invoice.invoice}</TableCell>
               <TableCell>{invoice.paymentStatus}</TableCell>
               <TableCell>{invoice.paymentMethod}</TableCell>
-              <TableCell className='text-right tabular-nums'>
+              <TableCell className='text-end tabular-nums'>
                 {formatCurrency(invoice.totalAmount)}
               </TableCell>
             </TableRow>
@@ -158,7 +158,7 @@ export const Selected = meta.story({
         <TableFooter>
           <TableRow>
             <TableFoot colSpan={3}>Total</TableFoot>
-            <TableFoot className='text-right tabular-nums'>{formatCurrency(totalData)}</TableFoot>
+            <TableFoot className='text-end tabular-nums'>{formatCurrency(totalData)}</TableFoot>
           </TableRow>
         </TableFooter>
         <TableCaption>Your recent invoices.</TableCaption>

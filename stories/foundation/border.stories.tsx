@@ -113,11 +113,11 @@ export const AsSeparator = meta.story({
   render: () => (
     <div className='h-sm flex items-center justify-center gap-12'>
       <div className='bg-base text-body-sm relative flex aspect-square size-40 justify-center rounded-sm border p-4 text-center'>
-        <div className='absolute top-1/2 left-0 h-px w-full -translate-y-1/2 border-b' />
+        <div className='border-base absolute inset-s-0 top-1/2 h-px w-full -translate-y-1/2 border-b' />
         Base
       </div>
       <div className='bg-surface text-body-sm relative flex aspect-square size-40 justify-center rounded-sm border p-4 text-center'>
-        <div className='border-base-alt absolute top-1/2 left-0 h-px w-full -translate-y-1/2 border-b' />
+        <div className='border-base-alt absolute inset-s-0 top-1/2 h-px w-full -translate-y-1/2 border-b' />
         Base Alt
       </div>
     </div>

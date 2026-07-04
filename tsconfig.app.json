@@ -41,5 +41,5 @@
 
     "skipDefaultLibCheck": true
   },
-  "include": ["./src", "./stories", "__tests__/**/*.{ts,tsx}"]
+  "include": ["./src", "./stories", "__tests__/**/*.{ts,tsx}", ".storybook/**/*.{ts,tsx}"]
 }

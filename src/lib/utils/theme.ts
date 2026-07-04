@@ -17,7 +17,7 @@ export type NonNullableVariantProps<Comp extends (...args: never) => unknown> = 
 const twMerge = extendTailwindMerge({
   extend: {
     theme: {
-      breakpoint: ['mobile-sm', 'mobile-md', 'tablet', 'laptop', 'desktop', 'display'],
+      breakpoint: ['mobile-sm', 'mobile-base', 'tablet', 'laptop', 'desktop', 'display'],
       spacing: [
         'icon-xs',
         'icon-sm',
@@ -76,14 +76,14 @@ const twMerge = extendTailwindMerge({
         'heading-1-display-sm',
         'heading-1-display-base',
       ],
-      'font-weight': ['normal', 'regular', 'medium', 'semibold', 'bold', 'extrabold'],
-      radius: ['sm', 'base', 'lg'],
-      shadow: ['2xl', 'xl', 'lg', 'base', 'sm', 'xs', 'inner'],
-      'drop-shadow': ['2xl', 'xl', 'lg', 'base', 'sm', 'xs'],
-      'text-shadow': ['sm', 'base', 'lg'],
+      'font-weight': ['regular'],
+      radius: ['base'],
+      shadow: ['base', 'xs', 'inner'],
+      'drop-shadow': ['base', 'xs'],
+      'text-shadow': ['base'],
       leading: ['xs', 'sm', 'base'],
       tracking: ['heading'],
-      ease: ['linear', 'base', 'out', 'elastic'],
+      ease: ['base', 'out', 'elastic'],
       animate: ['collapsible-down', 'collapsible-up', 'accordion-down', 'accordion-up', 'shake'],
     },
   },

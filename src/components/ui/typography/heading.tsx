@@ -576,11 +576,11 @@ export const Heading = ({
           aria-label={labels.permanetLink}
           data-slot='heading-permanent-link'
           className={cn(
-            'duration-faster ease-base absolute top-0 right-full flex items-center transition-opacity! focus-visible:opacity-100 focus-visible:ring-0 active:scale-98',
+            'duration-faster ease-base absolute inset-s-full top-0 flex items-center transition-opacity! focus-visible:opacity-100 focus-visible:ring-0 active:scale-98',
             includeAnchor && 'text-selectable hover:text-selected opacity-0 group-hover:opacity-100'
           )}
           href={`#${id}`}>
-          <IconLink className='size-icon-responsive mr-2' />
+          <IconLink className='size-icon-responsive ms-2' />
         </Link>
       )}
     </div>

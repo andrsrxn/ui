@@ -56,7 +56,7 @@ export const TableFooter = ({ className, ...props }: ComponentProps<'tfoot'>) =>
 export const TableCell = ({ className, ...props }: ComponentProps<'td'>) => (
   <td
     data-slot='table-cell'
-    className={cn('table-cell p-3 align-middle has-[[role=checkbox]]:pr-0', className)}
+    className={cn('table-cell p-3 align-middle has-[[role=checkbox]]:pe-0', className)}
     {...props}
   />
 )
@@ -85,7 +85,7 @@ export const TableHead = ({ className, ...props }: ComponentProps<'th'>) => (
     data-slot='table-head'
     className={cn(
       labelVariants({ size: 'sm' }),
-      'table-cell p-3 px-4 text-left align-middle has-[[role=checkbox]]:pr-0',
+      'table-cell p-3 px-4 text-start align-middle has-[[role=checkbox]]:pe-0',
       className
     )}
     {...props}

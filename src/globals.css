@@ -1,8 +1,6 @@
 @import 'tailwindcss';
 /* Micro interactions on components */
 @import 'tw-animate-css';
-/* Standard and View Timeline animations collection */
-@import 'tailwind-animations';
 
 /* Dark mode */
 @custom-variant dark (&:where(.dark, .dark *));
@@ -249,7 +247,6 @@
   --text-selectable-hover: var(--text-primary);
   --text-selected: var(--color-info-700);
   --text-link: var(--color-brand-600);
-  --text-link-hover: var(--color-brand-700);
   --text-details: var(--color-brand-700);
   --text-details-subtle: var(--color-brand-300);
   --text-content: var(--text-inverted-static);
@@ -501,7 +498,6 @@
   --text-selectable-hover: var(--text-primary);
   --text-selected: var(--color-info-300);
   --text-link: var(--color-brand-400);
-  --text-link-hover: var(--color-brand-300);
   --text-details: var(--color-brand-300);
   --text-details-subtle: var(--color-brand-700);
   --text-content: var(--text-inverted-static);
@@ -901,7 +897,7 @@
 
   /* Breakpoints */
   --breakpoint-mobile-sm: 360px;
-  --breakpoint-mobile-md: 480px;
+  --breakpoint-mobile-base: 480px;
   --breakpoint-tablet: 768px;
   --breakpoint-laptop: 1024px;
   --breakpoint-desktop: 1280px;
@@ -1011,7 +1007,6 @@
   --text-color-selectable-hover: var(--text-selectable-hover);
   --text-color-selected: var(--text-selected);
   --text-color-link: var(--text-link);
-  --text-color-link-hover: var(--text-link-hover);
   --text-color-details: var(--text-details);
   --text-color-details-subtle: var(--text-details-subtle);
   --text-color-content: var(--text-content);
@@ -1420,15 +1415,11 @@
   }
 
   *::-webkit-scrollbar {
-    @apply bg-scrollbar transition-theme relative size-[6px];
+    @apply bg-scrollbar transition-theme relative size-2;
   }
 
   *::-webkit-scrollbar-thumb {
-    @apply bg-scrollbar-thumb hover:bg-scrollbar-thumb-hover active:bg-scrollbar-thumb-active transition-theme relative size-[6px] rounded-full;
-  }
-
-  body::-webkit-scrollbar-thumb {
-    @apply bg-scrollbar-thumb-bold hover:bg-scrollbar-thumb-bold-hover active:bg-scrollbar-thumb-bold-active size-2 rounded-full;
+    @apply bg-scrollbar-thumb hover:bg-scrollbar-thumb-hover active:bg-scrollbar-thumb-active transition-theme relative size-2 rounded-full;
   }
 
   body {
@@ -1436,7 +1427,7 @@
   }
 
   body[data-scroll-locked] {
-    @apply mr-0!;
+    @apply me-0! mr-0!;
   }
 
   html {
@@ -1468,7 +1459,7 @@
     content: counter(heading-counter) '. ';
     counter-increment: heading-counter;
     display: inline-block;
-    margin-right: 0.25rem;
+    margin-inline-end: 0.25rem;
   }
 
   /* Automatic squircle support */
@@ -1476,6 +1467,43 @@
   [class*='first:rounded-']:not([class*='first:rounded-full']):not([class*='first:rounded-none']),
   [class*='rounded-']:not([class*='rounded-full']):not([class*='rounded-none']) {
     corner-shape: squircle;
+  }
+
+  /* Hide the default expand arrow on Safari.  */
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  /* Hide default arrows from number inputs. */
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* Firefox */
+  input[type='number'] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+
+  input[type='password'] {
+    &::-ms-clear {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+
+    &::-ms-reveal {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  /* Hide the default clear button (X) from search inputs. */
+  input[type='search']::-webkit-search-cancel-button {
+    -webkit-appearance: none;
   }
 
   .ReactCrop .ReactCrop__drag-elements .ReactCrop__drag-handle {
@@ -1552,52 +1580,6 @@
   @apply opacity-disabled pointer-events-none select-none;
 }
 
-@utility no-search-icon {
-  &::-ms-clear {
-    display: none;
-    width: 0;
-    height: 0;
-  }
-
-  &::-ms-reveal {
-    display: none;
-    width: 0;
-    height: 0;
-  }
-
-  &::-webkit-search-decoration {
-    display: none;
-  }
-
-  &::-webkit-search-cancel-button {
-    display: none;
-  }
-
-  &::-webkit-search-results-button {
-    display: none;
-  }
-
-  &::-webkit-search-results-decoration {
-    display: none;
-  }
-}
-
-@utility no-password-icon {
-  /* biome-ignore lint/nursery/noDuplicateSelectors: not duplicated */
-  &::-ms-clear {
-    display: none;
-    width: 0;
-    height: 0;
-  }
-
-  /* biome-ignore lint/nursery/noDuplicateSelectors: not duplicated */
-  &::-ms-reveal {
-    display: none;
-    width: 0;
-    height: 0;
-  }
-}
-
 @utility numbered-heading {
   counter-reset: heading-counter;
 }
@@ -1612,10 +1594,14 @@
 
   &::-webkit-scrollbar {
     display: none;
+    -webkit-appearance: none;
   }
 }
 
 @utility scrollbar-visible {
+  -ms-overflow-style: auto;
+  scrollbar-width: auto;
+
   /* biome-ignore lint/nursery/noDuplicateSelectors: not duplicated */
   &::-webkit-scrollbar {
     display: block;

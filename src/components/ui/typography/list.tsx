@@ -4,7 +4,7 @@ import { cn, type NonNullableVariantProps } from '../../../lib/utils/theme'
 import { Label } from './label'
 
 export const listVariants = cva(
-  'text-pretty transition-theme font-body max-w-prose pl-4 grid gap-2',
+  'text-pretty transition-theme font-body max-w-prose ps-4 grid gap-2',
   {
     variants: {
       variant: {

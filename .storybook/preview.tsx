@@ -14,18 +14,27 @@ import {
 import addonThemes, { withThemeByClassName } from '@storybook/addon-themes'
 import addonVitest from '@storybook/addon-vitest'
 import { definePreview } from '@storybook/react-vite'
-import type { PartialStoryFn } from 'storybook/internal/types'
+import type { PartialStoryFn, StoryContext } from 'storybook/internal/types'
 import theme from './theme'
 import '../src/globals.css'
 import { UIProvider } from '../src/components/providers/ui-provider'
 
 // biome-ignore lint/style/useNamingConvention: component rendering
-const LayoutDecorator = (Story: PartialStoryFn) => (
-  <UIProvider>
-    <Story />
-    {/* TODO: <Toaster /> */}
-  </UIProvider>
-)
+const RTLDecorator = (Story: PartialStoryFn, context: StoryContext) => {
+  document.documentElement.dir = context.globals.rtl === 'RTL' ? 'rtl' : 'ltr'
+
+  return <Story />
+}
+
+// biome-ignore lint/style/useNamingConvention: component rendering
+const LayoutDecorator = (Story: PartialStoryFn) => {
+  return (
+    <UIProvider>
+      <Story />
+      {/* TODO: <Toaster /> */}
+    </UIProvider>
+  )
+}
 
 const decorators = [
   withThemeByClassName({
@@ -37,25 +46,16 @@ const decorators = [
     parentSelector: 'html',
   }),
   LayoutDecorator,
+  RTLDecorator,
 ]
 
 export default definePreview({
   addons: [addonThemes(), addonVitest(), addonA11y(), addonDocs()],
   decorators,
-  // globalTypes: {
-  //   theme: {
-  //     description: 'Global theme for components',
-  //     toolbar: {
-  //       title: 'Theme',
-  //       icon: 'circlehollow',
-  //       items: ['light', 'dark'],
-  //       dynamicTitle: true,
-  //     },
-  //   },
-  // },
-  // initialGlobals: {
-  //   theme: 'light',
-  // },
+
+  initialGlobals: {
+    rtl: 'LTR',
+  },
   tags: ['autodocs'],
   parameters: {
     backgrounds: {
@@ -68,7 +68,6 @@ export default definePreview({
         date: /Date$/iu,
       },
     },
-
     docs: {
       theme,
       codePanel: true,
