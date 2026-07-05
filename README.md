@@ -24,7 +24,7 @@ import { Button } from '@andrsrxn/ui/button'
 
 export function App() {
   return (
-    <div>
+    <div className='flex h-screen w-full items-center justify-center'>
       <Button variant='primary'>Click me</Button>
     </div>
   )
