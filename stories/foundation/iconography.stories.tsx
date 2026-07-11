@@ -507,45 +507,45 @@ import {
   IconLogoApplePodcast,
   IconLogoAppStore,
   IconLogoBehance,
-  IconLogoBoldAfterEffects,
-  IconLogoBoldAhrefs,
-  IconLogoBoldAmericanExpress,
-  IconLogoBoldAstro,
-  IconLogoBoldCanva,
-  IconLogoBoldCapCut,
-  IconLogoBoldClickUp,
-  IconLogoBoldCloudflare,
-  IconLogoBoldElevenlabs,
-  IconLogoBoldExcalidraw,
-  IconLogoBoldFigma,
-  IconLogoBoldFontshare,
-  IconLogoBoldGithub,
-  IconLogoBoldGoogle,
-  IconLogoBoldGoogleMeet,
-  IconLogoBoldGSAP,
-  IconLogoBoldHuggingFace,
-  IconLogoBoldIllustrator,
-  IconLogoBoldInDesign,
-  IconLogoBoldInstagram,
-  IconLogoBoldLinkedIn,
-  IconLogoBoldMastercard,
-  IconLogoBoldMotion,
-  IconLogoBoldNamecheap,
-  IconLogoBoldNetlify,
-  IconLogoBoldNextJS,
-  IconLogoBoldNotion,
-  IconLogoBoldPhosphorIcons,
-  IconLogoBoldPhotoshop,
-  IconLogoBoldPremierePro,
-  IconLogoBoldRadixUI,
-  IconLogoBoldResend,
-  IconLogoBoldSERanking,
-  IconLogoBoldShopify,
-  IconLogoBoldStatista,
-  IconLogoBoldTailwind,
-  IconLogoBoldVercel,
-  IconLogoBoldVisa,
-  IconLogoBoldWhatsApp,
+  IconBrandAfterEffects,
+  IconBrandAhrefs,
+  IconBrandAmericanExpress,
+  IconBrandAstro,
+  IconBrandCanva,
+  IconBrandCapCut,
+  IconBrandClickUp,
+  IconBrandCloudflare,
+  IconBrandElevenlabs,
+  IconBrandExcalidraw,
+  IconBrandFigma,
+  IconBrandFontshare,
+  IconBrandGithub,
+  IconBrandGoogle,
+  IconBrandGoogleMeet,
+  IconBrandGSAP,
+  IconBrandHuggingFace,
+  IconBrandIllustrator,
+  IconBrandInDesign,
+  IconBrandInstagram,
+  IconBrandLinkedIn,
+  IconBrandMastercard,
+  IconBrandMotion,
+  IconBrandNamecheap,
+  IconBrandNetlify,
+  IconBrandNextJS,
+  IconBrandNotion,
+  IconBrandPhosphorIcons,
+  IconBrandPhotoshop,
+  IconBrandPremierePro,
+  IconBrandRadixUI,
+  IconBrandResend,
+  IconBrandSERanking,
+  IconBrandShopify,
+  IconBrandStatista,
+  IconBrandTailwind,
+  IconBrandVercel,
+  IconBrandVisa,
+  IconBrandWhatsApp,
   IconLogoCodepen,
   IconLogoDiscord,
   IconLogoDribbble,
@@ -2646,122 +2646,122 @@ export const Brands = meta.story({
       <div title='IconLogoYoutube'>
         <IconLogoYoutube />
       </div>
-      <div title='IconLogoBoldAfterEffects'>
-        <IconLogoBoldAfterEffects />
+      <div title='IconBrandAfterEffects'>
+        <IconBrandAfterEffects />
       </div>
-      <div title='IconLogoBoldAhrefs'>
-        <IconLogoBoldAhrefs />
+      <div title='IconBrandAhrefs'>
+        <IconBrandAhrefs />
       </div>
-      <div title='IconLogoBoldAmericanExpress'>
-        <IconLogoBoldAmericanExpress />
+      <div title='IconBrandAmericanExpress'>
+        <IconBrandAmericanExpress />
       </div>
-      <div title='IconLogoBoldAstro'>
-        <IconLogoBoldAstro />
+      <div title='IconBrandAstro'>
+        <IconBrandAstro />
       </div>
-      <div title='IconLogoBoldCanva'>
-        <IconLogoBoldCanva />
+      <div title='IconBrandCanva'>
+        <IconBrandCanva />
       </div>
-      <div title='IconLogoBoldCapCut'>
-        <IconLogoBoldCapCut />
+      <div title='IconBrandCapCut'>
+        <IconBrandCapCut />
       </div>
-      <div title='IconLogoBoldClickUp'>
-        <IconLogoBoldClickUp />
+      <div title='IconBrandClickUp'>
+        <IconBrandClickUp />
       </div>
-      <div title='IconLogoBoldCloudflare'>
-        <IconLogoBoldCloudflare />
+      <div title='IconBrandCloudflare'>
+        <IconBrandCloudflare />
       </div>
-      <div title='IconLogoBoldElevenlabs'>
-        <IconLogoBoldElevenlabs />
+      <div title='IconBrandElevenlabs'>
+        <IconBrandElevenlabs />
       </div>
-      <div title='IconLogoBoldExcalidraw'>
-        <IconLogoBoldExcalidraw />
+      <div title='IconBrandExcalidraw'>
+        <IconBrandExcalidraw />
       </div>
-      <div title='IconLogoBoldFigma'>
-        <IconLogoBoldFigma />
+      <div title='IconBrandFigma'>
+        <IconBrandFigma />
       </div>
-      <div title='IconLogoBoldFontshare'>
-        <IconLogoBoldFontshare />
+      <div title='IconBrandFontshare'>
+        <IconBrandFontshare />
       </div>
-      <div title='IconLogoBoldGithub'>
-        <IconLogoBoldGithub />
+      <div title='IconBrandGithub'>
+        <IconBrandGithub />
       </div>
-      <div title='IconLogoBoldGoogle'>
-        <IconLogoBoldGoogle />
+      <div title='IconBrandGoogle'>
+        <IconBrandGoogle />
       </div>
-      <div title='IconLogoBoldGoogleMeet'>
-        <IconLogoBoldGoogleMeet />
+      <div title='IconBrandGoogleMeet'>
+        <IconBrandGoogleMeet />
       </div>
-      <div title='IconLogoBoldGSAP'>
-        <IconLogoBoldGSAP />
+      <div title='IconBrandGSAP'>
+        <IconBrandGSAP />
       </div>
-      <div title='IconLogoBoldHuggingFace'>
-        <IconLogoBoldHuggingFace />
+      <div title='IconBrandHuggingFace'>
+        <IconBrandHuggingFace />
       </div>
-      <div title='IconLogoBoldIllustrator'>
-        <IconLogoBoldIllustrator />
+      <div title='IconBrandIllustrator'>
+        <IconBrandIllustrator />
       </div>
-      <div title='IconLogoBoldInDesign'>
-        <IconLogoBoldInDesign />
+      <div title='IconBrandInDesign'>
+        <IconBrandInDesign />
       </div>
-      <div title='IconLogoBoldInstagram'>
-        <IconLogoBoldInstagram />
+      <div title='IconBrandInstagram'>
+        <IconBrandInstagram />
       </div>
-      <div title='IconLogoBoldLinkedIn'>
-        <IconLogoBoldLinkedIn />
+      <div title='IconBrandLinkedIn'>
+        <IconBrandLinkedIn />
       </div>
-      <div title='IconLogoBoldMastercard'>
-        <IconLogoBoldMastercard />
+      <div title='IconBrandMastercard'>
+        <IconBrandMastercard />
       </div>
-      <div title='IconLogoBoldMotion'>
-        <IconLogoBoldMotion />
+      <div title='IconBrandMotion'>
+        <IconBrandMotion />
       </div>
-      <div title='IconLogoBoldNamecheap'>
-        <IconLogoBoldNamecheap />
+      <div title='IconBrandNamecheap'>
+        <IconBrandNamecheap />
       </div>
-      <div title='IconLogoBoldNetlify'>
-        <IconLogoBoldNetlify />
+      <div title='IconBrandNetlify'>
+        <IconBrandNetlify />
       </div>
-      <div title='IconLogoBoldNextJS'>
-        <IconLogoBoldNextJS />
+      <div title='IconBrandNextJS'>
+        <IconBrandNextJS />
       </div>
-      <div title='IconLogoBoldNotion'>
-        <IconLogoBoldNotion />
+      <div title='IconBrandNotion'>
+        <IconBrandNotion />
       </div>
-      <div title='IconLogoBoldPhosphorIcons'>
-        <IconLogoBoldPhosphorIcons />
+      <div title='IconBrandPhosphorIcons'>
+        <IconBrandPhosphorIcons />
       </div>
-      <div title='IconLogoBoldPhotoshop'>
-        <IconLogoBoldPhotoshop />
+      <div title='IconBrandPhotoshop'>
+        <IconBrandPhotoshop />
       </div>
-      <div title='IconLogoBoldPremierePro'>
-        <IconLogoBoldPremierePro />
+      <div title='IconBrandPremierePro'>
+        <IconBrandPremierePro />
       </div>
-      <div title='IconLogoBoldRadixUI'>
-        <IconLogoBoldRadixUI />
+      <div title='IconBrandRadixUI'>
+        <IconBrandRadixUI />
       </div>
-      <div title='IconLogoBoldResend'>
-        <IconLogoBoldResend />
+      <div title='IconBrandResend'>
+        <IconBrandResend />
       </div>
-      <div title='IconLogoBoldSERanking'>
-        <IconLogoBoldSERanking />
+      <div title='IconBrandSERanking'>
+        <IconBrandSERanking />
       </div>
-      <div title='IconLogoBoldShopify'>
-        <IconLogoBoldShopify />
+      <div title='IconBrandShopify'>
+        <IconBrandShopify />
       </div>
-      <div title='IconLogoBoldStatista'>
-        <IconLogoBoldStatista />
+      <div title='IconBrandStatista'>
+        <IconBrandStatista />
       </div>
-      <div title='IconLogoBoldTailwind'>
-        <IconLogoBoldTailwind />
+      <div title='IconBrandTailwind'>
+        <IconBrandTailwind />
       </div>
-      <div title='IconLogoBoldVercel'>
-        <IconLogoBoldVercel />
+      <div title='IconBrandVercel'>
+        <IconBrandVercel />
       </div>
-      <div title='IconLogoBoldVisa'>
-        <IconLogoBoldVisa />
+      <div title='IconBrandVisa'>
+        <IconBrandVisa />
       </div>
-      <div title='IconLogoBoldWhatsApp'>
-        <IconLogoBoldWhatsApp />
+      <div title='IconBrandWhatsApp'>
+        <IconBrandWhatsApp />
       </div>
     </div>
   ),

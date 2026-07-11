@@ -9,13 +9,13 @@ const meta = preview.meta({
     layout: 'centered',
     docs: {
       description: {
-        component: 'The semantic `<code>` inline for code snippets or file paths.',
+        component: 'The semantic `<blockquote>` element for quotations including author citation.',
       },
     },
   },
   args: {
     children:
-      'UI is the saddle, the stirrups, & the reins. UX is the feeling you get being able to ride the horse.',
+      'Quality is more important than quantity. One home run is much better than two doubles.',
   },
 })
 
@@ -25,7 +25,7 @@ export const WithAuthor = meta.story({
   render: args => (
     <Blockquote cite='https://dribble.com'>
       {args.children}
-      <BlockquoteFooter>Dribbble</BlockquoteFooter>
+      <BlockquoteFooter>Steve Jobs</BlockquoteFooter>
     </Blockquote>
   ),
 })

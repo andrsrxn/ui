@@ -17,7 +17,7 @@ const meta = preview.meta({
     variant: 'primary',
     selectable: false,
     selected: false,
-    selectedAlt: false,
+    selectedSubtle: false,
     includeIcon: false,
     full: false,
     unstyled: false,
@@ -70,12 +70,12 @@ export const Selectable = meta.story({
   ),
 })
 
-export const SelectedAlt = meta.story({
-  args: { selectable: true, selectedAlt: false },
+export const SelectedSubtle = meta.story({
+  args: { selectable: true },
   render: args => (
     <div className='flex items-center gap-4'>
       <Link {...args}>About us</Link>
-      <Link {...args} selectedAlt>
+      <Link {...args} selectedSubtle>
         Home
       </Link>
       <Link {...args}>Contact</Link>

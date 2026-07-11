@@ -48,8 +48,8 @@ export const AsTerms = meta.story({
 export const AsReference = meta.story({
   render: () => (
     <Text size='base' variant='secondary'>
-      To continue, check the status in the <Bold>Active modules</Bold> section and select{' '}
-      <Bold>Activate pro plan</Bold> to unlock all the features.
+      To continue, check the status in the <Bold>Modules</Bold> section and select{' '}
+      <Bold>Pro plan</Bold> to unlock all features.
     </Text>
   ),
 })

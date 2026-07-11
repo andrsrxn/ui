@@ -22,7 +22,7 @@ const meta = preview.meta({
 export const Base = meta.story({})
 
 /**
- * Emphize primary idea.
+ * Emphasizes secondary ideas, usually used for marketing porpuses.
  */
 export const InParagraph = meta.story({
   render: args => (

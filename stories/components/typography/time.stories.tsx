@@ -16,6 +16,7 @@ const meta = preview.meta({
   },
   args: {
     dateTime: '2026-06-17T03:24:00',
+    includeIcon: false,
     children: formatDate({
       date: new Date('2026-06-17T03:24:00'),
       includeTime: true,
@@ -32,28 +33,12 @@ export const Tertiary = meta.story({ args: { variant: 'tertiary' } })
 
 export const Inverted = meta.story({
   args: { variant: 'inverted', className: 'light' },
-  decorators: [
-    Story => {
-      return (
-        <InvertedDecorator>
-          <Story />
-        </InvertedDecorator>
-      )
-    },
-  ],
+  decorators: InvertedDecorator,
 })
 
 export const Content = meta.story({
   args: { variant: 'content' },
-  decorators: [
-    Story => {
-      return (
-        <BrandDecorator>
-          <Story />
-        </BrandDecorator>
-      )
-    },
-  ],
+  decorators: BrandDecorator,
 })
 
 export const Sizes = meta.story({

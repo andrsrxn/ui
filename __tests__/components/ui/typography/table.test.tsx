@@ -15,7 +15,7 @@ import {
 describe('Table Components', () => {
   it('renders a table structure with all components', () => {
     render(
-      <Table variant='primary' data-testid='table-wrapper'>
+      <Table variant='base' data-testid='table-wrapper'>
         <TableCaption>My Table Caption</TableCaption>
         <TableHeader>
           <TableRow>
@@ -87,8 +87,8 @@ describe('Table Components', () => {
     expect(caption.getAttribute('data-slot')).toBe('table-caption')
   })
 
-  it('applies secondary variant styles to the table', () => {
-    render(<Table variant='secondary' />)
+  it('applies surface variant styles to the table', () => {
+    render(<Table variant='surface' />)
     const table = screen.getByRole('table')
     expect(table.className).toContain('[&_tbody_tr:hover]:bg-surface-hover')
   })

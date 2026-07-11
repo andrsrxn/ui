@@ -19,7 +19,7 @@ const meta = preview.meta({
     variant: 'base',
     center: false,
     size: 'base',
-    children: 'Heading text',
+    children: 'The quick brown fox jumps over the lazy dog',
   },
 })
 
@@ -33,15 +33,7 @@ export const Content = meta.story({
   args: {
     variant: 'content',
   },
-  decorators: [
-    Story => {
-      return (
-        <BrandDecorator>
-          <Story />
-        </BrandDecorator>
-      )
-    },
-  ],
+  decorators: BrandDecorator,
 })
 
 export const Inverted = meta.story({
@@ -49,13 +41,7 @@ export const Inverted = meta.story({
     variant: 'inverted',
     className: 'light',
   },
-  decorators: [
-    Story => (
-      <InvertedDecorator>
-        <Story />
-      </InvertedDecorator>
-    ),
-  ],
+  decorators: InvertedDecorator,
 })
 
 export const Levels = meta.story({
@@ -163,9 +149,11 @@ export const Centered = meta.story({
 
 export const WithParagraph = meta.story({
   render: args => (
-    <>
-      <Heading {...args}>Heading</Heading>
-      <Text variant='secondary'>Supporting long text or description</Text>
-    </>
+    <div className='grid gap-2'>
+      <Heading {...args}>Supercharge your team's workflow</Heading>
+      <Text variant='secondary' desktop='lg'>
+        Transform project management with seamless collaboration and intelligent automation.
+      </Text>
+    </div>
   ),
 })

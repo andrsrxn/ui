@@ -10,6 +10,7 @@ import {
   TableHeader,
   TableRow,
 } from '../../../src/components/ui/typography/table'
+import { SurfaceDecorator } from '../../shared/decorators'
 import { formatCurrency } from '../../utils/numbers'
 
 const data = [
@@ -115,17 +116,12 @@ const meta = preview.meta({
   },
 })
 
-export const Primary = meta.story({})
+export const Base = meta.story({})
 
-export const Secondary = meta.story({
-  args: { variant: 'secondary' },
-  decorators: [
-    STORY => (
-      <div className='bg-surface transition-theme p-4'>
-        <STORY />
-      </div>
-    ),
-  ],
+export const Surface = meta.story({
+  args: { variant: 'surface' },
+
+  decorators: SurfaceDecorator,
 })
 
 export const Selected = meta.story({
@@ -145,7 +141,7 @@ export const Selected = meta.story({
             <TableRow
               key={invoice.invoice}
               // biome-ignore lint/style/noMagicNumbers: mocking random rows to be selected
-              data-state={i === 2 || i === 5 ? 'selected' : undefined}>
+              data-selected={i === 2 || i === 3 || i === 5 ? true : undefined}>
               <TableCell className='font-medium'>{invoice.invoice}</TableCell>
               <TableCell>{invoice.paymentStatus}</TableCell>
               <TableCell>{invoice.paymentMethod}</TableCell>

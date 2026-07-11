@@ -46,8 +46,8 @@ export const Colors = meta.story({
       <div className='bg-surface text-body-sm border-base flex size-20 items-center justify-center rounded-sm border p-1 text-center'>
         Base
       </div>
-      <div className='bg-surface text-body-sm border-base-alt flex size-20 items-center justify-center rounded-sm border p-1 text-center'>
-        Base Alt
+      <div className='bg-surface text-body-sm border-base-sublte flex size-20 items-center justify-center rounded-sm border p-1 text-center'>
+        Base subtle
       </div>
       <div className='bg-surface text-body-sm border-inverted flex size-20 items-center justify-center rounded-sm border p-1 text-center'>
         Inverted
@@ -70,28 +70,28 @@ export const Colors = meta.story({
         Brand
       </div>
       <div className='bg-surface text-body-sm border-accent-blue flex size-20 items-center justify-center rounded-sm border p-1 text-center'>
-        Accent Blue
+        Accent blue
       </div>
       <div className='bg-surface text-body-sm border-accent-green flex size-20 items-center justify-center rounded-sm border p-1 text-center'>
-        Accent Green
+        Accent green
       </div>
       <div className='bg-surface text-body-sm border-accent-red flex size-20 items-center justify-center rounded-sm border p-1 text-center'>
-        Accent Red
+        Accent red
       </div>
       <div className='bg-surface text-body-sm border-accent-yellow flex size-20 items-center justify-center rounded-sm border p-1 text-center'>
-        Accent Yellow
+        Accent yellow
       </div>
       <div className='bg-surface text-body-sm border-accent-teal flex size-20 items-center justify-center rounded-sm border p-1 text-center'>
-        Accent Teal
+        Accent teal
       </div>
       <div className='bg-surface text-body-sm border-accent-magenta flex size-20 items-center justify-center rounded-sm border p-1 text-center'>
-        Accent Magenta
+        Accent magenta
       </div>
       <div className='bg-surface text-body-sm border-accent-purple flex size-20 items-center justify-center rounded-sm border p-1 text-center'>
-        Accent Purple
+        Accent purple
       </div>
       <div className='bg-surface text-body-sm border-accent-orange flex size-20 items-center justify-center rounded-sm border p-1 text-center'>
-        Accent Orange
+        Accent orange
       </div>
       <div className='bg-surface text-body-sm border-info flex size-20 items-center justify-center rounded-sm border p-1 text-center'>
         Info
@@ -117,8 +117,8 @@ export const AsSeparator = meta.story({
         Base
       </div>
       <div className='bg-surface text-body-sm relative flex aspect-square size-40 justify-center rounded-sm border p-4 text-center'>
-        <div className='border-base-alt absolute inset-s-0 top-1/2 h-px w-full -translate-y-1/2 border-b' />
-        Base Alt
+        <div className='border-base-subtle absolute inset-s-0 top-1/2 h-px w-full -translate-y-1/2 border-b' />
+        Base subtle
       </div>
     </div>
   ),

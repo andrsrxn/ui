@@ -1,18 +1,40 @@
-import type { ComponentProps } from 'react'
-import { cn } from '../../src/lib/utils/theme'
+import type { PartialStoryFn } from 'storybook/internal/types'
 
-export const BrandDecorator = ({ className, children, ...props }: ComponentProps<'div'>) => {
+export const BrandDecorator = (Story: PartialStoryFn) => {
   return (
-    <div className={cn('bg-brand w-full p-4', className)} {...props}>
-      {children}
+    <div data-slot='brand-decorator'>
+      <style>{`
+        body {
+          background: var(--background-color-brand)
+        }
+      `}</style>
+      <Story />
     </div>
   )
 }
 
-export const InvertedDecorator = ({ className, children, ...props }: ComponentProps<'div'>) => {
+export const InvertedDecorator = (Story: PartialStoryFn) => {
   return (
-    <div className={cn('dark bg-base p-4', className)} {...props}>
-      {children}
+    <div data-slot='inverted-decorator'>
+      <style>{`
+        body {
+          background: var(--background-color-base-inverted)
+        }
+      `}</style>
+      <Story />
+    </div>
+  )
+}
+
+export const SurfaceDecorator = (Story: PartialStoryFn) => {
+  return (
+    <div data-slot='surface-decorator'>
+      <style>{`
+        body {
+          background: var(--background-color-surface)
+        }
+      `}</style>
+      <Story />
     </div>
   )
 }

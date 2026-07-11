@@ -28,9 +28,9 @@ const meta = preview.meta({
     nested: false,
     children: (
       <>
-        <ListItem>Item 1</ListItem>
-        <ListItem>Item 2</ListItem>
-        <ListItem>Item 3</ListItem>
+        <ListItem>Unlimited collaborative workspaces</ListItem>
+        <ListItem>Advanced analytics and custom reporting dashboard</ListItem>
+        <ListItem>Dedicated account manager and 24/7 priority support</ListItem>
       </>
     ),
   },
@@ -49,26 +49,14 @@ export const Inverted = meta.story({
     variant: 'inverted',
     className: 'light',
   },
-  decorators: [
-    Story => (
-      <InvertedDecorator>
-        <Story />
-      </InvertedDecorator>
-    ),
-  ],
+  decorators: InvertedDecorator,
 })
 
 export const Content = meta.story({
   args: {
     variant: 'content',
   },
-  decorators: [
-    Story => (
-      <BrandDecorator>
-        <Story />
-      </BrandDecorator>
-    ),
-  ],
+  decorators: BrandDecorator,
 })
 
 export const Ordered = meta.story({
@@ -95,12 +83,11 @@ export const Nested = meta.story({
         Levels
         <List nested ordered={false}>
           <ListItem>Admins</ListItem>
-          <ListItem>Users</ListItem>
           <ListItem>
-            The following items:
+            Users
             <List nested ordered>
-              <ListItem>Sub-option A</ListItem>
-              <ListItem>Sub-option B</ListItem>
+              <ListItem>Basic</ListItem>
+              <ListItem>Premium</ListItem>
             </List>
           </ListItem>
         </List>

@@ -66,15 +66,7 @@ export const Content = meta.story({
   args: {
     variant: 'content',
   },
-  decorators: [
-    STORY => {
-      return (
-        <BrandDecorator>
-          <STORY />
-        </BrandDecorator>
-      )
-    },
-  ],
+  decorators: BrandDecorator,
 })
 
 export const Inverted = meta.story({
@@ -82,41 +74,35 @@ export const Inverted = meta.story({
     variant: 'inverted',
     className: 'light',
   },
-  decorators: [
-    STORY => (
-      <InvertedDecorator>
-        <STORY />
-      </InvertedDecorator>
-    ),
-  ],
+  decorators: InvertedDecorator,
 })
 
 export const Sizes = meta.story({
   render: args => (
     <div className='flex flex-col gap-4'>
       <Label {...args} size='xs'>
-        Text x-small
+        Label xs
       </Label>
       <Label {...args} size='sm'>
-        Text small
+        Label sm
       </Label>
       <Label {...args} size='base'>
-        Text base
+        Label base
       </Label>
       <Label {...args} size='lg'>
-        Text large
+        Label lg
       </Label>
       <Label {...args} size='xl'>
-        Text x-large
+        Label xl
       </Label>
       <Label {...args} size='2xl'>
-        Text 2x-large
+        Label 2xl
       </Label>
       <Label {...args} size='3xl'>
-        Text 3x-large
+        Label 3xl
       </Label>
       <Label {...args} size='4xl'>
-        Text 4x-large
+        Label 4xl
       </Label>
     </div>
   ),

@@ -39,6 +39,9 @@ export const Sizes = meta.story({
   ),
 })
 
+/**
+ * Meant to be used with `tertiary` variant.
+ */
 export const WithSeparator = meta.story({
   args: {
     variant: 'tertiary',
