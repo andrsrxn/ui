@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/style/useNamingConvention: Story rendering */
 import '@fontsource/fira-mono/500.css'
 import '@fontsource-variable/hanken-grotesk/wght.css'
 
@@ -18,20 +19,21 @@ import type { PartialStoryFn, StoryContext } from 'storybook/internal/types'
 import theme from './theme'
 import '../src/globals.css'
 import { UIProvider } from '../src/components/providers/ui-provider'
+import type { TextDirection } from '../src/components/providers/direction-provider'
 
-// biome-ignore lint/style/useNamingConvention: component rendering
 const RTLDecorator = (Story: PartialStoryFn, context: StoryContext) => {
   document.documentElement.dir = context.globals.rtl === 'RTL' ? 'rtl' : 'ltr'
 
   return <Story />
 }
 
-// biome-ignore lint/style/useNamingConvention: component rendering
-const LayoutDecorator = (Story: PartialStoryFn) => {
+const LayoutDecorator = (Story: PartialStoryFn, context: StoryContext) => {
   return (
-    <UIProvider>
-      <Story />
-      {/* TODO: <Toaster /> */}
+    <UIProvider dir={context.globals.rtl as TextDirection}>
+      <div className='isolate'>
+        <Story />
+        {/* TODO: <Toaster /> */}
+      </div>
     </UIProvider>
   )
 }
@@ -39,7 +41,8 @@ const LayoutDecorator = (Story: PartialStoryFn) => {
 const decorators = [
   withThemeByClassName({
     themes: {
-      light: 'light  [&_.docs-story]:bg-base',
+      light:
+        'light [&_.docs-story]:bg-base [&_.docs-story]:has-data-[slot=surface-decorator]:bg-surface [&_.docs-story]:has-data-[slot=brand-decorator]:bg-brand [&_.docs-story]:has-data-[slot=inverted-decorator]:bg-base-inverted',
       dark: 'dark [&_.docs-story]:bg-base',
     },
     defaultTheme: 'light',
