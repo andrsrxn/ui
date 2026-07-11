@@ -246,9 +246,10 @@
   --text-selectable: var(--text-secondary);
   --text-selectable-hover: var(--text-primary);
   --text-selected: var(--color-info-700);
+  --text-selected-content: var(--text-inverted-static);
   --text-link: var(--color-brand-600);
   --text-details: var(--color-brand-700);
-  --text-details-subtle: var(--color-brand-300);
+  --text-details-hover: var(--color-brand-300);
   --text-content: var(--text-inverted-static);
   --text-brand: var(--color-brand-700);
   --text-brand-content: var(--color-brand-200);
@@ -285,7 +286,7 @@
 
   /* Border */
   --border-base: var(--color-neutral-200);
-  --border-base-alt: var(--color-neutral-100);
+  --border-base-subtle: var(--color-neutral-100);
   --border-inverted: var(--color-neutral-800);
 
   /* Border applications */
@@ -327,119 +328,107 @@
   --background-to-overlay: var(--color-neutral-600);
 
   /* Background Applications */
-  --background-input: var(--background-base);
-  --background-input-hover: var(--background-base-hover);
-  --background-input-active: var(--background-base-active);
-  --background-input-alt: var(--background-base-alt);
-  --background-input-alt-hover: var(--background-base-alt-hover);
-  --background-input-alt-active: var(--background-base-alt-active);
   --background-details: var(--color-brand-100);
-  --background-details-bold: var(--color-brand-200);
+  --background-details-hover: var(--color-brand-200);
   --background-tooltip: var(--background-base-inverted);
   --background-surface: var(--color-neutral-0);
   --background-surface-hover: var(--color-neutral-50);
   --background-surface-active: var(--color-neutral-100);
-  --background-surface-alt: var(--color-neutral-50);
-  --background-surface-alt-hover: var(--color-neutral-100);
-  --background-surface-alt-active: var(--color-neutral-200);
-  --background-selected: var(--color-brand-50);
-  --background-selected-hover: var(--color-brand-100);
-  --background-selected-active: var(--color-brand-200);
-  --background-selected-bold: var(--color-brand-600);
-  --background-selected-bold-hover: var(--color-brand-700);
-  --background-selected-bold-active: var(--color-brand-800);
+  --background-selected-subtle: var(--color-brand-50);
+  --background-selected-subtle-hover: var(--color-brand-100);
+  --background-selected-subtle-active: var(--color-brand-200);
+  --background-selected: var(--color-brand-600);
+  --background-selected-hover: var(--color-brand-700);
+  --background-selected-active: var(--color-brand-800);
   --background-scrollbar: var(--color-alpha-0);
   --background-scrollbar-thumb: var(--color-neutral-200);
   --background-scrollbar-thumb-hover: var(--color-neutral-300);
   --background-scrollbar-thumb-active: var(--color-neutral-400);
-  --background-scrollbar-thumb-bold: var(--color-neutral-300);
-  --background-scrollbar-thumb-bold-hover: var(--color-neutral-400);
-  --background-scrollbar-thumb-bold-active: var(--color-neutral-500);
-  --background-brand-subtlest: var(--color-brand-50);
-  --background-brand-subtlest-hover: var(--color-brand-100);
-  --background-brand-subtlest-active: var(--color-brand-200);
+  --background-brand-subtle: var(--color-brand-50);
+  --background-brand-subtle-hover: var(--color-brand-100);
+  --background-brand-subtle-active: var(--color-brand-200);
   --background-brand: var(--color-brand-600);
   --background-brand-hover: var(--color-brand-700);
   --background-brand-active: var(--color-brand-800);
 
   /* Background Feedback */
-  --background-info-subtlest: var(--color-info-50);
-  --background-info-subtlest-hover: var(--color-info-100);
-  --background-info-subtlest-active: var(--color-info-200);
+  --background-info-subtle: var(--color-info-50);
+  --background-info-subtle-hover: var(--color-info-100);
+  --background-info-subtle-active: var(--color-info-200);
   --background-info: var(--color-info-600);
   --background-info-hover: var(--color-info-700);
   --background-info-active: var(--color-info-800);
-  --background-success-subtlest: var(--color-success-50);
-  --background-success-subtlest-hover: var(--color-success-100);
-  --background-success-subtlest-active: var(--color-success-200);
+  --background-success-subtle: var(--color-success-50);
+  --background-success-subtle-hover: var(--color-success-100);
+  --background-success-subtle-active: var(--color-success-200);
   --background-success: var(--color-success-600);
   --background-success-hover: var(--color-success-700);
   --background-success-active: var(--color-success-800);
-  --background-warning-subtlest: var(--color-warning-50);
-  --background-warning-subtlest-hover: var(--color-warning-100);
-  --background-warning-subtlest-active: var(--color-warning-200);
+  --background-warning-subtle: var(--color-warning-50);
+  --background-warning-subtle-hover: var(--color-warning-100);
+  --background-warning-subtle-active: var(--color-warning-200);
   --background-warning: var(--color-warning-700);
   --background-warning-hover: var(--color-warning-800);
   --background-warning-active: var(--color-warning-900);
-  --background-danger-subtlest: var(--color-danger-50);
-  --background-danger-subtlest-hover: var(--color-danger-100);
-  --background-danger-subtlest-active: var(--color-danger-200);
+  --background-danger-subtle: var(--color-danger-50);
+  --background-danger-subtle-hover: var(--color-danger-100);
+  --background-danger-subtle-active: var(--color-danger-200);
   --background-danger: var(--color-danger-600);
   --background-danger-hover: var(--color-danger-700);
   --background-danger-active: var(--color-danger-800);
-  --background-idle-subtlest: var(--color-idle-50);
-  --background-idle-subtlest-hover: var(--color-idle-100);
-  --background-idle-subtlest-active: var(--color-idle-200);
+  --background-idle-subtle: var(--color-idle-50);
+  --background-idle-subtle-hover: var(--color-idle-100);
+  --background-idle-subtle-active: var(--color-idle-200);
   --background-idle: var(--color-idle-500);
   --background-idle-hover: var(--color-idle-600);
   --background-idle-active: var(--color-idle-700);
 
   /* Background Accent */
-  --background-accent-teal-subtlest: var(--color-accent-teal-50);
-  --background-accent-teal-subtlest-hover: var(--color-accent-teal-100);
-  --background-accent-teal-subtlest-active: var(--color-accent-teal-200);
+  --background-accent-teal-subtle: var(--color-accent-teal-50);
+  --background-accent-teal-subtle-hover: var(--color-accent-teal-100);
+  --background-accent-teal-subtle-active: var(--color-accent-teal-200);
   --background-accent-teal: var(--color-accent-teal-600);
   --background-accent-teal-hover: var(--color-accent-teal-700);
   --background-accent-teal-active: var(--color-accent-teal-800);
-  --background-accent-magenta-subtlest: var(--color-accent-magenta-50);
-  --background-accent-magenta-subtlest-hover: var(--color-accent-magenta-100);
-  --background-accent-magenta-subtlest-active: var(--color-accent-magenta-200);
+  --background-accent-magenta-subtle: var(--color-accent-magenta-50);
+  --background-accent-magenta-subtle-hover: var(--color-accent-magenta-100);
+  --background-accent-magenta-subtle-active: var(--color-accent-magenta-200);
   --background-accent-magenta: var(--color-accent-magenta-600);
   --background-accent-magenta-hover: var(--color-accent-magenta-700);
   --background-accent-magenta-active: var(--color-accent-magenta-800);
-  --background-accent-purple-subtlest: var(--color-accent-purple-50);
-  --background-accent-purple-subtlest-hover: var(--color-accent-purple-100);
-  --background-accent-purple-subtlest-active: var(--color-accent-purple-200);
+  --background-accent-purple-subtle: var(--color-accent-purple-50);
+  --background-accent-purple-subtle-hover: var(--color-accent-purple-100);
+  --background-accent-purple-subtle-active: var(--color-accent-purple-200);
   --background-accent-purple: var(--color-accent-purple-600);
   --background-accent-purple-hover: var(--color-accent-purple-700);
   --background-accent-purple-active: var(--color-accent-purple-800);
-  --background-accent-orange-subtlest: var(--color-accent-orange-50);
-  --background-accent-orange-subtlest-hover: var(--color-accent-orange-100);
-  --background-accent-orange-subtlest-active: var(--color-accent-orange-200);
+  --background-accent-orange-subtle: var(--color-accent-orange-50);
+  --background-accent-orange-subtle-hover: var(--color-accent-orange-100);
+  --background-accent-orange-subtle-active: var(--color-accent-orange-200);
   --background-accent-orange: var(--color-accent-orange-600);
   --background-accent-orange-hover: var(--color-accent-orange-700);
   --background-accent-orange-active: var(--color-accent-orange-800);
-  --background-accent-blue-subtlest: var(--color-accent-blue-50);
-  --background-accent-blue-subtlest-hover: var(--color-accent-blue-100);
-  --background-accent-blue-subtlest-active: var(--color-accent-blue-200);
+  --background-accent-blue-subtle: var(--color-accent-blue-50);
+  --background-accent-blue-subtle-hover: var(--color-accent-blue-100);
+  --background-accent-blue-subtle-active: var(--color-accent-blue-200);
   --background-accent-blue: var(--color-accent-blue-600);
   --background-accent-blue-hover: var(--color-accent-blue-700);
   --background-accent-blue-active: var(--color-accent-blue-800);
-  --background-accent-green-subtlest: var(--color-accent-green-50);
-  --background-accent-green-subtlest-hover: var(--color-accent-green-100);
-  --background-accent-green-subtlest-active: var(--color-accent-green-200);
+  --background-accent-green-subtle: var(--color-accent-green-50);
+  --background-accent-green-subtle-hover: var(--color-accent-green-100);
+  --background-accent-green-subtle-active: var(--color-accent-green-200);
   --background-accent-green: var(--color-accent-green-600);
   --background-accent-green-hover: var(--color-accent-green-700);
   --background-accent-green-active: var(--color-accent-green-800);
-  --background-accent-yellow-subtlest: var(--color-accent-yellow-50);
-  --background-accent-yellow-subtlest-hover: var(--color-accent-yellow-100);
-  --background-accent-yellow-subtlest-active: var(--color-accent-yellow-200);
+  --background-accent-yellow-subtle: var(--color-accent-yellow-50);
+  --background-accent-yellow-subtle-hover: var(--color-accent-yellow-100);
+  --background-accent-yellow-subtle-active: var(--color-accent-yellow-200);
   --background-accent-yellow: var(--color-accent-yellow-600);
   --background-accent-yellow-hover: var(--color-accent-yellow-700);
   --background-accent-yellow-active: var(--color-accent-yellow-800);
-  --background-accent-red-subtlest: var(--color-accent-red-50);
-  --background-accent-red-subtlest-hover: var(--color-accent-red-100);
-  --background-accent-red-subtlest-active: var(--color-accent-red-200);
+  --background-accent-red-subtle: var(--color-accent-red-50);
+  --background-accent-red-subtle-hover: var(--color-accent-red-100);
+  --background-accent-red-subtle-active: var(--color-accent-red-200);
   --background-accent-red: var(--color-accent-red-600);
   --background-accent-red-hover: var(--color-accent-red-700);
   --background-accent-red-active: var(--color-accent-red-800);
@@ -497,9 +486,10 @@
   --text-selectable: var(--text-secondary);
   --text-selectable-hover: var(--text-primary);
   --text-selected: var(--color-info-300);
+  --text-selected-content: var(--text-inverted-static);
   --text-link: var(--color-brand-400);
   --text-details: var(--color-brand-300);
-  --text-details-subtle: var(--color-brand-700);
+  --text-details-hover: var(--color-brand-700);
   --text-content: var(--text-inverted-static);
   --text-brand: var(--color-brand-300);
   --text-brand-content: var(--color-brand-200);
@@ -536,7 +526,7 @@
 
   /* Border */
   --border-base: var(--color-neutral-600);
-  --border-base-alt: var(--color-neutral-700);
+  --border-base-subtle: var(--color-neutral-700);
   --border-inverted: var(--color-neutral-100);
 
   /* Border Applications */
@@ -581,119 +571,110 @@
   --background-input: var(--background-base);
   --background-input-hover: var(--background-base-hover);
   --background-input-active: var(--background-base-active);
-  --background-input-alt: var(--background-base-alt);
-  --background-input-alt-hover: var(--background-base-alt-hover);
-  --background-input-alt-active: var(--background-base-alt-active);
   --background-details: var(--color-brand-900);
-  --background-details-bold: var(--color-brand-800);
+  --background-details-hover: var(--color-brand-800);
   --background-tooltip: var(--background-base-inverted);
   --background-surface: var(--color-neutral-800);
   --background-surface-hover: var(--color-neutral-700);
   --background-surface-active: var(--color-neutral-600);
-  --background-surface-alt: var(--color-neutral-800);
-  --background-surface-alt-hover: var(--color-neutral-700);
-  --background-surface-alt-active: var(--color-neutral-600);
-  --background-selected: var(--color-brand-950);
-  --background-selected-hover: var(--color-brand-900);
-  --background-selected-active: var(--color-brand-800);
-  --background-selected-bold: var(--color-brand-600);
-  --background-selected-bold-hover: var(--color-brand-500);
-  --background-selected-bold-active: var(--color-brand-400);
-  --background-selected-alt: var(--background-base-accent);
-  --background-selected-alt-hover: var(--background-base-accent-hover);
-  --background-selected-alt-active: var(--background-base-accent-active);
+  --background-selected-subtle: var(--color-brand-950);
+  --background-selected-subtle-hover: var(--color-brand-900);
+  --background-selected-subtle-active: var(--color-brand-800);
+  --background-selected: var(--color-brand-600);
+  --background-selected-hover: var(--color-brand-500);
+  --background-selected-active: var(--color-brand-400);
+  --background-selected-base: var(--background-base-accent);
+  --background-selected-base-hover: var(--background-base-accent-hover);
+  --background-selected-base-active: var(--background-base-accent-active);
   --background-scrollbar: var(--color-alpha-0);
   --background-scrollbar-thumb: var(--color-neutral-600);
   --background-scrollbar-thumb-hover: var(--color-neutral-500);
   --background-scrollbar-thumb-active: var(--color-neutral-400);
-  --background-scrollbar-thumb-bold: var(--color-neutral-700);
-  --background-scrollbar-thumb-bold-hover: var(--color-neutral-600);
-  --background-scrollbar-thumb-bold-active: var(--color-neutral-500);
-  --background-brand-subtlest: var(--color-brand-950);
-  --background-brand-subtlest-hover: var(--color-brand-900);
-  --background-brand-subtlest-active: var(--color-brand-800);
+  --background-brand-subtle: var(--color-brand-950);
+  --background-brand-subtle-hover: var(--color-brand-900);
+  --background-brand-subtle-active: var(--color-brand-800);
   --background-brand: var(--color-brand-600);
   --background-brand-hover: var(--color-brand-500);
   --background-brand-active: var(--color-brand-400);
 
   /* Background Feedback */
-  --background-info-subtlest: var(--color-info-950);
-  --background-info-subtlest-hover: var(--color-info-900);
-  --background-info-subtlest-active: var(--color-info-800);
+  --background-info-subtle: var(--color-info-950);
+  --background-info-subtle-hover: var(--color-info-900);
+  --background-info-subtle-active: var(--color-info-800);
   --background-info: var(--color-info-600);
   --background-info-hover: var(--color-info-500);
   --background-info-active: var(--color-info-400);
-  --background-success-subtlest: var(--color-success-950);
-  --background-success-subtlest-hover: var(--color-success-900);
-  --background-success-subtlest-active: var(--color-success-800);
+  --background-success-subtle: var(--color-success-950);
+  --background-success-subtle-hover: var(--color-success-900);
+  --background-success-subtle-active: var(--color-success-800);
   --background-success: var(--color-success-600);
   --background-success-hover: var(--color-success-500);
   --background-success-active: var(--color-success-400);
-  --background-warning-subtlest: var(--color-warning-950);
-  --background-warning-subtlest-hover: var(--color-warning-900);
-  --background-warning-subtlest-active: var(--color-warning-800);
+  --background-warning-subtle: var(--color-warning-950);
+  --background-warning-subtle-hover: var(--color-warning-900);
+  --background-warning-subtle-active: var(--color-warning-800);
   --background-warning: var(--color-warning-700);
   --background-warning-hover: var(--color-warning-600);
   --background-warning-active: var(--color-warning-500);
-  --background-danger-subtlest: var(--color-danger-950);
-  --background-danger-subtlest-hover: var(--color-danger-900);
-  --background-danger-subtlest-active: var(--color-danger-800);
+  --background-danger-subtle: var(--color-danger-950);
+  --background-danger-subtle-hover: var(--color-danger-900);
+  --background-danger-subtle-active: var(--color-danger-800);
   --background-danger: var(--color-danger-600);
   --background-danger-hover: var(--color-danger-500);
   --background-danger-active: var(--color-danger-400);
-  --background-idle-subtlest: var(--color-idle-950);
-  --background-idle-subtlest-hover: var(--color-idle-900);
-  --background-idle-subtlest-active: var(--color-idle-800);
+  --background-idle-subtle: var(--color-idle-950);
+  --background-idle-subtle-hover: var(--color-idle-900);
+  --background-idle-subtle-active: var(--color-idle-800);
   --background-idle: var(--color-idle-500);
   --background-idle-hover: var(--color-idle-400);
   --background-idle-active: var(--color-idle-300);
 
   /* Background Accent */
-  --background-accent-teal-subtlest: var(--color-accent-teal-950);
-  --background-accent-teal-subtlest-hover: var(--color-accent-teal-900);
-  --background-accent-teal-subtlest-active: var(--color-accent-teal-800);
+  --background-accent-teal-subtle: var(--color-accent-teal-950);
+  --background-accent-teal-subtle-hover: var(--color-accent-teal-900);
+  --background-accent-teal-subtle-active: var(--color-accent-teal-800);
   --background-accent-teal: var(--color-accent-teal-600);
   --background-accent-teal-hover: var(--color-accent-teal-500);
   --background-accent-teal-active: var(--color-accent-teal-400);
-  --background-accent-magenta-subtlest: var(--color-accent-magenta-950);
-  --background-accent-magenta-subtlest-hover: var(--color-accent-magenta-900);
-  --background-accent-magenta-subtlest-active: var(--color-accent-magenta-800);
+  --background-accent-magenta-subtle: var(--color-accent-magenta-950);
+  --background-accent-magenta-subtle-hover: var(--color-accent-magenta-900);
+  --background-accent-magenta-subtle-active: var(--color-accent-magenta-800);
   --background-accent-magenta: var(--color-accent-magenta-600);
   --background-accent-magenta-hover: var(--color-accent-magenta-500);
   --background-accent-magenta-active: var(--color-accent-magenta-400);
-  --background-accent-purple-subtlest: var(--color-accent-purple-950);
-  --background-accent-purple-subtlest-hover: var(--color-accent-purple-900);
-  --background-accent-purple-subtlest-active: var(--color-accent-purple-800);
+  --background-accent-purple-subtle: var(--color-accent-purple-950);
+  --background-accent-purple-subtle-hover: var(--color-accent-purple-900);
+  --background-accent-purple-subtle-active: var(--color-accent-purple-800);
   --background-accent-purple: var(--color-accent-purple-600);
   --background-accent-purple-hover: var(--color-accent-purple-500);
   --background-accent-purple-active: var(--color-accent-purple-400);
-  --background-accent-orange-subtlest: var(--color-accent-orange-950);
-  --background-accent-orange-subtlest-hover: var(--color-accent-orange-900);
-  --background-accent-orange-subtlest-active: var(--color-accent-orange-800);
+  --background-accent-orange-subtle: var(--color-accent-orange-950);
+  --background-accent-orange-subtle-hover: var(--color-accent-orange-900);
+  --background-accent-orange-subtle-active: var(--color-accent-orange-800);
   --background-accent-orange: var(--color-accent-orange-600);
   --background-accent-orange-hover: var(--color-accent-orange-500);
   --background-accent-orange-active: var(--color-accent-orange-400);
-  --background-accent-blue-subtlest: var(--color-accent-blue-950);
-  --background-accent-blue-subtlest-hover: var(--color-accent-blue-900);
-  --background-accent-blue-subtlest-active: var(--color-accent-blue-800);
+  --background-accent-blue-subtle: var(--color-accent-blue-950);
+  --background-accent-blue-subtle-hover: var(--color-accent-blue-900);
+  --background-accent-blue-subtle-active: var(--color-accent-blue-800);
   --background-accent-blue: var(--color-accent-blue-600);
   --background-accent-blue-hover: var(--color-accent-blue-500);
   --background-accent-blue-active: var(--color-accent-blue-400);
-  --background-accent-green-subtlest: var(--color-accent-green-950);
-  --background-accent-green-subtlest-hover: var(--color-accent-green-900);
-  --background-accent-green-subtlest-active: var(--color-accent-green-800);
+  --background-accent-green-subtle: var(--color-accent-green-950);
+  --background-accent-green-subtle-hover: var(--color-accent-green-900);
+  --background-accent-green-subtle-active: var(--color-accent-green-800);
   --background-accent-green: var(--color-accent-green-600);
   --background-accent-green-hover: var(--color-accent-green-500);
   --background-accent-green-active: var(--color-accent-green-400);
-  --background-accent-yellow-subtlest: var(--color-accent-yellow-950);
-  --background-accent-yellow-subtlest-hover: var(--color-accent-yellow-900);
-  --background-accent-yellow-subtlest-active: var(--color-accent-yellow-800);
+  --background-accent-yellow-subtle: var(--color-accent-yellow-950);
+  --background-accent-yellow-subtle-hover: var(--color-accent-yellow-900);
+  --background-accent-yellow-subtle-active: var(--color-accent-yellow-800);
   --background-accent-yellow: var(--color-accent-yellow-600);
   --background-accent-yellow-hover: var(--color-accent-yellow-500);
   --background-accent-yellow-active: var(--color-accent-yellow-400);
-  --background-accent-red-subtlest: var(--color-accent-red-950);
-  --background-accent-red-subtlest-hover: var(--color-accent-red-900);
-  --background-accent-red-subtlest-active: var(--color-accent-red-800);
+  --background-accent-red-subtle: var(--color-accent-red-950);
+  --background-accent-red-subtle-hover: var(--color-accent-red-900);
+  --background-accent-red-subtle-active: var(--color-accent-red-800);
   --background-accent-red: var(--color-accent-red-600);
   --background-accent-red-hover: var(--color-accent-red-500);
   --background-accent-red-active: var(--color-accent-red-400);
@@ -913,7 +894,6 @@
   --spacing-icon-2xl: var(--text-label-2xl);
   --spacing-icon-3xl: var(--text-label-3xl);
   --spacing-icon-4xl: var(--text-label-4xl);
-  --spacing-icon-5xl: var(--text-label-5xl);
   --spacing-icon-responsive: 1.15em;
 
   --spacing-3xs: var(--container-3xs);
@@ -1006,9 +986,10 @@
   --text-color-selectable: var(--text-selectable);
   --text-color-selectable-hover: var(--text-selectable-hover);
   --text-color-selected: var(--text-selected);
+  --text-color-selected-content: var(--text-selected-content);
   --text-color-link: var(--text-link);
   --text-color-details: var(--text-details);
-  --text-color-details-subtle: var(--text-details-subtle);
+  --text-color-details-hover: var(--text-details-hover);
   --text-color-content: var(--text-content);
   --text-color-brand: var(--text-brand);
   --text-color-brand-content: var(--text-brand-content);
@@ -1043,7 +1024,7 @@
 
   /* Border Color */
   --border-color-base: var(--border-base);
-  --border-color-base-alt: var(--border-base-alt);
+  --border-color-base-subtle: var(--border-base-subtle);
   --border-color-inverted: var(--border-inverted);
 
   --border-color-background-base: var(--border-background-base);
@@ -1071,7 +1052,7 @@
   --border-color-accent-red: var(--border-accent-red);
 
   --outline-color-base: var(--border-base);
-  --outline-color-base-alt: var(--border-base-alt);
+  --outline-color-base-subtle: var(--border-base-subtle);
   --outline-color-inverted: var(--border-inverted);
 
   --outline-color-background-base: var(--border-background-base);
@@ -1123,37 +1104,28 @@
   --background-color-input: var(--background-input);
   --background-color-input-hover: var(--background-input-hover);
   --background-color-input-active: var(--background-input-active);
-  --background-color-input-alt: var(--background-input-alt);
-  --background-color-input-alt-hover: var(--background-input-alt-hover);
-  --background-color-input-alt-active: var(--background-input-alt-active);
   --background-color-details: var(--background-details);
-  --background-color-details-bold: var(--background-details-bold);
+  --background-color-details-hover: var(--background-details-hover);
   --background-color-tooltip: var(--background-tooltip);
   --background-color-surface: var(--background-surface);
   --background-color-surface-hover: var(--background-surface-hover);
   --background-color-surface-active: var(--background-surface-active);
-  --background-color-surface-alt: var(--background-surface-alt);
-  --background-color-surface-alt-hover: var(--background-surface-alt-hover);
-  --background-color-surface-alt-active: var(--background-surface-alt-active);
+  --background-color-selected-subtle: var(--background-selected-subtle);
+  --background-color-selected-subtle-hover: var(--background-selected-subtle-hover);
+  --background-color-selected-subtle-active: var(--background-selected-subtle-active);
   --background-color-selected: var(--background-selected);
   --background-color-selected-hover: var(--background-selected-hover);
   --background-color-selected-active: var(--background-selected-active);
-  --background-color-selected-bold: var(--background-selected-bold);
-  --background-color-selected-bold-hover: var(--background-selected-bold-hover);
-  --background-color-selected-bold-active: var(--background-selected-bold-active);
-  --background-color-selected-alt: var(--background-selected-alt);
-  --background-color-selected-alt-hover: var(--background-selected-alt-hover);
-  --background-color-selected-alt-active: var(--background-selected-alt-active);
+  --background-color-selected-base: var(--background-selected-base);
+  --background-color-selected-base-hover: var(--background-selected-base-hover);
+  --background-color-selected-base-active: var(--background-selected-base-active);
   --background-color-scrollbar: var(--background-scrollbar);
   --background-color-scrollbar-thumb: var(--background-scrollbar-thumb);
   --background-color-scrollbar-thumb-hover: var(--background-scrollbar-thumb-hover);
   --background-color-scrollbar-thumb-active: var(--background-scrollbar-thumb-active);
-  --background-color-scrollbar-thumb-bold: var(--background-scrollbar-thumb-bold);
-  --background-color-scrollbar-thumb-bold-hover: var(--background-scrollbar-thumb-bold-hover);
-  --background-color-scrollbar-thumb-bold-active: var(--background-scrollbar-thumb-bold-active);
-  --background-color-brand-subtlest: var(--background-brand-subtlest);
-  --background-color-brand-subtlest-hover: var(--background-brand-subtlest-hover);
-  --background-color-brand-subtlest-active: var(--background-brand-subtlest-active);
+  --background-color-brand-subtle: var(--background-brand-subtle);
+  --background-color-brand-subtle-hover: var(--background-brand-subtle-hover);
+  --background-color-brand-subtle-active: var(--background-brand-subtle-active);
   --background-color-brand-subtle: var(--background-brand-subtle);
   --background-color-brand-subtle-hover: var(--background-brand-subtle-hover);
   --background-color-brand-subtle-active: var(--background-brand-subtle-active);
@@ -1161,45 +1133,45 @@
   --background-color-brand-hover: var(--background-brand-hover);
   --background-color-brand-active: var(--background-brand-active);
 
-  --background-color-info-subtlest: var(--background-info-subtlest);
-  --background-color-info-subtlest-hover: var(--background-info-subtlest-hover);
-  --background-color-info-subtlest-active: var(--background-info-subtlest-active);
+  --background-color-info-subtle: var(--background-info-subtle);
+  --background-color-info-subtle-hover: var(--background-info-subtle-hover);
+  --background-color-info-subtle-active: var(--background-info-subtle-active);
   --background-color-info-subtle: var(--background-info-subtle);
   --background-color-info-subtle-hover: var(--background-info-subtle-hover);
   --background-color-info-subtle-active: var(--background-info-subtle-active);
   --background-color-info: var(--background-info);
   --background-color-info-hover: var(--background-info-hover);
   --background-color-info-active: var(--background-info-active);
-  --background-color-success-subtlest: var(--background-success-subtlest);
-  --background-color-success-subtlest-hover: var(--background-success-subtlest-hover);
-  --background-color-success-subtlest-active: var(--background-success-subtlest-active);
+  --background-color-success-subtle: var(--background-success-subtle);
+  --background-color-success-subtle-hover: var(--background-success-subtle-hover);
+  --background-color-success-subtle-active: var(--background-success-subtle-active);
   --background-color-success-subtle: var(--background-success-subtle);
   --background-color-success-subtle-hover: var(--background-success-subtle-hover);
   --background-color-success-subtle-active: var(--background-success-subtle-active);
   --background-color-success: var(--background-success);
   --background-color-success-hover: var(--background-success-hover);
   --background-color-success-active: var(--background-success-active);
-  --background-color-warning-subtlest: var(--background-warning-subtlest);
-  --background-color-warning-subtlest-hover: var(--background-warning-subtlest-hover);
-  --background-color-warning-subtlest-active: var(--background-warning-subtlest-active);
+  --background-color-warning-subtle: var(--background-warning-subtle);
+  --background-color-warning-subtle-hover: var(--background-warning-subtle-hover);
+  --background-color-warning-subtle-active: var(--background-warning-subtle-active);
   --background-color-warning-subtle: var(--background-warning-subtle);
   --background-color-warning-subtle-hover: var(--background-warning-subtle-hover);
   --background-color-warning-subtle-active: var(--background-warning-subtle-active);
   --background-color-warning: var(--background-warning);
   --background-color-warning-hover: var(--background-warning-hover);
   --background-color-warning-active: var(--background-warning-active);
-  --background-color-danger-subtlest: var(--background-danger-subtlest);
-  --background-color-danger-subtlest-hover: var(--background-danger-subtlest-hover);
-  --background-color-danger-subtlest-active: var(--background-danger-subtlest-active);
+  --background-color-danger-subtle: var(--background-danger-subtle);
+  --background-color-danger-subtle-hover: var(--background-danger-subtle-hover);
+  --background-color-danger-subtle-active: var(--background-danger-subtle-active);
   --background-color-danger-subtle: var(--background-danger-subtle);
   --background-color-danger-subtle-hover: var(--background-danger-subtle-hover);
   --background-color-danger-subtle-active: var(--background-danger-subtle-active);
   --background-color-danger: var(--background-danger);
   --background-color-danger-hover: var(--background-danger-hover);
   --background-color-danger-active: var(--background-danger-active);
-  --background-color-idle-subtlest: var(--background-idle-subtlest);
-  --background-color-idle-subtlest-hover: var(--background-idle-subtlest-hover);
-  --background-color-idle-subtlest-active: var(--background-idle-subtlest-active);
+  --background-color-idle-subtle: var(--background-idle-subtle);
+  --background-color-idle-subtle-hover: var(--background-idle-subtle-hover);
+  --background-color-idle-subtle-active: var(--background-idle-subtle-active);
   --background-color-idle-subtle: var(--background-idle-subtle);
   --background-color-idle-subtle-hover: var(--background-idle-subtle-hover);
   --background-color-idle-subtle-active: var(--background-idle-subtle-active);
@@ -1207,74 +1179,72 @@
   --background-color-idle-hover: var(--background-idle-hover);
   --background-color-idle-active: var(--background-idle-active);
 
-  --background-color-accent-teal-subtlest: var(--background-accent-teal-subtlest);
-  --background-color-accent-teal-subtlest-hover: var(--background-accent-teal-subtlest-hover);
-  --background-color-accent-teal-subtlest-active: var(--background-accent-teal-subtlest-active);
+  --background-color-accent-teal-subtle: var(--background-accent-teal-subtle);
+  --background-color-accent-teal-subtle-hover: var(--background-accent-teal-subtle-hover);
+  --background-color-accent-teal-subtle-active: var(--background-accent-teal-subtle-active);
   --background-color-accent-teal-subtle: var(--background-accent-teal-subtle);
   --background-color-accent-teal-subtle-hover: var(--background-accent-teal-subtle-hover);
   --background-color-accent-teal-subtle-active: var(--background-accent-teal-subtle-active);
   --background-color-accent-teal: var(--background-accent-teal);
   --background-color-accent-teal-hover: var(--background-accent-teal-hover);
   --background-color-accent-teal-active: var(--background-accent-teal-active);
-  --background-color-accent-magenta-subtlest: var(--background-accent-magenta-subtlest);
-  --background-color-accent-magenta-subtlest-hover: var(--background-accent-magenta-subtlest-hover);
-  --background-color-accent-magenta-subtlest-active: var(
-    --background-accent-magenta-subtlest-active
-  );
+  --background-color-accent-magenta-subtle: var(--background-accent-magenta-subtle);
+  --background-color-accent-magenta-subtle-hover: var(--background-accent-magenta-subtle-hover);
+  --background-color-accent-magenta-subtle-active: var(--background-accent-magenta-subtle-active);
   --background-color-accent-magenta-subtle: var(--background-accent-magenta-subtle);
   --background-color-accent-magenta-subtle-hover: var(--background-accent-magenta-subtle-hover);
   --background-color-accent-magenta-subtle-active: var(--background-accent-magenta-subtle-active);
   --background-color-accent-magenta: var(--background-accent-magenta);
   --background-color-accent-magenta-hover: var(--background-accent-magenta-hover);
   --background-color-accent-magenta-active: var(--background-accent-magenta-active);
-  --background-color-accent-purple-subtlest: var(--background-accent-purple-subtlest);
-  --background-color-accent-purple-subtlest-hover: var(--background-accent-purple-subtlest-hover);
-  --background-color-accent-purple-subtlest-active: var(--background-accent-purple-subtlest-active);
+  --background-color-accent-purple-subtle: var(--background-accent-purple-subtle);
+  --background-color-accent-purple-subtle-hover: var(--background-accent-purple-subtle-hover);
+  --background-color-accent-purple-subtle-active: var(--background-accent-purple-subtle-active);
   --background-color-accent-purple-subtle: var(--background-accent-purple-subtle);
   --background-color-accent-purple-subtle-hover: var(--background-accent-purple-subtle-hover);
   --background-color-accent-purple-subtle-active: var(--background-accent-purple-subtle-active);
   --background-color-accent-purple: var(--background-accent-purple);
   --background-color-accent-purple-hover: var(--background-accent-purple-hover);
   --background-color-accent-purple-active: var(--background-accent-purple-active);
-  --background-color-accent-orange-subtlest: var(--background-accent-orange-subtlest);
-  --background-color-accent-orange-subtlest-hover: var(--background-accent-orange-subtlest-hover);
-  --background-color-accent-orange-subtlest-active: var(--background-accent-orange-subtlest-active);
+  --background-color-accent-orange-subtle: var(--background-accent-orange-subtle);
+  --background-color-accent-orange-subtle-hover: var(--background-accent-orange-subtle-hover);
+  --background-color-accent-orange-subtle-active: var(--background-accent-orange-subtle-active);
   --background-color-accent-orange-subtle: var(--background-accent-orange-subtle);
   --background-color-accent-orange-subtle-hover: var(--background-accent-orange-subtle-hover);
   --background-color-accent-orange-subtle-active: var(--background-accent-orange-subtle-active);
   --background-color-accent-orange: var(--background-accent-orange);
   --background-color-accent-orange-hover: var(--background-accent-orange-hover);
   --background-color-accent-orange-active: var(--background-accent-orange-active);
-  --background-color-accent-blue-subtlest: var(--background-accent-blue-subtlest);
-  --background-color-accent-blue-subtlest-hover: var(--background-accent-blue-subtlest-hover);
-  --background-color-accent-blue-subtlest-active: var(--background-accent-blue-subtlest-active);
+  --background-color-accent-blue-subtle: var(--background-accent-blue-subtle);
+  --background-color-accent-blue-subtle-hover: var(--background-accent-blue-subtle-hover);
+  --background-color-accent-blue-subtle-active: var(--background-accent-blue-subtle-active);
   --background-color-accent-blue-subtle: var(--background-accent-blue-subtle);
   --background-color-accent-blue-subtle-hover: var(--background-accent-blue-subtle-hover);
   --background-color-accent-blue-subtle-active: var(--background-accent-blue-subtle-active);
   --background-color-accent-blue: var(--background-accent-blue);
   --background-color-accent-blue-hover: var(--background-accent-blue-hover);
   --background-color-accent-blue-active: var(--background-accent-blue-active);
-  --background-color-accent-green-subtlest: var(--background-accent-green-subtlest);
-  --background-color-accent-green-subtlest-hover: var(--background-accent-green-subtlest-hover);
-  --background-color-accent-green-subtlest-active: var(--background-accent-green-subtlest-active);
+  --background-color-accent-green-subtle: var(--background-accent-green-subtle);
+  --background-color-accent-green-subtle-hover: var(--background-accent-green-subtle-hover);
+  --background-color-accent-green-subtle-active: var(--background-accent-green-subtle-active);
   --background-color-accent-green-subtle: var(--background-accent-green-subtle);
   --background-color-accent-green-subtle-hover: var(--background-accent-green-subtle-hover);
   --background-color-accent-green-subtle-active: var(--background-accent-green-subtle-active);
   --background-color-accent-green: var(--background-accent-green);
   --background-color-accent-green-hover: var(--background-accent-green-hover);
   --background-color-accent-green-active: var(--background-accent-green-active);
-  --background-color-accent-yellow-subtlest: var(--background-accent-yellow-subtlest);
-  --background-color-accent-yellow-subtlest-hover: var(--background-accent-yellow-subtlest-hover);
-  --background-color-accent-yellow-subtlest-active: var(--background-accent-yellow-subtlest-active);
+  --background-color-accent-yellow-subtle: var(--background-accent-yellow-subtle);
+  --background-color-accent-yellow-subtle-hover: var(--background-accent-yellow-subtle-hover);
+  --background-color-accent-yellow-subtle-active: var(--background-accent-yellow-subtle-active);
   --background-color-accent-yellow-subtle: var(--background-accent-yellow-subtle);
   --background-color-accent-yellow-subtle-hover: var(--background-accent-yellow-subtle-hover);
   --background-color-accent-yellow-subtle-active: var(--background-accent-yellow-subtle-active);
   --background-color-accent-yellow: var(--background-accent-yellow);
   --background-color-accent-yellow-hover: var(--background-accent-yellow-hover);
   --background-color-accent-yellow-active: var(--background-accent-yellow-active);
-  --background-color-accent-red-subtlest: var(--background-accent-red-subtlest);
-  --background-color-accent-red-subtlest-hover: var(--background-accent-red-subtlest-hover);
-  --background-color-accent-red-subtlest-active: var(--background-accent-red-subtlest-active);
+  --background-color-accent-red-subtle: var(--background-accent-red-subtle);
+  --background-color-accent-red-subtle-hover: var(--background-accent-red-subtle-hover);
+  --background-color-accent-red-subtle-active: var(--background-accent-red-subtle-active);
   --background-color-accent-red-subtle: var(--background-accent-red-subtle);
   --background-color-accent-red-subtle-hover: var(--background-accent-red-subtle-hover);
   --background-color-accent-red-subtle-active: var(--background-accent-red-subtle-active);
@@ -1320,29 +1290,76 @@
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-elastic: cubic-bezier(0.76, 0, 0.24, 1);
 
-  /* Timing Duration */
+  /* Timing Duration, keep in sync with motion.ts */
   --transition-duration-none: 0ms;
-  --transition-duration-faster: 100ms;
+  --transition-duration-fastest: 100ms;
   --transition-duration-fast: 250ms;
   --transition-duration-base: 400ms;
   --transition-duration-slow: 650ms;
-  --transition-duration-slower: 1000ms;
+  --transition-duration-slowest: 1000ms;
 
-  /* Animation library variables */
-  --tw-anim-duration-faster: var(--transition-duration-faster);
-  --tw-anim-duration-fast: var(--transition-duration-fast);
-  --tw-anim-duration-base: var(--transition-duration-base);
-  --tw-anim-duration-normal: var(--transition-duration-base);
-  --tw-anim-duration-slow: var(--transition-duration-slow);
-  --tw-anim-duration-slower: var(--transition-duration-slower);
+  /* Timing Delay */
+  --tw-anim-delay-none: 0ms;
+  --tw-anim-delay-0: 0ms;
+  --tw-anim-delay-100: 100ms;
+  --tw-anim-delay-150: 150ms;
+  --tw-anim-delay-200: 200ms;
+  --tw-anim-delay-250: 250ms;
+  --tw-anim-delay-300: 300ms;
+  --tw-anim-delay-400: 400ms;
+  --tw-anim-delay-500: 500ms;
+  --tw-anim-delay-700: 700ms;
+  --tw-anim-delay-800: 800ms;
+  --tw-anim-delay-900: 900ms;
+  --tw-anim-delay-1000: 1000ms;
+
+  /* Animation Iteration Count Values */
+  --tw-anim-iteration-count-none: 0;
+  --tw-anim-iteration-count-once: 1;
+  --tw-anim-iteration-count-twice: 2;
+  --tw-anim-iteration-count-thrice: 3;
+  --tw-anim-iteration-count-infinite: infinite;
+
+  /* Animation Fill Mode Values */
+  --tw-anim-fill-mode-none: none;
+  --tw-anim-fill-mode-forwards: forwards;
+  --tw-anim-fill-mode-backwards: backwards;
+  --tw-anim-fill-mode-both: both;
+
+  /* Animation Steps Values */
+  --tw-anim-steps-none: 0;
+  --tw-anim-steps-retro: 8;
+  --tw-anim-steps-normal: 16;
+  --tw-anim-steps-modern: 24;
 
   /* Animations */
-  --animate-collapsible-down: collapsible-down var(--transition-duration-fast) var(--ease-base)
-    forwards;
-  --animate-collapsible-up: collapsible-up var(--transition-duration-fast) var(--ease-base);
-  --animate-accordion-down: accordion-down var(--transition-duration-fast) var(--ease-base) forwards;
-  --animate-accordion-up: accordion-up var(--transition-duration-fast) var(--ease-base);
+  --animate-collapsible-down: collapsible-down var(--transition-duration-fast) var(--ease-base);
+  --animate-collapsible-up: collapsible-up var(--transition-duration-fast) var(--ease-base) forwards;
+  --animate-accordion-down: accordion-down var(--transition-duration-fast) var(--ease-base);
+  --animate-accordion-up: accordion-up var(--transition-duration-fast) var(--ease-base) forwards;
   --animate-shake: shake var(--transition-duration-base) var(--ease-base);
+  --animate-fade-in: fadeIn var(--transition-duration-fast) var(--ease-base) forwards;
+  --animate-fade-out: fadeOut var(--transition-duration-fast) var(--ease-base) forwards;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
 
   @keyframes shake {
     0% {
@@ -1372,13 +1389,13 @@
     }
 
     100% {
-      height: var(--radix-collapsible-content-height);
+      height: var(--collapsible-panel-height);
     }
   }
 
   @keyframes collapsible-up {
     0% {
-      height: var(--radix-collapsible-content-height);
+      height: var(--collapsible-panel-height);
     }
 
     100% {
@@ -1392,13 +1409,13 @@
     }
 
     100% {
-      height: var(--radix-accordion-content-height);
+      height: var(--accordion-panel-height);
     }
   }
 
   @keyframes accordion-up {
     0% {
-      height: var(--radix-accordion-content-height);
+      height: var(--accordion-panel-height);
     }
 
     100% {
@@ -1422,16 +1439,16 @@
     @apply bg-scrollbar-thumb hover:bg-scrollbar-thumb-hover active:bg-scrollbar-thumb-active transition-theme relative size-2 rounded-full;
   }
 
+  html {
+    @apply overscroll-contain scroll-smooth text-[100%] antialiased;
+  }
+
   body {
-    @apply ease-base duration-fast bg-base font-body text-body-base text-primary selection:bg-details selection:text-details transition-theme min-h-dvh;
+    @apply bg-base font-body text-body-base text-primary selection:bg-details selection:text-details transition-theme relative h-full min-h-dvh;
   }
 
   body[data-scroll-locked] {
     @apply me-0! mr-0!;
-  }
-
-  html {
-    @apply overscroll-contain scroll-smooth text-[100%] antialiased;
   }
 
   img,
@@ -1443,25 +1460,6 @@
     @apply aspect-video;
   }
 
-  .numbered-heading > h2,
-  .numbered-heading > h3,
-  .numbered-heading > h4,
-  .numbered-heading > h5,
-  .numbered-heading > h6 {
-    @apply relative;
-  }
-
-  .numbered-heading > h2::before,
-  .numbered-heading > h3::before,
-  .numbered-heading > h4::before,
-  .numbered-heading > h5::before,
-  .numbered-heading > h6::before {
-    content: counter(heading-counter) '. ';
-    counter-increment: heading-counter;
-    display: inline-block;
-    margin-inline-end: 0.25rem;
-  }
-
   /* Automatic squircle support */
   [class*='last:rounded-']:not([class*='last:rounded-full']):not([class*='last:rounded-none']),
   [class*='first:rounded-']:not([class*='first:rounded-full']):not([class*='first:rounded-none']),
@@ -1469,19 +1467,16 @@
     corner-shape: squircle;
   }
 
-  /* Hide the default expand arrow on Safari.  */
   details summary::-webkit-details-marker {
     display: none;
   }
 
-  /* Hide default arrows from number inputs. */
-  /* Chrome, Safari, Edge, Opera */
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
-  /* Firefox */
+
   input[type='number'] {
     appearance: textfield;
     -moz-appearance: textfield;
@@ -1501,13 +1496,31 @@
     }
   }
 
-  /* Hide the default clear button (X) from search inputs. */
   input[type='search']::-webkit-search-cancel-button {
     -webkit-appearance: none;
   }
 
   .ReactCrop .ReactCrop__drag-elements .ReactCrop__drag-handle {
     @apply bg-surface size-8;
+  }
+
+  .base-ui-disable-scrollbar {
+    scrollbar-width: none;
+  }
+
+  .base-ui-disable-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  [data-slot='icon-arrow-left']:dir(rtl),
+  [data-slot='icon-arrow-right']:dir(rtl),
+  [data-slot='icon-arrow-up-right']:dir(rtl),
+  [data-slot='icon-arrow-up-left']:dir(rtl),
+  [data-slot='icon-chevron-right']:dir(rtl),
+  [data-slot='icon-chevron-left']:dir(rtl),
+  [data-slot='icon-chevron-right-double']:dir(rtl),
+  [data-slot='icon-chevron-left-double']:dir(rtl) {
+    transform: scaleX(-1);
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -1567,12 +1580,19 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Forces the invisible clickable area to be AT LEAST 44x44 */
+
     min-width: 44px;
     min-height: 44px;
-    /* Ensures it still covers the whole button if the button is larger than 44px */
+
     width: 100%;
     height: 100%;
+  }
+}
+
+@utility touch-target-initial {
+  /* biome-ignore lint/nursery/noDuplicateSelectors: false positive */
+  &::after {
+    display: none;
   }
 }
 
@@ -1602,7 +1622,7 @@
   -ms-overflow-style: auto;
   scrollbar-width: auto;
 
-  /* biome-ignore lint/nursery/noDuplicateSelectors: not duplicated */
+  /* biome-ignore lint/nursery/noDuplicateSelectors: false positive */
   &::-webkit-scrollbar {
     display: block;
   }
@@ -1630,4 +1650,70 @@
     --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: var(--ease-base);
   transition-duration: var(--transition-duration-fast);
+}
+
+@utility animate-delay-* {
+  animation-delay: calc(--value(integer) * 1ms);
+  animation-delay: --value(--tw-anim-delay-*, [duration], [*]);
+}
+
+@utility animate-duration-* {
+  animation-duration: calc(--value(integer) * 1ms);
+  animation-duration: --value(--transition-duration-*, [duration], [*]);
+}
+
+@utility animate-iteration-count-* {
+  animation-iteration-count: --value(--tw-anim-iteration-count-*, number, [number], [*]);
+}
+
+@utility animate-fill-mode-* {
+  animation-fill-mode: --value(--tw-anim-fill-mode-*, [*]);
+}
+
+@utility animate-ease-* {
+  animation-fill-mode: --value(--ease-*, [*]);
+}
+
+@utility animate-steps-* {
+  animation-timing-function: steps(--value(--tw-anim-steps-*, integer, [integer]));
+}
+
+@utility animate-direction-normal {
+  animation-direction: normal;
+}
+
+@utility animate-direction-reverse {
+  animation-direction: reverse;
+}
+
+@utility animate-direction-alternate {
+  animation-direction: alternate;
+}
+
+@utility animate-direction-alternate-reverse {
+  animation-direction: alternate-reverse;
+}
+
+@utility animate-play-running {
+  animation-play-state: running;
+}
+
+@utility animate-play-paused {
+  animation-play-state: paused;
+}
+
+@utility animate-ease-base {
+  animation-timing-function: var(--ease-base);
+}
+
+@utility animate-ease-elastic {
+  animation-timing-function: var(--ease-elastic);
+}
+
+@utility animate-ease-out {
+  animation-timing-function: var(--ease-out);
+}
+
+@utility animate-linear {
+  animation-timing-function: var(--ease-linear);
 }
