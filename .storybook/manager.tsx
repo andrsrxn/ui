@@ -15,7 +15,6 @@ addons.setConfig({
   initialActive: 'sidebar',
   sidebar: {
     showRoots: true,
-    collapsedRoots: ['other'],
   },
 })
 
