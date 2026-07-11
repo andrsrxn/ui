@@ -22,31 +22,37 @@ export const Image = ({
   const [loaded, setLoaded] = useState(false)
   const includePlaceholder = placeholderUrl && placeholderUrl.length > 0
 
+  const ImageToRender = (
+    <img
+      src={src}
+      alt={alt}
+      onLoad={() => setLoaded(true)}
+      className={cn('shrink-0', className)}
+      decoding={decoding}
+      loading={loading}
+      {...props}
+    />
+  )
+  if (!includePlaceholder) {
+    return ImageToRender
+  }
+
   return (
     <div className='relative isolate'>
-      {includePlaceholder ? (
-        <img
-          src={placeholderUrl}
-          className={cn(
-            'duration-fast ease-base pointer-events-none absolute inset-0 z-10 size-full object-cover opacity-100 transition-opacity',
-            loaded && 'opacity-0',
-            className
-          )}
-          loading='eager'
-          decoding='sync'
-          alt=''
-          aria-hidden
-        />
-      ) : null}
       <img
-        src={src}
-        alt={alt}
-        onLoad={() => setLoaded(true)}
-        className={cn('shrink-0', className)}
-        decoding={decoding}
-        loading={loading}
-        {...props}
+        src={placeholderUrl}
+        className={cn(
+          'duration-fast ease-base pointer-events-none absolute inset-0 z-10 size-full object-cover opacity-100 transition-opacity',
+          loaded && 'opacity-0',
+          className
+        )}
+        loading='eager'
+        decoding='sync'
+        alt=''
+        aria-hidden
       />
+
+      {ImageToRender}
     </div>
   )
 }
