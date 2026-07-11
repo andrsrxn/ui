@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEzLjM4MiA3LjM2M0g0Ljc3YS42NjIuNjYyIDAgMCAwLS42NjMuNjYydjcuOTVjMCAuMzY2LjI5Ny42NjIuNjYzLjY2Mmg4LjYxMmEuNjYyLjY2MiAwIDAgMCAuNjYyLS42NjJ2LTcuOTVhLjY2Mi42NjIgMCAwIDAtLjY2Mi0uNjYyWiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTEyLjMzMiAxNi42Mzd2My4zMTNtMC0xNS45djMuMzEzTTEzLjY1NyAxMmg2LjYyNW0tMTIuNTg3LjY2Mkg5LjAyYTEuMzI1IDEuMzI1IDAgMCAwIDAtMi42NUg3LjY5NXYyLjY1Wm0wIDB2MS4zMjVNNS44NzMgNy4zNjNhNy45NSA3Ljk1IDAgMSAxIDAgOS4yNzRtLTEuNDktOS4yNzRoOC42MTJjLjM2NiAwIC42NjIuMjk2LjY2Mi42NjJ2Ny45NWEuNjYyLjY2MiAwIDAgMS0uNjYyLjY2Mkg0LjM4M2EuNjYyLjY2MiAwIDAgMS0uNjYzLS42NjJ2LTcuOTVjMC0uMzY2LjI5Ny0uNjYyLjY2My0uNjYyWiIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEzLjM4MiA3LjM2M0g0Ljc3YS42NjIuNjYyIDAgMCAwLS42NjMuNjYydjcuOTVjMCAuMzY2LjI5Ny42NjIuNjYzLjY2Mmg4LjYxMmEuNjYyLjY2MiAwIDAgMCAuNjYyLS42NjJ2LTcuOTVhLjY2Mi42NjIgMCAwIDAtLjY2Mi0uNjYyWiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTEyLjMzMiAxNi42Mzd2My4zMTNtMC0xNS45djMuMzEzTTEzLjY1NyAxMmg2LjYyNW0tMTIuNTg3LjY2Mkg5LjAyYTEuMzI1IDEuMzI1IDAgMCAwIDAtMi42NUg3LjY5NXYyLjY1Wm0wIDB2MS4zMjVNNS44NzMgNy4zNjNhNy45NSA3Ljk1IDAgMSAxIDAgOS4yNzRtLTEuNDktOS4yNzRoOC42MTJjLjM2NiAwIC42NjIuMjk2LjY2Mi42NjJ2Ny45NWEuNjYyLjY2MiAwIDAgMS0uNjYyLjY2Mkg0LjM4M2EuNjYyLjY2MiAwIDAgMS0uNjYzLS42NjJ2LTcuOTVjMC0uMzY2LjI5Ny0uNjYyLjY2My0uNjYyWiIvPjwvc3ZnPg==)
  */
 export const IconLogoMsPowerPoint: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoMsPowerPoint: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-ms-power-point'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

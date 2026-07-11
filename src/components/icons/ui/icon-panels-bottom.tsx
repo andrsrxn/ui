@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE2IDIwYzEuODg2IDAgMi44MjggMCAzLjQxNC0uNTg2QzIwIDE4LjgyOCAyMCAxNy44ODUgMjAgMTZ2LTRINHY0YzAgMS44ODYgMCAyLjgyOC41ODYgMy40MTRDNS4xNzIgMjAgNi4xMTQgMjAgOCAyMGg4WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0yMCAxMlY4YzAtMS44ODYgMC0yLjgyOC0uNTg2LTMuNDE0QzE4LjgyOCA0IDE3Ljg4NiA0IDE2IDRIOGMtMS44ODYgMC0yLjgyOCAwLTMuNDE0LjU4NkM0IDUuMTcyIDQgNi4xMTQgNCA4djRtMTYgMHY0YzAgMS44ODYgMCAyLjgyOC0uNTg2IDMuNDE0QzE4LjgyOCAyMCAxNy44ODYgMjAgMTYgMjBIOGMtMS44ODYgMC0yLjgyOCAwLTMuNDE0LS41ODZDNCAxOC44MjggNCAxNy44ODYgNCAxNnYtNG0xNiAwSDQiLz48L3N2Zz4=)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE2IDIwYzEuODg2IDAgMi44MjggMCAzLjQxNC0uNTg2QzIwIDE4LjgyOCAyMCAxNy44ODUgMjAgMTZ2LTRINHY0YzAgMS44ODYgMCAyLjgyOC41ODYgMy40MTRDNS4xNzIgMjAgNi4xMTQgMjAgOCAyMGg4WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0yMCAxMlY4YzAtMS44ODYgMC0yLjgyOC0uNTg2LTMuNDE0QzE4LjgyOCA0IDE3Ljg4NiA0IDE2IDRIOGMtMS44ODYgMC0yLjgyOCAwLTMuNDE0LjU4NkM0IDUuMTcyIDQgNi4xMTQgNCA4djRtMTYgMHY0YzAgMS44ODYgMCAyLjgyOC0uNTg2IDMuNDE0QzE4LjgyOCAyMCAxNy44ODYgMjAgMTYgMjBIOGMtMS44ODYgMC0yLjgyOCAwLTMuNDE0LS41ODZDNCAxOC44MjggNCAxNy44ODYgNCAxNnYtNG0xNiAwSDQiLz48L3N2Zz4=)
  */
 export const IconPanelsBottom: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconPanelsBottom: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-panels-bottom'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

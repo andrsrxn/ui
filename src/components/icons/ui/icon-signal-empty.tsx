@@ -2,10 +2,27 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJtNy43MDMgMTIuODg4LTEuMzk4IDEuMDNjLTEuNzAyIDEuMjU0LTIuNTUyIDEuODgtMi42NzQgMi40MjhhMS41IDEuNSAwIDAgMCAuNDc5IDEuNDU5Yy40MjMuMzY4IDEuNDguMzY4IDMuNTkzLjM2OG0wLTUuMjg1djUuMjg1bTguMTk4LTExLjMyNi00LjA5OSAzLjAyLTQuMDk5IDMuMDJtMCA1LjI4Nmg0LjFtMCAwVjkuODY3bTAgOC4zMDZIMTUuOW0wIDBIMTdjMS40MTQgMCAyLjEyMSAwIDIuNTYtLjQ0LjQ0LS40MzkuNDQtMS4xNDYuNDQtMi41NlY4LjkxOGMwLTEuODMxIDAtMi43NDctLjQ0My0zLjE4N2ExLjUgMS41IDAgMCAwLS44MjctLjQxOGMtLjYxNy0uMDk2LTEuMzU1LjQ0OC0yLjgyOSAxLjUzNG0wIDExLjMyNlY2Ljg0NyIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJtNy43MDMgMTIuODg4LTEuMzk4IDEuMDNjLTEuNzAyIDEuMjU0LTIuNTUyIDEuODgtMi42NzQgMi40MjhhMS41IDEuNSAwIDAgMCAuNDc5IDEuNDU5Yy40MjMuMzY4IDEuNDguMzY4IDMuNTkzLjM2OG0wLTUuMjg1djUuMjg1bTguMTk4LTExLjMyNi00LjA5OSAzLjAyLTQuMDk5IDMuMDJtMCA1LjI4Nmg0LjFtMCAwVjkuODY3bTAgOC4zMDZIMTUuOW0wIDBIMTdjMS40MTQgMCAyLjEyMSAwIDIuNTYtLjQ0LjQ0LS40MzkuNDQtMS4xNDYuNDQtMi41NlY4LjkxOGMwLTEuODMxIDAtMi43NDctLjQ0My0zLjE4N2ExLjUgMS41IDAgMCAwLS44MjctLjQxOGMtLjYxNy0uMDk2LTEuMzU1LjQ0OC0yLjgyOSAxLjUzNG0wIDExLjMyNlY2Ljg0NyIvPjwvc3ZnPg==)
  */
 export const IconSignalEmpty: Icon = ({ className, ...props }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" className={cn('bp-icon text-primary pointer-events-none shrink-0', className)} {...props}><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="m7.703 12.888-1.398 1.03c-1.702 1.254-2.552 1.88-2.674 2.428a1.5 1.5 0 0 0 .479 1.459c.423.368 1.48.368 3.593.368m0-5.285v5.285m8.198-11.326-4.099 3.02-4.099 3.02m0 5.286h4.1m0 0V9.867m0 8.306H15.9m0 0H17c1.414 0 2.121 0 2.56-.44.44-.439.44-1.146.44-2.56V8.918c0-1.831 0-2.747-.443-3.187a1.5 1.5 0 0 0-.827-.418c-.617-.096-1.355.448-2.829 1.534m0 11.326V6.847"/></svg>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      viewBox='0 0 24 24'
+      data-slot='icon-signal-empty'
+      aria-hidden='true'
+      focusable='false'
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
+      {...props}>
+      <path
+        stroke='currentColor'
+        strokeLinecap='round'
+        strokeWidth='1.5'
+        d='m7.703 12.888-1.398 1.03c-1.702 1.254-2.552 1.88-2.674 2.428a1.5 1.5 0 0 0 .479 1.459c.423.368 1.48.368 3.593.368m0-5.285v5.285m8.198-11.326-4.099 3.02-4.099 3.02m0 5.286h4.1m0 0V9.867m0 8.306H15.9m0 0H17c1.414 0 2.121 0 2.56-.44.44-.439.44-1.146.44-2.56V8.918c0-1.831 0-2.747-.443-3.187a1.5 1.5 0 0 0-.827-.418c-.617-.096-1.355.448-2.829 1.534m0 11.326V6.847'
+      />
+    </svg>
   )
 }

@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTcuNTg4IDMuNjUyaDcuODg2bC43NDggNC42MTJoNC4xMjZ2OC4xNDhjMCAxLjg1MSAwIDIuNzc3LS41NzUgMy4zNTItLjU3NS41NzQtMS41LjU3NC0zLjM1MS41NzRINy41ODhjLTEuODUxIDAtMi43NzcgMC0zLjM1MS0uNTc1LS41NzUtLjU3NS0uNTc1LTEuNS0uNTc1LTMuMzVWNy41NzdjMC0xLjg1IDAtMi43NzYuNTc1LTMuMzUuNTc0LS41NzYgMS41LS41NzYgMy4zNS0uNTc2WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTIwLjM0OCAxMS42NDF2NC43NzFjMCAxLjg1MSAwIDIuNzc3LS41NzUgMy4zNTItLjU3NS41NzQtMS41LjU3NC0zLjM1MS41NzRINy41ODhjLTEuODUxIDAtMi43NzcgMC0zLjM1MS0uNTc1LS41NzUtLjU3NS0uNTc1LTEuNS0uNTc1LTMuMzVWNy41NzdjMC0xLjg1IDAtMi43NzYuNTc1LTMuMzUuNTc0LS41NzYgMS41LS41NzYgMy4zNS0uNTc2aDQuNzE3bTguNTM0IDIuMjU0YTIuNzQ0IDIuNzQ0IDAgMSAxLTUuNDg4IDAgMi43NDQgMi43NDQgMCAwIDEgNS40ODggMFoiLz48L3N2Zz4=)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTcuNTg4IDMuNjUyaDcuODg2bC43NDggNC42MTJoNC4xMjZ2OC4xNDhjMCAxLjg1MSAwIDIuNzc3LS41NzUgMy4zNTItLjU3NS41NzQtMS41LjU3NC0zLjM1MS41NzRINy41ODhjLTEuODUxIDAtMi43NzcgMC0zLjM1MS0uNTc1LS41NzUtLjU3NS0uNTc1LTEuNS0uNTc1LTMuMzVWNy41NzdjMC0xLjg1IDAtMi43NzYuNTc1LTMuMzUuNTc0LS41NzYgMS41LS41NzYgMy4zNS0uNTc2WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTIwLjM0OCAxMS42NDF2NC43NzFjMCAxLjg1MSAwIDIuNzc3LS41NzUgMy4zNTItLjU3NS41NzQtMS41LjU3NC0zLjM1MS41NzRINy41ODhjLTEuODUxIDAtMi43NzcgMC0zLjM1MS0uNTc1LS41NzUtLjU3NS0uNTc1LTEuNS0uNTc1LTMuMzVWNy41NzdjMC0xLjg1IDAtMi43NzYuNTc1LTMuMzUuNTc0LS41NzYgMS41LS41NzYgMy4zNS0uNTc2aDQuNzE3bTguNTM0IDIuMjU0YTIuNzQ0IDIuNzQ0IDAgMSAxLTUuNDg4IDAgMi43NDQgMi43NDQgMCAwIDEgNS40ODggMFoiLz48L3N2Zz4=)
  */
 export const IconNotificationBox: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconNotificationBox: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-notification-box'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

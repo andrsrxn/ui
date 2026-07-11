@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0ibTIwLjEzNiAyMC4xMzYtNy4zOTYtMS4zNDR2LTUuMzEzaDcuMzk2djYuNjU3Wk05Ljc4MSAxOC4yNTRsLTUuOTE3LTEuMDc2di0zLjY5OUg5Ljc4djQuNzc1Wm0xMC4zNTUtMTQuMzlMMTIuNzQgNS4yMDl2NS4zMTJoNy4zOTZWMy44NjRaTTkuNzgxIDUuNzQ2IDMuODY0IDYuODIydjMuNjk5SDkuNzhWNS43NDZaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJtMjAuMTM2IDIwLjEzNi03LjM5Ni0xLjM0NHYtNS4zMTNoNy4zOTZ2Ni42NTdaTTkuNzgxIDE4LjI1NGwtNS45MTctMS4wNzZ2LTMuNjk5SDkuNzh2NC43NzVabTEwLjM1NS0xNC4zOUwxMi43NCA1LjIwOXY1LjMxMmg3LjM5NlYzLjg2NFpNOS43ODEgNS43NDYgMy44NjQgNi44MjJ2My42OTlIOS43OFY1Ljc0NloiLz48L3N2Zz4=)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0ibTIwLjEzNiAyMC4xMzYtNy4zOTYtMS4zNDR2LTUuMzEzaDcuMzk2djYuNjU3Wk05Ljc4MSAxOC4yNTRsLTUuOTE3LTEuMDc2di0zLjY5OUg5Ljc4djQuNzc1Wm0xMC4zNTUtMTQuMzlMMTIuNzQgNS4yMDl2NS4zMTJoNy4zOTZWMy44NjRaTTkuNzgxIDUuNzQ2IDMuODY0IDYuODIydjMuNjk5SDkuNzhWNS43NDZaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJtMjAuMTM2IDIwLjEzNi03LjM5Ni0xLjM0NHYtNS4zMTNoNy4zOTZ2Ni42NTdaTTkuNzgxIDE4LjI1NGwtNS45MTctMS4wNzZ2LTMuNjk5SDkuNzh2NC43NzVabTEwLjM1NS0xNC4zOUwxMi43NCA1LjIwOXY1LjMxMmg3LjM5NlYzLjg2NFpNOS43ODEgNS43NDYgMy44NjQgNi44MjJ2My42OTlIOS43OFY1Ljc0NloiLz48L3N2Zz4=)
  */
 export const IconLogoWindows: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoWindows: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-windows'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

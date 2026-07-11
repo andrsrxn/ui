@@ -49,16 +49,19 @@
     "lint": "biome check && echo Lint finished.",
     "typecheck": "tsc --noEmit --project tsconfig.app.json && tsc --noEmit --project tsconfig.node.json && echo Typecheck finished.",
     "test": "vitest",
-    "generate-icons": "node ./scripts/generate-icons.js && node ./scripts/generate-icons-index.js",
+    "generate-icons": "node ./scripts/generate-icons.js && node ./scripts/generate-icons-index.js && prettier --write ./src/components/icons/ui && echo Icons generated and formatted.",
     "typecoverage": "pnpm dlx type-coverage -at-least=99 && echo Typecoverage finished.",
     "depcheck": "pnpm dlx knip && echo Depcheck finished.",
     "doctor": "pnpm dlx react-doctor@latest . && echo Doctor finished."
   },
   "peerDependencies": {
     "react": "^19",
-    "react-dom": "^19"
+    "react-dom": "^19",
+    "tailwindcss": "^4"
   },
   "dependencies": {
+    "@base-ui/react": "1.6.0",
+    "@radix-ui/react-slot": "1.3.0",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "date-fns": "4.4.0",
@@ -93,7 +96,6 @@
     "postcss-cli": "11.0.1",
     "prettier": "3.8.3",
     "prettier-plugin-tailwindcss": "0.8.0",
-    "server-only": "0.0.1",
     "storybook": "10.4.2",
     "tailwindcss": "4.3.0",
     "tsdown": "0.22.1",

@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTIwLjQyNSAxMmE4LjQyNSA4LjQyNSAwIDEgMS0xNi44NSAwIDguNDI1IDguNDI1IDAgMCAxIDE2Ljg1IDBaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMjAuNDI1IDEyQTguNDI1IDguNDI1IDAgMCAxIDEyIDIwLjQyNU0yMC40MjUgMTJBOC40MjYgOC40MjYgMCAwIDAgMTIgMy41NzRNMjAuNDI1IDEySDMuNTc1TTEyIDIwLjQyNUE4LjQyNiA4LjQyNiAwIDAgMSAzLjU3NCAxMk0xMiAyMC40MjVjMS43OCAwIDMuMjIyLTMuNzcyIDMuMjIyLTguNDI1IDAtNC42NTMtMS40NDMtOC40MjYtMy4yMjItOC40MjZtMCAxNi44NTFjLTEuNzggMC0zLjIyMi0zLjc3Mi0zLjIyMi04LjQyNSAwLTQuNjUzIDEuNDQzLTguNDI2IDMuMjIyLTguNDI2TTMuNTc0IDEyQTguNDI2IDguNDI2IDAgMCAxIDEyIDMuNTc0Ii8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTIwLjQyNSAxMmE4LjQyNSA4LjQyNSAwIDEgMS0xNi44NSAwIDguNDI1IDguNDI1IDAgMCAxIDE2Ljg1IDBaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMjAuNDI1IDEyQTguNDI1IDguNDI1IDAgMCAxIDEyIDIwLjQyNU0yMC40MjUgMTJBOC40MjYgOC40MjYgMCAwIDAgMTIgMy41NzRNMjAuNDI1IDEySDMuNTc1TTEyIDIwLjQyNUE4LjQyNiA4LjQyNiAwIDAgMSAzLjU3NCAxMk0xMiAyMC40MjVjMS43OCAwIDMuMjIyLTMuNzcyIDMuMjIyLTguNDI1IDAtNC42NTMtMS40NDMtOC40MjYtMy4yMjItOC40MjZtMCAxNi44NTFjLTEuNzggMC0zLjIyMi0zLjc3Mi0zLjIyMi04LjQyNSAwLTQuNjUzIDEuNDQzLTguNDI2IDMuMjIyLTguNDI2TTMuNTc0IDEyQTguNDI2IDguNDI2IDAgMCAxIDEyIDMuNTc0Ii8+PC9zdmc+)
  */
 export const IconGlobe: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconGlobe: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-globe'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

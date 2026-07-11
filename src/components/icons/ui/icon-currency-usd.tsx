@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEyIDEyaDIuMDAyYTMuMzM3IDMuMzM3IDAgMSAxIDAgNi42NzRIMTJWMTJabTAtNi42NzRoLTEuMzM1YTMuMzM3IDMuMzM3IDAgMSAwIDAgNi42NzRIMTJWNS4zMjZaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMTIgMy4zMjR2MTcuMzUybTQuNjcyLTEyLjAxM2EzLjMzNyAzLjMzNyAwIDAgMC0zLjMzNy0zLjMzN2gtMi42N2EzLjMzNyAzLjMzNyAwIDAgMCAwIDYuNjc0aDMuMzM3YTMuMzM3IDMuMzM3IDAgMCAxIDAgNi42NzRIOS45OThhMy4zMzcgMy4zMzcgMCAwIDEtMy4zMzctMy4zMzciLz48L3N2Zz4=)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEyIDEyaDIuMDAyYTMuMzM3IDMuMzM3IDAgMSAxIDAgNi42NzRIMTJWMTJabTAtNi42NzRoLTEuMzM1YTMuMzM3IDMuMzM3IDAgMSAwIDAgNi42NzRIMTJWNS4zMjZaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMTIgMy4zMjR2MTcuMzUybTQuNjcyLTEyLjAxM2EzLjMzNyAzLjMzNyAwIDAgMC0zLjMzNy0zLjMzN2gtMi42N2EzLjMzNyAzLjMzNyAwIDAgMCAwIDYuNjc0aDMuMzM3YTMuMzM3IDMuMzM3IDAgMCAxIDAgNi42NzRIOS45OThhMy4zMzcgMy4zMzcgMCAwIDEtMy4zMzctMy4zMzciLz48L3N2Zz4=)
  */
 export const IconCurrencyUsd: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconCurrencyUsd: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-currency-usd'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxnIG9wYWNpdHk9Ii4yIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE0LjMwOSAxMy4wMmMyLjE2Ljc2OCA2LjY3NS45MTQgNi42NzUtMS4wMmE4Ljk4NCA4Ljk4NCAwIDAgMC0xNy44NjYtMS4zNmMxLjU5My0xLjQ2OCA1LjY0NC00LjEzNCA5LjE0OC0yLjM3IDAgMCAzLjI5My45OCAyLjA0MyA0Ljc1WiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTIuMTM3IDIwLjkzNmMtMy4yNzcgMC0zLjcxNC01LjcwNC0zLjUyNy03LjY1NSAyLjU2NSA0LjkwNiA4LjAxNSA0Ljc0MyAxMC40MiA0LjA0OC0xLjMxIDEuOTktMy42MTYgMy42MDctNi44OTMgMy42MDdaIi8+PC9nPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMTkuMzg1IDE3LjE0NWE5IDkgMCAxIDEgMS41OTMtNS43NzNjLjIxIDIuOTkzLTUuMDM0IDIuNDEzLTYuOTEzIDEuNDg2IDEuMzkyLTEuNi40MDItNC4wMzgtMi4yNzQtMy44NTEtMS43NDUuMTIyLTIuOTI3IDEuMTU3LTIuNzg0IDMuMjAyLjI4IDMuOTkgNC40NDQgNi4yMDUgMTAuMzYgNC43OU0zLjAyMiAxMi42MjhDMi43MzkgOC41ODUgMTEuNzM5IDUuNCAxNC4yNyA5Ljk0bS0xLjY0MiAxMS4wMzhjLTIuOTkzLjIxLTUuMTYyLTQuNzI1LTMuNTY3LTkuNzQ4Ii8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxnIG9wYWNpdHk9Ii4yIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE0LjMwOSAxMy4wMmMyLjE2Ljc2OCA2LjY3NS45MTQgNi42NzUtMS4wMmE4Ljk4NCA4Ljk4NCAwIDAgMC0xNy44NjYtMS4zNmMxLjU5My0xLjQ2OCA1LjY0NC00LjEzNCA5LjE0OC0yLjM3IDAgMCAzLjI5My45OCAyLjA0MyA0Ljc1WiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTIuMTM3IDIwLjkzNmMtMy4yNzcgMC0zLjcxNC01LjcwNC0zLjUyNy03LjY1NSAyLjU2NSA0LjkwNiA4LjAxNSA0Ljc0MyAxMC40MiA0LjA0OC0xLjMxIDEuOTktMy42MTYgMy42MDctNi44OTMgMy42MDdaIi8+PC9nPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMTkuMzg1IDE3LjE0NWE5IDkgMCAxIDEgMS41OTMtNS43NzNjLjIxIDIuOTkzLTUuMDM0IDIuNDEzLTYuOTEzIDEuNDg2IDEuMzkyLTEuNi40MDItNC4wMzgtMi4yNzQtMy44NTEtMS43NDUuMTIyLTIuOTI3IDEuMTU3LTIuNzg0IDMuMjAyLjI4IDMuOTkgNC40NDQgNi4yMDUgMTAuMzYgNC43OU0zLjAyMiAxMi42MjhDMi43MzkgOC41ODUgMTEuNzM5IDUuNCAxNC4yNyA5Ljk0bS0xLjY0MiAxMS4wMzhjLTIuOTkzLjIxLTUuMTYyLTQuNzI1LTMuNTY3LTkuNzQ4Ii8+PC9zdmc+)
  */
 export const IconLogoEdge: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoEdge: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-edge'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <g opacity='.2'>
         <path

@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEyIDIwLjM1MmE4LjM1MiA4LjM1MiAwIDEgMCAwLTE2LjcwNCA4LjM1MiA4LjM1MiAwIDAgMCAwIDE2LjcwNFoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03LjA0MSAxOC43MjJhMTMuOTE0IDEzLjkxNCAwIDAgMSAxMy4zMS02LjY1M00xNy4yMiA1LjQ4M2ExMy44OTIgMTMuODkyIDAgMCAxLTEwLjc4OCA1LjEyNWMtLjg4IDAtMS43NTktLjA4My0yLjYyNC0uMjQ3TTguMzQgNC40OWExMy45MTIgMTMuOTEyIDAgMCAxIDYuODczIDEyLjAwNmMwIDEuMTM3LS4xMzggMi4yNy0uNDEyIDMuMzc0bTUuNTUtNy44N2E4LjM1MiA4LjM1MiAwIDEgMS0xNi43MDMgMCA4LjM1MiA4LjM1MiAwIDAgMSAxNi43MDQgMFoiLz48L3N2Zz4=)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEyIDIwLjM1MmE4LjM1MiA4LjM1MiAwIDEgMCAwLTE2LjcwNCA4LjM1MiA4LjM1MiAwIDAgMCAwIDE2LjcwNFoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03LjA0MSAxOC43MjJhMTMuOTE0IDEzLjkxNCAwIDAgMSAxMy4zMS02LjY1M00xNy4yMiA1LjQ4M2ExMy44OTIgMTMuODkyIDAgMCAxLTEwLjc4OCA1LjEyNWMtLjg4IDAtMS43NTktLjA4My0yLjYyNC0uMjQ3TTguMzQgNC40OWExMy45MTIgMTMuOTEyIDAgMCAxIDYuODczIDEyLjAwNmMwIDEuMTM3LS4xMzggMi4yNy0uNDEyIDMuMzc0bTUuNTUtNy44N2E4LjM1MiA4LjM1MiAwIDEgMS0xNi43MDMgMCA4LjM1MiA4LjM1MiAwIDAgMSAxNi43MDQgMFoiLz48L3N2Zz4=)
  */
 export const IconLogoDribbble: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoDribbble: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-dribbble'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNNCA0djE0LjYxMWExLjUgMS41IDAgMCAwIDEuNSAxLjVIMjBNNi44NyAxNS4wNjdsMy43NjItMy43NjFhMSAxIDAgMCAxIDEuNDI0LjAxbDEuNzE1IDEuNzY1YTEgMSAwIDAgMCAxLjQzOC0uMDA0bDQuMzE1LTQuNDkiLz48L3N2Zz4=)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNNCA0djE0LjYxMWExLjUgMS41IDAgMCAwIDEuNSAxLjVIMjBNNi44NyAxNS4wNjdsMy43NjItMy43NjFhMSAxIDAgMCAxIDEuNDI0LjAxbDEuNzE1IDEuNzY1YTEgMSAwIDAgMCAxLjQzOC0uMDA0bDQuMzE1LTQuNDkiLz48L3N2Zz4=)
  */
 export const IconChartLineUp: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconChartLineUp: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-chart-line-up'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         stroke='currentColor'

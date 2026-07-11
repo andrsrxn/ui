@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE5LjY4OSAxMC4yMjZjMCAzLjU4LTIuNDA2IDYuNDg0LTYuOTU4IDYuNDg0LTEuOTUtMS44ODgtMS43NDMuMTM0LTIuNDY3LS4xMDQtMi42OS0xLjIxLTQuNDktMy41NTUtNC40OS02LjM4IDAtMy41OCAzLjExNC02LjQ4MyA2Ljk1Ny02LjQ4MyAzLjg0MiAwIDYuOTU4IDIuOTAzIDYuOTU4IDYuNDgzWiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTEyLjA1NiA4LjUzIDkuMjgxIDIwLjMyN002Ljc0IDE0LjA4MmE2Ljk0IDYuOTQgMCAxIDEgMTIuOTQ5LTMuNDdjMCAzLjgzMi0yLjc3NiA2LjI0NS01LjU1MSA2LjI0NS0yLjc3NiAwLTMuNjEtMS44MjctMy42MS0xLjgyNyIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE5LjY4OSAxMC4yMjZjMCAzLjU4LTIuNDA2IDYuNDg0LTYuOTU4IDYuNDg0LTEuOTUtMS44ODgtMS43NDMuMTM0LTIuNDY3LS4xMDQtMi42OS0xLjIxLTQuNDktMy41NTUtNC40OS02LjM4IDAtMy41OCAzLjExNC02LjQ4MyA2Ljk1Ny02LjQ4MyAzLjg0MiAwIDYuOTU4IDIuOTAzIDYuOTU4IDYuNDgzWiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTEyLjA1NiA4LjUzIDkuMjgxIDIwLjMyN002Ljc0IDE0LjA4MmE2Ljk0IDYuOTQgMCAxIDEgMTIuOTQ5LTMuNDdjMCAzLjgzMi0yLjc3NiA2LjI0NS01LjU1MSA2LjI0NS0yLjc3NiAwLTMuNjEtMS44MjctMy42MS0xLjgyNyIvPjwvc3ZnPg==)
  */
 export const IconLogoPinterest: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoPinterest: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-pinterest'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

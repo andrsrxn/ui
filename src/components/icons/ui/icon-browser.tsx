@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTIwLjMzOSA4LjgyNEgzLjY2VjguNTljMC0xLjg4NiAwLTIuODI5LjU4Ni0zLjQxNC41ODYtLjU4NiAxLjUyOS0uNTg2IDMuNDE0LS41ODZoOC42NzhjMS44ODUgMCAyLjgyOCAwIDMuNDE0LjU4Ni41ODYuNTg1LjU4NiAxLjUyOC41ODYgMy40MTR2LjIzNFoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMy42NjEgOC44MjR2Ni41ODZjMCAxLjg4NiAwIDIuODI4LjU4NiAzLjQxNC41ODYuNTg2IDEuNTI5LjU4NiAzLjQxNC41ODZoOC42NzhjMS44ODUgMCAyLjgyOCAwIDMuNDE0LS41ODYuNTg2LS41ODYuNTg2LTEuNTI4LjU4Ni0zLjQxNFY4LjgyNG0tMTYuNjc4IDBWOC41OWMwLTEuODg2IDAtMi44MjkuNTg2LTMuNDE0LjU4Ni0uNTg2IDEuNTI5LS41ODYgMy40MTQtLjU4Nmg4LjY3OGMxLjg4NSAwIDIuODI4IDAgMy40MTQuNTg2LjU4Ni41ODUuNTg2IDEuNTI4LjU4NiAzLjQxNHYuMjM0bS0xNi42NzggMEgyMC4zNCIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTIwLjMzOSA4LjgyNEgzLjY2VjguNTljMC0xLjg4NiAwLTIuODI5LjU4Ni0zLjQxNC41ODYtLjU4NiAxLjUyOS0uNTg2IDMuNDE0LS41ODZoOC42NzhjMS44ODUgMCAyLjgyOCAwIDMuNDE0LjU4Ni41ODYuNTg1LjU4NiAxLjUyOC41ODYgMy40MTR2LjIzNFoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMy42NjEgOC44MjR2Ni41ODZjMCAxLjg4NiAwIDIuODI4LjU4NiAzLjQxNC41ODYuNTg2IDEuNTI5LjU4NiAzLjQxNC41ODZoOC42NzhjMS44ODUgMCAyLjgyOCAwIDMuNDE0LS41ODYuNTg2LS41ODYuNTg2LTEuNTI4LjU4Ni0zLjQxNFY4LjgyNG0tMTYuNjc4IDBWOC41OWMwLTEuODg2IDAtMi44MjkuNTg2LTMuNDE0LjU4Ni0uNTg2IDEuNTI5LS41ODYgMy40MTQtLjU4Nmg4LjY3OGMxLjg4NSAwIDIuODI4IDAgMy40MTQuNTg2LjU4Ni41ODUuNTg2IDEuNTI4LjU4NiAzLjQxNHYuMjM0bS0xNi42NzggMEgyMC4zNCIvPjwvc3ZnPg==)
  */
 export const IconBrowser: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconBrowser: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-browser'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

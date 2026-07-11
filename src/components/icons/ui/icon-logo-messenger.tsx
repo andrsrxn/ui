@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTcuODg0IDE5LjExN2E4LjIyMSA4LjIyMSAwIDEgMC0yLjk5OC0yLjk5N2wtMS4wNyAzLjE5OGEuNjg1LjY4NSAwIDAgMCAuODY2Ljg2N2wzLjIwMi0xLjA2OFoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Im03Ljg5IDEzLjM3IDIuNzQtMi43NCAyLjc0IDIuNzQgMi43NC0yLjc0bS04LjIyNiA4LjQ4N2E4LjIyMSA4LjIyMSAwIDEgMC0yLjk5OC0yLjk5N2wtMS4wNyAzLjE5OGEuNjg1LjY4NSAwIDAgMCAuODY2Ljg2N2wzLjIwMi0xLjA2OFoiLz48L3N2Zz4=)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTcuODg0IDE5LjExN2E4LjIyMSA4LjIyMSAwIDEgMC0yLjk5OC0yLjk5N2wtMS4wNyAzLjE5OGEuNjg1LjY4NSAwIDAgMCAuODY2Ljg2N2wzLjIwMi0xLjA2OFoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Im03Ljg5IDEzLjM3IDIuNzQtMi43NCAyLjc0IDIuNzQgMi43NC0yLjc0bS04LjIyNiA4LjQ4N2E4LjIyMSA4LjIyMSAwIDEgMC0yLjk5OC0yLjk5N2wtMS4wNyAzLjE5OGEuNjg1LjY4NSAwIDAgMCAuODY2Ljg2N2wzLjIwMi0xLjA2OFoiLz48L3N2Zz4=)
  */
 export const IconLogoMessenger: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoMessenger: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-messenger'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

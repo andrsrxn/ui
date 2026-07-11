@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE5LjM4OCAzLjk0SDQuNjEyYS42NzMuNjczIDAgMCAwLS42NzIuNjcydjE0Ljc3NmMwIC4zNy4zMDEuNjcyLjY3Mi42NzJoMTQuNzc2Yy4zNyAwIC42NzItLjMwMS42NzItLjY3MlY0LjYxMmEuNjczLjY3MyAwIDAgMC0uNjcyLS42NzJaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNOS4wOSAxNC4xODJjMCAxLjIwNCAxLjMwNCAyLjE4MiAyLjkxIDIuMTgyczIuOTEtLjk3OCAyLjkxLTIuMTgyYzAtMi45MS01LjY1Ny0xLjgxOC01LjY1Ny00LjM2NCAwLTEuMjA0IDEuMTQtMi4xODIgMi43NDctMi4xODIgMS4yMDQgMCAyLjE0OC41NDYgMi41NDYgMS4zMzNNNC43MjYgNGgxNC41NDZjLjQwMSAwIC43MjcuMzI2LjcyNy43Mjd2MTQuNTQ2YS43MjcuNzI3IDAgMCAxLS43MjcuNzI3SDQuNzI3QS43MjcuNzI3IDAgMCAxIDQgMTkuMjczVjQuNzI3QzQgNC4zMjYgNC4zMjYgNCA0LjcyNyA0WiIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE5LjM4OCAzLjk0SDQuNjEyYS42NzMuNjczIDAgMCAwLS42NzIuNjcydjE0Ljc3NmMwIC4zNy4zMDEuNjcyLjY3Mi42NzJoMTQuNzc2Yy4zNyAwIC42NzItLjMwMS42NzItLjY3MlY0LjYxMmEuNjczLjY3MyAwIDAgMC0uNjcyLS42NzJaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNOS4wOSAxNC4xODJjMCAxLjIwNCAxLjMwNCAyLjE4MiAyLjkxIDIuMTgyczIuOTEtLjk3OCAyLjkxLTIuMTgyYzAtMi45MS01LjY1Ny0xLjgxOC01LjY1Ny00LjM2NCAwLTEuMjA0IDEuMTQtMi4xODIgMi43NDctMi4xODIgMS4yMDQgMCAyLjE0OC41NDYgMi41NDYgMS4zMzNNNC43MjYgNGgxNC41NDZjLjQwMSAwIC43MjcuMzI2LjcyNy43Mjd2MTQuNTQ2YS43MjcuNzI3IDAgMCAxLS43MjcuNzI3SDQuNzI3QS43MjcuNzI3IDAgMCAxIDQgMTkuMjczVjQuNzI3QzQgNC4zMjYgNC4zMjYgNCA0LjcyNyA0WiIvPjwvc3ZnPg==)
  */
 export const IconLogoStripe: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoStripe: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-stripe'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

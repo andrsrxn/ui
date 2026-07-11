@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTYuMDkxIDEwYzAtMS44ODYgMC0yLjgyOC41ODYtMy40MTRDNy4yNjMgNiA4LjIwNiA2IDEwLjA5MiA2SDE0YzEuODg2IDAgMi44MjggMCAzLjQxNC41ODZDMTggNy4xNzIgMTggOC4xMTQgMTggMTB2My45MDljMCAxLjg4NSAwIDIuODI4LS41ODYgMy40MTQtLjU4Ni41ODYtMS41MjguNTg2LTMuNDE0LjU4NmgtMy45MDljLTEuODg1IDAtMi44MjggMC0zLjQxNC0uNTg2LS41ODYtLjU4Ni0uNTg2LTEuNTI5LS41ODYtMy40MTRWMTBaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMy40MTQgNi4wMWgxMC41NzdjMS44ODUgMCAyLjgyOCAwIDMuNDE0LjU4NS41ODUuNTg2LjU4NSAxLjUyOS41ODUgMy40MTR2MTAuNTc3bTIuNTk2LTIuNjEzaC0xMC41NmMtMS44ODUgMC0yLjgyOCAwLTMuNDE0LS41ODUtLjU4NS0uNTg2LS41ODUtMS41My0uNTg1LTMuNDE1VjMuNDE0Ii8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTYuMDkxIDEwYzAtMS44ODYgMC0yLjgyOC41ODYtMy40MTRDNy4yNjMgNiA4LjIwNiA2IDEwLjA5MiA2SDE0YzEuODg2IDAgMi44MjggMCAzLjQxNC41ODZDMTggNy4xNzIgMTggOC4xMTQgMTggMTB2My45MDljMCAxLjg4NSAwIDIuODI4LS41ODYgMy40MTQtLjU4Ni41ODYtMS41MjguNTg2LTMuNDE0LjU4NmgtMy45MDljLTEuODg1IDAtMi44MjggMC0zLjQxNC0uNTg2LS41ODYtLjU4Ni0uNTg2LTEuNTI5LS41ODYtMy40MTRWMTBaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMy40MTQgNi4wMWgxMC41NzdjMS44ODUgMCAyLjgyOCAwIDMuNDE0LjU4NS41ODUuNTg2LjU4NSAxLjUyOS41ODUgMy40MTR2MTAuNTc3bTIuNTk2LTIuNjEzaC0xMC41NmMtMS44ODUgMC0yLjgyOCAwLTMuNDE0LS41ODUtLjU4NS0uNTg2LS41ODUtMS41My0uNTg1LTMuNDE1VjMuNDE0Ii8+PC9zdmc+)
  */
 export const IconCrop: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconCrop: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-crop'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

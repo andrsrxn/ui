@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTIwIDE3LjVhMi41IDIuNSAwIDEgMS01IDAgMi41IDIuNSAwIDAgMSA1IDBaTTMuOTc0IDYuNWEyLjUgMi41IDAgMSAxIDUgMCAyLjUgMi41IDAgMCAxLTUgMFoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0xNy41IDE1YTIuNSAyLjUgMCAxIDAgMCA1IDIuNSAyLjUgMCAwIDAgMC01Wm0wIDBWOS42MjFjMC0xLjI0OCAwLTEuODcyLS4yNjktMi4zMzZhMiAyIDAgMCAwLS43My0uNzNjLS40NjQtLjI2OS0yLjQwMi0uMjY5LTMuNjUtLjI2OU02LjQ3NCA5YTIuNSAyLjUgMCAxIDAgMC01IDIuNSAyLjUgMCAwIDAgMCA1Wm0wIDB2NS4zNzljMCAxLjI0OCAwIDEuODcyLjI2OCAyLjMzNmEyIDIgMCAwIDAgLjczLjczYy40NjUuMjY5IDIuNDAzLjI2OSAzLjY1MS4yNjltMy4zOTQtOS4xNDItLjE2My0uMTYyYy0xLjAwMi0xLTEuNTAzLTEuNS0xLjUwMy0yLjEyMiAwLS42MjIuNS0xLjEyMiAxLjUtMi4xMjNMMTQuNTE4IDRtLTUuMDYgMTEuNDI4LjE2My4xNjJjMS4wMDIgMSAxLjUwMyAxLjUgMS41MDMgMi4xMjIgMCAuNjIyLS41IDEuMTIyLTEuNTAxIDIuMTIzTDkuNDU3IDIwIi8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTIwIDE3LjVhMi41IDIuNSAwIDEgMS01IDAgMi41IDIuNSAwIDAgMSA1IDBaTTMuOTc0IDYuNWEyLjUgMi41IDAgMSAxIDUgMCAyLjUgMi41IDAgMCAxLTUgMFoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0xNy41IDE1YTIuNSAyLjUgMCAxIDAgMCA1IDIuNSAyLjUgMCAwIDAgMC01Wm0wIDBWOS42MjFjMC0xLjI0OCAwLTEuODcyLS4yNjktMi4zMzZhMiAyIDAgMCAwLS43My0uNzNjLS40NjQtLjI2OS0yLjQwMi0uMjY5LTMuNjUtLjI2OU02LjQ3NCA5YTIuNSAyLjUgMCAxIDAgMC01IDIuNSAyLjUgMCAwIDAgMCA1Wm0wIDB2NS4zNzljMCAxLjI0OCAwIDEuODcyLjI2OCAyLjMzNmEyIDIgMCAwIDAgLjczLjczYy40NjUuMjY5IDIuNDAzLjI2OSAzLjY1MS4yNjltMy4zOTQtOS4xNDItLjE2My0uMTYyYy0xLjAwMi0xLTEuNTAzLTEuNS0xLjUwMy0yLjEyMiAwLS42MjIuNS0xLjEyMiAxLjUtMi4xMjNMMTQuNTE4IDRtLTUuMDYgMTEuNDI4LjE2My4xNjJjMS4wMDIgMSAxLjUwMyAxLjUgMS41MDMgMi4xMjIgMCAuNjIyLS41IDEuMTIyLTEuNTAxIDIuMTIzTDkuNDU3IDIwIi8+PC9zdmc+)
  */
 export const IconGitDiff: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconGitDiff: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-git-diff'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

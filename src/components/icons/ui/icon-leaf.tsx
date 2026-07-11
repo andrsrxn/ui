@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE2LjM1NyAxNS4zODJjLTMuMjM2IDMuMDQ4LTcuNTkyIDIuMzM1LTkuNDcyLjU2NC0xLjY4NS0xLjU4Ni0yLjYzNy01Ljg3NC41OTktOC45MjIgNC4wMjQtMy43OSA5LjUwNS0zLjM5NSAxMS4zOS0zLjEyLjQxLjA2LjcxNS4zNjQuNzU5Ljc1My4yMDUgMS44MzMuNDM4IDcuMjI3LTMuMjc2IDEwLjcyNVoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0xMS42NDEgMTEuMDIyYy0xLjg1IDEuMTk1LTUuNjQyIDQuNzgxLTYuMDAyIDkuNTdtMTAuNzE4LTUuMjFjLTMuMjM2IDMuMDQ4LTcuNTkyIDIuMzM1LTkuNDcyLjU2NC0xLjY4NS0xLjU4Ni0yLjYzNy01Ljg3NC41OTktOC45MjIgNC4wMjQtMy43OSA5LjUwNS0zLjM5NSAxMS4zOS0zLjEyLjQxLjA2LjcxNS4zNjQuNzU5Ljc1My4yMDUgMS44MzMuNDM4IDcuMjI3LTMuMjc2IDEwLjcyNVoiLz48L3N2Zz4=)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE2LjM1NyAxNS4zODJjLTMuMjM2IDMuMDQ4LTcuNTkyIDIuMzM1LTkuNDcyLjU2NC0xLjY4NS0xLjU4Ni0yLjYzNy01Ljg3NC41OTktOC45MjIgNC4wMjQtMy43OSA5LjUwNS0zLjM5NSAxMS4zOS0zLjEyLjQxLjA2LjcxNS4zNjQuNzU5Ljc1My4yMDUgMS44MzMuNDM4IDcuMjI3LTMuMjc2IDEwLjcyNVoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0xMS42NDEgMTEuMDIyYy0xLjg1IDEuMTk1LTUuNjQyIDQuNzgxLTYuMDAyIDkuNTdtMTAuNzE4LTUuMjFjLTMuMjM2IDMuMDQ4LTcuNTkyIDIuMzM1LTkuNDcyLjU2NC0xLjY4NS0xLjU4Ni0yLjYzNy01Ljg3NC41OTktOC45MjIgNC4wMjQtMy43OSA5LjUwNS0zLjM5NSAxMS4zOS0zLjEyLjQxLjA2LjcxNS4zNjQuNzU5Ljc1My4yMDUgMS44MzMuNDM4IDcuMjI3LTMuMjc2IDEwLjcyNVoiLz48L3N2Zz4=)
  */
 export const IconLeaf: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLeaf: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-leaf'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

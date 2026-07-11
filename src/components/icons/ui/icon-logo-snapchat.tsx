@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE1LjAyMiAxOS4xOGMtLjkxOC4yMzUtMi4wMy0uNTc0LTMuMDIyLS41NzRzLTIuMTA0LjgxLTMuMDIyLjU3NGMtLjk1LS4yNDMtMS40MDgtMS43MjQtMi4yNDctMi4xODUtLjg1MS0uNDY5LTIuNTM3LS4xNTktMy4yNDEtLjgxOSAwIDAgNC4yNTUtMS41MiA0LjI1NS03Ljg5N2E0LjI1NSA0LjI1NSAwIDEgMSA4LjUxIDBjMCA2LjM3NCA0LjI1NSA3Ljg5NyA0LjI1NSA3Ljg5Ny0uNzA0LjY2LTIuMzkuMzUtMy4yNDEuODItLjg0LjQ2LTEuMjk3IDEuOTQxLTIuMjQ3IDIuMTg0WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0ibTcuMzEzIDExLjUxMy0yLS44bTExLjM3NC44IDItLjhtLTMuNjY1IDguNDY3Yy0uOTE4LjIzNS0yLjAzLS41NzQtMy4wMjItLjU3NHMtMi4xMDQuODEtMy4wMjIuNTc0Yy0uOTUtLjI0My0xLjQwOC0xLjcyNC0yLjI0Ny0yLjE4NS0uODUxLS40NjktMi41MzctLjE1OS0zLjI0MS0uODE5IDAgMCA0LjI1NS0xLjUyIDQuMjU1LTcuODk3YTQuMjU1IDQuMjU1IDAgMSAxIDguNTEgMGMwIDYuMzc0IDQuMjU1IDcuODk3IDQuMjU1IDcuODk3LS43MDQuNjYtMi4zOS4zNS0zLjI0MS44Mi0uODQuNDYtMS4yOTcgMS45NDEtMi4yNDcgMi4xODRaIi8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE1LjAyMiAxOS4xOGMtLjkxOC4yMzUtMi4wMy0uNTc0LTMuMDIyLS41NzRzLTIuMTA0LjgxLTMuMDIyLjU3NGMtLjk1LS4yNDMtMS40MDgtMS43MjQtMi4yNDctMi4xODUtLjg1MS0uNDY5LTIuNTM3LS4xNTktMy4yNDEtLjgxOSAwIDAgNC4yNTUtMS41MiA0LjI1NS03Ljg5N2E0LjI1NSA0LjI1NSAwIDEgMSA4LjUxIDBjMCA2LjM3NCA0LjI1NSA3Ljg5NyA0LjI1NSA3Ljg5Ny0uNzA0LjY2LTIuMzkuMzUtMy4yNDEuODItLjg0LjQ2LTEuMjk3IDEuOTQxLTIuMjQ3IDIuMTg0WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0ibTcuMzEzIDExLjUxMy0yLS44bTExLjM3NC44IDItLjhtLTMuNjY1IDguNDY3Yy0uOTE4LjIzNS0yLjAzLS41NzQtMy4wMjItLjU3NHMtMi4xMDQuODEtMy4wMjIuNTc0Yy0uOTUtLjI0My0xLjQwOC0xLjcyNC0yLjI0Ny0yLjE4NS0uODUxLS40NjktMi41MzctLjE1OS0zLjI0MS0uODE5IDAgMCA0LjI1NS0xLjUyIDQuMjU1LTcuODk3YTQuMjU1IDQuMjU1IDAgMSAxIDguNTEgMGMwIDYuMzc0IDQuMjU1IDcuODk3IDQuMjU1IDcuODk3LS43MDQuNjYtMi4zOS4zNS0zLjI0MS44Mi0uODQuNDYtMS4yOTcgMS45NDEtMi4yNDcgMi4xODRaIi8+PC9zdmc+)
  */
 export const IconLogoSnapchat: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoSnapchat: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-snapchat'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

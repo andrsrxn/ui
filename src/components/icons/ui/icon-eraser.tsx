@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE2LjAxOSAxMi40MDcgMTEuNTczIDcuOTZhMiAyIDAgMCAxLS4wMDktMi44MmwuNjIxLS42MjhhMiAyIDAgMCAxIDIuODM4LS4wMWw0LjQ1IDQuNDVhMiAyIDAgMCAxIDAgMi44MjlsLS42MjYuNjI1YTIgMiAwIDAgMS0yLjgyOCAwWiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0ibTEwLjg4NSA1LjYwNi0uMDk0LjA5NW0wIDAtLjczNC43MzRtMCAwTDUuNTggMTAuOTFjLTEuMzE0IDEuMzE1LTEuOTcgMS45NzMtMS45NyAyLjc5cy42NTYgMS40NzUgMS45NjkgMi43OWwxLjgzMiAxLjgzN2MxLjMxNSAxLjMxOCAxLjk3MyAxLjk3NyAyLjc5IDEuOTc4LjgxOSAwIDEuNDc4LS42NTggMi43OTUtMS45NzRsNC40OC00LjQ3OC43MzQtLjczNGMxLjMxNi0xLjMxNiAxLjk3NC0xLjk3NCAxLjk3NC0yLjc5MiAwLS44MTctLjY1OC0xLjQ3Ni0xLjk3NC0yLjc5MmwtMS44MzUtMS44MzRjLTEuMzE2LTEuMzE2LTEuOTc0LTEuOTc0LTIuNzkxLTEuOTc0LS44MTggMC0xLjQ3Ni42NTgtMi43OTIgMS45NzRtLS43MzQuNzM0IDcuNDE4IDcuNDE4Ii8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE2LjAxOSAxMi40MDcgMTEuNTczIDcuOTZhMiAyIDAgMCAxLS4wMDktMi44MmwuNjIxLS42MjhhMiAyIDAgMCAxIDIuODM4LS4wMWw0LjQ1IDQuNDVhMiAyIDAgMCAxIDAgMi44MjlsLS42MjYuNjI1YTIgMiAwIDAgMS0yLjgyOCAwWiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0ibTEwLjg4NSA1LjYwNi0uMDk0LjA5NW0wIDAtLjczNC43MzRtMCAwTDUuNTggMTAuOTFjLTEuMzE0IDEuMzE1LTEuOTcgMS45NzMtMS45NyAyLjc5cy42NTYgMS40NzUgMS45NjkgMi43OWwxLjgzMiAxLjgzN2MxLjMxNSAxLjMxOCAxLjk3MyAxLjk3NyAyLjc5IDEuOTc4LjgxOSAwIDEuNDc4LS42NTggMi43OTUtMS45NzRsNC40OC00LjQ3OC43MzQtLjczNGMxLjMxNi0xLjMxNiAxLjk3NC0xLjk3NCAxLjk3NC0yLjc5MiAwLS44MTctLjY1OC0xLjQ3Ni0xLjk3NC0yLjc5MmwtMS44MzUtMS44MzRjLTEuMzE2LTEuMzE2LTEuOTc0LTEuOTc0LTIuNzkxLTEuOTc0LS44MTggMC0xLjQ3Ni42NTgtMi43OTIgMS45NzRtLS43MzQuNzM0IDcuNDE4IDcuNDE4Ii8+PC9zdmc+)
  */
 export const IconEraser: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconEraser: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-eraser'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

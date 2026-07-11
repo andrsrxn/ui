@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTQuODkgNGgxNC4yMnYxMC42MzhINC44OVY0Wm04Ljc3IDE0Ljk1NGMwIC45MzItLjc0MyAxLjY4Ny0xLjY2IDEuNjg3LS45MTcgMC0xLjY2LS43NTUtMS42Ni0xLjY4NiAwLS45MzIuNzQzLTEuNjg3IDEuNjYtMS42ODcuOTE3IDAgMS42Ni43NTUgMS42NiAxLjY4NloiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0zLjQ1IDE0LjYzOGgxNy4xTTguNzUzIDExLjg2VjguMzJtNi41NDUgMy41NFY5LjgyN00xMiAxNi45NDF2LTIuMDMzbTAtMy4wNDhWNi43NzhNMy40NSA0aDE3LjFNNC44OSA0aDE0LjIydjEwLjYzOEg0Ljg5VjRabTguNzcgMTQuOTU0YzAgLjkzMi0uNzQzIDEuNjg3LTEuNjYgMS42ODctLjkxNyAwLTEuNjYtLjc1NS0xLjY2LTEuNjg2IDAtLjkzMi43NDMtMS42ODcgMS42Ni0xLjY4Ny45MTcgMCAxLjY2Ljc1NSAxLjY2IDEuNjg2WiIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTQuODkgNGgxNC4yMnYxMC42MzhINC44OVY0Wm04Ljc3IDE0Ljk1NGMwIC45MzItLjc0MyAxLjY4Ny0xLjY2IDEuNjg3LS45MTcgMC0xLjY2LS43NTUtMS42Ni0xLjY4NiAwLS45MzIuNzQzLTEuNjg3IDEuNjYtMS42ODcuOTE3IDAgMS42Ni43NTUgMS42NiAxLjY4NloiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0zLjQ1IDE0LjYzOGgxNy4xTTguNzUzIDExLjg2VjguMzJtNi41NDUgMy41NFY5LjgyN00xMiAxNi45NDF2LTIuMDMzbTAtMy4wNDhWNi43NzhNMy40NSA0aDE3LjFNNC44OSA0aDE0LjIydjEwLjYzOEg0Ljg5VjRabTguNzcgMTQuOTU0YzAgLjkzMi0uNzQzIDEuNjg3LTEuNjYgMS42ODctLjkxNyAwLTEuNjYtLjc1NS0xLjY2LTEuNjg2IDAtLjkzMi43NDMtMS42ODcgMS42Ni0xLjY4Ny45MTcgMCAxLjY2Ljc1NSAxLjY2IDEuNjg2WiIvPjwvc3ZnPg==)
  */
 export const IconPresentation: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconPresentation: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-presentation'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

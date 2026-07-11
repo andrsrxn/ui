@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEzLjgyNSAxNS4wMDJIOC43NzhhMSAxIDAgMCAxLS45MjItMS4zODVsMS42NjktNGExIDEgMCAwIDEgLjkyMi0uNjE1aDQuODQ0YTEgMSAwIDAgMSAuOTM5IDEuMzQ1bC0xLjQ2NiA0YTEgMSAwIDAgMS0uOTM5LjY1NVoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik01LjUwMSAyMC4wMDUgMTEuNTE3IDRtLjk4NCAxNi4wMDVMMTguNSA0TTIwIDlING0xNiA2SDQiLz48L3N2Zz4=)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEzLjgyNSAxNS4wMDJIOC43NzhhMSAxIDAgMCAxLS45MjItMS4zODVsMS42NjktNGExIDEgMCAwIDEgLjkyMi0uNjE1aDQuODQ0YTEgMSAwIDAgMSAuOTM5IDEuMzQ1bC0xLjQ2NiA0YTEgMSAwIDAgMS0uOTM5LjY1NVoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik01LjUwMSAyMC4wMDUgMTEuNTE3IDRtLjk4NCAxNi4wMDVMMTguNSA0TTIwIDlING0xNiA2SDQiLz48L3N2Zz4=)
  */
 export const IconHashtag: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconHashtag: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-hashtag'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

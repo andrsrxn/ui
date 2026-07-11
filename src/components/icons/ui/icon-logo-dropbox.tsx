@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxnIG9wYWNpdHk9Ii4yIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik03Ljc2IDUuNDc0IDMuNTIgOC40MDlsNC4yNCAyLjkzNUwxMiA4LjQwOSA3Ljc2IDUuNDc0Wm04LjQ4IDBMMTIgOC40MDlsNC4yNCAyLjkzNSA0LjI0LTIuOTM1LTQuMjQtMi45MzVaIi8+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJtNy43NiAxMS4zNDQtNC4yNCAyLjkzNSA0LjI0IDIuOTM1TDEyIDE0LjI4bC00LjI0LTIuOTM1Wm04LjQ4IDBMMTIgMTQuMjc5bDQuMjQgMi45MzUgNC4yNC0yLjkzNS00LjI0LTIuOTM1WiIvPjwvZz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTcuNzYgMTEuMzQ0IDMuNTIgOC40MDlsNC4yNC0yLjkzNUwxMiA4LjQwOW0tNC4yNCAyLjkzNUwxMiA4LjQwOW0tNC4yNCAyLjkzNS00LjI0IDIuOTM1IDQuMjQgMi45MzUgMS4yNDctLjg2M003Ljc2IDExLjM0NCAxMiAxNC4yNzltMC01Ljg3IDQuMjQtMi45MzUgNC4yNCAyLjkzNS00LjI0IDIuOTM1TTEyIDguNDA5bDQuMjQgMi45MzVtMCAwTDEyIDE0LjI3OW0wIDAgMi45OTMgMi4wNzIgMS4yNDcuODYzIDQuMjQtMi45MzUtNC4yNC0yLjkzNW0tNy4yMzMgNS4wMDdMMTIgMTQuMjhtLTIuOTkzIDIuMDcyTDEyIDE4LjQ3bDIuOTkzLTIuMTE4Ii8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxnIG9wYWNpdHk9Ii4yIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik03Ljc2IDUuNDc0IDMuNTIgOC40MDlsNC4yNCAyLjkzNUwxMiA4LjQwOSA3Ljc2IDUuNDc0Wm04LjQ4IDBMMTIgOC40MDlsNC4yNCAyLjkzNSA0LjI0LTIuOTM1LTQuMjQtMi45MzVaIi8+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJtNy43NiAxMS4zNDQtNC4yNCAyLjkzNSA0LjI0IDIuOTM1TDEyIDE0LjI4bC00LjI0LTIuOTM1Wm04LjQ4IDBMMTIgMTQuMjc5bDQuMjQgMi45MzUgNC4yNC0yLjkzNS00LjI0LTIuOTM1WiIvPjwvZz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTcuNzYgMTEuMzQ0IDMuNTIgOC40MDlsNC4yNC0yLjkzNUwxMiA4LjQwOW0tNC4yNCAyLjkzNUwxMiA4LjQwOW0tNC4yNCAyLjkzNS00LjI0IDIuOTM1IDQuMjQgMi45MzUgMS4yNDctLjg2M003Ljc2IDExLjM0NCAxMiAxNC4yNzltMC01Ljg3IDQuMjQtMi45MzUgNC4yNCAyLjkzNS00LjI0IDIuOTM1TTEyIDguNDA5bDQuMjQgMi45MzVtMCAwTDEyIDE0LjI3OW0wIDAgMi45OTMgMi4wNzIgMS4yNDcuODYzIDQuMjQtMi45MzUtNC4yNC0yLjkzNW0tNy4yMzMgNS4wMDdMMTIgMTQuMjhtLTIuOTkzIDIuMDcyTDEyIDE4LjQ3bDIuOTkzLTIuMTE4Ii8+PC9zdmc+)
  */
 export const IconLogoDropbox: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoDropbox: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-dropbox'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <g opacity='.2'>
         <path

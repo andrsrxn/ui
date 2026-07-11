@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTIxLjA2NiAxMS44MTdjMCAuNzQ5IDAgMS4xMjMtLjEzMSAxLjQxNWExLjUgMS41IDAgMCAxLS43NTcuNzU4Yy0uMjkyLjEzLS42NjcuMTMtMS40MTUuMTMtLjc1IDAtMS4xMjMgMC0xLjQxNi0uMTNhMS41IDEuNSAwIDAgMS0uNzU3LS43NThjLS4xMy0uMjkyLS4xMy0uNjY2LS4xMy0xLjQxNVY2LjE4YzAtLjc1IDAtMS4xMjMuMTMtMS40MTZhMS41IDEuNSAwIDAgMSAuNzU3LS43NTdjLjI5My0uMTMuNjY3LS4xMyAxLjQxNi0uMTMuNzQ4IDAgMS4xMjMgMCAxLjQxNS4xMy4zMzcuMTUuNjA2LjQyLjc1Ny43NTcuMTMuMjkzLjEzLjY2Ny4xMyAxLjQxNnY1LjYzN1ptLTcuMTIzIDQuODI3Yy4wODYtMS4wOTcuNzUyLTEuNzg3IDEuMjA5LTIuMzM0YS44OTguODk4IDAgMCAwIC4yMDEtLjU4VjQuODc4YTEgMSAwIDAgMC0xLTFINi44OTFhMiAyIDAgMCAwLTEuODc0IDEuM0wyLjkwOCAxMC44MmEyIDIgMCAwIDAgMS44NzQgMi43aDQuNDgzYy40NDYgMCAuNzYuNjE4LjU5IDEuMDMtLjI2NS42MzktLjUwMiAxLjU5LS40NDIgMi44OTEuMSAyLjE4IDEuOTQxIDIuNTkgMy40NjIgMi42NjYuNTc3LjAyOSAxLjAzNi0uNDcyIDEuMDIyLTEuMDVhMjQuNjg5IDI0LjY4OSAwIDAgMSAuMDQ2LTIuNDEyWiIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTIxLjA2NiAxMS44MTdjMCAuNzQ5IDAgMS4xMjMtLjEzMSAxLjQxNWExLjUgMS41IDAgMCAxLS43NTcuNzU4Yy0uMjkyLjEzLS42NjcuMTMtMS40MTUuMTMtLjc1IDAtMS4xMjMgMC0xLjQxNi0uMTNhMS41IDEuNSAwIDAgMS0uNzU3LS43NThjLS4xMy0uMjkyLS4xMy0uNjY2LS4xMy0xLjQxNVY2LjE4YzAtLjc1IDAtMS4xMjMuMTMtMS40MTZhMS41IDEuNSAwIDAgMSAuNzU3LS43NTdjLjI5My0uMTMuNjY3LS4xMyAxLjQxNi0uMTMuNzQ4IDAgMS4xMjMgMCAxLjQxNS4xMy4zMzcuMTUuNjA2LjQyLjc1Ny43NTcuMTMuMjkzLjEzLjY2Ny4xMyAxLjQxNnY1LjYzN1ptLTcuMTIzIDQuODI3Yy4wODYtMS4wOTcuNzUyLTEuNzg3IDEuMjA5LTIuMzM0YS44OTguODk4IDAgMCAwIC4yMDEtLjU4VjQuODc4YTEgMSAwIDAgMC0xLTFINi44OTFhMiAyIDAgMCAwLTEuODc0IDEuM0wyLjkwOCAxMC44MmEyIDIgMCAwIDAgMS44NzQgMi43aDQuNDgzYy40NDYgMCAuNzYuNjE4LjU5IDEuMDMtLjI2NS42MzktLjUwMiAxLjU5LS40NDIgMi44OTEuMSAyLjE4IDEuOTQxIDIuNTkgMy40NjIgMi42NjYuNTc3LjAyOSAxLjAzNi0uNDcyIDEuMDIyLTEuMDVhMjQuNjg5IDI0LjY4OSAwIDAgMSAuMDQ2LTIuNDEyWiIvPjwvc3ZnPg==)
  */
 export const IconDislikeFilled: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconDislikeFilled: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-dislike-filled'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

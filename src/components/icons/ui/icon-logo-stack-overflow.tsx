@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE5LjIzOCAxNC40Nkg0Ljc2MnY1Ljc5aDE0LjQ3NnYtNS43OVoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik00Ljc2MiAxNC40NnY1Ljc5aDE0LjQ3NnYtNS43OU04LjM4IDE2LjYzaDcuMjM4bS02LjYxLTQuNzc3IDYuOTkzIDEuODc0bS01LjE0OC02LjMyNSA2LjI2OCAzLjYxOU0xMy43ODcgMy41OGw1LjExOCA1LjExOCIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE5LjIzOCAxNC40Nkg0Ljc2MnY1Ljc5aDE0LjQ3NnYtNS43OVoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik00Ljc2MiAxNC40NnY1Ljc5aDE0LjQ3NnYtNS43OU04LjM4IDE2LjYzaDcuMjM4bS02LjYxLTQuNzc3IDYuOTkzIDEuODc0bS01LjE0OC02LjMyNSA2LjI2OCAzLjYxOU0xMy43ODcgMy41OGw1LjExOCA1LjExOCIvPjwvc3ZnPg==)
  */
 export const IconLogoStackOverflow: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoStackOverflow: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-stack-overflow'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path fill='currentColor' d='M19.238 14.46H4.762v5.79h14.476v-5.79Z' opacity='.2' />
       <path

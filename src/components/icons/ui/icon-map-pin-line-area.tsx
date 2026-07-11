@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE1LjI2NCA2Ljk3MWEzLjI2NCAzLjI2NCAwIDEgMS02LjUyOCAwIDMuMjY0IDMuMjY0IDAgMCAxIDYuNTI4IDBabTUuMDI2IDEwLjMxOGMwIDEuNzc5LTMuNzEyIDMuMjItOC4yOSAzLjIyLTQuNTc4IDAtOC4yOS0xLjQ0MS04LjI5LTMuMjIgMC0xLjc3OSAzLjcxMi0zLjIyIDguMjktMy4yMiA0LjU3OCAwIDguMjkgMS40NDEgOC4yOSAzLjIyWiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTEyIDEwLjIzNmEzLjI2NCAzLjI2NCAwIDEgMCAwLTYuNTI5IDMuMjY0IDMuMjY0IDAgMCAwIDAgNi41MjlabTAgMHY2Ljk0bTMuNjU1LTIuNzc4YzIuNzQ1LjUyNCA0LjYzNCAxLjYyMiA0LjYzNCAyLjg5IDAgMS43OC0zLjcxMSAzLjIyMS04LjI4OSAzLjIyMS00LjU3OCAwLTguMjktMS40NDEtOC4yOS0zLjIyIDAtMS4yNyAxLjg5LTIuMzY3IDQuNjM2LTIuODkyIi8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE1LjI2NCA2Ljk3MWEzLjI2NCAzLjI2NCAwIDEgMS02LjUyOCAwIDMuMjY0IDMuMjY0IDAgMCAxIDYuNTI4IDBabTUuMDI2IDEwLjMxOGMwIDEuNzc5LTMuNzEyIDMuMjItOC4yOSAzLjIyLTQuNTc4IDAtOC4yOS0xLjQ0MS04LjI5LTMuMjIgMC0xLjc3OSAzLjcxMi0zLjIyIDguMjktMy4yMiA0LjU3OCAwIDguMjkgMS40NDEgOC4yOSAzLjIyWiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTEyIDEwLjIzNmEzLjI2NCAzLjI2NCAwIDEgMCAwLTYuNTI5IDMuMjY0IDMuMjY0IDAgMCAwIDAgNi41MjlabTAgMHY2Ljk0bTMuNjU1LTIuNzc4YzIuNzQ1LjUyNCA0LjYzNCAxLjYyMiA0LjYzNCAyLjg5IDAgMS43OC0zLjcxMSAzLjIyMS04LjI4OSAzLjIyMS00LjU3OCAwLTguMjktMS40NDEtOC4yOS0zLjIyIDAtMS4yNyAxLjg5LTIuMzY3IDQuNjM2LTIuODkyIi8+PC9zdmc+)
  */
 export const IconMapPinLineArea: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconMapPinLineArea: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-map-pin-line-area'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

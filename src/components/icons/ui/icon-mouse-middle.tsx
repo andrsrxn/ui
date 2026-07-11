@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTYuNzcgMTEuNTU3aDEwLjQ2djMuNzY2YTUuMjMgNS4yMyAwIDEgMS0xMC40NiAwdi0zLjc2NlptNC4yNTctNS4zMDEuNTE2LS4yN2ExIDEgMCAwIDEgLjkxNy0uMDA3bC41NTIuMjhhMSAxIDAgMCAxIC41NDguODkydjEuMzAyYTEgMSAwIDAgMS0uNDYuODQybC0uNTUxLjM1M2ExIDEgMCAwIDEtMS4wOTItLjAwOGwtLjUxOC0uMzQzYTEgMSAwIDAgMS0uNDQ3LS44MzRWNy4xNDJhMSAxIDAgMCAxIC41MzUtLjg4NloiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMTEuOTUxIDUuNzc0aC4wMjhjLjkxMSAwIDEuNjUuNzQgMS42NSAxLjY1VjguNDNhMS42NSAxLjY1IDAgMCAxLTEuNjUgMS42NWgtLjAyOG0wLTQuMzA1YTEuNjUgMS42NSAwIDAgMC0xLjYyMyAxLjY1VjguNDNhMS42NSAxLjY1IDAgMCAwIDEuNjIzIDEuNjVtMC00LjMwNUwxMS45NTggNG0tLjAwNyA2LjA4LjAwNyAxLjk3Mm0wIDBIN200Ljk1OCAwaDUuMjczbS01LjI1MiA4LjUzYTUuMjMgNS4yMyAwIDAgMS01LjIzMS01LjIzMlY4LjcwNmE1LjIzIDUuMjMgMCAwIDEgMTAuNDYyIDB2Ni42NDZhNS4yMzEgNS4yMzEgMCAwIDEtNS4yMzEgNS4yM1oiLz48L3N2Zz4=)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTYuNzcgMTEuNTU3aDEwLjQ2djMuNzY2YTUuMjMgNS4yMyAwIDEgMS0xMC40NiAwdi0zLjc2NlptNC4yNTctNS4zMDEuNTE2LS4yN2ExIDEgMCAwIDEgLjkxNy0uMDA3bC41NTIuMjhhMSAxIDAgMCAxIC41NDguODkydjEuMzAyYTEgMSAwIDAgMS0uNDYuODQybC0uNTUxLjM1M2ExIDEgMCAwIDEtMS4wOTItLjAwOGwtLjUxOC0uMzQzYTEgMSAwIDAgMS0uNDQ3LS44MzRWNy4xNDJhMSAxIDAgMCAxIC41MzUtLjg4NloiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMTEuOTUxIDUuNzc0aC4wMjhjLjkxMSAwIDEuNjUuNzQgMS42NSAxLjY1VjguNDNhMS42NSAxLjY1IDAgMCAxLTEuNjUgMS42NWgtLjAyOG0wLTQuMzA1YTEuNjUgMS42NSAwIDAgMC0xLjYyMyAxLjY1VjguNDNhMS42NSAxLjY1IDAgMCAwIDEuNjIzIDEuNjVtMC00LjMwNUwxMS45NTggNG0tLjAwNyA2LjA4LjAwNyAxLjk3Mm0wIDBIN200Ljk1OCAwaDUuMjczbS01LjI1MiA4LjUzYTUuMjMgNS4yMyAwIDAgMS01LjIzMS01LjIzMlY4LjcwNmE1LjIzIDUuMjMgMCAwIDEgMTAuNDYyIDB2Ni42NDZhNS4yMzEgNS4yMzEgMCAwIDEtNS4yMzEgNS4yM1oiLz48L3N2Zz4=)
  */
 export const IconMouseMiddle: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconMouseMiddle: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-mouse-middle'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

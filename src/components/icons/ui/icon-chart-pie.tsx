@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTIgMy41NjdhOC40MzMgOC40MzMgMCAwIDAtNS45NjMgMTQuMzk2TDEyIDEyVjMuNTY3WiIgY2xpcC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTEyIDMuNTY3YTguNDMzIDguNDMzIDAgMSAwIDAgMTYuODY2IDguNDMzIDguNDMzIDAgMCAwIDAtMTYuODY2Wm0wIDB2Ni43NzZjMCAuODE4IDAgMS4yMjYtLjE1MiAxLjU5NC0uMTUzLjM2OC0uNDQyLjY1Ny0xLjAyIDEuMjM1bC00LjY5MyA0LjY5MyIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTIgMy41NjdhOC40MzMgOC40MzMgMCAwIDAtNS45NjMgMTQuMzk2TDEyIDEyVjMuNTY3WiIgY2xpcC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTEyIDMuNTY3YTguNDMzIDguNDMzIDAgMSAwIDAgMTYuODY2IDguNDMzIDguNDMzIDAgMCAwIDAtMTYuODY2Wm0wIDB2Ni43NzZjMCAuODE4IDAgMS4yMjYtLjE1MiAxLjU5NC0uMTUzLjM2OC0uNDQyLjY1Ny0xLjAyIDEuMjM1bC00LjY5MyA0LjY5MyIvPjwvc3ZnPg==)
  */
 export const IconChartPie: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconChartPie: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-chart-pie'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

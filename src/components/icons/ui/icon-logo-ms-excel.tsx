@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEzLjk4NCA3LjIxSDUuMDg5YS42ODQuNjg0IDAgMCAwLS42ODQuNjg1djguMjFjMCAuMzc4LjMwNi42ODQuNjg0LjY4NGg4Ljg5NWEuNjg0LjY4NCAwIDAgMCAuNjg0LS42ODR2LTguMjFhLjY4NC42ODQgMCAwIDAtLjY4NC0uNjg0WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTE0LjY2OCA5LjI2M2g0Ljc5bS00Ljc5IDUuNDc0aDQuNzlNNy4xNDEgNy4yMVY0LjQ3NGEuNjg0LjY4NCAwIDAgMSAuNjg0LS42ODRoMTAuOTQ3YS42ODQuNjg0IDAgMCAxIC42ODQuNjg0djE1LjA1MmEuNjg0LjY4NCAwIDAgMS0uNjg0LjY4NEg3LjgyNmEuNjg0LjY4NCAwIDAgMS0uNjg0LS42ODRWMTYuNzltNi4xNTggMHYzLjQybTAtMTYuNDJ2My40Mk03LjgyNiA5Ljk0OGwzLjQyMSA0LjEwNm0wLTQuMTA2LTMuNDIxIDQuMTA2TTUuMDg5IDcuMjFoOC44OTVjLjM3OCAwIC42ODQuMzA2LjY4NC42ODR2OC4yMWEuNjg0LjY4NCAwIDAgMS0uNjg0LjY4NEg1LjA4OWEuNjg0LjY4NCAwIDAgMS0uNjg0LS42ODR2LTguMjFjMC0uMzc4LjMwNi0uNjg0LjY4NC0uNjg0WiIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEzLjk4NCA3LjIxSDUuMDg5YS42ODQuNjg0IDAgMCAwLS42ODQuNjg1djguMjFjMCAuMzc4LjMwNi42ODQuNjg0LjY4NGg4Ljg5NWEuNjg0LjY4NCAwIDAgMCAuNjg0LS42ODR2LTguMjFhLjY4NC42ODQgMCAwIDAtLjY4NC0uNjg0WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTE0LjY2OCA5LjI2M2g0Ljc5bS00Ljc5IDUuNDc0aDQuNzlNNy4xNDEgNy4yMVY0LjQ3NGEuNjg0LjY4NCAwIDAgMSAuNjg0LS42ODRoMTAuOTQ3YS42ODQuNjg0IDAgMCAxIC42ODQuNjg0djE1LjA1MmEuNjg0LjY4NCAwIDAgMS0uNjg0LjY4NEg3LjgyNmEuNjg0LjY4NCAwIDAgMS0uNjg0LS42ODRWMTYuNzltNi4xNTggMHYzLjQybTAtMTYuNDJ2My40Mk03LjgyNiA5Ljk0OGwzLjQyMSA0LjEwNm0wLTQuMTA2LTMuNDIxIDQuMTA2TTUuMDg5IDcuMjFoOC44OTVjLjM3OCAwIC42ODQuMzA2LjY4NC42ODR2OC4yMWEuNjg0LjY4NCAwIDAgMS0uNjg0LjY4NEg1LjA4OWEuNjg0LjY4NCAwIDAgMS0uNjg0LS42ODR2LTguMjFjMC0uMzc4LjMwNi0uNjg0LjY4NC0uNjg0WiIvPjwvc3ZnPg==)
  */
 export const IconLogoMsExcel: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoMsExcel: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-ms-excel'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

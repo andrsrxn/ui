@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjAuMTMgMTYuNDg0VjhjMC0xLjg4NiAwLTIuODI4LS41ODYtMy40MTRDMTguOTYgNCAxOC4wMTYgNCAxNi4xMyA0SDcuNjQ2Yy0xLjg4NiAwLTIuODI4IDAtMy40MTQuNTg2TDIwLjEzIDE2LjQ4NFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0ibTQuNDU4IDUgOC4yMDkgNi4xMzNtMCAwTDIwIDE2LjEyMm0tNy4zMzMtNC45ODlMOCAyMG0tLjM1NC40ODRoOC40ODRjMS44ODYgMCAyLjgyOSAwIDMuNDE0LS41ODYuNTg2LS41ODUuNTg2LTEuNTI4LjU4Ni0zLjQxNFY4YzAtMS44ODYgMC0yLjgyOC0uNTg2LTMuNDE0QzE4Ljk2IDQgMTguMDE2IDQgMTYuMTMgNEg3LjY0NmMtMS44ODYgMC0yLjgyOCAwLTMuNDE0LjU4Ni0uNTg2LjU4Ni0uNTg2IDEuNTI4LS41ODYgMy40MTR2OC40ODRjMCAxLjg4NiAwIDIuODI4LjU4NiAzLjQxNC41ODYuNTg2IDEuNTI4LjU4NiAzLjQxNC41ODZaIi8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjAuMTMgMTYuNDg0VjhjMC0xLjg4NiAwLTIuODI4LS41ODYtMy40MTRDMTguOTYgNCAxOC4wMTYgNCAxNi4xMyA0SDcuNjQ2Yy0xLjg4NiAwLTIuODI4IDAtMy40MTQuNTg2TDIwLjEzIDE2LjQ4NFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0ibTQuNDU4IDUgOC4yMDkgNi4xMzNtMCAwTDIwIDE2LjEyMm0tNy4zMzMtNC45ODlMOCAyMG0tLjM1NC40ODRoOC40ODRjMS44ODYgMCAyLjgyOSAwIDMuNDE0LS41ODYuNTg2LS41ODUuNTg2LTEuNTI4LjU4Ni0zLjQxNFY4YzAtMS44ODYgMC0yLjgyOC0uNTg2LTMuNDE0QzE4Ljk2IDQgMTguMDE2IDQgMTYuMTMgNEg3LjY0NmMtMS44ODYgMC0yLjgyOCAwLTMuNDE0LjU4Ni0uNTg2LjU4Ni0uNTg2IDEuNTI4LS41ODYgMy40MTR2OC40ODRjMCAxLjg4NiAwIDIuODI4LjU4NiAzLjQxNC41ODYuNTg2IDEuNTI4LjU4NiAzLjQxNC41ODZaIi8+PC9zdmc+)
  */
 export const IconMosaic: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconMosaic: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-mosaic'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTcuODY4IDQuNjExYzEuMjUgMCAyLjMwNi42MTMgMy4wNiAxLjI4Ni41ODguNTI0Ljg4MS43ODYgMS4wNzIuNzg2LjE5IDAgLjQ4NC0uMjYyIDEuMDcyLS43ODYuNzU0LS42NzMgMS44MS0xLjI4NiAzLjA2LTEuMjg2IDIuNTk4IDAgNC4xMzEgMi40NTQgNC4xMzEgNC4zMTYgMCA1LjI5My00LjYwMyA3LjM1Ni03LjQ5NyA5LjkwNy0uMzg1LjMzOS0uNTc3LjUwOC0uNzY2LjUwOC0uMTg5IDAtLjM4MS0uMTctLjc2Ni0uNTA4LTIuODk0LTIuNTUtNy40OTctNC42MTQtNy40OTctOS45MDcgMC0xLjg2MiAxLjUzMy00LjMxNiA0LjEzMS00LjMxNloiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03Ljg2OCA0LjYxMWMyLjA3OSAwIDMuNjIgMS42OTUgNC4xMzIgMi41NDMuNTExLS44NDggMi4wNTMtMi41NDMgNC4xMzItMi41NDMgMi41OTggMCA0LjEzMSAyLjQ1NCA0LjEzMSA0LjMxNiAwIDUuNzktNS41MDkgNy43MTYtOC4yNjMgMTAuNjQyLTIuNzU0LTIuOTI2LTguMjYzLTQuODUyLTguMjYzLTEwLjY0MiAwLTEuODYyIDEuNTMzLTQuMzE2IDQuMTMxLTQuMzE2WiIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTcuODY4IDQuNjExYzEuMjUgMCAyLjMwNi42MTMgMy4wNiAxLjI4Ni41ODguNTI0Ljg4MS43ODYgMS4wNzIuNzg2LjE5IDAgLjQ4NC0uMjYyIDEuMDcyLS43ODYuNzU0LS42NzMgMS44MS0xLjI4NiAzLjA2LTEuMjg2IDIuNTk4IDAgNC4xMzEgMi40NTQgNC4xMzEgNC4zMTYgMCA1LjI5My00LjYwMyA3LjM1Ni03LjQ5NyA5LjkwNy0uMzg1LjMzOS0uNTc3LjUwOC0uNzY2LjUwOC0uMTg5IDAtLjM4MS0uMTctLjc2Ni0uNTA4LTIuODk0LTIuNTUtNy40OTctNC42MTQtNy40OTctOS45MDcgMC0xLjg2MiAxLjUzMy00LjMxNiA0LjEzMS00LjMxNloiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03Ljg2OCA0LjYxMWMyLjA3OSAwIDMuNjIgMS42OTUgNC4xMzIgMi41NDMuNTExLS44NDggMi4wNTMtMi41NDMgNC4xMzItMi41NDMgMi41OTggMCA0LjEzMSAyLjQ1NCA0LjEzMSA0LjMxNiAwIDUuNzktNS41MDkgNy43MTYtOC4yNjMgMTAuNjQyLTIuNzU0LTIuOTI2LTguMjYzLTQuODUyLTguMjYzLTEwLjY0MiAwLTEuODYyIDEuNTMzLTQuMzE2IDQuMTMxLTQuMzE2WiIvPjwvc3ZnPg==)
  */
 export const IconHeart: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconHeart: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-heart'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTguMjE4IDE2LjAwOHMtNC40OTItMi42MDYtMy44NDYtOS43NzRjMCAwIDMuMjMgMy4yNTggNy4xMDQgMy45MVY4Ljg0YzAtMS43OTEgMS40NjYtMy4yOCAzLjI1OC0zLjI1OGEzLjMxOCAzLjMxOCAwIDAgMSAyLjk4NyAxLjk1NWgyLjg3N2wtMi42MDYgMi42MDdjLS4zNDcgNS40NDQtNC44OTMgOS43NzQtMTAuNDI1IDkuNzc0LTIuNjA3IDAtMy4yNTgtLjk3OC0zLjI1OC0uOTc4czIuNjA2LS45NzcgMy45MS0yLjkzMloiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik04LjIxOCAxNi4wMDhzLTQuNDkyLTIuNjA2LTMuODQ2LTkuNzc0YzAgMCAzLjIzIDMuMjU4IDcuMTA0IDMuOTFWOC44NGMwLTEuNzkxIDEuNDY2LTMuMjggMy4yNTgtMy4yNThhMy4zMTggMy4zMTggMCAwIDEgMi45ODcgMS45NTVoMi44NzdsLTIuNjA2IDIuNjA3Yy0uMzQ3IDUuNDQ0LTQuODkzIDkuNzc0LTEwLjQyNSA5Ljc3NC0yLjYwNyAwLTMuMjU4LS45NzgtMy4yNTgtLjk3OHMyLjYwNi0uOTc3IDMuOTEtMi45MzJaIi8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTguMjE4IDE2LjAwOHMtNC40OTItMi42MDYtMy44NDYtOS43NzRjMCAwIDMuMjMgMy4yNTggNy4xMDQgMy45MVY4Ljg0YzAtMS43OTEgMS40NjYtMy4yOCAzLjI1OC0zLjI1OGEzLjMxOCAzLjMxOCAwIDAgMSAyLjk4NyAxLjk1NWgyLjg3N2wtMi42MDYgMi42MDdjLS4zNDcgNS40NDQtNC44OTMgOS43NzQtMTAuNDI1IDkuNzc0LTIuNjA3IDAtMy4yNTgtLjk3OC0zLjI1OC0uOTc4czIuNjA2LS45NzcgMy45MS0yLjkzMloiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik04LjIxOCAxNi4wMDhzLTQuNDkyLTIuNjA2LTMuODQ2LTkuNzc0YzAgMCAzLjIzIDMuMjU4IDcuMTA0IDMuOTFWOC44NGMwLTEuNzkxIDEuNDY2LTMuMjggMy4yNTgtMy4yNThhMy4zMTggMy4zMTggMCAwIDEgMi45ODcgMS45NTVoMi44NzdsLTIuNjA2IDIuNjA3Yy0uMzQ3IDUuNDQ0LTQuODkzIDkuNzc0LTEwLjQyNSA5Ljc3NC0yLjYwNyAwLTMuMjU4LS45NzgtMy4yNTgtLjk3OHMyLjYwNi0uOTc3IDMuOTEtMi45MzJaIi8+PC9zdmc+)
  */
 export const IconLogoTwitter: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoTwitter: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-twitter'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

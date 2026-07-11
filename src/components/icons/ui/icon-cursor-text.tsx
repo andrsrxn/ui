@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNOC44ODIgMjAuMzM1YzEuMDUgMCAxLjU3NSAwIDEuOTgxLS4xOTJhMiAyIDAgMCAwIC45NTItLjk1MmMuMTkyLS40MDYuMTkyLS45MzEuMTkyLTEuOTgxVjYuNzljMC0xLjA1IDAtMS41NzUtLjE5Mi0xLjk4MWEyIDIgMCAwIDAtLjk1Mi0uOTUyYy0uNDA2LS4xOTMtLjkzMS0uMTkzLTEuOTgxLS4xOTNtNi4yMzYgMTYuNjcxYy0xLjA1IDAtMS41NzUgMC0xLjk4MS0uMTkyYTIgMiAwIDAgMS0uOTUyLS45NTJjLS4xOTItLjQwNi0uMTkyLS45MzEtLjE5Mi0xLjk4MVY2Ljc5YzAtMS4wNSAwLTEuNTc1LjE5Mi0xLjk4MWEyIDIgMCAwIDEgLjk1Mi0uOTUyYy40MDYtLjE5My45MzEtLjE5MyAxLjk4MS0uMTkzIi8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNOC44ODIgMjAuMzM1YzEuMDUgMCAxLjU3NSAwIDEuOTgxLS4xOTJhMiAyIDAgMCAwIC45NTItLjk1MmMuMTkyLS40MDYuMTkyLS45MzEuMTkyLTEuOTgxVjYuNzljMC0xLjA1IDAtMS41NzUtLjE5Mi0xLjk4MWEyIDIgMCAwIDAtLjk1Mi0uOTUyYy0uNDA2LS4xOTMtLjkzMS0uMTkzLTEuOTgxLS4xOTNtNi4yMzYgMTYuNjcxYy0xLjA1IDAtMS41NzUgMC0xLjk4MS0uMTkyYTIgMiAwIDAgMS0uOTUyLS45NTJjLS4xOTItLjQwNi0uMTkyLS45MzEtLjE5Mi0xLjk4MVY2Ljc5YzAtMS4wNSAwLTEuNTc1LjE5Mi0xLjk4MWEyIDIgMCAwIDEgLjk1Mi0uOTUyYy40MDYtLjE5My45MzEtLjE5MyAxLjk4MS0uMTkzIi8+PC9zdmc+)
  */
 export const IconCursorText: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconCursorText: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-cursor-text'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         stroke='currentColor'

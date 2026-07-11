@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTIwLjE3NyAxMmE4LjE3NyA4LjE3NyAwIDEgMS0xNi4zNTQgMCA4LjE3NyA4LjE3NyAwIDAgMSAxNi4zNTQgMFoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTkuNDg1IDIwLjU0NmEuNzUuNzUgMCAwIDAgMS4wNjEtMS4wNmwtLjUzLjUzLS41My41M1pNNC41MTUgMy40NTRhLjc1Ljc1IDAgMCAwLTEuMDYxIDEuMDZsLjUzLS41My41My0uNTNaTTIwLjE3NiAxMmgtLjc1QTcuNDI3IDcuNDI3IDAgMCAxIDEyIDE5LjQyN3YxLjVBOC45MjcgOC45MjcgMCAwIDAgMjAuOTI3IDEyaC0uNzVaTTEyIDIwLjE3N3YtLjc1QTcuNDI3IDcuNDI3IDAgMCAxIDQuNTczIDEyaC0xLjVBOC45MjcgOC45MjcgMCAwIDAgMTIgMjAuOTI3di0uNzVaTTMuODIzIDEyaC43NUE3LjQyNyA3LjQyNyAwIDAgMSAxMiA0LjU3M3YtMS41QTguOTI3IDguOTI3IDAgMCAwIDMuMDczIDEyaC43NVpNMTIgMy44MjN2Ljc1QTcuNDI3IDcuNDI3IDAgMCAxIDE5LjQyNyAxMmgxLjVBOC45MjcgOC45MjcgMCAwIDAgMTIgMy4wNzN2Ljc1Wm04LjAxNiAxNi4xOTMuNTMtLjUzTDQuNTE0IDMuNDUzbC0uNTMuNTMtLjUzLjUzIDE2LjAzMiAxNi4wMzIuNTMtLjUzWiIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTIwLjE3NyAxMmE4LjE3NyA4LjE3NyAwIDEgMS0xNi4zNTQgMCA4LjE3NyA4LjE3NyAwIDAgMSAxNi4zNTQgMFoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTkuNDg1IDIwLjU0NmEuNzUuNzUgMCAwIDAgMS4wNjEtMS4wNmwtLjUzLjUzLS41My41M1pNNC41MTUgMy40NTRhLjc1Ljc1IDAgMCAwLTEuMDYxIDEuMDZsLjUzLS41My41My0uNTNaTTIwLjE3NiAxMmgtLjc1QTcuNDI3IDcuNDI3IDAgMCAxIDEyIDE5LjQyN3YxLjVBOC45MjcgOC45MjcgMCAwIDAgMjAuOTI3IDEyaC0uNzVaTTEyIDIwLjE3N3YtLjc1QTcuNDI3IDcuNDI3IDAgMCAxIDQuNTczIDEyaC0xLjVBOC45MjcgOC45MjcgMCAwIDAgMTIgMjAuOTI3di0uNzVaTTMuODIzIDEyaC43NUE3LjQyNyA3LjQyNyAwIDAgMSAxMiA0LjU3M3YtMS41QTguOTI3IDguOTI3IDAgMCAwIDMuMDczIDEyaC43NVpNMTIgMy44MjN2Ljc1QTcuNDI3IDcuNDI3IDAgMCAxIDE5LjQyNyAxMmgxLjVBOC45MjcgOC45MjcgMCAwIDAgMTIgMy4wNzN2Ljc1Wm04LjAxNiAxNi4xOTMuNTMtLjUzTDQuNTE0IDMuNDUzbC0uNTMuNTMtLjUzLjUzIDE2LjAzMiAxNi4wMzIuNTMtLjUzWiIvPjwvc3ZnPg==)
  */
 export const IconProhibit: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconProhibit: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-prohibit'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

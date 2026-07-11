@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0ibTMgOC41IDEgMVM1LjUgOC4zOTggNiA5Yy41MDkuNjA5IDEuODYzIDcuNjUgMi41IDkgLjU1NiAxLjE4NCAxLjk3OCAyLjg5IDQgMS41QzE0LjUgMTggMjAgMTQgMjEgOGMuNDQ0LTIuNjYxLTEtNC0yLjUtNC0yIDAtNC4wNDcgMS4yMDItNC41IDQgMi4wNS0xLjI1NCAyLjU1MSAxIDEuNSAzLTEuMDUyIDItMiAzLTIuNSAzLS40OSAwLS45MjQtMS4xNjUtMS41LTMuNS0uNTktMi40Mi0uNS02LjUtMy02LjVTMyA4LjUgMyA4LjVaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJtMyA4LjUgMSAxUzUuNSA4LjM5OCA2IDljLjUwOS42MDkgMS44NjMgNy42NSAyLjUgOSAuNTU2IDEuMTg0IDEuOTc4IDIuODkgNCAxLjVDMTQuNSAxOCAyMCAxNCAyMSA4Yy40NDQtMi42NjEtMS00LTIuNS00LTIgMC00LjA0NyAxLjIwMi00LjUgNCAyLjA1LTEuMjU0IDIuNTUxIDEgMS41IDMtMS4wNTIgMi0yIDMtMi41IDMtLjQ5IDAtLjkyNC0xLjE2NS0xLjUtMy41LS41OS0yLjQyLS41LTYuNS0zLTYuNVMzIDguNSAzIDguNVoiLz48L3N2Zz4=)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0ibTMgOC41IDEgMVM1LjUgOC4zOTggNiA5Yy41MDkuNjA5IDEuODYzIDcuNjUgMi41IDkgLjU1NiAxLjE4NCAxLjk3OCAyLjg5IDQgMS41QzE0LjUgMTggMjAgMTQgMjEgOGMuNDQ0LTIuNjYxLTEtNC0yLjUtNC0yIDAtNC4wNDcgMS4yMDItNC41IDQgMi4wNS0xLjI1NCAyLjU1MSAxIDEuNSAzLTEuMDUyIDItMiAzLTIuNSAzLS40OSAwLS45MjQtMS4xNjUtMS41LTMuNS0uNTktMi40Mi0uNS02LjUtMy02LjVTMyA4LjUgMyA4LjVaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJtMyA4LjUgMSAxUzUuNSA4LjM5OCA2IDljLjUwOS42MDkgMS44NjMgNy42NSAyLjUgOSAuNTU2IDEuMTg0IDEuOTc4IDIuODkgNCAxLjVDMTQuNSAxOCAyMCAxNCAyMSA4Yy40NDQtMi42NjEtMS00LTIuNS00LTIgMC00LjA0NyAxLjIwMi00LjUgNCAyLjA1LTEuMjU0IDIuNTUxIDEgMS41IDMtMS4wNTIgMi0yIDMtMi41IDMtLjQ5IDAtLjkyNC0xLjE2NS0xLjUtMy41LS41OS0yLjQyLS41LTYuNS0zLTYuNVMzIDguNSAzIDguNVoiLz48L3N2Zz4=)
  */
 export const IconLogoVimeo: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoVimeo: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-vimeo'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

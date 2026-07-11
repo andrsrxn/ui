@@ -11,7 +11,7 @@ import process from 'node:process'
 const ICONS_DIR = path.resolve('./src/components/icons/raw')
 const ICONS_OUT = path.resolve('./src/components/icons/ui')
 
-const CLASSNAME = 'bp-icon text-primary pointer-events-none shrink-0'
+const CLASSNAME = 'ui-icon text-primary pointer-events-none shrink-0'
 
 // Excepciones para la conversión de SVG a JSX
 const JSX_EXCEPTIONS = new Set(['viewBox', 'xmlns', 'xmlns:xlink', 'xml:space'])
@@ -36,22 +36,22 @@ function svgAttrsToJsx(svg) {
   })
 }
 
-function injectReactProps(svg) {
+function injectReactProps(svg, iconName) {
   return svg.replace(/<svg([^>]*)>/u, (_match, attrs) => {
-    return `<svg${attrs} aria-hidden="true" focusable="false" className={cn('${CLASSNAME}', className)} {...props}>`
+    return `<svg${attrs} data-slot='${iconName}' aria-hidden='true' focusable='false' className={cn('${CLASSNAME}', className)} {...props}>`
   })
 }
 
-function normalizeSvg(svg) {
+function normalizeSvg(svg, iconName) {
   svg = svgAttrsToJsx(svg)
-  svg = injectReactProps(svg)
+  svg = injectReactProps(svg, iconName)
   return svg
 }
 
 // --- Utilidades: Generación de Preview (JSDoc) ---
 function injectWhiteBackground(svg) {
   // Insertamos rect blanco justo después del <svg ...>
-  return svg.replace(/<svg([^>]*)>/u, `<svg$1><rect width="100%" height="100%" fill="white"/>`)
+  return svg.replace(/<svg([^>]*)>/u, `<svg$1><rect width='100%' height='100%' fill='white'/>`)
 }
 
 function svgToBase64(svg) {
@@ -63,7 +63,8 @@ function createPreviewJSDoc(base64) {
 }
 
 function generateComponent(fileName, svgContent) {
-  const componentName = toPascalCase(fileName.replace('.svg', ''))
+  const iconName = fileName.replace('.svg', '')
+  const componentName = toPascalCase(iconName)
 
   const rawSvg = extractSvg(svgContent)
   if (!rawSvg) {
@@ -76,7 +77,7 @@ function generateComponent(fileName, svgContent) {
   const jsDocPreview = createPreviewJSDoc(base64)
 
   // Generate JSX normalizado para el componente de React
-  const jsxSvg = normalizeSvg(rawSvg)
+  const jsxSvg = normalizeSvg(rawSvg, iconName)
 
   // Return the content of the .tsx file
   return `import type { Icon } from '../icon'

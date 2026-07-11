@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTQgOGMwLTEuODg2IDAtMi44MjguNTg2LTMuNDE0QzUuMTcyIDQgNi4xMTQgNCA4IDRoNHYxNkg4Yy0xLjg4NiAwLTIuODI4IDAtMy40MTQtLjU4NkM0IDE4LjgyOCA0IDE3Ljg4NiA0IDE2VjhaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTEyIDRIOGMtMS44ODYgMC0yLjgyOCAwLTMuNDE0LjU4NkM0IDUuMTcyIDQgNi4xMTQgNCA4djhjMCAxLjg4NiAwIDIuODI4LjU4NiAzLjQxNEM1LjE3MiAyMCA2LjExNCAyMCA4IDIwaDRtMC0xNmg0YzEuODg2IDAgMi44MjggMCAzLjQxNC41ODZDMjAgNS4xNzIgMjAgNi4xMTQgMjAgOHY4YzAgMS44ODYgMCAyLjgyOC0uNTg2IDMuNDE0QzE4LjgyOCAyMCAxNy44ODYgMjAgMTYgMjBoLTRtMC0xNnYxNiIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTQgOGMwLTEuODg2IDAtMi44MjguNTg2LTMuNDE0QzUuMTcyIDQgNi4xMTQgNCA4IDRoNHYxNkg4Yy0xLjg4NiAwLTIuODI4IDAtMy40MTQtLjU4NkM0IDE4LjgyOCA0IDE3Ljg4NiA0IDE2VjhaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTEyIDRIOGMtMS44ODYgMC0yLjgyOCAwLTMuNDE0LjU4NkM0IDUuMTcyIDQgNi4xMTQgNCA4djhjMCAxLjg4NiAwIDIuODI4LjU4NiAzLjQxNEM1LjE3MiAyMCA2LjExNCAyMCA4IDIwaDRtMC0xNmg0YzEuODg2IDAgMi44MjggMCAzLjQxNC41ODZDMjAgNS4xNzIgMjAgNi4xMTQgMjAgOHY4YzAgMS44ODYgMCAyLjgyOC0uNTg2IDMuNDE0QzE4LjgyOCAyMCAxNy44ODYgMjAgMTYgMjBoLTRtMC0xNnYxNiIvPjwvc3ZnPg==)
  */
 export const IconPanelsLeft: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconPanelsLeft: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-panels-left'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

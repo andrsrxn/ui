@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEzLjU2NSA3LjI0NEg0LjczM2EuNjguNjggMCAwIDAtLjY4LjY4djguMTUyYzAgLjM3NS4zMDUuNjguNjguNjhoOC44MzJhLjY4LjY4IDAgMCAwIC42OC0uNjhWNy45MjRhLjY4LjY4IDAgMCAwLS42OC0uNjhaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMTQuMjQ0IDkuMjgzSDE5bS00Ljc1NiA1LjQzNEgxOU02Ljc3MSA3LjI0NFY0LjUyN2EuNjguNjggMCAwIDEgLjY4LS42OGgxMC44N2EuNjguNjggMCAwIDEgLjY3OS42OHYxNC45NDZhLjY4LjY4IDAgMCAxLS42OC42OEg3LjQ1YS42NzkuNjc5IDAgMCAxLS42NzktLjY4di0yLjcxN20wLTYuNzk0IDEuMDIgNC4wNzYgMS4zNTgtMi43MTcgMS4zNTkgMi43MTcgMS4wMTktNC4wNzZNNC43MzMgNy4yNDRoOC44MzJhLjY4LjY4IDAgMCAxIC42OC42OHY4LjE1MmEuNjguNjggMCAwIDEtLjY4LjY4SDQuNzMzYS42OC42OCAwIDAgMS0uNjgtLjY4VjcuOTI0YS42OC42OCAwIDAgMSAuNjgtLjY4WiIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEzLjU2NSA3LjI0NEg0LjczM2EuNjguNjggMCAwIDAtLjY4LjY4djguMTUyYzAgLjM3NS4zMDUuNjguNjguNjhoOC44MzJhLjY4LjY4IDAgMCAwIC42OC0uNjhWNy45MjRhLjY4LjY4IDAgMCAwLS42OC0uNjhaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMTQuMjQ0IDkuMjgzSDE5bS00Ljc1NiA1LjQzNEgxOU02Ljc3MSA3LjI0NFY0LjUyN2EuNjguNjggMCAwIDEgLjY4LS42OGgxMC44N2EuNjguNjggMCAwIDEgLjY3OS42OHYxNC45NDZhLjY4LjY4IDAgMCAxLS42OC42OEg3LjQ1YS42NzkuNjc5IDAgMCAxLS42NzktLjY4di0yLjcxN20wLTYuNzk0IDEuMDIgNC4wNzYgMS4zNTgtMi43MTcgMS4zNTkgMi43MTcgMS4wMTktNC4wNzZNNC43MzMgNy4yNDRoOC44MzJhLjY4LjY4IDAgMCAxIC42OC42OHY4LjE1MmEuNjguNjggMCAwIDEtLjY4LjY4SDQuNzMzYS42OC42OCAwIDAgMS0uNjgtLjY4VjcuOTI0YS42OC42OCAwIDAgMSAuNjgtLjY4WiIvPjwvc3ZnPg==)
  */
 export const IconLogoMsWord: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoMsWord: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-ms-word'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

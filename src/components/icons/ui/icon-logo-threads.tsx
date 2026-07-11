@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEyIDIxYzQuMTQyIDAgNy41LTQuMDMgNy41LTlTMTYuMTQyIDMgMTIgM2MtNC4xNDIgMC03LjUgNC4wMy03LjUgOXMzLjM1OCA5IDcuNSA5WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTE4Ljc1IDcuMjhDMTcuOCA0LjgwOCAxNS44MDMgMyAxMiAzYy02IDAtNy41IDQuNS03LjUgOVM2IDIxIDEyIDIxYzQuNSAwIDYuNzUtMyA2Ljc1LTUuMjUgMC0yLjIyLTEuMzM2LTMuNjItMy4wMTgtNC4yNzJtMCAwQzEyLjg2OCAxMC4zNjYgOSAxMS40MTUgOSAxNC4yNSA5IDE4IDE1Ljc1IDE4IDE1Ljc1IDEyYzAtLjE4LS4wMDYtLjM1NC0uMDE4LS41MjJabTAgMEMxNS4zOTQgNi43NTMgMTAuNDQ4IDYuODI4IDkgOSIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEyIDIxYzQuMTQyIDAgNy41LTQuMDMgNy41LTlTMTYuMTQyIDMgMTIgM2MtNC4xNDIgMC03LjUgNC4wMy03LjUgOXMzLjM1OCA5IDcuNSA5WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTE4Ljc1IDcuMjhDMTcuOCA0LjgwOCAxNS44MDMgMyAxMiAzYy02IDAtNy41IDQuNS03LjUgOVM2IDIxIDEyIDIxYzQuNSAwIDYuNzUtMyA2Ljc1LTUuMjUgMC0yLjIyLTEuMzM2LTMuNjItMy4wMTgtNC4yNzJtMCAwQzEyLjg2OCAxMC4zNjYgOSAxMS40MTUgOSAxNC4yNSA5IDE4IDE1Ljc1IDE4IDE1Ljc1IDEyYzAtLjE4LS4wMDYtLjM1NC0uMDE4LS41MjJabTAgMEMxNS4zOTQgNi43NTMgMTAuNDQ4IDYuODI4IDkgOSIvPjwvc3ZnPg==)
  */
 export const IconLogoThreads: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoThreads: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-threads'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

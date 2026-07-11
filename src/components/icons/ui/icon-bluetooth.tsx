@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0ibTE2Ljg2IDE3LjU0My0zLjIzMyAyLjZhMSAxIDAgMCAxLTEuNjI3LS43OFY0LjU1MmExIDEgMCAwIDEgMS42MS0uNzkybDMuMjMzIDIuNDlhMSAxIDAgMCAxIC4wNCAxLjU1MkwxMiAxMS45ODVsNC44NjkgNC4wMDZhMSAxIDAgMCAxLS4wMDkgMS41NTJaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJtNS43NyA3LjIxIDYuMjc1IDQuNzk4bTAgMCA0LjEyMyAzLjE1Yy45NDguNzI2IDEuNDIyIDEuMDg4IDEuNDI0IDEuNTguMDAyLjQ5Mi0uNDY5Ljg1OC0xLjQxMiAxLjU5bC0uOTA4LjcwNWMtMS40MDQgMS4wOS0yLjEwNiAxLjYzNi0yLjY2NyAxLjM2MS0uNTYtLjI3NC0uNTYtMS4xNjMtLjU2LTIuOTR2LTUuNDQ3Wm0tNi4yNzUgNC43OCA2LjI3Ni00Ljc5N20wIDAgNC4xMjMtMy4xNWMuOTQ4LS43MjYgMS40MjItMS4wODggMS40MjQtMS41OC4wMDItLjQ5Mi0uNDY5LS44NTgtMS40MTItMS41OWwtLjkwOC0uNzA1Yy0xLjQwNC0xLjA5LTIuMTA2LTEuNjM2LTIuNjY3LTEuMzYxLS41Ni4yNzQtLjU2IDEuMTYzLS41NiAyLjk0djUuNDQ2WiIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0ibTE2Ljg2IDE3LjU0My0zLjIzMyAyLjZhMSAxIDAgMCAxLTEuNjI3LS43OFY0LjU1MmExIDEgMCAwIDEgMS42MS0uNzkybDMuMjMzIDIuNDlhMSAxIDAgMCAxIC4wNCAxLjU1MkwxMiAxMS45ODVsNC44NjkgNC4wMDZhMSAxIDAgMCAxLS4wMDkgMS41NTJaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJtNS43NyA3LjIxIDYuMjc1IDQuNzk4bTAgMCA0LjEyMyAzLjE1Yy45NDguNzI2IDEuNDIyIDEuMDg4IDEuNDI0IDEuNTguMDAyLjQ5Mi0uNDY5Ljg1OC0xLjQxMiAxLjU5bC0uOTA4LjcwNWMtMS40MDQgMS4wOS0yLjEwNiAxLjYzNi0yLjY2NyAxLjM2MS0uNTYtLjI3NC0uNTYtMS4xNjMtLjU2LTIuOTR2LTUuNDQ3Wm0tNi4yNzUgNC43OCA2LjI3Ni00Ljc5N20wIDAgNC4xMjMtMy4xNWMuOTQ4LS43MjYgMS40MjItMS4wODggMS40MjQtMS41OC4wMDItLjQ5Mi0uNDY5LS44NTgtMS40MTItMS41OWwtLjkwOC0uNzA1Yy0xLjQwNC0xLjA5LTIuMTA2LTEuNjM2LTIuNjY3LTEuMzYxLS41Ni4yNzQtLjU2IDEuMTYzLS41NiAyLjk0djUuNDQ2WiIvPjwvc3ZnPg==)
  */
 export const IconBluetooth: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconBluetooth: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-bluetooth'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

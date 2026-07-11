@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE2LjE3MSA3Ljg1OEgxMS4zNGEuNjkuNjkgMCAwIDAtLjY3LjUyM2wtMS4wMzUgNC4xNDJhLjY5LjY5IDAgMCAxIC42Ny0uNTIzaDMuMTA1YTQuMTQxIDQuMTQxIDAgMCAwIDQuMTM2LTMuOTA5IDQuMTYzIDQuMTYzIDAgMCAwLTEuMzc1LS4yMzNaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNOC41MTYgMTdhLjY5LjY5IDAgMCAxLS42Ny41MjJINS4xMjdhLjY5LjY5IDAgMCAxLS42Ny0uODU4TDcuNTY1IDQuMjRhLjY5LjY5IDAgMCAxIC42Ny0uNTIzaDUuMTc2YTQuMTQyIDQuMTQyIDAgMCAxIDAgOC4yODNoLTMuMTA2YS42OS42OSAwIDAgMC0uNjY3LjUyM2wtMS4xMjEgNC40NzZabTAgMC0uNjA0IDIuNDI1YS42OS42OSAwIDAgMCAuNjY3Ljg1OGgyLjcxOGEuNjkuNjkgMCAwIDAgLjY3LS41MjNsLjc3Ni0zLjA5NmEuNjkuNjkgMCAwIDEgLjY2Ny0uNTIyaDIuNzYxYTQuMTQyIDQuMTQyIDAgMCAwIDAtOC4yODRIMTEuMzRhLjY5LjY5IDAgMCAwLS42Ny41MjNsLTEuMDM1IDQuMTQyIi8+PC9zdmc+)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE2LjE3MSA3Ljg1OEgxMS4zNGEuNjkuNjkgMCAwIDAtLjY3LjUyM2wtMS4wMzUgNC4xNDJhLjY5LjY5IDAgMCAxIC42Ny0uNTIzaDMuMTA1YTQuMTQxIDQuMTQxIDAgMCAwIDQuMTM2LTMuOTA5IDQuMTYzIDQuMTYzIDAgMCAwLTEuMzc1LS4yMzNaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNOC41MTYgMTdhLjY5LjY5IDAgMCAxLS42Ny41MjJINS4xMjdhLjY5LjY5IDAgMCAxLS42Ny0uODU4TDcuNTY1IDQuMjRhLjY5LjY5IDAgMCAxIC42Ny0uNTIzaDUuMTc2YTQuMTQyIDQuMTQyIDAgMCAxIDAgOC4yODNoLTMuMTA2YS42OS42OSAwIDAgMC0uNjY3LjUyM2wtMS4xMjEgNC40NzZabTAgMC0uNjA0IDIuNDI1YS42OS42OSAwIDAgMCAuNjY3Ljg1OGgyLjcxOGEuNjkuNjkgMCAwIDAgLjY3LS41MjNsLjc3Ni0zLjA5NmEuNjkuNjkgMCAwIDEgLjY2Ny0uNTIyaDIuNzYxYTQuMTQyIDQuMTQyIDAgMCAwIDAtOC4yODRIMTEuMzRhLjY5LjY5IDAgMCAwLS42Ny41MjNsLTEuMDM1IDQuMTQyIi8+PC9zdmc+)
  */
 export const IconLogoPaypal: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoPaypal: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-paypal'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

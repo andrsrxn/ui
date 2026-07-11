@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTYuNTQgMTMuNzljLTEuODMtLjc5OC0yLjc0Ni0xLjE5OC0yLjc0MS0xLjg1Ny4wMDQtLjY2LjkyNS0xLjA0NyAyLjc2Ny0xLjgybDQuNjYtMS45NTVjLjM4Mi0uMTYuNTczLS4yNC43NzQtLjI0LjIwMSAwIC4zOTIuMDguNzc0LjI0bDQuNjYgMS45NTZjMS44NDIuNzcyIDIuNzYzIDEuMTU5IDIuNzY3IDEuODE5LjAwNS42Ni0uOTEgMS4wNTktMi43NDEgMS44NThsLTQuNjYgMi4wMzNjLS4zOTQuMTcyLS41OTEuMjU4LS44LjI1OC0uMjA5IDAtLjQwNi0uMDg2LS44LS4yNThsLTQuNjYtMi4wMzNaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0ibTExLjI0NiA4LjE1LTQuNzkgMi4wMWMtMS43OTUuNzUzLTIuNjkyIDEuMTMtMi42OTcgMS43NzItLjAwNC42NDMuODg3IDEuMDMyIDIuNjcxIDEuODFsLjY0NS4yODIgNC4xNDYgMS44MWMuMzg0LjE2Ny41NzYuMjUuNzc5LjI1LjIwMyAwIC4zOTUtLjA4My43OC0uMjVsNC4xNDUtMS44MS42NDUtLjI4MWMxLjc4NC0uNzc5IDIuNjc1LTEuMTY4IDIuNjctMS44MS0uMDA0LS42NDMtLjktMS4wMi0yLjY5NS0xLjc3M2wtNC43OTEtMi4wMWMtLjM3Mi0uMTU3LS41NTgtLjIzNS0uNzU0LS4yMzUtLjE5NiAwLS4zODIuMDc4LS43NTQuMjM1WiIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTYuNTQgMTMuNzljLTEuODMtLjc5OC0yLjc0Ni0xLjE5OC0yLjc0MS0xLjg1Ny4wMDQtLjY2LjkyNS0xLjA0NyAyLjc2Ny0xLjgybDQuNjYtMS45NTVjLjM4Mi0uMTYuNTczLS4yNC43NzQtLjI0LjIwMSAwIC4zOTIuMDguNzc0LjI0bDQuNjYgMS45NTZjMS44NDIuNzcyIDIuNzYzIDEuMTU5IDIuNzY3IDEuODE5LjAwNS42Ni0uOTEgMS4wNTktMi43NDEgMS44NThsLTQuNjYgMi4wMzNjLS4zOTQuMTcyLS41OTEuMjU4LS44LjI1OC0uMjA5IDAtLjQwNi0uMDg2LS44LS4yNThsLTQuNjYtMi4wMzNaIiBvcGFjaXR5PSIuMiIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0ibTExLjI0NiA4LjE1LTQuNzkgMi4wMWMtMS43OTUuNzUzLTIuNjkyIDEuMTMtMi42OTcgMS43NzItLjAwNC42NDMuODg3IDEuMDMyIDIuNjcxIDEuODFsLjY0NS4yODIgNC4xNDYgMS44MWMuMzg0LjE2Ny41NzYuMjUuNzc5LjI1LjIwMyAwIC4zOTUtLjA4My43OC0uMjVsNC4xNDUtMS44MS42NDUtLjI4MWMxLjc4NC0uNzc5IDIuNjc1LTEuMTY4IDIuNjctMS44MS0uMDA0LS42NDMtLjktMS4wMi0yLjY5NS0xLjc3M2wtNC43OTEtMi4wMWMtLjM3Mi0uMTU3LS41NTgtLjIzNS0uNzU0LS4yMzUtLjE5NiAwLS4zODIuMDc4LS43NTQuMjM1WiIvPjwvc3ZnPg==)
  */
 export const IconLayer: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLayer: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-layer'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

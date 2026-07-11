@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTcuODM0IDE2LjE2NmE0LjE2NiA0LjE2NiAwIDEgMCAwLTguMzMyIDQuMTY2IDQuMTY2IDAgMCAwIDAgOC4zMzJabTguMzMyIDBjLjk4NiAwIDEuNzg2LTEuODY1IDEuNzg2LTQuMTY2cy0uOC00LjE2Ni0xLjc4Ni00LjE2NlMxNC4zODEgOS42OTkgMTQuMzgxIDEycy44IDQuMTY2IDEuNzg1IDQuMTY2WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTIwLjMzMyA3LjgzNHY4LjMzMk0xMiAxMmE0LjE2NiA0LjE2NiAwIDEgMS04LjMzMyAwQTQuMTY2IDQuMTY2IDAgMCAxIDEyIDEyWm01Ljk1MiAwYzAgMi4zMDEtLjggNC4xNjYtMS43ODYgNC4xNjZTMTQuMzgxIDE0LjMwMSAxNC4zODEgMTJzLjgtNC4xNjYgMS43ODUtNC4xNjZjLjk4NiAwIDEuNzg2IDEuODY1IDEuNzg2IDQuMTY2WiIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTcuODM0IDE2LjE2NmE0LjE2NiA0LjE2NiAwIDEgMCAwLTguMzMyIDQuMTY2IDQuMTY2IDAgMCAwIDAgOC4zMzJabTguMzMyIDBjLjk4NiAwIDEuNzg2LTEuODY1IDEuNzg2LTQuMTY2cy0uOC00LjE2Ni0xLjc4Ni00LjE2NlMxNC4zODEgOS42OTkgMTQuMzgxIDEycy44IDQuMTY2IDEuNzg1IDQuMTY2WiIgb3BhY2l0eT0iLjIiLz48cGF0aCBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTIwLjMzMyA3LjgzNHY4LjMzMk0xMiAxMmE0LjE2NiA0LjE2NiAwIDEgMS04LjMzMyAwQTQuMTY2IDQuMTY2IDAgMCAxIDEyIDEyWm01Ljk1MiAwYzAgMi4zMDEtLjggNC4xNjYtMS43ODYgNC4xNjZTMTQuMzgxIDE0LjMwMSAxNC4zODEgMTJzLjgtNC4xNjYgMS43ODUtNC4xNjZjLjk4NiAwIDEuNzg2IDEuODY1IDEuNzg2IDQuMTY2WiIvPjwvc3ZnPg==)
  */
 export const IconLogoMedium: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconLogoMedium: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-logo-medium'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'

@@ -2,7 +2,7 @@ import type { Icon } from '../icon'
 import { cn } from '../../../lib/utils/theme'
 
 /**
- * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE0LjE2IDYuMTZhMi4xNiAyLjE2IDAgMSAxLTQuMzIgMCAyLjE2IDIuMTYgMCAwIDEgNC4zMiAwWm0wIDExLjY4YTIuMTYgMi4xNiAwIDEgMS00LjMyIDAgMi4xNiAyLjE2IDAgMCAxIDQuMzIgMFoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0zLjYzNiAxMmgxNi43MjhNMTQuMTYgNi4xNmEyLjE2IDIuMTYgMCAxIDEtNC4zMiAwIDIuMTYgMi4xNiAwIDAgMSA0LjMyIDBabTAgMTEuNjhhMi4xNiAyLjE2IDAgMSAxLTQuMzIgMCAyLjE2IDIuMTYgMCAwIDEgNC4zMiAwWiIvPjwvc3ZnPg==)
+ * @preview ![img](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd3aGl0ZScvPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE0LjE2IDYuMTZhMi4xNiAyLjE2IDAgMSAxLTQuMzIgMCAyLjE2IDIuMTYgMCAwIDEgNC4zMiAwWm0wIDExLjY4YTIuMTYgMi4xNiAwIDEgMS00LjMyIDAgMi4xNiAyLjE2IDAgMCAxIDQuMzIgMFoiIG9wYWNpdHk9Ii4yIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0zLjYzNiAxMmgxNi43MjhNMTQuMTYgNi4xNmEyLjE2IDIuMTYgMCAxIDEtNC4zMiAwIDIuMTYgMi4xNiAwIDAgMSA0LjMyIDBabTAgMTEuNjhhMi4xNiAyLjE2IDAgMSAxLTQuMzIgMCAyLjE2IDIuMTYgMCAwIDEgNC4zMiAwWiIvPjwvc3ZnPg==)
  */
 export const IconDivide: Icon = ({ className, ...props }) => {
   return (
@@ -12,9 +12,10 @@ export const IconDivide: Icon = ({ className, ...props }) => {
       height='24'
       fill='none'
       viewBox='0 0 24 24'
+      data-slot='icon-divide'
       aria-hidden='true'
       focusable='false'
-      className={cn('bp-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
       {...props}>
       <path
         fill='currentColor'
