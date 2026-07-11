@@ -1,11 +1,11 @@
-import { Slot } from 'radix-ui'
 import { cva } from 'class-variance-authority'
+import { Slot, Slottable } from '@radix-ui/react-slot'
 import type { ComponentProps } from 'react'
 import { cn, type NonNullableVariantProps } from '../../../lib/utils/theme'
 import { IconChevronRight, IconDownload, IconExternalLink } from '../../icons'
 
 export const linkVariants = cva(
-  'focus-visible:outline-2 outline-offset-3 rounded-base font-medium leading-inherit focus-visible:outline-focus text-body-inherit font-body active:scale-98 disabled:disabled duration-faster ease-base decoration-1 underline-offset-2 underline transition-theme',
+  'focus-visible:outline-2 outline-offset-3 rounded-base font-medium leading-inherit focus-visible:outline-focus text-body-inherit font-body active:scale-98 disabled:disabled duration-fastest ease-base decoration-1 underline-offset-2 underline transition-theme',
   {
     variants: {
       full: {
@@ -22,7 +22,7 @@ export const linkVariants = cva(
         content: 'text-content',
       },
       unstyled: {
-        true: 'no-underline outline-offset-0 rounded-[unset] text-inherit block focus-visible:focus',
+        true: 'decoration-0 no-underline outline-offset-0 rounded-[unset] text-inherit block focus-visible:focus',
       },
       selectable: {
         true: 'text-selectable hover:text-selectable-hover focus-visible:text-selectable-hover',
@@ -30,7 +30,7 @@ export const linkVariants = cva(
       selected: {
         true: 'text-selected hover:text-selected focus-visible:text-selected',
       },
-      selectedAlt: {
+      selectedSubtle: {
         true: 'text-primary hover:text-primary focus-visible:text-primary',
       },
     },
@@ -41,7 +41,7 @@ export const linkVariants = cva(
       variant: 'primary',
       selectable: false,
       selected: false,
-      selectedAlt: false,
+      selectedSubtle: false,
     },
   }
 )
@@ -60,7 +60,7 @@ export const Link = ({
   full,
   selectable,
   selected,
-  selectedAlt,
+  selectedSubtle,
   asChild = false,
   includeIcon = full ?? false,
   unstyled = false,
@@ -69,7 +69,7 @@ export const Link = ({
   download,
   ...props
 }: LinkProps) => {
-  const Comp = asChild ? Slot.Root : 'a'
+  const Comp = asChild ? Slot : 'a'
 
   const RenderLink = (
     <Comp
@@ -78,11 +78,19 @@ export const Link = ({
       rel={target === '_blank' ? 'noopener noreferrer' : undefined}
       download={download}
       className={cn(
-        linkVariants({ full, includeIcon, selectedAlt, selectable, selected, variant, unstyled }),
+        linkVariants({
+          full,
+          includeIcon,
+          selectedSubtle,
+          selectable,
+          selected,
+          variant,
+          unstyled,
+        }),
         className
       )}
       {...props}>
-      <Slot.Slottable>{children}</Slot.Slottable>
+      <Slottable>{children}</Slottable>
 
       {download !== undefined && includeIcon ? (
         <IconDownload className={'size-icon-responsive text-inherit'} />
@@ -95,7 +103,7 @@ export const Link = ({
       {target !== '_blank' && download === undefined && includeIcon ? (
         <IconChevronRight
           className={cn(
-            'size-icon-responsive duration-fast ease-base -ms-0.5 text-inherit transition-transform group-hover:translate-x-1 rtl:-scale-x-100 rtl:group-hover:-translate-x-1'
+            'size-icon-responsive duration-fast ease-base -ms-0.5 text-inherit transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1'
           )}
         />
       ) : null}

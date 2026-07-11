@@ -3,7 +3,7 @@ import type { ComponentProps } from 'react'
 import { cn, type NonNullableVariantProps } from '../../../lib/utils/theme'
 
 export const highlightVariants = cva(
-  'shrink-0 font-body bg-details text-details transition-theme box-decoration-slice selection:bg-details-bold'
+  'shrink-0 font-body bg-details text-details transition-theme box-decoration-slice selection:bg-details-hover'
 )
 
 export interface HighlightProps

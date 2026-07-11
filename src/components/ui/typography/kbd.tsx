@@ -42,7 +42,7 @@ export const KbdGroup = ({
   <kbd
     data-slot='kbd-group'
     className={cn(
-      'flex shrink-0 items-center gap-0.5 font-mono leading-none',
+      'flex shrink-0 items-center gap-1 font-mono leading-none',
       includeSeparator && '[&>[data-slot=kbd]:not(:last-child)]:after:content-["+"]',
       className
     )}

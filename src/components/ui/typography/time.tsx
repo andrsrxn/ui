@@ -164,7 +164,7 @@ export const Time = ({
       )}
       dateTime={dateTime}
       {...props}>
-      {includeIcon ? <IconClock className='size-icon-responsive' /> : null}
+      {includeIcon ? <IconClock className='size-icon-responsive text-inherit' /> : null}
       {children}
     </time>
   )

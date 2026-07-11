@@ -222,7 +222,7 @@ export const ListItem = ({ className, children, label, ...props }: ListItemProps
     data-slot='list-item'
     className={cn('marker:text-details-subtle list-outside', className)}
     {...props}>
-    {label === undefined ? null : <Label data-slot='list-item-label'>{label}: </Label>}
+    {label === undefined ? null : <Label data-slot='list-item-label'>{label}:&nbsp;</Label>}
     {children}
   </li>
 )
