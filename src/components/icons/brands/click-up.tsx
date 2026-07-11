@@ -1,42 +1,42 @@
 import type { SVGProps } from 'react'
 import { cn } from '../../../lib/utils/theme'
 
-export const IconLogoBoldClickUp = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
+export const IconBrandClickUp = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
   <svg
-    aria-label='Click Up'
-    className={cn('size-icon-base shrink-0', className)}
-    role='img'
-    {...props}
     xmlns='http://www.w3.org/2000/svg'
     fill='none'
+    aria-label='Click Up'
+    className={cn('size-icon-base shrink-0', className)}
+    {...props}
+    role='img'
     viewBox='0 0 32 38'>
     <linearGradient
       id='clikup-a'
-      gradientUnits='userSpaceOnUse'
       x1='0'
-      x2='31.2358'
-      y1='40.2438'
-      y2='40.2438'>
+      x2='31.236'
+      y1='40.244'
+      y2='40.244'
+      gradientUnits='userSpaceOnUse'>
       <stop offset='0' stopColor='#7612fa' />
       <stop offset='1' stopColor='#40ddff' />
     </linearGradient>
     <linearGradient
       id='clikup-b'
-      gradientUnits='userSpaceOnUse'
-      x1='.68116'
-      x2='30.6097'
-      y1='21.9883'
-      y2='21.9883'>
+      x1='.681'
+      x2='30.61'
+      y1='21.988'
+      y2='21.988'
+      gradientUnits='userSpaceOnUse'>
       <stop offset='0' stopColor='#fa12e3' />
-      <stop offset='1' stopColor='#ffd700' />
+      <stop offset='1' stopColor='gold' />
     </linearGradient>
     <path
-      d='m0 29.087 5.76396-4.46c3.06234 4.037 6.31594 5.8978 9.93744 5.8978 3.6022 0 6.7638-1.8388 9.6881-5.8441l5.8463 4.3525c-4.2195 5.7756-9.463 8.8272-15.5344 8.8272-6.05203 0-11.34635-3.032-15.7014-8.7734z'
       fill='url(#clikup-a)'
+      d='m0 29.087 5.764-4.46c3.062 4.037 6.316 5.898 9.937 5.898 3.603 0 6.764-1.839 9.689-5.844l5.846 4.352c-4.22 5.776-9.463 8.827-15.535 8.827C9.65 37.86 4.355 34.828 0 29.087'
     />
     <path
-      d='m15.683 9.70266-10.25946 8.92994-4.74238-5.5555 15.02364-13.07702371 14.9049 13.08672371-4.7641 5.536z'
       fill='url(#clikup-b)'
+      d='m15.683 9.703-10.26 8.93-4.742-5.556L15.705 0 30.61 13.087l-4.764 5.536z'
     />
   </svg>
 )

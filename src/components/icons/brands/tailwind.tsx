@@ -1,20 +1,20 @@
 import type { SVGProps } from 'react'
 import { cn } from '../../../lib/utils/theme'
 
-export const IconLogoBoldTailwind = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
+export const IconBrandTailwind = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
   <svg
-    aria-label='Tailwind'
-    className={cn('size-icon-base shrink-0', className)}
-    role='img'
-    {...props}
     xmlns='http://www.w3.org/2000/svg'
     fill='none'
+    aria-label='Tailwind'
+    className={cn('size-icon-base shrink-0', className)}
+    {...props}
+    role='img'
     viewBox='0 0 54 33'>
     <g clipPath='url(#a)'>
       <path
         fill='#38bdf8'
         fillRule='evenodd'
-        d='M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z'
+        d='M27 0Q16.2 0 13.5 10.8q4.05-5.4 9.45-4.05c2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2q10.8 0 13.5-10.8-4.05 5.4-9.45 4.05c-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0M13.5 16.2Q2.7 16.2 0 27q4.05-5.4 9.45-4.05c2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4q10.8 0 13.5-10.8-4.05 5.4-9.45 4.05c-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2'
         clipRule='evenodd'
       />
     </g>

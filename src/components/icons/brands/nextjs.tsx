@@ -1,55 +1,55 @@
 import type { SVGProps } from 'react'
 import { cn } from '../../../lib/utils/theme'
 
-export const IconLogoBoldNextJS = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
+export const IconBrandNextJS = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
   <svg
+    xmlns='http://www.w3.org/2000/svg'
+    fill='none'
     aria-label='Next.js'
     className={cn('size-icon-base shrink-0', className)}
+    {...props}
     role='img'
-    viewBox='0 0 180 180'
-    fill='none'
-    xmlns='http://www.w3.org/2000/svg'
-    {...props}>
+    viewBox='0 0 180 180'>
     <mask
       id='mask0_408_139'
+      height={180}
       style={{
         maskType: 'alpha',
       }}
-      maskUnits='userSpaceOnUse'
+      width={180}
       x={0}
       y={0}
-      width={180}
-      height={180}>
-      <circle cx={90} cy={90} r={90} fill='black' />
+      maskUnits='userSpaceOnUse'>
+      <circle fill='#000' cx={90} cy={90} r={90} />
     </mask>
     <g mask='url(#mask0_408_139)'>
-      <circle cx={90} cy={90} r={87} fill='black' stroke='white' strokeWidth={6} />
+      <circle fill='#000' stroke='#fff' cx={90} cy={90} r={87} strokeWidth={6} />
       <path
-        d='M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z'
         fill='url(#paint0_linear_408_139)'
+        d='M149.508 157.52 69.142 54H54v71.97h12.114V69.384l73.885 95.461a90 90 0 0 0 9.509-7.325'
       />
-      <rect x={115} y={54} width={12} height={72} fill='url(#paint1_linear_408_139)' />
+      <rect fill='url(#paint1_linear_408_139)' height={72} width={12} x={115} y={54} />
     </g>
     <defs>
       <linearGradient
         id='paint0_linear_408_139'
         x1={109}
-        y1={116.5}
         x2={144.5}
+        y1={116.5}
         y2={160.5}
         gradientUnits='userSpaceOnUse'>
-        <stop stopColor='white' />
-        <stop offset={1} stopColor='white' stopOpacity={0} />
+        <stop stopColor='#fff' />
+        <stop offset={1} stopOpacity={0} stopColor='#fff' />
       </linearGradient>
       <linearGradient
         id='paint1_linear_408_139'
         x1={121}
-        y1={54}
         x2={120.799}
+        y1={54}
         y2={106.875}
         gradientUnits='userSpaceOnUse'>
-        <stop stopColor='white' />
-        <stop offset={1} stopColor='white' stopOpacity={0} />
+        <stop stopColor='#fff' />
+        <stop offset={1} stopOpacity={0} stopColor='#fff' />
       </linearGradient>
     </defs>
   </svg>

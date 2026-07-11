@@ -1,39 +1,39 @@
 import type { SVGProps } from 'react'
 import { cn } from '../../../lib/utils/theme'
 
-export const IconLogoBoldCanva = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
+export const IconBrandCanva = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
   <svg
+    xmlns='http://www.w3.org/2000/svg'
+    fill='none'
     aria-label='Canva'
     className={cn('size-icon-base shrink-0', className)}
-    role='img'
     {...props}
-    viewBox='0 0 80 80'
-    fill='none'
-    xmlns='http://www.w3.org/2000/svg'>
+    role='img'
+    viewBox='0 0 80 80'>
     <g clipPath='url(#clip0_905_1790)'>
       <path
-        d='M40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80Z'
-        fill='#7D2AE7'
+        fill='#7d2ae7'
+        d='M40 80c22.091 0 40-17.909 40-40S62.091 0 40 0 0 17.909 0 40s17.909 40 40 40'
       />
       <path
-        d='M40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80Z'
         fill='url(#paint0_radial_905_1790)'
+        d='M40 80c22.091 0 40-17.909 40-40S62.091 0 40 0 0 17.909 0 40s17.909 40 40 40'
       />
       <path
-        d='M40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80Z'
         fill='url(#paint1_radial_905_1790)'
+        d='M40 80c22.091 0 40-17.909 40-40S62.091 0 40 0 0 17.909 0 40s17.909 40 40 40'
       />
       <path
-        d='M40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80Z'
         fill='url(#paint2_radial_905_1790)'
+        d='M40 80c22.091 0 40-17.909 40-40S62.091 0 40 0 0 17.909 0 40s17.909 40 40 40'
       />
       <path
-        d='M40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80Z'
         fill='url(#paint3_radial_905_1790)'
+        d='M40 80c22.091 0 40-17.909 40-40S62.091 0 40 0 0 17.909 0 40s17.909 40 40 40'
       />
       <path
-        d='M57.2691 48.2052C56.939 48.2052 56.6485 48.484 56.3462 49.0928C52.9323 56.0153 47.0358 60.9134 40.2125 60.9134C32.3228 60.9134 27.437 53.7913 27.437 43.9522C27.437 27.2855 36.7232 17.6491 44.8796 17.6491C48.691 17.6491 51.0186 20.0443 51.0186 23.8559C51.0186 28.3796 48.4485 30.7748 48.4485 32.3702C48.4485 33.0864 48.8939 33.5201 49.7773 33.5201C53.3264 33.5201 57.4918 29.4419 57.4918 23.6808C57.4918 18.0947 52.63 13.9888 44.4737 13.9888C30.994 13.9888 19.0142 26.4858 19.0142 43.777C19.0142 57.1614 26.6572 66.0061 38.45 66.0061C50.9668 66.0061 58.2043 53.5526 58.2043 49.5105C58.2043 48.6153 57.7466 48.2052 57.2691 48.2052Z'
-        fill='white'
+        fill='#fff'
+        d='M57.27 48.205c-.331 0-.622.279-.924.888-3.414 6.922-9.31 11.82-16.133 11.82-7.89 0-12.776-7.122-12.776-16.96 0-16.668 9.286-26.304 17.443-26.304 3.811 0 6.139 2.395 6.139 6.207 0 4.524-2.57 6.919-2.57 8.514 0 .716.445 1.15 1.328 1.15 3.55 0 7.715-4.078 7.715-9.84 0-5.585-4.862-9.691-13.018-9.691-13.48 0-25.46 12.497-25.46 29.788 0 13.384 7.643 22.23 19.436 22.23 12.517 0 19.754-12.454 19.754-16.497 0-.895-.457-1.305-.935-1.305'
       />
     </g>
     <defs>
@@ -42,44 +42,44 @@ export const IconLogoBoldCanva = ({ className, ...props }: SVGProps<SVGSVGElemen
         cx='0'
         cy='0'
         r='1'
-        gradientUnits='userSpaceOnUse'
-        gradientTransform='translate(15.453 70.9057) rotate(-49.416) scale(61.8733)'>
-        <stop stopColor='#6420FF' />
-        <stop offset='1' stopColor='#6420FF' stopOpacity='0' />
+        gradientTransform='rotate(-49.416 84.778 18.66)scale(61.8733)'
+        gradientUnits='userSpaceOnUse'>
+        <stop stopColor='#6420ff' />
+        <stop offset='1' stopColor='#6420ff' stopOpacity='0' />
       </radialGradient>
       <radialGradient
         id='paint1_radial_905_1790'
         cx='0'
         cy='0'
         r='1'
-        gradientUnits='userSpaceOnUse'
-        gradientTransform='translate(21.1788 9.09457) rotate(54.703) scale(69.7735)'>
-        <stop stopColor='#00C4CC' />
-        <stop offset='1' stopColor='#00C4CC' stopOpacity='0' />
+        gradientTransform='rotate(54.703 1.799 25.019)scale(69.7735)'
+        gradientUnits='userSpaceOnUse'>
+        <stop stopColor='#00c4cc' />
+        <stop offset='1' stopColor='#00c4cc' stopOpacity='0' />
       </radialGradient>
       <radialGradient
         id='paint2_radial_905_1790'
         cx='0'
         cy='0'
         r='1'
-        gradientUnits='userSpaceOnUse'
-        gradientTransform='translate(15.4526 70.9053) rotate(-45.1954) scale(61.1242 28.1118)'>
-        <stop stopColor='#6420FF' />
-        <stop offset='1' stopColor='#6420FF' stopOpacity='0' />
+        gradientTransform='rotate(-45.195 92.905 16.89)scale(61.1242 28.1118)'
+        gradientUnits='userSpaceOnUse'>
+        <stop stopColor='#6420ff' />
+        <stop offset='1' stopColor='#6420ff' stopOpacity='0' />
       </radialGradient>
       <radialGradient
         id='paint3_radial_905_1790'
         cx='0'
         cy='0'
         r='1'
-        gradientUnits='userSpaceOnUse'
-        gradientTransform='translate(32.7158 10.7789) rotate(66.5198) scale(62.9836 105.512)'>
-        <stop stopColor='#00C4CC' stopOpacity='0.725916' />
-        <stop offset='0.0001' stopColor='#00C4CC' />
-        <stop offset='1' stopColor='#00C4CC' stopOpacity='0' />
+        gradientTransform='rotate(66.52 8.14 30.33)scale(62.9836 105.512)'
+        gradientUnits='userSpaceOnUse'>
+        <stop stopColor='#00c4cc' stopOpacity='.726' />
+        <stop offset='0' stopColor='#00c4cc' />
+        <stop offset='1' stopColor='#00c4cc' stopOpacity='0' />
       </radialGradient>
       <clipPath id='clip0_905_1790'>
-        <rect width='80' height='80' fill='white' />
+        <path fill='#fff' d='M0 0h80v80H0z' />
       </clipPath>
     </defs>
   </svg>
