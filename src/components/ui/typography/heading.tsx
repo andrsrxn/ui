@@ -1,12 +1,10 @@
-'use client'
-
 import { createElement, useMemo, type ComponentProps } from 'react'
 import { cn, type NonNullableVariantProps } from '../../../lib/utils/theme'
 import { cva } from 'class-variance-authority'
 import { slugify } from '../../../lib/utils/strings'
 import { IconLink } from '../../icons'
 import { Link } from './link'
-import { useUI } from '../../../lib/hooks/use-ui'
+import { getUILabels } from '../../../lib/utils/config'
 
 export const headingVariants = cva(
   'font-heading text-balance whitespace-normal block transition-theme',
@@ -533,7 +531,7 @@ export const Heading = ({
   id,
   ...props
 }: HeadingProps) => {
-  const { labels } = useUI()
+  const { actions } = getUILabels()
   const slug = useMemo(
     () => (children && children !== '' ? slugify(children) : undefined),
     [children]
@@ -573,10 +571,10 @@ export const Heading = ({
       {id !== undefined && (
         <Link
           unstyled
-          aria-label={labels.permanetLink}
+          aria-label={actions.copyPermanentLink}
           data-slot='heading-permanent-link'
           className={cn(
-            'duration-faster ease-base absolute inset-s-full top-0 flex items-center transition-opacity! focus-visible:opacity-100 focus-visible:ring-0 active:scale-98',
+            'duration-fastest ease-base absolute inset-s-full top-0 flex items-center transition-opacity! focus-visible:opacity-100 focus-visible:ring-0 active:scale-98',
             includeAnchor && 'text-selectable hover:text-selected opacity-0 group-hover:opacity-100'
           )}
           href={`#${id}`}>
