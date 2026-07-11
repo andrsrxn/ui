@@ -4,20 +4,20 @@ import { labelVariants } from './label'
 import { textVariants } from './text'
 
 export interface TableProps extends TableHTMLAttributes<HTMLTableElement> {
-  variant?: 'primary' | 'secondary'
+  variant?: 'base' | 'surface'
 }
 
-export const Table = ({ className, variant = 'primary', ...props }: TableProps) => (
-  <div className='relative w-full overflow-auto'>
+export const Table = ({ className, variant = 'base', ...props }: TableProps) => (
+  <div className='relative overflow-auto'>
     <table
       data-slot='table'
       className={cn(
         textVariants({ size: 'sm' }),
         'table w-full caption-bottom leading-none',
-        variant === 'primary' &&
-          '[&_tbody_tr:hover]:bg-base-hover [&_tbody_tr]:bg-base [&_tfoot_tr]:bg-base-accent [&_thead_tr]:bg-base-accent',
-        variant === 'secondary' &&
-          '[&_tbody_tr:hover]:bg-surface-hover [&_tbody_tr]:bg-surface [&_tfoot_tr]:bg-base-accent [&_thead_tr]:bg-base-accent',
+        variant === 'base' &&
+          '[&_tbody_tr:hover]:bg-base-hover [&_tbody_tr]:bg-base [&_tfoot_tr]:bg-base-active [&_thead_tr]:bg-base-active',
+        variant === 'surface' &&
+          '[&_tbody_tr:hover]:bg-surface-hover [&_tbody_tr]:bg-surface [&_tfoot_tr]:bg-surface-active [&_thead_tr]:bg-surface-active',
 
         className
       )}
@@ -73,7 +73,7 @@ export const TableRow = ({ className, ...props }: ComponentProps<'tr'>) => (
   <tr
     data-slot='table-row'
     className={cn(
-      'transition-theme hover:duration-none duration-faster data-[state=selected]:bg-selected! data-[state=selected]:border-selected data-[state=selected]:text-selected! data-[state=selected]:hover:bg-selected-hover! border-base tran sition-colors has-[+[data-state=selected]]:border-selected border-b data-[state=selected]:relative data-[state=selected]:border-t',
+      'transition-theme hover:duration-none duration-fastest data-selected:bg-selected-subtle! data-selected:border-selected data-selected:text-selected! data-selected:hover:bg-selected-subtle-hover! border-base tran sition-colors has-[+[data-selected]]:border-selected border-b data-selected:relative data-selected:border-t',
       className
     )}
     {...props}
