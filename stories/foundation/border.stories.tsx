@@ -49,9 +49,6 @@ export const Colors = meta.story({
       <div className='bg-surface text-body-sm border-base-sublte flex size-20 items-center justify-center rounded-sm border p-1 text-center'>
         Base subtle
       </div>
-      <div className='bg-surface text-body-sm border-inverted flex size-20 items-center justify-center rounded-sm border p-1 text-center'>
-        Inverted
-      </div>
       <div className='bg-surface text-body-sm border-input flex size-20 items-center justify-center rounded-sm border p-1 text-center'>
         Input
       </div>

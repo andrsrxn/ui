@@ -1,24 +1,11 @@
 import type { PartialStoryFn } from 'storybook/internal/types'
 
-export const BrandDecorator = (Story: PartialStoryFn) => {
+export const ContentDecorator = (Story: PartialStoryFn) => {
   return (
-    <div data-slot='brand-decorator'>
+    <div data-slot='content-decorator'>
       <style>{`
         body {
-          background: var(--background-color-brand)
-        }
-      `}</style>
-      <Story />
-    </div>
-  )
-}
-
-export const InvertedDecorator = (Story: PartialStoryFn) => {
-  return (
-    <div data-slot='inverted-decorator'>
-      <style>{`
-        body {
-          background: var(--background-color-base-inverted)
+          background: var(--background-brand)
         }
       `}</style>
       <Story />

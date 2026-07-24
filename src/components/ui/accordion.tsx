@@ -1,11 +1,10 @@
-import type { ComponentProps } from 'react'
 import { cn } from '../../lib/utils/theme'
 import { labelVariants, type LabelProps } from './typography/label'
 import { IconPlus } from '../icons'
 import { Text, type TextProps } from './typography/text'
 import { Accordion as AccordionPrimitive } from '@base-ui/react/accordion'
 
-interface AccordionProps extends AccordionPrimitive.Root.Props {
+export interface AccordionProps extends AccordionPrimitive.Root.Props {
   variant?: 'base' | 'surface'
 }
 
@@ -21,20 +20,17 @@ export const Accordion = ({ variant = 'base', className, ...props }: AccordionPr
   />
 )
 
-export const AccordionItem = ({
-  className,
-  ...props
-}: ComponentProps<typeof AccordionPrimitive.Item>) => (
+export interface AccordionItemProps extends AccordionPrimitive.Item.Props {}
+
+export const AccordionItem = ({ className, ...props }: AccordionItemProps) => (
   <AccordionPrimitive.Item
     data-slot='accordion-item'
-    className={cn(
-      'transition-theme border-b',
-
-      className
-    )}
+    className={cn('transition-theme border-b', className)}
     {...props}
   />
 )
+
+export type AccordionTriggerProps = LabelProps & AccordionPrimitive.Trigger.Props
 
 export const AccordionTrigger = ({
   className,
@@ -45,7 +41,7 @@ export const AccordionTrigger = ({
   size,
   tablet,
   ...props
-}: AccordionPrimitive.Trigger.Props & LabelProps) => (
+}: AccordionTriggerProps) => (
   <AccordionPrimitive.Header
     className={cn(
       labelVariants({ desktop, display, laptop, size, tablet }),
@@ -64,18 +60,16 @@ export const AccordionTrigger = ({
   </AccordionPrimitive.Header>
 )
 
-export const AccordionContent = ({
-  className,
-  children,
-  ...props
-}: AccordionPrimitive.Panel.Props) => (
+export interface AccordionContentProps extends AccordionPrimitive.Panel.Props {}
+
+export const AccordionContent = ({ className, children, ...props }: AccordionContentProps) => (
   <AccordionPrimitive.Panel
     data-slot='accordion-content'
     className='data-open:animate-accordion-down data-closed:animate-accordion-up group/accordion-panel overflow-hidden will-change-transform'
     {...props}>
     <div
       className={cn(
-        'animate-fade-in animate-delay-100 grid h-(--accordion-panel-height) gap-2 px-3 pt-1 pb-4 opacity-0',
+        'animate-fade-in animate-delay-100 grid h-(--accordion-panel-height) gap-2 px-3 pt-1 pb-5 opacity-0',
         'group-data-closed/accordion-panel:animate-fade-out group-data-closed/accordion-panel:animate-duration-fastest',
         className
       )}>
@@ -84,7 +78,9 @@ export const AccordionContent = ({
   </AccordionPrimitive.Panel>
 )
 
-export const AccordionContentText = ({ children, ...props }: TextProps) => (
+export interface AccordionContentTextProps extends TextProps {}
+
+export const AccordionContentText = ({ children, ...props }: AccordionContentTextProps) => (
   <Text variant='secondary' data-slot='accordion-content-text' {...props}>
     {children}
   </Text>

@@ -12,7 +12,6 @@ export const labelVariants = cva(
       variant: {
         primary: 'text-primary',
         secondary: 'text-secondary',
-        inverted: 'text-inverted',
         content: 'text-content',
       },
       size: {

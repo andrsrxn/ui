@@ -9,7 +9,6 @@ export const timeVariants = cva('font-body transition-theme shrink-0', {
       primary: 'text-primary',
       secondary: 'text-secondary',
       tertiary: 'text-tertiary',
-      inverted: 'text-inverted',
       content: 'text-content',
     },
 

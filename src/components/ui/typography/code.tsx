@@ -3,7 +3,7 @@ import type { ComponentProps } from 'react'
 import { cn, type NonNullableVariantProps } from '../../../lib/utils/theme'
 
 export const codeVariants = cva(
-  'shrink-0 rounded-base text-primary w-fit border box-decoration-slice border-base relative bg-base-accent px-1.5 py-1 font-mono inline-block transition-theme',
+  'shrink-0 rounded-base text-primary w-fit border box-decoration-slice border-base relative bg-base-contrast px-1.5 py-1 font-mono inline-block transition-theme',
   {
     variants: {
       size: {

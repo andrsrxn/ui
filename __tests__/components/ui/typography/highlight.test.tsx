@@ -8,14 +8,14 @@ describe('Highlight Component', () => {
     const element = screen.getByText('Highlighted Text')
     expect(element.tagName).toBe('MARK')
     expect(element.getAttribute('data-slot')).toBe('highlight')
-    expect(element.className).toContain('bg-details')
+    expect(element.className).toContain('bg-selected-subtle')
   })
 
   it('applies custom className', () => {
     render(<Highlight className='my-highlight-class'>Text</Highlight>)
     const element = screen.getByText('Text')
     expect(element.className).toContain('my-highlight-class')
-    expect(element.className).toContain('bg-details')
+    expect(element.className).toContain('bg-selected-subtle')
   })
 
   it('forwards additional HTML attributes', () => {

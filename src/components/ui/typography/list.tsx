@@ -4,14 +4,13 @@ import { cn, type NonNullableVariantProps } from '../../../lib/utils/theme'
 import { Label } from './label'
 
 export const listVariants = cva(
-  'text-pretty transition-theme font-body max-w-prose ps-4 grid gap-2',
+  'text-pretty transition-theme font-body max-w-prose ps-4 grid gap-2 **:data-[slot=list-item]:marker:text-brand-secondary',
   {
     variants: {
       variant: {
         primary: 'text-primary',
         secondary: 'text-secondary',
-        inverted: 'text-inverted',
-        content: 'text-content',
+        content: 'text-content **:data-[slot=list-item]:marker:text-content',
       },
       nested: {
         true: 'text-body-inherit tablet:text-body-inherit laptop:text-body-inherit desktop:text-body-inherit display:text-body-inherit text-inherit mt-1',
@@ -218,10 +217,7 @@ export interface ListItemProps extends ComponentProps<'li'> {
 }
 
 export const ListItem = ({ className, children, label, ...props }: ListItemProps) => (
-  <li
-    data-slot='list-item'
-    className={cn('marker:text-details-subtle list-outside', className)}
-    {...props}>
+  <li data-slot='list-item' className={cn('list-outside', className)} {...props}>
     {label === undefined ? null : <Label data-slot='list-item-label'>{label}:&nbsp;</Label>}
     {children}
   </li>

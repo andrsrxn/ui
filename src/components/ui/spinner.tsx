@@ -10,7 +10,6 @@ export const spinnerVariants = cva('animate-spin animate-ease-base transition-th
       primary: 'text-brand',
       secondary: 'text-primary',
       tertiary: 'text-secondary',
-      inverted: 'text-inverted',
       inherit: 'text-inherit',
     },
     size: {

@@ -16,8 +16,7 @@ When creating or maintaining CSS variable tokens in `globals.css`, adhere to the
 - **Scale references:** When a token represents a progression without a natural "base" starting point (such as breakpoints or structural containers), use standard t-shirt sizes (`xs`, `sm`, `md`, `lg`, `xl`).
 - **Naming structure:** Tokens must follow a predictable, segmented taxonomy: `--{property}-{context}-{modifier}-{state}`.
   - **Property:** What it affects (`background`, `text`, `border`).
-  - **Context:** The role it plays (`surface`, `brand`, `info`, `input`).
-  - **Modifier (optional):** The weight or variant (`alt`, `inverted`, `subtlest`, `bold`).
+  - **Context:** The role it plays (`surface`, `brand`, `info`, `input`)
   - **State (optional):** The interaction phase (`hover`, `active`). Focus is typically handled by ring utilities.
     - **Correct:** `--background-surface-alt-hover`
     - **Incorrect:** `--background-hover-surface-alt`

@@ -7,7 +7,6 @@
 
 /* Static values */
 :root {
-  /* Brand */
   --color-brand-50: #e7effd;
   --color-brand-100: #d8e5fd;
   --color-brand-200: #b1cbfb;
@@ -20,7 +19,18 @@
   --color-brand-900: #00153d;
   --color-brand-950: #000e29;
 
-  /* Neutral */
+  --color-brand-secondary-50: #fef0f5;
+  --color-brand-secondary-100: #fde2ec;
+  --color-brand-secondary-200: #fcc5d8;
+  --color-brand-secondary-300: #faadc8;
+  --color-brand-secondary-400: #f896b8;
+  --color-brand-secondary-500: #fc6ea0;
+  --color-brand-secondary-600: #f33f7e;
+  --color-brand-secondary-700: #c53064;
+  --color-brand-secondary-800: #892949;
+  --color-brand-secondary-900: #431324;
+  --color-brand-secondary-950: #310c19;
+
   --color-neutral-0: #ffffff;
   --color-neutral-50: #f6f7fd;
   --color-neutral-100: #ebedf9;
@@ -34,7 +44,6 @@
   --color-neutral-900: #13141b;
   --color-neutral-950: #060709;
 
-  /* Accent */
   --color-accent-orange-50: #fef5f0;
   --color-accent-orange-100: #feebe2;
   --color-accent-orange-200: #fcd7c5;
@@ -67,7 +76,7 @@
   --color-accent-magenta-500: #fc6ea0;
   --color-accent-magenta-600: #f33f7e;
   --color-accent-magenta-700: #c53064;
-  --color-accent-magenta-800: #822746;
+  --color-accent-magenta-800: #892949;
   --color-accent-magenta-900: #431324;
   --color-accent-magenta-950: #310c19;
 
@@ -79,21 +88,21 @@
   --color-accent-teal-500: #45c4af;
   --color-accent-teal-600: #328b7d;
   --color-accent-teal-700: #246b5f;
-  --color-accent-teal-800: #1a4d44;
+  --color-accent-teal-800: #1c544a;
   --color-accent-teal-900: #0f2e29;
   --color-accent-teal-950: #0b221f;
 
-  --color-accent-blue-50: var(--color-brand-50);
-  --color-accent-blue-100: var(--color-brand-100);
-  --color-accent-blue-200: var(--color-brand-200);
-  --color-accent-blue-300: var(--color-brand-300);
-  --color-accent-blue-400: var(--color-brand-400);
-  --color-accent-blue-500: var(--color-brand-500);
-  --color-accent-blue-600: var(--color-brand-600);
-  --color-accent-blue-700: var(--color-brand-700);
-  --color-accent-blue-800: var(--color-brand-800);
-  --color-accent-blue-900: var(--color-brand-900);
-  --color-accent-blue-950: var(--color-brand-950);
+  --color-accent-blue-50: #e7effd;
+  --color-accent-blue-100: #d8e5fd;
+  --color-accent-blue-200: #b1cbfb;
+  --color-accent-blue-300: #86aef9;
+  --color-accent-blue-400: #5187ec;
+  --color-accent-blue-500: #2367e7;
+  --color-accent-blue-600: #0047cc;
+  --color-accent-blue-700: #0039a3;
+  --color-accent-blue-800: #002e85;
+  --color-accent-blue-900: #00153d;
+  --color-accent-blue-950: #000e29;
 
   --color-accent-green-50: #f3faef;
   --color-accent-green-100: #e7f6e0;
@@ -114,8 +123,8 @@
   --color-accent-yellow-400: #f6df6f;
   --color-accent-yellow-500: #f4d952;
   --color-accent-yellow-600: #eace43;
-  --color-accent-yellow-700: #9a8413;
-  --color-accent-yellow-800: #75640f;
+  --color-accent-yellow-700: #b69b16;
+  --color-accent-yellow-800: #907b13;
   --color-accent-yellow-900: #322a06;
   --color-accent-yellow-950: #231f05;
 
@@ -131,18 +140,18 @@
   --color-accent-red-900: #3d0101;
   --color-accent-red-950: #2d0000;
 
-  /* Feedback */
-  --color-info-50: var(--color-brand-50);
-  --color-info-100: var(--color-brand-100);
-  --color-info-200: var(--color-brand-200);
-  --color-info-300: var(--color-brand-300);
-  --color-info-400: var(--color-brand-400);
-  --color-info-500: var(--color-brand-500);
-  --color-info-600: var(--color-brand-600);
-  --color-info-700: var(--color-brand-700);
-  --color-info-800: var(--color-brand-800);
-  --color-info-900: var(--color-brand-900);
-  --color-info-950: var(--color-brand-950);
+  /* Feedback  */
+  --color-info-50: var(--color-accent-blue-50);
+  --color-info-100: var(--color-accent-blue-100);
+  --color-info-200: var(--color-accent-blue-200);
+  --color-info-300: var(--color-accent-blue-300);
+  --color-info-400: var(--color-accent-blue-400);
+  --color-info-500: var(--color-accent-blue-500);
+  --color-info-600: var(--color-accent-blue-600);
+  --color-info-700: var(--color-accent-blue-700);
+  --color-info-800: var(--color-accent-blue-800);
+  --color-info-900: var(--color-accent-blue-900);
+  --color-info-950: var(--color-accent-blue-950);
 
   --color-success-50: var(--color-accent-green-50);
   --color-success-100: var(--color-accent-green-100);
@@ -193,6 +202,10 @@
   --color-idle-900: var(--color-neutral-900);
   --color-idle-950: var(--color-neutral-950);
 
+  /* Shadow */
+  --color-shadow-subtle: color-mix(in oklab, var(--color-neutral-600) 10%, transparent);
+  --color-shadow: color-mix(in oklab, var(--color-neutral-600) 25%, transparent);
+
   /* Typography fonts */
   --font-heading: 'Hanken Grotesk Variable';
   --font-label: 'Hanken Grotesk Variable';
@@ -211,48 +224,41 @@
   --typography-scale-5xl: 3rem; /* 48px */
   --typography-scale-6xl: 3.5rem; /* 56px */
 
-  /* Shadow */
-  /* neutral 600 / 10 */
-  --color-shadow: color-mix(in oklab, var(--color-neutral-600) 10%, transparent);
-  /* neutral 600 / 25 */
-  --color-text-shadow: color-mix(in oklab, var(--color-neutral-600) 25%, transparent);
-
   /* Support for squircle */
-  --radius-sm: 4px;
-  --radius-base: 8px;
-  --radius-lg: 12px;
+  --border-radius-sm: 4px;
+  --border-radius-base: 8px;
+  --border-radius-lg: 12px;
+
+  --radius-sm: var(--border-radius-sm);
+  --radius-base: var(--border-radius-base);
+  --radius-lg: var(--border-radius-lg);
 
   @supports (corner-shape: squircle) {
-    --radius-sm: 12px;
-    --radius-base: 16px;
-    --radius-lg: 24px;
+    --radius-sm: calc(var(--border-radius-sm) + 6px);
+    --radius-base: calc(var(--border-radius-base) + 8px);
+    --radius-lg: calc(var(--border-radius-lg) + 12px);
   }
 }
 
 /* Themes */
 .light {
-  --typography-weigth-regular: 400;
   /* Text */
   --text-primary: var(--color-neutral-800);
   --text-secondary: var(--color-neutral-500);
   --text-tertiary: var(--color-neutral-400);
-  --text-inverted: var(--color-neutral-100);
-  --text-primary-static: var(--color-neutral-800);
-  --text-secondary-static: var(--color-neutral-500);
-  --text-tertiary-static: var(--color-neutral-400);
-  --text-inverted-static: var(--color-neutral-100);
 
   /* Text Applications */
+  --text-content: var(--color-neutral-100);
+  --text-tooltip: var(--color-neutral-100);
   --text-selectable: var(--text-secondary);
   --text-selectable-hover: var(--text-primary);
   --text-selected: var(--color-info-700);
-  --text-selected-content: var(--text-inverted-static);
+  --text-selected-content: var(--text-content);
   --text-link: var(--color-brand-600);
-  --text-details: var(--color-brand-700);
-  --text-details-hover: var(--color-brand-300);
-  --text-content: var(--text-inverted-static);
   --text-brand: var(--color-brand-700);
   --text-brand-content: var(--color-brand-200);
+  --text-brand-secondary: var(--color-brand-secondary-700);
+  --text-brand-secondary-content: var(--color-brand-secondary-200);
 
   /* Text Feedback */
   --text-info: var(--color-info-700);
@@ -287,7 +293,6 @@
   /* Border */
   --border-base: var(--color-neutral-200);
   --border-base-subtle: var(--color-neutral-100);
-  --border-inverted: var(--color-neutral-800);
 
   /* Border applications */
   --border-background-base: var(--background-base);
@@ -298,6 +303,7 @@
   --border-selected: var(--color-brand-300);
   --border-selectable: var(--border-base);
   --border-brand: var(--color-brand-200);
+  --border-brand-secondary: var(--color-brand-secondary-200);
 
   /* Border Feedback */
   --border-info: var(--color-info-200);
@@ -320,17 +326,25 @@
   --background-base: var(--color-neutral-50);
   --background-base-hover: var(--color-neutral-100);
   --background-base-active: var(--color-neutral-200);
-  --background-base-accent: var(--color-neutral-200);
-  --background-base-accent-hover: var(--color-neutral-300);
-  --background-base-accent-active: var(--color-neutral-400);
-  --background-base-inverted: var(--color-neutral-950);
-  --background-to-alpha: var(--color-neutral-500);
-  --background-to-overlay: var(--color-neutral-600);
+  --background-base-contrast: var(--color-neutral-200);
+  --background-base-contrast-hover: var(--color-neutral-300);
+  --background-base-contrast-active: var(--color-neutral-400);
+
+  --background-alpha-0: transparent;
+  --background-alpha-5: color-mix(in oklab, var(--color-neutral-500) 5%, transparent);
+  --background-alpha-10: color-mix(in oklab, var(--color-neutral-500) 10%, transparent);
+  --background-alpha-20: color-mix(in oklab, var(--color-neutral-500) 20%, transparent);
+  --background-alpha-30: color-mix(in oklab, var(--color-neutral-500) 30%, transparent);
+  --background-alpha-40: color-mix(in oklab, var(--color-neutral-500) 40%, transparent);
+  --background-alpha-50: color-mix(in oklab, var(--color-neutral-500) 50%, transparent);
+  --background-alpha-60: color-mix(in oklab, var(--color-neutral-500) 60%, transparent);
+  --background-alpha-70: color-mix(in oklab, var(--color-neutral-500) 70%, transparent);
+  --background-alpha-80: color-mix(in oklab, var(--color-neutral-500) 80%, transparent);
+  --background-alpha-90: color-mix(in oklab, var(--color-neutral-500) 90%, transparent);
+  --background-alpha-95: color-mix(in oklab, var(--color-neutral-500) 95%, transparent);
 
   /* Background Applications */
-  --background-details: var(--color-brand-100);
-  --background-details-hover: var(--color-brand-200);
-  --background-tooltip: var(--background-base-inverted);
+  --background-tooltip: var(--color-neutral-950);
   --background-surface: var(--color-neutral-0);
   --background-surface-hover: var(--color-neutral-50);
   --background-surface-active: var(--color-neutral-100);
@@ -340,16 +354,22 @@
   --background-selected: var(--color-brand-600);
   --background-selected-hover: var(--color-brand-700);
   --background-selected-active: var(--color-brand-800);
-  --background-scrollbar: var(--color-alpha-0);
-  --background-scrollbar-thumb: var(--color-neutral-200);
-  --background-scrollbar-thumb-hover: var(--color-neutral-300);
-  --background-scrollbar-thumb-active: var(--color-neutral-400);
+  --background-scrollbar: var(--background-alpha-0);
+  --background-scrollbar-thumb: var(--color-neutral-300);
+  --background-scrollbar-thumb-hover: var(--color-neutral-400);
+  --background-scrollbar-thumb-active: var(--color-neutral-500);
   --background-brand-subtle: var(--color-brand-50);
   --background-brand-subtle-hover: var(--color-brand-100);
   --background-brand-subtle-active: var(--color-brand-200);
   --background-brand: var(--color-brand-600);
   --background-brand-hover: var(--color-brand-700);
   --background-brand-active: var(--color-brand-800);
+  --background-brand-secondary-subtle: var(--color-brand-secondary-50);
+  --background-brand-secondary-subtle-hover: var(--color-brand-secondary-100);
+  --background-brand-secondary-subtle-active: var(--color-brand-secondary-200);
+  --background-brand-secondary: var(--color-brand-secondary-600);
+  --background-brand-secondary-hover: var(--color-brand-secondary-700);
+  --background-brand-secondary-active: var(--color-brand-secondary-800);
 
   /* Background Feedback */
   --background-info-subtle: var(--color-info-50);
@@ -434,15 +454,15 @@
   --background-accent-red-active: var(--color-accent-red-800);
 
   /* Background Overlay */
-  --background-overlay: color-mix(in oklab, var(--background-to-overlay) 40%, transparent);
-  --background-overlay-stop: color-mix(in oklab, var(--background-to-overlay) 10%, transparent);
-  --background-overlay-start: color-mix(in oklab, var(--background-to-overlay) 80%, transparent);
+  --background-overlay: color-mix(in oklab, var(--color-neutral-600) 40%, transparent);
+  --background-overlay-stop: color-mix(in oklab, var(--color-neutral-600) 10%, transparent);
+  --background-overlay-start: color-mix(in oklab, var(--color-neutral-600) 80%, transparent);
 
   /* Chart */
   --chart-base: var(--color-neutral-500);
   --chart-primary: var(--color-brand-600);
-  --chart-secondary: var(--color-brand-400);
-  --chart-tertiary: var(--color-brand-200);
+  --chart-secondary: var(--color-brand-secondary-600);
+  --chart-tertiary: var(--color-brand-400);
 
   /* Chart Feedback */
   --chart-info: var(--background-info);
@@ -471,28 +491,23 @@
 }
 
 .dark {
-  --typography-weigth-regular: 300;
   /* Text */
   --text-primary: var(--color-neutral-100);
   --text-secondary: var(--color-neutral-400);
   --text-tertiary: var(--color-neutral-500);
-  --text-inverted: var(--color-neutral-800);
-  --text-primary-static: var(--color-neutral-800);
-  --text-secondary-static: var(--color-neutral-500);
-  --text-tertiary-static: var(--color-neutral-400);
-  --text-inverted-static: var(--color-neutral-100);
 
   /* Text Applications */
+  --text-content: var(--color-neutral-100);
+  --text-tooltip: var(--color-neutral-800);
   --text-selectable: var(--text-secondary);
   --text-selectable-hover: var(--text-primary);
   --text-selected: var(--color-info-300);
-  --text-selected-content: var(--text-inverted-static);
+  --text-selected-content: var(--text-content);
   --text-link: var(--color-brand-400);
-  --text-details: var(--color-brand-300);
-  --text-details-hover: var(--color-brand-700);
-  --text-content: var(--text-inverted-static);
   --text-brand: var(--color-brand-300);
   --text-brand-content: var(--color-brand-200);
+  --text-brand-secondary: var(--color-brand-secondary-300);
+  --text-brand-secondary-content: var(--color-brand-secondary-200);
 
   /* Text Feedback */
   --text-info: var(--color-info-300);
@@ -527,7 +542,6 @@
   /* Border */
   --border-base: var(--color-neutral-600);
   --border-base-subtle: var(--color-neutral-700);
-  --border-inverted: var(--color-neutral-100);
 
   /* Border Applications */
   --border-background-base: var(--background-base);
@@ -538,6 +552,7 @@
   --border-selected: var(--color-brand-700);
   --border-selectable: var(--border-base);
   --border-brand: var(--color-brand-800);
+  --border-brand-secondary: var(--color-brand-secondary-800);
 
   /* Border Feedback */
   --border-info: var(--color-info-800);
@@ -560,20 +575,28 @@
   --background-base: var(--color-neutral-950);
   --background-base-hover: var(--color-neutral-900);
   --background-base-active: var(--color-neutral-800);
-  --background-base-accent: var(--color-neutral-900);
-  --background-base-accent-hover: var(--color-neutral-800);
-  --background-base-accent-active: var(--color-neutral-700);
-  --background-base-inverted: var(--color-neutral-50);
-  --background-to-alpha: var(--color-neutral-400);
-  --background-to-overlay: var(--color-neutral-950);
+  --background-base-contrast: var(--color-neutral-900);
+  --background-base-contrast-hover: var(--color-neutral-800);
+  --background-base-contrast-active: var(--color-neutral-700);
+
+  --background-alpha-0: transparent;
+  --background-alpha-5: color-mix(in oklab, var(--color-neutral-400) 5%, transparent);
+  --background-alpha-10: color-mix(in oklab, var(--color-neutral-400) 10%, transparent);
+  --background-alpha-20: color-mix(in oklab, var(--color-neutral-400) 20%, transparent);
+  --background-alpha-30: color-mix(in oklab, var(--color-neutral-400) 30%, transparent);
+  --background-alpha-40: color-mix(in oklab, var(--color-neutral-400) 40%, transparent);
+  --background-alpha-50: color-mix(in oklab, var(--color-neutral-400) 50%, transparent);
+  --background-alpha-60: color-mix(in oklab, var(--color-neutral-400) 60%, transparent);
+  --background-alpha-70: color-mix(in oklab, var(--color-neutral-400) 70%, transparent);
+  --background-alpha-80: color-mix(in oklab, var(--color-neutral-400) 80%, transparent);
+  --background-alpha-90: color-mix(in oklab, var(--color-neutral-400) 90%, transparent);
+  --background-alpha-95: color-mix(in oklab, var(--color-neutral-400) 95%, transparent);
 
   /* Background Applications */
   --background-input: var(--background-base);
   --background-input-hover: var(--background-base-hover);
   --background-input-active: var(--background-base-active);
-  --background-details: var(--color-brand-900);
-  --background-details-hover: var(--color-brand-800);
-  --background-tooltip: var(--background-base-inverted);
+  --background-tooltip: var(--color-neutral-50);
   --background-surface: var(--color-neutral-800);
   --background-surface-hover: var(--color-neutral-700);
   --background-surface-active: var(--color-neutral-600);
@@ -583,10 +606,10 @@
   --background-selected: var(--color-brand-600);
   --background-selected-hover: var(--color-brand-500);
   --background-selected-active: var(--color-brand-400);
-  --background-selected-base: var(--background-base-accent);
-  --background-selected-base-hover: var(--background-base-accent-hover);
-  --background-selected-base-active: var(--background-base-accent-active);
-  --background-scrollbar: var(--color-alpha-0);
+  --background-selected-base: var(--background-base-contrast);
+  --background-selected-base-hover: var(--background-base-contrast-hover);
+  --background-selected-base-active: var(--background-base-contrast-active);
+  --background-scrollbar: var(--background-alpha-0);
   --background-scrollbar-thumb: var(--color-neutral-600);
   --background-scrollbar-thumb-hover: var(--color-neutral-500);
   --background-scrollbar-thumb-active: var(--color-neutral-400);
@@ -596,6 +619,12 @@
   --background-brand: var(--color-brand-600);
   --background-brand-hover: var(--color-brand-500);
   --background-brand-active: var(--color-brand-400);
+  --background-brand-secondary-subtle: var(--color-brand-secondary-950);
+  --background-brand-secondary-subtle-hover: var(--color-brand-secondary-900);
+  --background-brand-secondary-subtle-active: var(--color-brand-secondary-800);
+  --background-brand-secondary: var(--color-brand-secondary-600);
+  --background-brand-secondary-hover: var(--color-brand-secondary-500);
+  --background-brand-secondary-active: var(--color-brand-secondary-400);
 
   /* Background Feedback */
   --background-info-subtle: var(--color-info-950);
@@ -680,15 +709,15 @@
   --background-accent-red-active: var(--color-accent-red-400);
 
   /* Background Overlay */
-  --background-overlay: color-mix(in oklab, var(--background-to-overlay) 40%, transparent);
-  --background-overlay-stop: color-mix(in oklab, var(--background-to-overlay) 10%, transparent);
-  --background-overlay-start: color-mix(in oklab, var(--background-to-overlay) 80%, transparent);
+  --background-overlay: color-mix(in oklab, var(--color-neutral-950) 40%, transparent);
+  --background-overlay-stop: color-mix(in oklab, var(--color-neutral-950) 10%, transparent);
+  --background-overlay-start: color-mix(in oklab, var(--color-neutral-950) 80%, transparent);
 
   /* Chart */
   --chart-base: var(--color-neutral-400);
   --chart-primary: var(--color-brand-600);
-  --chart-secondary: var(--color-brand-400);
-  --chart-tertiary: var(--color-brand-200);
+  --chart-secondary: var(--color-brand-secondary-600);
+  --chart-tertiary: var(--color-brand-400);
 
   /* Chart Feedback */
   --chart-info: var(--background-info);
@@ -734,8 +763,8 @@
     'Courier New', monospace;
 
   /* Weights */
-  --font-weight-normal: var(--typography-weigth-regular);
-  --font-weight-regular: var(--typography-weigth-regular);
+  --font-weight-normal: 400;
+  --font-weigth-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
@@ -896,19 +925,19 @@
   --spacing-icon-4xl: var(--text-label-4xl);
   --spacing-icon-responsive: 1.15em;
 
-  --spacing-3xs: var(--container-3xs);
-  --spacing-2xs: var(--container-2xs);
-  --spacing-xs: var(--container-xs);
-  --spacing-sm: var(--container-sm);
-  --spacing-md: var(--container-md);
-  --spacing-lg: var(--container-lg);
-  --spacing-xl: var(--container-xl);
-  --spacing-2xl: var(--container-2xl);
-  --spacing-3xl: var(--container-3xl);
-  --spacing-4xl: var(--container-4xl);
-  --spacing-5xl: var(--container-5xl);
-  --spacing-6xl: var(--container-6xl);
-  --spacing-7xl: var(--container-7xl);
+  --spacing-xs: var(--container-3xs);
+  --spacing-sm: var(--container-2xs);
+  --spacing-md: var(--container-xs);
+  --spacing-lg: var(--container-sm);
+  --spacing-xl: var(--container-md);
+  --spacing-2xl: var(--container-lg);
+  --spacing-3xl: var(--container-xl);
+  --spacing-4xl: var(--container-2xl);
+  --spacing-5xl: var(--container-3xl);
+  --spacing-6xl: var(--container-4xl);
+  --spacing-7xl: var(--container-5xl);
+  --spacing-8xl: var(--container-6xl);
+  --spacing-9xl: var(--container-7xl);
 
   /* Custom Scales */
   --scale-90: 90%;
@@ -939,6 +968,7 @@
   --z-index-max: 9999;
 
   /* Radius */
+  --radius-*: initial;
   --radius-sm: var(--radius-sm);
   --radius-base: var(--radius-base);
   --radius-lg: var(--radius-lg);
@@ -950,22 +980,22 @@
   --shadow-*: initial;
   --drop-shadow-*: initial;
   --text-shadow-*: initial;
-  --shadow-2xl: 0 18px 22px var(--color-shadow);
-  --shadow-xl: 0 12px 14px var(--color-shadow);
-  --shadow-lg: 0 8px 10px var(--color-shadow);
-  --shadow-base: 0 4px 8px var(--color-shadow);
-  --shadow-sm: 0 2px 4px var(--color-shadow);
-  --shadow-xs: 0 1px 2px var(--color-shadow);
-  --shadow-inner: inset 0 2px 4px 0 var(--color-shadow);
-  --drop-shadow-2xl: 0 20px 16px var(--color-shadow);
-  --drop-shadow-xl: 0 12px 12px var(--color-shadow);
-  --drop-shadow-lg: 0 8px 8px var(--color-shadow);
-  --drop-shadow-base: 0 4px 4px var(--color-shadow);
-  --drop-shadow-sm: 0 2px 2px var(--color-shadow);
-  --drop-shadow-xs: 0 1px 1px var(--color-shadow);
-  --text-shadow-sm: 0px 1px 1px var(--text-color-shadow), 0px 1px 1px var(--text-color-shadow);
-  --text-shadow-base: 0px 1px 2px var(--text-color-shadow), 0px 1px 2px var(--text-color-shadow);
-  --text-shadow-lg: 0px 2px 3px var(--text-color-shadow), 0px 2px 3px var(--text-color-shadow);
+  --shadow-2xl: 0 18px 22px var(--color-shadow-subtle);
+  --shadow-xl: 0 12px 14px var(--color-shadow-subtle);
+  --shadow-lg: 0 8px 10px var(--color-shadow-subtle);
+  --shadow-base: 0 4px 8px var(--color-shadow-subtle);
+  --shadow-sm: 0 2px 3px var(--color-shadow-subtle);
+  --shadow-xs: 0 1px 2px var(--color-shadow-subtle);
+  --shadow-inner: inset 0 2px 4px 0 var(--color-shadow-subtle);
+  --drop-shadow-2xl: 0 20px 16px var(--color-shadow-subtle);
+  --drop-shadow-xl: 0 12px 12px var(--color-shadow-subtle);
+  --drop-shadow-lg: 0 8px 8px var(--color-shadow-subtle);
+  --drop-shadow-base: 0 4px 4px var(--color-shadow-subtle);
+  --drop-shadow-sm: 0 2px 2px var(--color-shadow-subtle);
+  --drop-shadow-xs: 0 1px 1px var(--color-shadow-subtle);
+  --text-shadow-sm: 0px 1px 1px var(--color-shadow), 0px 1px 1px var(--color-shadow);
+  --text-shadow-base: 0px 1px 2px var(--color-shadow), 0px 1px 2px var(--color-shadow);
+  --text-shadow-lg: 0px 2px 3px var(--color-shadow), 0px 2px 3px var(--color-shadow);
 
   /* Color */
 
@@ -977,22 +1007,18 @@
   --text-color-primary: var(--text-primary);
   --text-color-secondary: var(--text-secondary);
   --text-color-tertiary: var(--text-tertiary);
-  --text-color-inverted: var(--text-inverted);
-  --text-color-primary-static: var(--text-primary-static);
-  --text-color-secondary-static: var(--text-secondary-static);
-  --text-color-tertiary-static: var(--text-tertiary-static);
-  --text-color-inverted-static: var(--text-inverted-static);
 
+  --text-color-content: var(--text-content);
+  --text-color-tooltip: var(--text-tooltip);
   --text-color-selectable: var(--text-selectable);
   --text-color-selectable-hover: var(--text-selectable-hover);
   --text-color-selected: var(--text-selected);
   --text-color-selected-content: var(--text-selected-content);
   --text-color-link: var(--text-link);
-  --text-color-details: var(--text-details);
-  --text-color-details-hover: var(--text-details-hover);
-  --text-color-content: var(--text-content);
   --text-color-brand: var(--text-brand);
   --text-color-brand-content: var(--text-brand-content);
+  --text-color-brand-secondary: var(--text-brand-secondary);
+  --text-color-brand-secondary-content: var(--text-brand-secondary-content);
 
   --text-color-info: var(--text-info);
   --text-color-success: var(--text-success);
@@ -1025,7 +1051,6 @@
   /* Border Color */
   --border-color-base: var(--border-base);
   --border-color-base-subtle: var(--border-base-subtle);
-  --border-color-inverted: var(--border-inverted);
 
   --border-color-background-base: var(--border-background-base);
   --border-color-surface: var(--border-surface);
@@ -1035,6 +1060,7 @@
   --border-color-selected: var(--border-selected);
   --border-color-selectable: var(--border-selectable);
   --border-color-brand: var(--border-brand);
+  --border-color-brand-secondary: var(--border-brand-secondary);
 
   --border-color-info: var(--border-info);
   --border-color-success: var(--border-success);
@@ -1053,7 +1079,6 @@
 
   --outline-color-base: var(--border-base);
   --outline-color-base-subtle: var(--border-base-subtle);
-  --outline-color-inverted: var(--border-inverted);
 
   --outline-color-background-base: var(--border-background-base);
   --outline-color-surface: var(--border-surface);
@@ -1063,6 +1088,7 @@
   --outline-color-selected: var(--border-selected);
   --outline-color-selectable: var(--border-selectable);
   --outline-color-brand: var(--border-brand);
+  --outline-color-brand-secondary: var(--border-brand-secondary);
 
   --outline-color-info: var(--border-info);
   --outline-color-success: var(--border-success);
@@ -1083,29 +1109,26 @@
   --background-color-base: var(--background-base);
   --background-color-base-hover: var(--background-base-hover);
   --background-color-base-active: var(--background-base-active);
-  --background-color-base-accent: var(--background-base-accent);
-  --background-color-base-accent-hover: var(--background-base-accent-hover);
-  --background-color-base-accent-active: var(--background-base-accent-active);
-  --background-color-base-inverted: var(--background-base-inverted);
+  --background-color-base-contrast: var(--background-base-contrast);
+  --background-color-base-contrast-hover: var(--background-base-contrast-hover);
+  --background-color-base-contrast-active: var(--background-base-contrast-active);
 
-  --background-color-alpha-0: transparent;
-  --background-color-alpha-5: color-mix(in oklab, var(--background-to-alpha) 5%, transparent);
-  --background-color-alpha-10: color-mix(in oklab, var(--background-to-alpha) 10%, transparent);
-  --background-color-alpha-20: color-mix(in oklab, var(--background-to-alpha) 20%, transparent);
-  --background-color-alpha-30: color-mix(in oklab, var(--background-to-alpha) 30%, transparent);
-  --background-color-alpha-40: color-mix(in oklab, var(--background-to-alpha) 40%, transparent);
-  --background-color-alpha-50: color-mix(in oklab, var(--background-to-alpha) 50%, transparent);
-  --background-color-alpha-60: color-mix(in oklab, var(--background-to-alpha) 60%, transparent);
-  --background-color-alpha-70: color-mix(in oklab, var(--background-to-alpha) 70%, transparent);
-  --background-color-alpha-80: color-mix(in oklab, var(--background-to-alpha) 80%, transparent);
-  --background-color-alpha-90: color-mix(in oklab, var(--background-to-alpha) 90%, transparent);
-  --background-color-alpha-95: color-mix(in oklab, var(--background-to-alpha) 95%, transparent);
+  --background-color-alpha-0: var(--background-alpha-0);
+  --background-color-alpha-5: var(--background-alpha-5);
+  --background-color-alpha-10: var(--background-alpha-10);
+  --background-color-alpha-20: var(--background-alpha-20);
+  --background-color-alpha-30: var(--background-alpha-30);
+  --background-color-alpha-40: var(--background-alpha-40);
+  --background-color-alpha-50: var(--background-alpha-50);
+  --background-color-alpha-60: var(--background-alpha-60);
+  --background-color-alpha-70: var(--background-alpha-70);
+  --background-color-alpha-80: var(--background-alpha-80);
+  --background-color-alpha-90: var(--background-alpha-90);
+  --background-color-alpha-95: var(--background-alpha-95);
 
   --background-color-input: var(--background-input);
   --background-color-input-hover: var(--background-input-hover);
   --background-color-input-active: var(--background-input-active);
-  --background-color-details: var(--background-details);
-  --background-color-details-hover: var(--background-details-hover);
   --background-color-tooltip: var(--background-tooltip);
   --background-color-surface: var(--background-surface);
   --background-color-surface-hover: var(--background-surface-hover);
@@ -1126,16 +1149,16 @@
   --background-color-brand-subtle: var(--background-brand-subtle);
   --background-color-brand-subtle-hover: var(--background-brand-subtle-hover);
   --background-color-brand-subtle-active: var(--background-brand-subtle-active);
-  --background-color-brand-subtle: var(--background-brand-subtle);
-  --background-color-brand-subtle-hover: var(--background-brand-subtle-hover);
-  --background-color-brand-subtle-active: var(--background-brand-subtle-active);
   --background-color-brand: var(--background-brand);
   --background-color-brand-hover: var(--background-brand-hover);
   --background-color-brand-active: var(--background-brand-active);
+  --background-color-brand-secondary-subtle: var(--background-brand-secondary-subtle);
+  --background-color-brand-secondary-subtle-hover: var(--background-brand-secondary-subtle-hover);
+  --background-color-brand-secondary-subtle-active: var(--background-brand-secondary-subtle-active);
+  --background-color-brand-secondary: var(--background-brand-secondary);
+  --background-color-brand-secondary-hover: var(--background-brand-secondary-hover);
+  --background-color-brand-secondary-active: var(--background-brand-secondary-active);
 
-  --background-color-info-subtle: var(--background-info-subtle);
-  --background-color-info-subtle-hover: var(--background-info-subtle-hover);
-  --background-color-info-subtle-active: var(--background-info-subtle-active);
   --background-color-info-subtle: var(--background-info-subtle);
   --background-color-info-subtle-hover: var(--background-info-subtle-hover);
   --background-color-info-subtle-active: var(--background-info-subtle-active);
@@ -1145,15 +1168,9 @@
   --background-color-success-subtle: var(--background-success-subtle);
   --background-color-success-subtle-hover: var(--background-success-subtle-hover);
   --background-color-success-subtle-active: var(--background-success-subtle-active);
-  --background-color-success-subtle: var(--background-success-subtle);
-  --background-color-success-subtle-hover: var(--background-success-subtle-hover);
-  --background-color-success-subtle-active: var(--background-success-subtle-active);
   --background-color-success: var(--background-success);
   --background-color-success-hover: var(--background-success-hover);
   --background-color-success-active: var(--background-success-active);
-  --background-color-warning-subtle: var(--background-warning-subtle);
-  --background-color-warning-subtle-hover: var(--background-warning-subtle-hover);
-  --background-color-warning-subtle-active: var(--background-warning-subtle-active);
   --background-color-warning-subtle: var(--background-warning-subtle);
   --background-color-warning-subtle-hover: var(--background-warning-subtle-hover);
   --background-color-warning-subtle-active: var(--background-warning-subtle-active);
@@ -1163,15 +1180,9 @@
   --background-color-danger-subtle: var(--background-danger-subtle);
   --background-color-danger-subtle-hover: var(--background-danger-subtle-hover);
   --background-color-danger-subtle-active: var(--background-danger-subtle-active);
-  --background-color-danger-subtle: var(--background-danger-subtle);
-  --background-color-danger-subtle-hover: var(--background-danger-subtle-hover);
-  --background-color-danger-subtle-active: var(--background-danger-subtle-active);
   --background-color-danger: var(--background-danger);
   --background-color-danger-hover: var(--background-danger-hover);
   --background-color-danger-active: var(--background-danger-active);
-  --background-color-idle-subtle: var(--background-idle-subtle);
-  --background-color-idle-subtle-hover: var(--background-idle-subtle-hover);
-  --background-color-idle-subtle-active: var(--background-idle-subtle-active);
   --background-color-idle-subtle: var(--background-idle-subtle);
   --background-color-idle-subtle-hover: var(--background-idle-subtle-hover);
   --background-color-idle-subtle-active: var(--background-idle-subtle-active);
@@ -1182,15 +1193,9 @@
   --background-color-accent-teal-subtle: var(--background-accent-teal-subtle);
   --background-color-accent-teal-subtle-hover: var(--background-accent-teal-subtle-hover);
   --background-color-accent-teal-subtle-active: var(--background-accent-teal-subtle-active);
-  --background-color-accent-teal-subtle: var(--background-accent-teal-subtle);
-  --background-color-accent-teal-subtle-hover: var(--background-accent-teal-subtle-hover);
-  --background-color-accent-teal-subtle-active: var(--background-accent-teal-subtle-active);
   --background-color-accent-teal: var(--background-accent-teal);
   --background-color-accent-teal-hover: var(--background-accent-teal-hover);
   --background-color-accent-teal-active: var(--background-accent-teal-active);
-  --background-color-accent-magenta-subtle: var(--background-accent-magenta-subtle);
-  --background-color-accent-magenta-subtle-hover: var(--background-accent-magenta-subtle-hover);
-  --background-color-accent-magenta-subtle-active: var(--background-accent-magenta-subtle-active);
   --background-color-accent-magenta-subtle: var(--background-accent-magenta-subtle);
   --background-color-accent-magenta-subtle-hover: var(--background-accent-magenta-subtle-hover);
   --background-color-accent-magenta-subtle-active: var(--background-accent-magenta-subtle-active);
@@ -1200,15 +1205,9 @@
   --background-color-accent-purple-subtle: var(--background-accent-purple-subtle);
   --background-color-accent-purple-subtle-hover: var(--background-accent-purple-subtle-hover);
   --background-color-accent-purple-subtle-active: var(--background-accent-purple-subtle-active);
-  --background-color-accent-purple-subtle: var(--background-accent-purple-subtle);
-  --background-color-accent-purple-subtle-hover: var(--background-accent-purple-subtle-hover);
-  --background-color-accent-purple-subtle-active: var(--background-accent-purple-subtle-active);
   --background-color-accent-purple: var(--background-accent-purple);
   --background-color-accent-purple-hover: var(--background-accent-purple-hover);
   --background-color-accent-purple-active: var(--background-accent-purple-active);
-  --background-color-accent-orange-subtle: var(--background-accent-orange-subtle);
-  --background-color-accent-orange-subtle-hover: var(--background-accent-orange-subtle-hover);
-  --background-color-accent-orange-subtle-active: var(--background-accent-orange-subtle-active);
   --background-color-accent-orange-subtle: var(--background-accent-orange-subtle);
   --background-color-accent-orange-subtle-hover: var(--background-accent-orange-subtle-hover);
   --background-color-accent-orange-subtle-active: var(--background-accent-orange-subtle-active);
@@ -1218,15 +1217,9 @@
   --background-color-accent-blue-subtle: var(--background-accent-blue-subtle);
   --background-color-accent-blue-subtle-hover: var(--background-accent-blue-subtle-hover);
   --background-color-accent-blue-subtle-active: var(--background-accent-blue-subtle-active);
-  --background-color-accent-blue-subtle: var(--background-accent-blue-subtle);
-  --background-color-accent-blue-subtle-hover: var(--background-accent-blue-subtle-hover);
-  --background-color-accent-blue-subtle-active: var(--background-accent-blue-subtle-active);
   --background-color-accent-blue: var(--background-accent-blue);
   --background-color-accent-blue-hover: var(--background-accent-blue-hover);
   --background-color-accent-blue-active: var(--background-accent-blue-active);
-  --background-color-accent-green-subtle: var(--background-accent-green-subtle);
-  --background-color-accent-green-subtle-hover: var(--background-accent-green-subtle-hover);
-  --background-color-accent-green-subtle-active: var(--background-accent-green-subtle-active);
   --background-color-accent-green-subtle: var(--background-accent-green-subtle);
   --background-color-accent-green-subtle-hover: var(--background-accent-green-subtle-hover);
   --background-color-accent-green-subtle-active: var(--background-accent-green-subtle-active);
@@ -1236,15 +1229,9 @@
   --background-color-accent-yellow-subtle: var(--background-accent-yellow-subtle);
   --background-color-accent-yellow-subtle-hover: var(--background-accent-yellow-subtle-hover);
   --background-color-accent-yellow-subtle-active: var(--background-accent-yellow-subtle-active);
-  --background-color-accent-yellow-subtle: var(--background-accent-yellow-subtle);
-  --background-color-accent-yellow-subtle-hover: var(--background-accent-yellow-subtle-hover);
-  --background-color-accent-yellow-subtle-active: var(--background-accent-yellow-subtle-active);
   --background-color-accent-yellow: var(--background-accent-yellow);
   --background-color-accent-yellow-hover: var(--background-accent-yellow-hover);
   --background-color-accent-yellow-active: var(--background-accent-yellow-active);
-  --background-color-accent-red-subtle: var(--background-accent-red-subtle);
-  --background-color-accent-red-subtle-hover: var(--background-accent-red-subtle-hover);
-  --background-color-accent-red-subtle-active: var(--background-accent-red-subtle-active);
   --background-color-accent-red-subtle: var(--background-accent-red-subtle);
   --background-color-accent-red-subtle-hover: var(--background-accent-red-subtle-hover);
   --background-color-accent-red-subtle-active: var(--background-accent-red-subtle-active);
@@ -1432,11 +1419,11 @@
   }
 
   *::-webkit-scrollbar {
-    @apply bg-scrollbar transition-theme relative size-2;
+    @apply bg-scrollbar transition-theme relative scrollbar-thin;
   }
 
   *::-webkit-scrollbar-thumb {
-    @apply bg-scrollbar-thumb hover:bg-scrollbar-thumb-hover active:bg-scrollbar-thumb-active transition-theme relative size-2 rounded-full;
+    @apply bg-scrollbar-thumb hover:bg-scrollbar-thumb-hover active:bg-scrollbar-thumb-active transition-theme relative rounded-full;
   }
 
   html {
@@ -1444,7 +1431,7 @@
   }
 
   body {
-    @apply bg-base font-body text-body-base text-primary selection:bg-details selection:text-details transition-theme relative h-full min-h-dvh;
+    @apply bg-base font-body text-body-base text-primary selection:bg-selected-subtle selection:text-selected transition-theme relative h-full min-h-dvh;
   }
 
   body[data-scroll-locked] {
@@ -1458,6 +1445,10 @@
 
   video {
     @apply aspect-video;
+  }
+
+  .ui-icon {
+    @apply text-primary pointer-events-none shrink-0;
   }
 
   /* Automatic squircle support */
@@ -1512,14 +1503,15 @@
     display: none;
   }
 
-  [data-slot='icon-arrow-left']:dir(rtl),
-  [data-slot='icon-arrow-right']:dir(rtl),
-  [data-slot='icon-arrow-up-right']:dir(rtl),
-  [data-slot='icon-arrow-up-left']:dir(rtl),
-  [data-slot='icon-chevron-right']:dir(rtl),
-  [data-slot='icon-chevron-left']:dir(rtl),
-  [data-slot='icon-chevron-right-double']:dir(rtl),
-  [data-slot='icon-chevron-left-double']:dir(rtl) {
+  /* RTL aware icons */
+  [data-slot='icon-arrow-start']:dir(rtl),
+  [data-slot='icon-arrow-end']:dir(rtl),
+  [data-slot='icon-arrow-up-end']:dir(rtl),
+  [data-slot='icon-arrow-up-start']:dir(rtl),
+  [data-slot='icon-chevron-end']:dir(rtl),
+  [data-slot='icon-chevron-start']:dir(rtl),
+  [data-slot='icon-chevron-end-double']:dir(rtl),
+  [data-slot='icon-chevron-start-double']:dir(rtl) {
     transform: scaleX(-1);
   }
 
@@ -1570,6 +1562,63 @@
   @apply outline-focus ring ring-offset-1 outline-2;
 }
 
+@utility disabled {
+  @apply opacity-disabled pointer-events-none select-none;
+}
+
+/* New corner-shape CSS property, only full sides values, not individual corners for now */
+@utility corner-squircle {
+  corner-shape: squircle;
+}
+
+@utility corner-smooth {
+  corner-shape: smooth;
+}
+
+@utility corner-round {
+  corner-shape: round;
+}
+
+@utility corner-scoop {
+  corner-shape: scoop;
+}
+
+@utility corner-bevel {
+  corner-shape: bevel;
+}
+
+@utility corner-notch {
+  corner-shape: notch;
+}
+
+@utility corner-square {
+  corner-shape: square;
+}
+
+@utility corner-squircle {
+  corner-shape: squircle;
+}
+
+@utility corner-initial {
+  corner-shape: initial;
+}
+
+@utility corner-inherit {
+  corner-shape: inherit;
+}
+
+@utility corner-revert {
+  corner-shape: revert;
+}
+
+@utility corner-revert-layer {
+  corner-shape: revert-layer;
+}
+
+@utility corner-unset {
+  corner-shape: unset;
+}
+
 /* Accessibility compliance: touch target at least 44px */
 @utility touch-target {
   position: relative;
@@ -1594,18 +1643,6 @@
   &::after {
     display: none;
   }
-}
-
-@utility disabled {
-  @apply opacity-disabled pointer-events-none select-none;
-}
-
-@utility numbered-heading {
-  counter-reset: heading-counter;
-}
-
-@utility squircle {
-  corner-shape: squircle;
 }
 
 @utility scrollbar-hidden {
@@ -1651,6 +1688,8 @@
   transition-timing-function: var(--ease-base);
   transition-duration: var(--transition-duration-fast);
 }
+
+/* Missing animation utilities */
 
 @utility animate-delay-* {
   animation-delay: calc(--value(integer) * 1ms);
@@ -1716,4 +1755,140 @@
 
 @utility animate-linear {
   animation-timing-function: var(--ease-linear);
+}
+
+/* Non-inheritable utilities by scoped variables such as --text-color-*, --background-color-*, and --border-color-* */
+
+@utility scrollbar-thumb-* {
+  --opacity: calc(--modifier(integer) * 1%);
+
+  scrollbar-color: color-mix(
+    in oklab,
+    --value(--background-color-*, [color]) var(--opacity, 100%),
+    transparent
+  );
+}
+
+@utility scrollbar-track-* {
+  --opacity: calc(--modifier(integer) * 1%);
+
+  scrollbar-color: color-mix(
+    in oklab,
+    --value(--background-color-*, [color]) var(--opacity, 100%),
+    transparent
+  );
+}
+
+@utility drop-shadow-bg-* {
+  --opacity: calc(--modifier(integer) * 1%);
+
+  --tw-drop-shadow-color: color-mix(
+    in oklab,
+    --value(--background-color-*, [color]) var(--opacity, 100%),
+    transparent
+  );
+}
+
+@utility shadow-bg-* {
+  --opacity: calc(--modifier(integer) * 1%);
+
+  --tw-shadow-color: color-mix(
+    in oklab,
+    --value(--background-color-*, [color]) var(--opacity, 100%),
+    transparent
+  );
+}
+
+@utility shadow-text-* {
+  --opacity: calc(--modifier(integer) * 1%);
+
+  --tw-text-shadow-color: color-mix(
+    in oklab,
+    --value(--text-color-*, [color]) var(--opacity, 100%),
+    transparent
+  );
+}
+
+@utility placeholder-* {
+  --opacity: calc(--modifier(integer) * 1%);
+
+  &::placeholder {
+    color: color-mix(in oklab, --value(--text-color-*, [color]) var(--opacity, 100%), transparent);
+  }
+}
+
+@utility fill-* {
+  --opacity: calc(--modifier(integer) * 1%);
+
+  fill: color-mix(
+    in oklab,
+    --value('none', 'inherit', 'currentColor', [color]) var(--opacity, 100%),
+    transparent
+  );
+}
+
+@utility fill-text-* {
+  --opacity: calc(--modifier(integer) * 1%);
+
+  fill: color-mix(in oklab, --value(--text-color-*, [color]) var(--opacity, 100%), transparent);
+}
+
+@utility fill-bg-* {
+  --opacity: calc(--modifier(integer) * 1%);
+
+  fill: color-mix(
+    in oklab,
+    --value(--background-color-*, [color]) var(--opacity, 100%),
+    transparent
+  );
+}
+
+@utility accent-* {
+  --opacity: calc(--modifier(integer) * 1%);
+
+  accent-color: color-mix(
+    in oklab,
+    --value(--background-color-*, [color]) var(--opacity, 100%),
+    transparent
+  );
+}
+
+@utility ring-* {
+  --opacity: calc(--modifier(integer) * 1%);
+
+  --tw-ring-color: color-mix(
+    in oklab,
+    --value(--border-color-*, [color]) var(--opacity, 100%),
+    transparent
+  );
+}
+
+@utility caret-* {
+  --opacity: calc(--modifier(integer) * 1%);
+
+  caret-color: color-mix(
+    in oklab,
+    --value(--background-color-*, 'auto', 'transparent', [color]) var(--opacity, 100%),
+    transparent
+  );
+}
+
+@utility stroke-* {
+  --opacity: calc(--modifier(integer) * 1%);
+
+  stroke: color-mix(
+    in oklab,
+    --value(--border-color-*, 'none', 'inherit', 'currentColor', [color]) var(--opacity, 100%),
+    transparent
+  );
+}
+
+@utility decoration-* {
+  --opacity: calc(--modifier(integer) * 1%);
+
+  text-decoration-color: color-mix(
+    in oklab,
+    --value(--text-color-*, 'inherit', 'currentColor', 'transparent', [color]) var(--opacity, 100%),
+    transparent
+  );
 }
