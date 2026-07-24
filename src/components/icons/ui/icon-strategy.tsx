@@ -15,7 +15,7 @@ export const IconStrategy: Icon = ({ className, ...props }) => {
       data-slot='icon-strategy'
       aria-hidden='true'
       focusable='false'
-      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon', className)}
       {...props}>
       <path fill='currentColor' d='M20 17.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z' opacity='.2' />
       <path

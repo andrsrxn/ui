@@ -15,7 +15,7 @@ export const IconRotate: Icon = ({ className, ...props }) => {
       data-slot='icon-rotate'
       aria-hidden='true'
       focusable='false'
-      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon', className)}
       {...props}>
       <path fill='currentColor' d='M4 5.772h16v12.474H4V5.772Z' opacity='.2' />
       <path

@@ -15,7 +15,7 @@ export const IconLogoStackOverflow: Icon = ({ className, ...props }) => {
       data-slot='icon-logo-stack-overflow'
       aria-hidden='true'
       focusable='false'
-      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon', className)}
       {...props}>
       <path fill='currentColor' d='M19.238 14.46H4.762v5.79h14.476v-5.79Z' opacity='.2' />
       <path

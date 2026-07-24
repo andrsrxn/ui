@@ -15,7 +15,7 @@ export const IconTilde: Icon = ({ className, ...props }) => {
       data-slot='icon-tilde'
       aria-hidden='true'
       focusable='false'
-      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon', className)}
       {...props}>
       <path
         stroke='currentColor'

@@ -11,7 +11,7 @@ import process from 'node:process'
 const ICONS_DIR = path.resolve('./src/components/icons/raw')
 const ICONS_OUT = path.resolve('./src/components/icons/ui')
 
-const CLASSNAME = 'ui-icon text-primary pointer-events-none shrink-0'
+const CLASSNAME = 'ui-icon'
 
 // Excepciones para la conversión de SVG a JSX
 const JSX_EXCEPTIONS = new Set(['viewBox', 'xmlns', 'xmlns:xlink', 'xml:space'])

@@ -15,7 +15,7 @@ export const IconBox: Icon = ({ className, ...props }) => {
       data-slot='icon-box'
       aria-hidden='true'
       focusable='false'
-      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon', className)}
       {...props}>
       <path fill='currentColor' d='M3.798 16.258V7.144l8.213 4.742V21l-8.213-4.742Z' opacity='.2' />
       <path

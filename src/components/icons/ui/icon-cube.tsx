@@ -15,7 +15,7 @@ export const IconCube: Icon = ({ className, ...props }) => {
       data-slot='icon-cube'
       aria-hidden='true'
       focusable='false'
-      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon', className)}
       {...props}>
       <path fill='currentColor' d='M3.798 15.83V6.77l8.213 4.713v9.06L3.798 15.83Z' opacity='.2' />
       <path

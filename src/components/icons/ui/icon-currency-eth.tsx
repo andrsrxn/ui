@@ -15,7 +15,7 @@ export const IconCurrencyEth: Icon = ({ className, ...props }) => {
       data-slot='icon-currency-eth'
       aria-hidden='true'
       focusable='false'
-      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon', className)}
       {...props}>
       <path fill='currentColor' d='m5 12 7 8.592L19 12l-7 1.73L5 12Z' opacity='.2' />
       <path

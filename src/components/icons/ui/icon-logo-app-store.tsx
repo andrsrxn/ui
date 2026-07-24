@@ -15,7 +15,7 @@ export const IconLogoAppStore: Icon = ({ className, ...props }) => {
       data-slot='icon-logo-app-store'
       aria-hidden='true'
       focusable='false'
-      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon', className)}
       {...props}>
       <path fill='currentColor' d='M16.236 15.281 12 8.113 7.764 15.28h8.472Z' opacity='.2' />
       <path

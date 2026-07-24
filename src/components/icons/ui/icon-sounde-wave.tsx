@@ -15,7 +15,7 @@ export const IconSoundeWave: Icon = ({ className, ...props }) => {
       data-slot='icon-sounde-wave'
       aria-hidden='true'
       focusable='false'
-      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon', className)}
       {...props}>
       <path
         stroke='currentColor'

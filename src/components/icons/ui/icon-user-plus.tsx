@@ -15,7 +15,7 @@ export const IconUserPlus: Icon = ({ className, ...props }) => {
       data-slot='icon-user-plus'
       aria-hidden='true'
       focusable='false'
-      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon', className)}
       {...props}>
       <g opacity='.2'>
         <path

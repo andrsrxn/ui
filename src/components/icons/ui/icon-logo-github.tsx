@@ -15,7 +15,7 @@ export const IconLogoGithub: Icon = ({ className, ...props }) => {
       data-slot='icon-logo-github'
       aria-hidden='true'
       focusable='false'
-      className={cn('ui-icon text-primary pointer-events-none shrink-0', className)}
+      className={cn('ui-icon', className)}
       {...props}>
       <g opacity='.2'>
         <path fill='currentColor' d='M11.16 20.5v-3.4a2.72 2.72 0 0 1 5.44 0v3.4h-5.44Z' />
