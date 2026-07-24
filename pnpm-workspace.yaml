@@ -1,5 +1,8 @@
-onlyBuiltDependencies:
-  - esbuild
+allowBuilds:
+  esbuild: true
 minimumReleaseAge: 4320
 minimumReleaseAgeExclude:
   - '@andrsrxn/*'
+saveExact: true
+provenance: true
+autoInstallPeers: true

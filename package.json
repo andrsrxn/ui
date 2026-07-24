@@ -36,11 +36,12 @@
   ],
   "engines": {
     "node": "^24",
-    "pnpm": "^10"
+    "pnpm": "^11"
   },
-  "packageManager": "pnpm@10.33.4",
+  "packageManager": "pnpm@11.12.0",
   "scripts": {
     "dev": "storybook dev -p 6006 --no-open",
+    "dev:vite": "vite dev",
     "preview": "vite preview",
     "build": "pnpm run build:styles && tsdown && echo Build styles finished.",
     "build:sb": "storybook build",
@@ -50,6 +51,7 @@
     "typecheck": "tsc --noEmit --project tsconfig.app.json && tsc --noEmit --project tsconfig.node.json && echo Typecheck finished.",
     "test": "vitest",
     "generate-icons": "node ./scripts/generate-icons.js && node ./scripts/generate-icons-index.js && prettier --write ./src/components/icons/ui && echo Icons generated and formatted.",
+    "generate-icons-index": "node ./scripts/generate-icons-index.js && echo Icons index generated.",
     "typecoverage": "pnpm dlx type-coverage -at-least=99 && echo Typecoverage finished.",
     "depcheck": "pnpm dlx knip && echo Depcheck finished.",
     "doctor": "pnpm dlx react-doctor@latest . && echo Doctor finished."
@@ -61,11 +63,9 @@
   },
   "dependencies": {
     "@base-ui/react": "1.6.0",
-    "@radix-ui/react-slot": "1.3.0",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "date-fns": "4.4.0",
-    "radix-ui": "1.6.0",
     "tailwind-merge": "3.6.0",
     "zod": "4.4.3"
   },
