@@ -11,18 +11,24 @@ import { SurfaceDecorator } from '../shared/decorators'
 const items = [
   {
     value: 'item-1',
-    title: 'lorem ipsum dolor sit amet',
-    content: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+    title: 'What is a design system?',
+    content: [
+      'A design system is a collection of reusable components, guidelines, and best practices that help teams create consistent and high-quality user interfaces.',
+    ],
   },
   {
     value: 'item-2',
-    title: 'lorem ipsum dolor sit amet',
-    content: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+    title: 'Why is it important?',
+    content: [
+      'It ensures consistency across all products, speeds up the development process, and improves the user experience by providing a familiar and intuitive interface.',
+    ],
   },
   {
     value: 'item-3',
-    title: 'lorem ipsum dolor sit amet',
-    content: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+    title: 'Who benefits from a design system?',
+    content: [
+      'Everyone! It provides a common language and a shared understanding of the design principles, patterns, and components that should be used across all products.',
+    ],
   },
 ]
 
@@ -45,7 +51,6 @@ const meta = preview.meta({
     },
   },
   args: {
-    defaultValue: ['item-1'],
     variant: 'base',
     multiple: false,
     className: 'w-md',
@@ -83,5 +88,11 @@ export const Disabled = meta.story({
         </AccordionContent>
       </AccordionItem>
     )),
+  },
+})
+
+export const WithDefaultValue = meta.story({
+  args: {
+    defaultValue: ['item-1'],
   },
 })
