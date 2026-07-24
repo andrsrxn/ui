@@ -24,9 +24,9 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
-    "declarationMap": true,
-    "declaration": true,
-    "sourceMap": true,
+    "declarationMap": false,
+    "declaration": false,
+    "sourceMap": false,
 
     "esModuleInterop": true,
     "resolveJsonModule": true,
@@ -41,5 +41,5 @@
 
     "skipDefaultLibCheck": true
   },
-  "include": ["./src", "./stories", "__tests__/**/*.{ts,tsx}", ".storybook/**/*.{ts,tsx}"]
+  "include": ["src", "stories", "__tests__", ".storybook"]
 }
