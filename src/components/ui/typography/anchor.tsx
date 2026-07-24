@@ -1,8 +1,8 @@
 import { cva } from 'class-variance-authority'
-import { Slot, Slottable } from '@radix-ui/react-slot'
-import type { ComponentProps } from 'react'
+import type { ComponentProps, ReactElement } from 'react'
 import { cn, type NonNullableVariantProps } from '../../../lib/utils/theme'
-import { IconChevronRight, IconDownload, IconExternalLink } from '../../icons'
+import { IconChevronEnd, IconDownload, IconExternalLink } from '../../icons'
+import { useRender } from '@base-ui/react'
 
 export const linkVariants = cva(
   'focus-visible:outline-2 outline-offset-3 rounded-base font-medium leading-inherit focus-visible:outline-focus text-body-inherit font-body active:scale-98 disabled:disabled duration-fastest ease-base decoration-1 underline-offset-2 underline transition-theme',
@@ -18,7 +18,6 @@ export const linkVariants = cva(
         primary: 'text-link',
         secondary: 'text-primary',
         inherit: 'text-inherit',
-        inverted: 'text-inverted',
         content: 'text-content',
       },
       unstyled: {
@@ -51,33 +50,52 @@ export type LinkTarget = '_self' | '_blank' | '_parent' | '_top'
 export interface LinkProps
   extends ComponentProps<'a'>, NonNullableVariantProps<typeof linkVariants> {
   target?: LinkTarget
-  asChild?: boolean
+  render?: ReactElement
 }
 
-export const Link = ({
+export const Anchor = ({
   className,
   children,
   full,
   selectable,
   selected,
   selectedSubtle,
-  asChild = false,
   includeIcon = full ?? false,
   unstyled = false,
   variant = 'primary',
   target = '_self',
   download,
+  render,
   ...props
 }: LinkProps) => {
-  const Comp = asChild ? Slot : 'a'
+  const icons = (
+    <>
+      {download !== undefined && includeIcon && (
+        <IconDownload className='size-icon-responsive text-inherit' />
+      )}
+      {target === '_blank' && download === undefined && includeIcon && (
+        <IconExternalLink className='size-icon-responsive text-inherit' />
+      )}
+      {target !== '_blank' && download === undefined && includeIcon && (
+        <IconChevronEnd
+          className={cn(
+            'size-icon-responsive duration-fast ease-base -ms-0.5 text-inherit',
+            'transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1'
+          )}
+        />
+      )}
+    </>
+  )
 
-  const RenderLink = (
-    <Comp
-      data-slot='link'
-      target={target}
-      rel={target === '_blank' ? 'noopener noreferrer' : undefined}
-      download={download}
-      className={cn(
+  const element = useRender({
+    defaultTagName: 'a',
+    render,
+    props: {
+      'data-slot': 'anchor',
+      target,
+      rel: target === '_blank' ? 'noopener noreferrer' : undefined,
+      download,
+      className: cn(
         linkVariants({
           full,
           includeIcon,
@@ -88,31 +106,20 @@ export const Link = ({
           unstyled,
         }),
         className
-      )}
-      {...props}>
-      <Slottable>{children}</Slottable>
-
-      {download !== undefined && includeIcon ? (
-        <IconDownload className={'size-icon-responsive text-inherit'} />
-      ) : null}
-
-      {target === '_blank' && download === undefined && includeIcon ? (
-        <IconExternalLink className={'size-icon-responsive text-inherit'} />
-      ) : null}
-
-      {target !== '_blank' && download === undefined && includeIcon ? (
-        <IconChevronRight
-          className={cn(
-            'size-icon-responsive duration-fast ease-base -ms-0.5 text-inherit transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1'
-          )}
-        />
-      ) : null}
-    </Comp>
-  )
+      ),
+      children: (
+        <>
+          {children}
+          {icons}
+        </>
+      ),
+      ...props,
+    },
+  })
 
   if (full === true) {
-    return <div className='flex w-full items-start justify-center'>{RenderLink}</div>
+    return <div className='flex w-full items-start justify-center'>{element}</div>
   }
 
-  return RenderLink
+  return element
 }

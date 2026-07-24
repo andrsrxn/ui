@@ -3,7 +3,7 @@ import { cn, type NonNullableVariantProps } from '../../../lib/utils/theme'
 import { cva } from 'class-variance-authority'
 import { slugify } from '../../../lib/utils/strings'
 import { IconLink } from '../../icons'
-import { Link } from './link'
+import { Anchor } from './anchor'
 import { getUILabels } from '../../../lib/utils/config'
 
 export const headingVariants = cva(
@@ -23,7 +23,7 @@ export const headingVariants = cva(
       },
       variant: {
         base: 'text-primary',
-        inverted: 'text-inverted',
+
         content: 'text-content',
       },
       size: {
@@ -569,7 +569,7 @@ export const Heading = ({
       <HeadingToRender {...commonProps} {...props} />
 
       {id !== undefined && (
-        <Link
+        <Anchor
           unstyled
           aria-label={actions.copyPermanentLink}
           data-slot='heading-permanent-link'
@@ -579,7 +579,7 @@ export const Heading = ({
           )}
           href={`#${id}`}>
           <IconLink className='size-icon-responsive ms-2' />
-        </Link>
+        </Anchor>
       )}
     </div>
   )

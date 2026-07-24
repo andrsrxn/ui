@@ -1,10 +1,10 @@
 import preview from '../../../.storybook/preview'
-import { Link } from '../../../src/components/ui/typography/link'
+import { Anchor } from '../../../src/components/ui/typography/anchor'
 import { Text } from '../../../src/components/ui/typography/text'
 
 const meta = preview.meta({
-  title: 'Components/Typography/Link',
-  component: Link,
+  title: 'Components/Typography/Anchor',
+  component: Anchor,
   parameters: {
     layout: 'centered',
     docs: {
@@ -22,7 +22,7 @@ const meta = preview.meta({
     full: false,
     unstyled: false,
     href: '#',
-    asChild: false,
+    render: undefined,
     children: 'Go to homepage',
   },
 })
@@ -32,13 +32,11 @@ export const Primary = meta.story({})
 export const Secondary = meta.story({ args: { variant: 'secondary' } })
 
 export const AsChild = meta.story({
-  args: { asChild: true },
   render: args => (
-    <Link {...args}>
-      <a href='/#' target='_blank' rel='noopener noreferrer'>
-        Go to homepage
-      </a>
-    </Link>
+    // biome-ignore lint/a11y/useAnchorContent: false positive
+    <Anchor {...args} render={<a href='/#' target='_blank' rel='noopener noreferrer' />}>
+      Go to homepage
+    </Anchor>
   ),
 })
 
@@ -61,11 +59,11 @@ export const Selectable = meta.story({
   args: { selectable: true, selected: false },
   render: args => (
     <div className='flex items-center gap-4'>
-      <Link {...args}>About us</Link>
-      <Link {...args} selected>
+      <Anchor {...args}>About us</Anchor>
+      <Anchor {...args} selected>
         Home
-      </Link>
-      <Link {...args}>Contact</Link>
+      </Anchor>
+      <Anchor {...args}>Contact</Anchor>
     </div>
   ),
 })
@@ -74,11 +72,11 @@ export const SelectedSubtle = meta.story({
   args: { selectable: true },
   render: args => (
     <div className='flex items-center gap-4'>
-      <Link {...args}>About us</Link>
-      <Link {...args} selectedSubtle>
+      <Anchor {...args}>About us</Anchor>
+      <Anchor {...args} selectedSubtle>
         Home
-      </Link>
-      <Link {...args}>Contact</Link>
+      </Anchor>
+      <Anchor {...args}>Contact</Anchor>
     </div>
   ),
 })
@@ -89,9 +87,9 @@ export const InParagraph = meta.story({
   render: args => (
     <Text variant='secondary'>
       Visit our{' '}
-      <Link href='/politica-de-privacidad' {...args}>
+      <Anchor href='/politica-de-privacidad' {...args}>
         privacy policy
-      </Link>
+      </Anchor>
       .
     </Text>
   ),

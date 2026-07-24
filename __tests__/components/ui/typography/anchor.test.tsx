@@ -1,11 +1,11 @@
 import { render, screen } from '../../../../stories/utils/tests'
 import { describe, it, expect, vi } from 'vitest'
-import { Link } from '../../../../src/components/ui/typography/link'
+import { Anchor } from '../../../../src/components/ui/typography/anchor'
 import type { IconProps } from '../../../../src/components/icons/icon'
 
 // Mock the icons
 vi.mock('../../../../src/components/icons', () => ({
-  IconChevronRight: ({ className, ...props }: IconProps) => (
+  IconChevronEnd: ({ className, ...props }: IconProps) => (
     <svg data-testid='icon-chevron' className={className} {...props} />
   ),
   IconDownload: ({ className, ...props }: IconProps) => (
@@ -18,10 +18,10 @@ vi.mock('../../../../src/components/icons', () => ({
 
 describe('Link Component', () => {
   it('renders a default anchor link', () => {
-    render(<Link href='https://example.com'>My Link</Link>)
+    render(<Anchor href='https://example.com'>My Link</Anchor>)
     const link = screen.getByRole('link', { name: 'My Link' })
     expect(link).toBeDefined()
-    expect(link.getAttribute('data-slot')).toBe('link')
+    expect(link.getAttribute('data-slot')).toBe('anchor')
     expect(link.getAttribute('href')).toBe('https://example.com')
     expect(link.className).toContain('text-link') // default variant primary -> text-link
     expect(link.className).toContain('underline')
@@ -29,60 +29,57 @@ describe('Link Component', () => {
 
   it('adds noopener noreferrer when target is _blank', () => {
     render(
-      <Link href='https://example.com' target='_blank'>
+      <Anchor href='https://example.com' target='_blank'>
         External Link
-      </Link>
+      </Anchor>
     )
     const link = screen.getByRole('link', { name: 'External Link' })
     expect(link.getAttribute('target')).toBe('_blank')
     expect(link.getAttribute('rel')).toBe('noopener noreferrer')
   })
 
-  it('renders as custom slot/child when asChild is true', () => {
-    render(
-      <Link asChild>
-        <button type='button'>Button Link</button>
-      </Link>
-    )
+  it('renders as custom slot/child when passing render prop function', () => {
+    render(<Anchor render={<button type='button' />}>Button Link</Anchor>)
     const button = screen.getByRole('button', { name: 'Button Link' })
     expect(button).toBeDefined()
-    expect(button.getAttribute('data-slot')).toBe('link')
+    expect(button.getAttribute('data-slot')).toBe('anchor')
     expect(button.className).toContain('text-link')
   })
 
   it('includes appropriate icons based on props', () => {
     const { rerender } = render(
-      <Link href='/doc.pdf' download='doc.pdf' includeIcon>
+      <Anchor href='/doc.pdf' download='doc.pdf' includeIcon>
         Download
-      </Link>
+      </Anchor>
     )
     expect(screen.getByTestId('icon-download')).toBeDefined()
 
     rerender(
-      <Link href='https://google.com' target='_blank' includeIcon>
+      <Anchor href='https://google.com' target='_blank' includeIcon>
         Google
-      </Link>
+      </Anchor>
     )
     expect(screen.getByTestId('icon-external')).toBeDefined()
 
     rerender(
-      <Link href='/next-page' includeIcon>
+      <Anchor href='/next-page' includeIcon>
         Next
-      </Link>
+      </Anchor>
     )
     expect(screen.getByTestId('icon-chevron')).toBeDefined()
   })
 
   it('wraps the link in a div when full is true', () => {
     const { container } = render(
-      <Link href='/path' full>
+      <Anchor href='/path' full>
         Full Link
-      </Link>
+      </Anchor>
     )
+
     // Check that there is a wrapper div with full width styles
-    const wrapper = container.firstElementChild
+    const wrapper = container.querySelector('[data-slot="anchor"]')?.parentElement
     expect(wrapper?.className).toContain('flex')
     expect(wrapper?.className).toContain('w-full')
-    expect(wrapper?.firstElementChild?.getAttribute('data-slot')).toBe('link')
+    expect(wrapper?.firstElementChild?.getAttribute('data-slot')).toBe('anchor')
   })
 })
