@@ -1,7 +1,7 @@
 import preview from '../../../.storybook/preview'
 import { Figure, FigureCaption } from '../../../src/components/ui/typography/figure'
 import { Image } from '../../../src/components/ui/typography/image'
-import { Link } from '../../../src/components/ui/typography/link'
+import { Anchor } from '../../../src/components/ui/typography/anchor'
 
 const meta = preview.meta({
   title: 'Components/Typography/Figure',
@@ -51,9 +51,9 @@ export const WithCaption = meta.story({
         />
         <FigureCaption>
           Figure 1: Context, additional information, attributes the source or a{' '}
-          <Link href='https://placehold.co' target='_blank' includeIcon>
+          <Anchor href='https://placehold.co' target='_blank' includeIcon>
             copyright holder
-          </Link>
+          </Anchor>
         </FigureCaption>
       </>
     ),
@@ -73,9 +73,9 @@ export const Centered = meta.story({
         />
         <FigureCaption>
           Figure 1: Context, additional information, attributes the source or a{' '}
-          <Link href='https://placehold.co' target='_blank' includeIcon>
+          <Anchor href='https://placehold.co' target='_blank' includeIcon>
             copyright holder
-          </Link>
+          </Anchor>
         </FigureCaption>
       </>
     ),

@@ -1,6 +1,6 @@
 import preview from '../../../.storybook/preview'
 import { Time } from '../../../src/components/ui/typography/time'
-import { BrandDecorator, InvertedDecorator } from '../../shared/decorators'
+import { ContentDecorator } from '../../shared/decorators'
 import { formatDate } from '../../utils/dates'
 
 const meta = preview.meta({
@@ -31,14 +31,9 @@ export const Secondary = meta.story({ args: { variant: 'secondary' } })
 
 export const Tertiary = meta.story({ args: { variant: 'tertiary' } })
 
-export const Inverted = meta.story({
-  args: { variant: 'inverted', className: 'light' },
-  decorators: InvertedDecorator,
-})
-
 export const Content = meta.story({
   args: { variant: 'content' },
-  decorators: BrandDecorator,
+  decorators: ContentDecorator,
 })
 
 export const Sizes = meta.story({

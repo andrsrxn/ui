@@ -1,6 +1,6 @@
 import preview from '../../../.storybook/preview'
 import { List, ListItem } from '../../../src/components/ui/typography/list'
-import { BrandDecorator, InvertedDecorator } from '../../shared/decorators'
+import { ContentDecorator } from '../../shared/decorators'
 
 const meta = preview.meta({
   title: 'Components/Typography/List',
@@ -44,19 +44,11 @@ export const Secondary = meta.story({
   },
 })
 
-export const Inverted = meta.story({
-  args: {
-    variant: 'inverted',
-    className: 'light',
-  },
-  decorators: InvertedDecorator,
-})
-
 export const Content = meta.story({
   args: {
     variant: 'content',
   },
-  decorators: BrandDecorator,
+  decorators: ContentDecorator,
 })
 
 export const Ordered = meta.story({

@@ -2,7 +2,7 @@ import preview from '../../../.storybook/preview'
 import { IconColors, IconDashboard, IconLayers, IconTool } from '../../../src/components/icons'
 import { Label } from '../../../src/components/ui/typography/label'
 import { Text } from '../../../src/components/ui/typography/text'
-import { BrandDecorator, InvertedDecorator } from '../../shared/decorators'
+import { ContentDecorator } from '../../shared/decorators'
 
 const meta = preview.meta({
   title: 'Components/Typography/Label',
@@ -23,58 +23,15 @@ const meta = preview.meta({
   },
 })
 
-/**
- * Used when the text is the main content of a component, section, or page
- */
-export const Primary = meta.story({
-  render: args => (
-    <div className='grid gap-1'>
-      <Label {...args}>Label text</Label>
-      <Text variant='secondary'>Supporting long text or description</Text>
-    </div>
-  ),
-})
+export const Primary = meta.story({})
 
-/**
- * Used for supporting label, when is not the only label in a list or a sidebar.
- */
-export const Secondary = meta.story({
-  render: args => (
-    <div>
-      <Label {...args} variant='secondary'>
-        General
-      </Label>
-      <ul className='mt-4 grid gap-2'>
-        <li className='flex items-center gap-2'>
-          <IconDashboard className='size-icon-responsive' /> Dashboard
-        </li>
-        <li className='flex items-center gap-2'>
-          <IconLayers className='size-icon-responsive' /> Components
-        </li>
-        <li className='flex items-center gap-2'>
-          <IconColors className='size-icon-responsive' /> Colors
-        </li>
-        <li className='flex items-center gap-2'>
-          <IconTool className='size-icon-responsive' /> Utilities
-        </li>
-      </ul>
-    </div>
-  ),
-})
+export const Secondary = meta.story({ args: { variant: 'secondary' } })
 
 export const Content = meta.story({
   args: {
     variant: 'content',
   },
-  decorators: BrandDecorator,
-})
-
-export const Inverted = meta.story({
-  args: {
-    variant: 'inverted',
-    className: 'light',
-  },
-  decorators: InvertedDecorator,
+  decorators: ContentDecorator,
 })
 
 export const Sizes = meta.story({
@@ -118,6 +75,10 @@ export const Responsive = meta.story({
   },
 })
 
+/**
+ * Used when the text is the main content of a component, section, or page
+ */
+
 export const Centered = meta.story({
   args: {
     center: true,
@@ -125,4 +86,43 @@ export const Centered = meta.story({
   parameters: {
     layout: 'padded',
   },
+})
+
+/**
+ * Used when the text is the main content of a component, section, or page
+ */
+export const WithDescription = meta.story({
+  render: args => (
+    <div className='grid gap-1'>
+      <Label {...args}>Reports</Label>
+      <Text variant='secondary'>Manage your data and metrics</Text>
+    </div>
+  ),
+})
+
+/**
+ * Used for supporting label, when is not the only label in a list or a sidebar.
+ */
+export const WithList = meta.story({
+  render: args => (
+    <div>
+      <Label {...args} variant='secondary'>
+        General
+      </Label>
+      <ul className='mt-4 grid gap-2'>
+        <li className='flex items-center gap-2'>
+          <IconDashboard className='size-icon-responsive' /> Dashboard
+        </li>
+        <li className='flex items-center gap-2'>
+          <IconLayers className='size-icon-responsive' /> Components
+        </li>
+        <li className='flex items-center gap-2'>
+          <IconColors className='size-icon-responsive' /> Colors
+        </li>
+        <li className='flex items-center gap-2'>
+          <IconTool className='size-icon-responsive' /> Utilities
+        </li>
+      </ul>
+    </div>
+  ),
 })

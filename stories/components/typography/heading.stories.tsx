@@ -1,7 +1,7 @@
 import preview from '../../../.storybook/preview'
 import { Heading } from '../../../src/components/ui/typography/heading'
 import { Text } from '../../../src/components/ui/typography/text'
-import { BrandDecorator, InvertedDecorator } from '../../shared/decorators'
+import { ContentDecorator } from '../../shared/decorators'
 
 const meta = preview.meta({
   title: 'Components/Typography/Heading',
@@ -33,15 +33,7 @@ export const Content = meta.story({
   args: {
     variant: 'content',
   },
-  decorators: BrandDecorator,
-})
-
-export const Inverted = meta.story({
-  args: {
-    variant: 'inverted',
-    className: 'light',
-  },
-  decorators: InvertedDecorator,
+  decorators: ContentDecorator,
 })
 
 export const Levels = meta.story({
@@ -156,4 +148,19 @@ export const WithParagraph = meta.story({
       </Text>
     </div>
   ),
+})
+
+export const WithContentParagraph = meta.story({
+  args: {
+    variant: 'content',
+  },
+  render: args => (
+    <div className='grid gap-2'>
+      <Heading {...args}>Supercharge your team's workflow</Heading>
+      <Text variant='brandContent' desktop='lg'>
+        Transform project management with seamless collaboration and intelligent automation.
+      </Text>
+    </div>
+  ),
+  decorators: ContentDecorator,
 })

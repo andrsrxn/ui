@@ -1,7 +1,7 @@
 import preview from '../../../.storybook/preview'
 import { Inline } from '../../../src/components/ui/typography/inline'
 import { Text } from '../../../src/components/ui/typography/text'
-import { BrandDecorator, InvertedDecorator } from '../../shared/decorators'
+import { ContentDecorator } from '../../shared/decorators'
 
 const meta = preview.meta({
   title: 'Components/Typography/Inline',
@@ -70,7 +70,7 @@ export const Content = meta.story({
   args: {
     variant: 'content',
   },
-  decorators: BrandDecorator,
+  decorators: ContentDecorator,
 })
 
 export const Info = meta.story({
@@ -95,14 +95,6 @@ export const Danger = meta.story({
   args: {
     variant: 'danger',
   },
-})
-
-export const Inverted = meta.story({
-  args: {
-    variant: 'inverted',
-    className: 'light',
-  },
-  decorators: InvertedDecorator,
 })
 
 export const Sizes = meta.story({

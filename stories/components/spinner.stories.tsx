@@ -1,7 +1,6 @@
 import preview from '../../.storybook/preview'
 import { Button } from '../../src/components/ui/button'
 import { Spinner } from '../../src/components/ui/spinner'
-import { InvertedDecorator } from '../shared/decorators'
 
 const meta = preview.meta({
   title: 'Components/Spinner',
@@ -26,14 +25,6 @@ export const Primary = meta.story({})
 export const Secondary = meta.story({ args: { variant: 'secondary' } })
 
 export const Tertiary = meta.story({ args: { variant: 'tertiary' } })
-
-export const Inverted = meta.story({
-  args: {
-    variant: 'inverted',
-    className: 'light',
-  },
-  decorators: InvertedDecorator,
-})
 
 export const Inherit = meta.story({
   args: {
