@@ -2,37 +2,35 @@ import { cva } from 'class-variance-authority'
 import type { ComponentProps } from 'react'
 import { cn } from '../../../lib/utils/theme'
 import { Text, type TextProps } from './text'
+import { Figure } from './figure'
 
 export const blockquoteVariants = cva(
-  'relative my-4 border-s-3 border-brand ps-4 max-w-prose transition-theme'
+  'relative my-4 border-s-3 border-brand-secondary ps-4 max-w-prose transition-theme'
 )
 
-export interface BlockquoteProps
-  extends
-    ComponentProps<'blockquote'>,
-    Pick<TextProps, 'size' | 'tablet' | 'laptop' | 'desktop' | 'display'> {}
+export interface BlockquoteProps extends ComponentProps<'blockquote'> {}
 
-export const Blockquote = ({
+export const Blockquote = ({ className, ...props }: BlockquoteProps) => (
+  <Figure>
+    <blockquote data-slot='blockquote' className={cn(blockquoteVariants(), className)} {...props} />
+  </Figure>
+)
+
+export interface BlockquoteTextProps extends Omit<TextProps, 'variant'> {}
+
+export const BlockquoteText = ({
   className,
   size = 'lg',
-  tablet = 'xl',
-  laptop,
-  desktop,
-  display,
-  children,
+  desktop = 'xl',
   ...props
-}: BlockquoteProps) => (
-  <blockquote data-slot='blockquote' className={cn(blockquoteVariants(), className)} {...props}>
-    <Text
-      size={size}
-      tablet={tablet}
-      laptop={laptop}
-      desktop={desktop}
-      display={display}
-      className='font-semibold italic'>
-      {children}
-    </Text>
-  </blockquote>
+}: BlockquoteTextProps) => (
+  <Text
+    data-slot='blockquote-text'
+    size={size}
+    desktop={desktop}
+    className={cn('font-semibold italic', className)}
+    {...props}
+  />
 )
 
 export interface BlockquoteCiteProps extends ComponentProps<'cite'> {}
