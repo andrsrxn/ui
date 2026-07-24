@@ -22,18 +22,17 @@ import { UIProvider } from '../src/components/providers/ui-provider'
 import type { TextDirection } from '../src/components/providers/direction-provider'
 
 const RTLDecorator = (Story: PartialStoryFn, context: StoryContext) => {
-  document.documentElement.dir = context.globals.rtl === 'RTL' ? 'rtl' : 'ltr'
+  const dir = context.globals.rtl
 
+  document.documentElement.dir = dir
   return <Story />
 }
 
 const LayoutDecorator = (Story: PartialStoryFn, context: StoryContext) => {
   return (
     <UIProvider dir={context.globals.rtl as TextDirection}>
-      <div className='isolate'>
-        <Story />
-        {/* TODO: <Toaster /> */}
-      </div>
+      <Story />
+      {/* TODO: <Toaster /> */}
     </UIProvider>
   )
 }
@@ -42,7 +41,7 @@ const decorators = [
   withThemeByClassName({
     themes: {
       light:
-        'light [&_.docs-story]:bg-base [&_.docs-story]:has-data-[slot=surface-decorator]:bg-surface [&_.docs-story]:has-data-[slot=brand-decorator]:bg-brand [&_.docs-story]:has-data-[slot=inverted-decorator]:bg-base-inverted',
+        'light [&_.docs-story]:bg-base [&_.docs-story]:has-data-[slot=surface-decorator]:bg-surface [&_.docs-story]:has-data-[slot=content-decorator]:bg-brand',
       dark: 'dark [&_.docs-story]:bg-base',
     },
     defaultTheme: 'light',
@@ -55,9 +54,8 @@ const decorators = [
 export default definePreview({
   addons: [addonThemes(), addonVitest(), addonA11y(), addonDocs()],
   decorators,
-
   initialGlobals: {
-    rtl: 'LTR',
+    rtl: 'ltr',
   },
   tags: ['autodocs'],
   parameters: {

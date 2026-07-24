@@ -24,7 +24,7 @@ const TOOL_ID = `${ADDON_ID}/tool`
 export const DirectionSwitcher = memo(() => {
   const [{ rtl }, updateGlobals] = useGlobals()
 
-  const isRTL = rtl === 'RTL'
+  const isRTL = rtl === 'rtl'
 
   return createElement(
     Button,
@@ -36,7 +36,7 @@ export const DirectionSwitcher = memo(() => {
       key: TOOL_ID,
       onClick: () => {
         updateGlobals({
-          rtl: isRTL ? 'LTR' : 'RTL',
+          rtl: isRTL ? 'ltr' : 'rtl',
         })
       },
     },
@@ -47,7 +47,7 @@ export const DirectionSwitcher = memo(() => {
 addons.register(ADDON_ID, () => {
   addons.add(TOOL_ID, {
     type: types.TOOL,
-    title: 'My Custom Tool',
+    title: 'Toggle direction',
     render: () => createElement(DirectionSwitcher),
   })
 })
