@@ -149,29 +149,38 @@ export const DEFAULT_LABELS = {
 } as const
 
 export const DEFAULT_CONFIG = {
-  tooltip: {
-    openDelay: 100,
+  /** Apply to elements like Tooltip, Popover, and similar */
+  floatingElement: {
+    /** Delay in milliseconds */
+    openDelay: 0,
+    /** Delay in milliseconds */
     closeDelay: 0,
-    offset: 4,
+    /** Offset in pixels */
+    offset: 8,
   },
 
   toast: {
+    /** Duration in milliseconds */
     duration: 3000,
   },
 
   copy: {
+    /** Duration in milliseconds */
     feedbackDuration: 1000,
   },
 
   animatedNumber: {
+    /** Duration in milliseconds */
     duration: 1000,
   },
 
   textarea: {
+    /** Maximum characters */
     maxLength: 500,
   },
 
   history: {
+    /** Maximum amount of history entries */
     maxDepth: 50,
   },
 
@@ -181,14 +190,17 @@ export const DEFAULT_CONFIG = {
   },
 
   scrollSpy: {
+    /** Percentage of the element's height that must be visible before it is considered visible */
     threshold: 0.2,
   },
 
   dataTable: {
+    /** Tuple of available page sizes */
     pageSizes: [10, 20, 30, 40, 50],
   },
 
   mouseSafeArea: {
+    /** When to start applying the safe area padding */
     paddingInset: 12,
   },
 
@@ -197,12 +209,14 @@ export const DEFAULT_CONFIG = {
   },
 
   motion: {
+    /** Translate ease from design tokens, keep always in sync with tailwind */
     ease: {
       base: [0.28, 0.1, 0.34, 1],
       out: [0.16, 1, 0.3, 1],
       elastic: [0.76, 0, 0.24, 1],
       linear: [0, 0, 1, 1],
     },
+    /** Translate durations from design tokens, keep always in sync with tailwind */
     duration: {
       slowest: 100,
       slow: 250,
@@ -213,6 +227,7 @@ export const DEFAULT_CONFIG = {
   },
 } as const
 
+/** Custom code highlighting theme based on  */
 export const CODE_THEME = {
   'code[class*="language-"]': {
     background: 'var(--background-surface)',
@@ -354,6 +369,7 @@ export const CODE_THEME = {
   'token.space:before': { color: '#444d5630', textShadow: 'none' },
 } as Record<string, CSSProperties>
 
+/** Most used languages for code snippets */
 export const ACCEPTED_CODE_LANGUAGES = [
   'html',
   'xml',
@@ -400,4 +416,5 @@ export const ACCEPTED_CODE_LANGUAGES = [
   'json',
 ] as const
 
+/** Most used languages for code snippets */
 export type CodeLangauge = (typeof ACCEPTED_CODE_LANGUAGES)[number]
