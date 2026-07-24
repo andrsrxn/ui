@@ -6,10 +6,10 @@ export const IconBrandNamecheap = ({ className, ...props }: SVGProps<SVGSVGEleme
     xmlns='http://www.w3.org/2000/svg'
     aria-label='Namecheap'
     className={cn('size-icon-base shrink-0', className)}
-    {...props}
     preserveAspectRatio='xMidYMid'
     role='img'
-    viewBox='0 -57 256 256'>
+    viewBox='0 -57 256 256'
+    {...props}>
     <defs>
       <linearGradient id='linearGradient-1' x1='13.322%' x2='82.62%' y1='94.945%' y2='1.132%'>
         <stop offset='0%' stopColor='#d4202c' />

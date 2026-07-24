@@ -7,9 +7,9 @@ export const IconBrandFigma = ({ className, ...props }: SVGProps<SVGSVGElement>)
     fill='none'
     aria-label='Figma'
     className={cn('size-icon-base shrink-0', className)}
-    {...props}
     role='img'
-    viewBox='0 0 54 80'>
+    viewBox='0 0 54 80'
+    {...props}>
     <g clipPath='url(#clip0_912_3)'>
       <path
         fill='#0acf83'

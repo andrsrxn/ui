@@ -5,12 +5,12 @@ export const IconBrandTailwind = ({ className, ...props }: SVGProps<SVGSVGElemen
   <svg
     xmlns='http://www.w3.org/2000/svg'
     fill='none'
-    aria-label='Tailwind'
+    aria-label='TailwindCSS'
     className={cn('size-icon-base shrink-0', className)}
-    {...props}
     role='img'
-    viewBox='0 0 54 33'>
-    <g clipPath='url(#a)'>
+    viewBox='0 0 54 33'
+    {...props}>
+    <g clipPath='url(#tailwindcss__a)'>
       <path
         fill='#38bdf8'
         fillRule='evenodd'
@@ -19,7 +19,7 @@ export const IconBrandTailwind = ({ className, ...props }: SVGProps<SVGSVGElemen
       />
     </g>
     <defs>
-      <clipPath id='a'>
+      <clipPath id='tailwindcss__a'>
         <path fill='#fff' d='M0 0h54v32.4H0z' />
       </clipPath>
     </defs>

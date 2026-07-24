@@ -7,9 +7,9 @@ export const IconBrandCanva = ({ className, ...props }: SVGProps<SVGSVGElement>)
     fill='none'
     aria-label='Canva'
     className={cn('size-icon-base shrink-0', className)}
-    {...props}
     role='img'
-    viewBox='0 0 80 80'>
+    viewBox='0 0 80 80'
+    {...props}>
     <g clipPath='url(#clip0_905_1790)'>
       <path
         fill='#7d2ae7'

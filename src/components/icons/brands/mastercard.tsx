@@ -7,9 +7,9 @@ export const IconBrandMastercard = ({ className, ...props }: SVGProps<SVGSVGElem
     fill='none'
     aria-label='Mastercard'
     className={cn('size-icon-base shrink-0', className)}
-    {...props}
     role='img'
-    viewBox='0 0 1000 618'>
+    viewBox='0 0 1000 618'
+    {...props}>
     <path fill='#eb001b' d='M308 0a309 309 0 1 0 2 0z' />
     <path fill='#f79e1b' d='M690 0a309 309 0 1 0 2 0z' />
     <path fill='#ff5f00' d='M500 66a309 309 0 0 0 0 486 309 309 0 0 0 0-486' />

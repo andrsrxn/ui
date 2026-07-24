@@ -7,36 +7,42 @@ export const IconBrandClickUp = ({ className, ...props }: SVGProps<SVGSVGElement
     fill='none'
     aria-label='Click Up'
     className={cn('size-icon-base shrink-0', className)}
-    {...props}
     role='img'
-    viewBox='0 0 32 38'>
-    <linearGradient
-      id='clikup-a'
-      x1='0'
-      x2='31.236'
-      y1='40.244'
-      y2='40.244'
-      gradientUnits='userSpaceOnUse'>
-      <stop offset='0' stopColor='#7612fa' />
-      <stop offset='1' stopColor='#40ddff' />
-    </linearGradient>
-    <linearGradient
-      id='clikup-b'
-      x1='.681'
-      x2='30.61'
-      y1='21.988'
-      y2='21.988'
-      gradientUnits='userSpaceOnUse'>
-      <stop offset='0' stopColor='#fa12e3' />
-      <stop offset='1' stopColor='gold' />
-    </linearGradient>
+    viewBox='0 0 64 64'
+    {...props}>
     <path
-      fill='url(#clikup-a)'
-      d='m0 29.087 5.764-4.46c3.062 4.037 6.316 5.898 9.937 5.898 3.603 0 6.764-1.839 9.689-5.844l5.846 4.352c-4.22 5.776-9.463 8.827-15.535 8.827C9.65 37.86 4.355 34.828 0 29.087'
+      fillRule='evenodd'
+      clipRule='evenodd'
+      d='M6.43828 50.2095C5.81176 49.4456 5.94882 48.3212 6.71918 47.7027L14.0169 41.8433C14.6535 41.3322 15.5841 41.4476 16.1032 42.0777C21.06 48.0956 26.32 50.8815 32.142 50.8815C37.9238 50.8815 43.0403 48.135 47.7801 42.1839C48.2888 41.5452 49.2172 41.4131 49.8629 41.9129L57.2604 47.6377C58.0415 48.2422 58.1989 49.3637 57.5855 50.1379C50.5775 58.9839 41.9971 63.6446 32.142 63.6446C22.3156 63.6446 13.6586 59.013 6.43828 50.2095Z'
+      fill='url(#clickup__paint0_linear_8_569)'
     />
     <path
-      fill='url(#clikup-b)'
-      d='m15.683 9.703-10.26 8.93-4.742-5.556L15.705 0 30.61 13.087l-4.764 5.536z'
+      fillRule='evenodd'
+      clipRule='evenodd'
+      d='M32.4953 17.1804C32.2202 16.9368 31.8067 16.9367 31.5314 17.1801L15.663 31.2116C15.0564 31.748 14.1285 31.6857 13.599 31.0731L7.40986 23.9122C6.88774 23.3082 6.95019 22.3961 7.54979 21.8688L31.0527 1.20062C31.6021 0.717503 32.4248 0.717611 32.9741 1.20088L56.4822 21.8847C57.0822 22.4125 57.1439 23.3256 56.6205 23.9294L50.4164 31.0866C49.8862 31.6982 48.9589 31.7594 48.353 31.2229L32.4953 17.1804Z'
+      fill='url(#clickup__paint1_linear_8_569)'
     />
+    <defs>
+      <linearGradient
+        id='clickup__paint0_linear_8_569'
+        x1='5.3335'
+        y1='32.1624'
+        x2='58.6653'
+        y2='32.1624'
+        gradientUnits='userSpaceOnUse'>
+        <stop offset='0.225962' stopColor='#6647F0' />
+        <stop offset='0.793269' stopColor='#0091FF' />
+      </linearGradient>
+      <linearGradient
+        id='clickup__paint1_linear_8_569'
+        x1='5.3335'
+        y1='31.6447'
+        x2='58.6653'
+        y2='31.6447'
+        gradientUnits='userSpaceOnUse'>
+        <stop stopColor='#FF02F0' />
+        <stop offset='0.778846' stopColor='#F76808' />
+      </linearGradient>
+    </defs>
   </svg>
 )

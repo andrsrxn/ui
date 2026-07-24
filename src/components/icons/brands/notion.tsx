@@ -6,10 +6,10 @@ export const IconBrandNotion = ({ className, ...props }: SVGProps<SVGSVGElement>
     xmlns='http://www.w3.org/2000/svg'
     aria-label='Notion'
     className={cn('size-icon-base shrink-0', className)}
-    {...props}
     preserveAspectRatio='xMidYMid'
     role='img'
-    viewBox='0 0 256 268'>
+    viewBox='0 0 256 268'
+    {...props}>
     <path
       fill='#fff'
       d='M16.092 11.538 164.09.608c18.179-1.56 22.85-.508 34.28 7.801l47.243 33.282C253.406 47.414 256 48.975 256 55.207v182.527c0 11.439-4.155 18.205-18.696 19.24L65.44 267.378c-10.913.517-16.11-1.043-21.825-8.327L8.826 213.814C2.586 205.487 0 199.254 0 191.97V29.726c0-9.352 4.155-17.153 16.092-18.188'

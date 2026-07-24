@@ -5,11 +5,11 @@ export const IconBrandNextJS = ({ className, ...props }: SVGProps<SVGSVGElement>
   <svg
     xmlns='http://www.w3.org/2000/svg'
     fill='none'
-    aria-label='Next.js'
+    aria-label='NextJS'
     className={cn('size-icon-base shrink-0', className)}
-    {...props}
     role='img'
-    viewBox='0 0 180 180'>
+    viewBox='0 0 180 180'
+    {...props}>
     <mask
       id='mask0_408_139'
       height={180}

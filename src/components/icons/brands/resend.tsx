@@ -2,19 +2,24 @@ import type { SVGProps } from 'react'
 import { cn } from '../../../lib/utils/theme'
 
 export const IconBrandResend = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
-  <div className='border-base flex items-center justify-center border bg-[black]'>
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      fill='none'
-      aria-label='Resend'
-      className={cn('size-icon-base shrink-0', className)}
-      {...props}
-      role='img'
-      viewBox='0 0 600 600'>
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    aria-label='Resend'
+    className={cn('size-icon-base shrink-0', className)}
+    role='img'
+    viewBox='0 0 1800 1800'
+    fill='none'
+    {...props}>
+    <g clipPath='url(#clip0_221_7)'>
       <path
-        fill='#fff'
-        d='M186 447.471V154h132.062q28.089 0 50.728 12.158 23.06 12.157 36.055 33.54 12.997 20.962 12.997 47.793 0 27.67-12.997 49.89-12.996 21.802-35.636 34.378-22.639 12.578-51.147 12.578h-64.145v103.134zm162.667 0L274.041 314.99l72.949-10.481L430 447.471zm-94.75-157.636h57.856q10.9 0 18.866-4.612 8.385-5.03 12.577-13.835 4.612-8.804 4.612-20.123t-5.031-19.705q-5.031-8.804-14.673-13.416-9.224-4.611-22.64-4.611h-51.567z'
+        d='M1100.92 0C1449.54 0 1656.86 207.338 1656.86 482.564C1656.86 757.792 1449.54 965.126 1100.92 965.126H924.764L1800 1800H1181.64L515.588 1166.96C467.888 1122.94 445.872 1071.56 445.87 1027.53C445.87 965.144 489.918 910.098 574.322 886.244L917.424 794.488C1047.7 759.624 1137.62 658.706 1137.62 526.596C1137.6 365.134 1005.49 271.56 842.19 271.56H0V0H1100.92Z'
+        className='fill-black dark:fill-white'
       />
-    </svg>
-  </div>
+    </g>
+    <defs>
+      <clipPath id='clip0_221_7'>
+        <rect width='1800' height='1800' fill='white' />
+      </clipPath>
+    </defs>
+  </svg>
 )

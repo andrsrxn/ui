@@ -7,9 +7,9 @@ export const IconBrandAmericanExpress = ({ className, ...props }: SVGProps<SVGSV
     fill='none'
     aria-label='American Express'
     className={cn('size-icon-base shrink-0', className)}
-    {...props}
     role='img'
-    viewBox='0 0 256 256'>
+    viewBox='0 0 256 256'
+    {...props}>
     <path fill='#fff' d='M0 0h256v256H0z' />
     <path
       fill='#006fcf'

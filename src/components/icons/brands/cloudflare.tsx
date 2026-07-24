@@ -6,10 +6,10 @@ export const IconBrandCloudflare = ({ className, ...props }: SVGProps<SVGSVGElem
     xmlns='http://www.w3.org/2000/svg'
     aria-label='Cloudflare'
     className={cn('size-icon-base shrink-0', className)}
-    {...props}
     preserveAspectRatio='xMidYMid'
     role='img'
-    viewBox='0 0 256 116'>
+    viewBox='0 0 256 116'
+    {...props}>
     <path
       fill='#fff'
       d='m202.357 49.394-5.311-2.124C172.085 103.434 72.786 69.289 66.81 85.997c-.996 11.286 54.227 2.146 93.706 4.059 12.039.583 18.076 9.671 12.964 24.484l10.069.031c11.615-36.209 48.683-17.73 50.232-29.68-2.545-7.857-42.601 0-31.425-35.497Z'

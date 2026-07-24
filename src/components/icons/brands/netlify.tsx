@@ -6,10 +6,10 @@ export const IconBrandNetlify = ({ className, ...props }: SVGProps<SVGSVGElement
     xmlns='http://www.w3.org/2000/svg'
     aria-label='Netlify'
     className={cn('size-icon-base shrink-0', className)}
-    {...props}
     preserveAspectRatio='xMidYMid'
     role='img'
-    viewBox='0 0 256 226'>
+    viewBox='0 0 256 226'
+    {...props}>
     <path
       fill='#05bdba'
       d='M69.181 188.087h-2.417l-12.065-12.065v-2.417l18.444-18.444h12.778l1.704 1.704v12.778zM54.699 51.628v-2.417l12.065-12.065h2.417L87.625 55.59v12.778l-1.704 1.704H73.143z'

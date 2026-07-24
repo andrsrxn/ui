@@ -1,0 +1,19 @@
+import type { SVGProps } from 'react'
+import { cn } from '../../../lib/utils/theme'
+
+export const IconBrandFramer = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    fill='none'
+    aria-label='Framer'
+    className={cn('size-icon-base shrink-0', className)}
+    preserveAspectRatio='xMidYMid'
+    role='img'
+    viewBox='0 0 256 384'
+    {...props}>
+    <path
+      className='fill-black dark:fill-white'
+      d='M0 0h256v128H128L0 0Zm0 128h128l128 128H128v128L0 256V128Z'
+    />
+  </svg>
+)
