@@ -1,7 +1,7 @@
 import preview from '../../.storybook/preview'
 import { IconPlus, IconSearch } from '../../src/components/icons'
 import { Button } from '../../src/components/ui/button'
-import { Link } from '../../src/components/ui/typography/link'
+import { Anchor } from '../../src/components/ui/typography/anchor'
 import { COMPANY } from '../constants/company'
 
 const meta = preview.meta({
@@ -25,7 +25,7 @@ const meta = preview.meta({
     adjustIcon: false,
     loading: false,
     disabled: false,
-    asChild: false,
+    render: undefined,
   },
 })
 
@@ -43,6 +43,10 @@ export const Success = meta.story({ args: { variant: 'success' } })
 
 export const Disabled = meta.story({ args: { disabled: true } })
 
+export const DisabledWithFocus = meta.story({
+  args: { disabled: true, focusableWhenDisabled: true },
+})
+
 export const Loading = meta.story({ args: { loading: true } })
 
 export const Pill = meta.story({ args: { pill: true } })
@@ -58,10 +62,10 @@ export const WithIcon = meta.story({
 
 export const AsChild = meta.story({
   render: () => (
-    <Button variant='secondary' asChild>
-      <Link target='_blank' includeIcon href={COMPANY.repository.url} unstyled>
-        See our GitHub repository
-      </Link>
+    <Button
+      variant='secondary'
+      render={<Anchor target='_blank' includeIcon href={COMPANY.repository.url} unstyled />}>
+      See repository
     </Button>
   ),
 })

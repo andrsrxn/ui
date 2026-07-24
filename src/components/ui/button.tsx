@@ -1,12 +1,12 @@
 import { cva } from 'class-variance-authority'
-import { Slot, Slottable } from '@radix-ui/react-slot'
-import type { ComponentProps } from 'react'
+import { useCallback, type ComponentProps, type ReactElement } from 'react'
 import { cn, type NonNullableVariantProps } from '../../lib/utils/theme'
 import { Spinner } from './spinner'
 import { getUILabels } from '../../lib/utils/config'
+import { useRender } from '@base-ui/react'
 
 export const buttonVariants = cva(
-  'will-change-transform relative inline-flex gap-2 items-center  origin-center justify-center rounded-base whitespace-nowrap disabled:disabled w-fit grow-0 active:scale-98 shrink-0 leading-none cursor-pointer [&_svg]:text-inherit active:transition-transform duration-fastest touch-target data-disabled:disabled aria-[disabled]:disabled focus-visible:focus transition-theme hover:duration-none',
+  'will-change-transform relative inline-flex gap-2 items-center origin-center justify-center rounded-base whitespace-nowrap disabled:disabled w-fit grow-0 active:scale-98 shrink-0 leading-none cursor-pointer [&_svg]:text-inherit active:transition-transform duration-fastest touch-target data-[disabled=true]:disabled aria-disabled:disabled focus-visible:focus transition-theme hover:duration-none',
   {
     variants: {
       variant: {
@@ -15,8 +15,7 @@ export const buttonVariants = cva(
         secondary:
           'bg-surface border border-input text-primary hover:bg-surface-hover active:bg-surface-active shadow-xs dark:shadow-none',
         tertiary:
-          'bg-base-accent text-primary hover:bg-base-accent-hover active:bg-base-accent-active',
-
+          'bg-base-contrast text-primary hover:bg-base-contrast-hover active:bg-base-contrast-active',
         ghost: 'bg-transparent hover:bg-alpha-10 active:bg-alpha-20 text-primary',
         danger: 'bg-danger text-content hover:bg-danger-hover active:bg-danger-active',
         success: 'bg-success text-content hover:bg-success-hover active:bg-success-active',
@@ -72,10 +71,11 @@ export const buttonVariants = cva(
 
 export interface ButtonProps
   extends ComponentProps<'button'>, NonNullableVariantProps<typeof buttonVariants> {
-  asChild?: boolean
+  render?: ReactElement
   loading?: boolean
   adjustIcon?: boolean
   disabled?: boolean
+  focusableWhenDisabled?: boolean
 }
 
 export const Button = ({
@@ -85,32 +85,63 @@ export const Button = ({
   variant,
   size,
   pill,
-  asChild = false,
   full,
   loading = false,
   disabled = loading,
+
+  focusableWhenDisabled = false,
   type = 'button',
+  render,
+  onClick,
   'aria-label': ariaLabel,
   ...props
 }: ButtonProps) => {
-  const Comp = asChild ? Slot : 'button'
   const { state } = getUILabels()
-  return (
-    <Comp
-      aria-busy={loading}
-      disabled={disabled}
-      role={asChild || props.role ? undefined : 'button'}
-      className={cn(
+
+  // when focusableWhenDisabled is true, aria-disabled is used instead of the native disabled attribute, as native disabled removes focus entirely
+  const isNativeDisabled = disabled && !focusableWhenDisabled
+  const isAriaDisabled = disabled && focusableWhenDisabled
+
+  const handleClick = useCallback(
+    (e: React.MouseEvent<HTMLButtonElement>) => {
+      // block interaction when aria-disabled, native disabled does this automatically but aria-disabled doesn't
+      if (isAriaDisabled) {
+        e.preventDefault()
+        e.stopPropagation()
+        return
+      }
+      onClick?.(e)
+    },
+    [isAriaDisabled, onClick]
+  )
+
+  const element = useRender({
+    defaultTagName: 'button',
+    render,
+    props: {
+      'data-slot': 'button',
+      disabled: isNativeDisabled,
+      'aria-disabled': isAriaDisabled ?? undefined,
+      'aria-busy': loading,
+      // type is only valid on button tag, when render provides a different tag it should be omitted
+      ...(render === undefined && { type }),
+      'aria-label': ariaLabel ?? (loading ? state.loading : undefined),
+      onClick: handleClick,
+
+      className: cn(
         buttonVariants({ variant, size, full, pill }),
         adjustIcon && 'justify-between',
         className
-      )}
-      type={asChild ? undefined : type}
-      aria-label={(ariaLabel ?? loading) ? state.loading : undefined}
-      {...props}>
-      {loading ? <Spinner decorative variant='inherit' /> : null}
+      ),
+      children: (
+        <>
+          {loading && <Spinner decorative variant='inherit' />}
+          {children}
+        </>
+      ),
+      ...props,
+    },
+  })
 
-      <Slottable>{children}</Slottable>
-    </Comp>
-  )
+  return element
 }

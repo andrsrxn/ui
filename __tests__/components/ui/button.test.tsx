@@ -52,12 +52,9 @@ describe('Button Component', () => {
     expect(button.getAttribute('aria-busy')).toBe('true')
   })
 
-  it('renders as a child element when asChild is true', () => {
-    render(
-      <Button asChild>
-        <a href='/home'>Home</a>
-      </Button>
-    )
+  it('renders as a child element when passing render prop', () => {
+    // biome-ignore lint/a11y/useAnchorContent: false positive
+    render(<Button render={<a href='/home' />}>Home</Button>)
     const link = screen.getByRole('link', { name: 'Home' })
     expect(link).toBeDefined()
     expect(link.tagName).toBe('A')
