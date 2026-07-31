@@ -1,14 +1,14 @@
 import { render, screen } from '../../../../stories/utils/tests'
-import { describe, it, expect, vi } from 'vitest'
+import { describe, it, expect } from 'vitest'
 import { Figure, FigureCaption } from '../../../../src/components/ui/typography/figure'
-import type { IconProps } from '../../../../src/components/icons/icon'
+// import type { IconProps } from '../../../../src/components/icons/icon'
 
-// Mock the IconInfo to verify it renders without dependencies breaking
-vi.mock('../../../../src/components/icons', () => ({
-  IconInfo: ({ className, ...props }: IconProps) => (
-    <svg data-testid='icon-info' className={className} {...props} />
-  ),
-}))
+// // Mock the IconInfo to verify it renders without dependencies breaking
+// vi.mock('../../../../src/components/icons', () => ({
+//   IconInfo: ({ className, ...props }: IconProps) => (
+//     <svg data-testid='icon-info' className={className} {...props} />
+//   ),
+// }))
 
 describe('Figure Component', () => {
   it('renders a figure element with default properties', () => {

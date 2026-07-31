@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority'
 import type { ComponentProps } from 'react'
 import { cn, type NonNullableVariantProps } from '../../../lib/utils/theme'
-import { IconClock } from '../../icons'
+import { IconClock } from '@andrsrxn/icons'
 
 export const timeVariants = cva('font-body transition-theme shrink-0', {
   variants: {

@@ -1,6 +1,7 @@
 /** biome-ignore-all lint/style/useNamingConvention: Story rendering */
 import '@fontsource/fira-mono/500.css'
 import '@fontsource-variable/hanken-grotesk/wght.css'
+import '@andrsrxn/icons/styles.css'
 
 import addonA11y from '@storybook/addon-a11y'
 import addonDocs from '@storybook/addon-docs'

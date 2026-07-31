@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority'
 import type { ComponentProps, ReactElement } from 'react'
 import { cn, type NonNullableVariantProps } from '../../../lib/utils/theme'
-import { IconChevronEnd, IconDownload, IconExternalLink } from '../../icons'
+import { IconChevronEnd, IconDownload, IconExternalLink } from '@andrsrxn/icons'
 import { useRender } from '@base-ui/react'
 
 export const linkVariants = cva(

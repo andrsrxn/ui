@@ -1,5 +1,5 @@
 import preview from '../../.storybook/preview'
-import { IconPlus, IconSearch } from '../../src/components/icons'
+import { IconPlus, IconSearch } from '@andrsrxn/icons'
 import { Button } from '../../src/components/ui/button'
 import { Anchor } from '../../src/components/ui/typography/anchor'
 import { COMPANY } from '../constants/company'

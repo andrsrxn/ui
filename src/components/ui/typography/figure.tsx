@@ -1,7 +1,7 @@
 import type { ComponentProps } from 'react'
 import { Text, type TextProps } from './text'
 import { cn } from '../../../lib/utils/theme'
-import { IconInfo } from '../../icons'
+import { IconInfo } from '@andrsrxn/icons'
 
 export interface FigureProps extends ComponentProps<'figure'> {
   center?: boolean

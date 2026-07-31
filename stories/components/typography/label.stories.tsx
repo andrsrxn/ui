@@ -1,5 +1,5 @@
 import preview from '../../../.storybook/preview'
-import { IconColors, IconDashboard, IconLayers, IconTool } from '../../../src/components/icons'
+import { IconColors, IconDashboard, IconLayers, IconTool } from '@andrsrxn/icons'
 import { Label } from '../../../src/components/ui/typography/label'
 import { Text } from '../../../src/components/ui/typography/text'
 import { ContentDecorator } from '../../shared/decorators'

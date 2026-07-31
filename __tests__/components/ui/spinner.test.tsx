@@ -1,14 +1,13 @@
 import { render, screen } from '../../../stories/utils/tests'
 import { describe, it, expect, vi } from 'vitest'
 import { Spinner } from '../../../src/components/ui/spinner'
-import type { IconProps } from '../../../src/components/icons/icon'
 
-// Mock the IconSpinner used internally
-vi.mock('../../../src/components/icons', () => ({
-  IconSpinner: ({ className, ...props }: IconProps) => (
-    <svg data-testid='icon-spinner' className={className} {...props} />
-  ),
-}))
+// // Mock the IconSpinner used internally
+// vi.mock('../../../src/components/icons', () => ({
+//   IconSpinner: ({ className, ...props }: IconProps) => (
+//     <svg data-testid='icon-spinner' className={className} {...props} />
+//   ),
+// }))
 
 // Mock getUILabels config
 vi.mock('../../../src/lib/utils/config', () => ({

@@ -662,16 +662,7 @@
         }
       }
     },
-    {
-      "includes": ["./stories/**", "src/components/icons/**"],
-      "linter": {
-        "rules": {
-          "complexity": {
-            "noExcessiveLinesPerFunction": "off"
-          }
-        }
-      }
-    },
+
     {
       "includes": ["./stories/**"],
       "linter": {

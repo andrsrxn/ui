@@ -1448,7 +1448,7 @@
   }
 
   .ui-icon {
-    @apply text-primary pointer-events-none shrink-0;
+    @apply text-primary;
   }
 
   /* Automatic squircle support */
@@ -1501,18 +1501,6 @@
 
   .base-ui-disable-scrollbar::-webkit-scrollbar {
     display: none;
-  }
-
-  /* RTL aware icons */
-  [data-slot='icon-arrow-start']:dir(rtl),
-  [data-slot='icon-arrow-end']:dir(rtl),
-  [data-slot='icon-arrow-up-end']:dir(rtl),
-  [data-slot='icon-arrow-up-start']:dir(rtl),
-  [data-slot='icon-chevron-end']:dir(rtl),
-  [data-slot='icon-chevron-start']:dir(rtl),
-  [data-slot='icon-chevron-end-double']:dir(rtl),
-  [data-slot='icon-chevron-start-double']:dir(rtl) {
-    transform: scaleX(-1);
   }
 
   @media (prefers-reduced-motion: reduce) {

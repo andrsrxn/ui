@@ -1,7 +1,9 @@
+/** biome-ignore-all lint/performance/noNamespaceImport: get all the icons to showcase them */
 import type { ElementType, ReactNode } from 'react'
 import preview from '../../.storybook/preview'
-// biome-ignore lint/performance/noNamespaceImport: to much imports
-import * as icons from '../../src/components/icons'
+import * as icons from '@andrsrxn/icons'
+import * as bIcons from '@andrsrxn/icons/brands'
+import * as fIcons from '@andrsrxn/icons/flags'
 import { Inline } from '../../src/components/ui/typography/inline'
 
 const meta = preview.meta({
@@ -37,14 +39,7 @@ export const Base = meta.story({
   render: () => (
     <IconGrid>
       {Object.entries(icons)
-        .filter(
-          ([name]) =>
-            !(
-              name.startsWith('IconBrand') ||
-              name.startsWith('IconFlag') ||
-              name.startsWith('IconLogo')
-            )
-        )
+        .filter(([name]) => !name.startsWith('IconLogo'))
         .map(([name, Icon]) => (
           <IconGridItem key={name} icon={Icon} iconName={name} />
         ))}
@@ -67,7 +62,7 @@ export const Logos = meta.story({
 export const Brands = meta.story({
   render: () => (
     <IconGrid>
-      {Object.entries(icons)
+      {Object.entries(bIcons)
         .filter(([name]) => name.startsWith('IconBrand'))
         .map(([name, Icon]) => (
           <IconGridItem key={name} icon={Icon} iconName={name} />
@@ -79,7 +74,7 @@ export const Brands = meta.story({
 export const Flags = meta.story({
   render: () => (
     <IconGrid>
-      {Object.entries(icons)
+      {Object.entries(fIcons)
         // biome-ignore lint/style/noMagicNumbers: to not take the literal `IconFlag`
         .filter(([name]) => name.startsWith('IconFlag') && name.length > 8)
         .map(([name, Icon]) => (

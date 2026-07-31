@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@andrsrxn/icons':
+        specifier: 2.2.0
+        version: 2.2.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@base-ui/react':
         specifier: 1.6.0
         version: 1.6.0(@date-fns/tz@1.5.0)(@types/react@19.2.16)(date-fns@4.4.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -141,6 +144,13 @@ packages:
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
+
+  '@andrsrxn/icons@2.2.0':
+    resolution: {integrity: sha512-oUcxsXvOHdSx+eJnvCQvOEMEgz+Yosxclr0rFUxTyf0bmgKUmP52SFIxlVOlaEPTxNq9JZpdKwtr5HTMzwA1xQ==}
+    engines: {node: ^24, pnpm: ^11}
+    peerDependencies:
+      react: ^19
+      react-dom: ^19
 
   '@babel/code-frame@7.29.0':
     resolution: {integrity: sha512-9NhCeYjq9+3uxgdtp20LSiJXJvN0FeCtNGpJxuMFZ1Kv3cWUNb6DOhJwUvcVCzKGR66cw4njwM6hrJLqgOwbcw==}
@@ -2867,6 +2877,11 @@ snapshots:
   '@adobe/css-tools@4.4.4': {}
 
   '@alloc/quick-lru@5.2.0': {}
+
+  '@andrsrxn/icons@2.2.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+    dependencies:
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
 
   '@babel/code-frame@7.29.0':
     dependencies:

@@ -38,20 +38,18 @@
     "node": "^24",
     "pnpm": "^11"
   },
-  "packageManager": "pnpm@11.12.0",
+  "packageManager": "pnpm@11.13.1",
   "scripts": {
     "dev": "storybook dev -p 6006 --no-open",
     "dev:vite": "vite dev",
     "preview": "vite preview",
-    "build": "pnpm run build:styles && tsdown && echo Build styles finished.",
+    "build": "pnpm run build:styles && tsdown && echo Build finished.",
     "build:sb": "storybook build",
     "build:styles": "postcss ./src/globals.css -o ./dist/styles.css && echo Build styles finished.",
     "format": "prettier --write . && echo Format finished.",
     "lint": "biome check && echo Lint finished.",
     "typecheck": "tsc --noEmit --project tsconfig.app.json && tsc --noEmit --project tsconfig.node.json && echo Typecheck finished.",
     "test": "vitest",
-    "generate-icons": "node ./scripts/generate-icons.js && node ./scripts/generate-icons-index.js && prettier --write ./src/components/icons/ui && echo Icons generated and formatted.",
-    "generate-icons-index": "node ./scripts/generate-icons-index.js && echo Icons index generated.",
     "typecoverage": "pnpm dlx type-coverage -at-least=99 && echo Typecoverage finished.",
     "depcheck": "pnpm dlx knip && echo Depcheck finished.",
     "doctor": "pnpm dlx react-doctor@latest . && echo Doctor finished."
@@ -62,6 +60,7 @@
     "tailwindcss": "^4"
   },
   "dependencies": {
+    "@andrsrxn/icons": "2.2.0",
     "@base-ui/react": "1.6.0",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",

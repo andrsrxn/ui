@@ -1,14 +1,14 @@
-import { describe, it, expect, vi } from 'vitest'
+import { describe, it, expect } from 'vitest'
 import { Heading } from '../../../../src/components/ui/typography/heading'
-import type { IconProps } from '../../../../src/components/icons/icon'
+// import type { IconProps } from '../../../../src/components/icons/icon'
 import { render, screen } from '../../../../stories/utils/tests'
 
-// Mock the IconLink from icons
-vi.mock('../../../../src/components/icons', () => ({
-  IconLink: ({ className, ...props }: IconProps) => (
-    <svg data-testid='icon-link' className={className} {...props} />
-  ),
-}))
+// // Mock the IconLink from icons
+// vi.mock('../../../../src/components/icons', () => ({
+//   IconLink: ({ className, ...props }: IconProps) => (
+//     <svg data-testid='icon-link' className={className} {...props} />
+//   ),
+// }))
 
 describe('Heading Component', () => {
   it('renders h1 by default', () => {

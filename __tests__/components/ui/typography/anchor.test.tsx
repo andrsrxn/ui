@@ -1,20 +1,20 @@
 import { render, screen } from '../../../../stories/utils/tests'
-import { describe, it, expect, vi } from 'vitest'
+import { describe, it, expect } from 'vitest'
 import { Anchor } from '../../../../src/components/ui/typography/anchor'
-import type { IconProps } from '../../../../src/components/icons/icon'
+// import type { IconProps } from '../../../../src/components/icons/icon'
 
-// Mock the icons
-vi.mock('../../../../src/components/icons', () => ({
-  IconChevronEnd: ({ className, ...props }: IconProps) => (
-    <svg data-testid='icon-chevron' className={className} {...props} />
-  ),
-  IconDownload: ({ className, ...props }: IconProps) => (
-    <svg data-testid='icon-download' className={className} {...props} />
-  ),
-  IconExternalLink: ({ className, ...props }: IconProps) => (
-    <svg data-testid='icon-external' className={className} {...props} />
-  ),
-}))
+// // Mock the icons
+// vi.mock('../../../../src/components/icons', () => ({
+//   IconChevronEnd: ({ className, ...props }: IconProps) => (
+//     <svg data-testid='icon-chevron' className={className} {...props} />
+//   ),
+//   IconDownload: ({ className, ...props }: IconProps) => (
+//     <svg data-testid='icon-download' className={className} {...props} />
+//   ),
+//   IconExternalLink: ({ className, ...props }: IconProps) => (
+//     <svg data-testid='icon-external' className={className} {...props} />
+//   ),
+// }))
 
 describe('Link Component', () => {
   it('renders a default anchor link', () => {

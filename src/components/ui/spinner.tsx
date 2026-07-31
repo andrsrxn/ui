@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority'
 import { cn, type NonNullableVariantProps } from '../../lib/utils/theme'
 import type { IconProps } from '../icons/icon'
-import { IconSpinner } from '../icons'
+import { IconSpinner } from '@andrsrxn/icons'
 import { getUILabels } from '../../lib/utils/config'
 
 export const spinnerVariants = cva('animate-spin animate-ease-base transition-theme inline-block', {

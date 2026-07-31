@@ -2,7 +2,7 @@ import { createElement, useMemo, type ComponentProps } from 'react'
 import { cn, type NonNullableVariantProps } from '../../../lib/utils/theme'
 import { cva } from 'class-variance-authority'
 import { slugify } from '../../../lib/utils/strings'
-import { IconLink } from '../../icons'
+import { IconLink } from '@andrsrxn/icons'
 import { Anchor } from './anchor'
 import { getUILabels } from '../../../lib/utils/config'
 

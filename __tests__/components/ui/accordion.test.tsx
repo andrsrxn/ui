@@ -1,5 +1,5 @@
 import { render, screen } from '../../../stories/utils/tests'
-import { describe, it, expect, vi } from 'vitest'
+import { describe, it, expect } from 'vitest'
 import {
   Accordion,
   AccordionItem,
@@ -7,14 +7,14 @@ import {
   AccordionContent,
   AccordionContentText,
 } from '../../../src/components/ui/accordion'
-import type { IconProps } from '../../../src/components/icons/icon'
+// import type { IconProps } from '../../../src/components/icons/icon'
 
-// Mock the icons used inside AccordionTrigger
-vi.mock('../../../src/components/icons', () => ({
-  IconPlus: ({ className, ...props }: IconProps) => (
-    <svg data-testid='icon-plus' className={className} {...props} />
-  ),
-}))
+// // Mock the icons used inside AccordionTrigger
+// vi.mock('../../../src/components/icons', () => ({
+//   IconPlus: ({ className, ...props }: IconProps) => (
+//     <svg data-testid='icon-plus' className={className} {...props} />
+//   ),
+// }))
 
 describe('Accordion Component', () => {
   it('renders with data-slot accordion and default base variant classes', () => {

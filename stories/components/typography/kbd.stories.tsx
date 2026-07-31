@@ -1,5 +1,5 @@
 import preview from '../../../.storybook/preview'
-import { IconKeyCommand, IconKeyOption } from '../../../src/components/icons'
+import { IconKeyCommand, IconKeyOption } from '@andrsrxn/icons'
 import { Kbd, KbdGroup } from '../../../src/components/ui/typography/kbd'
 import { Text } from '../../../src/components/ui/typography/text'
 

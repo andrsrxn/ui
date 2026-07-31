@@ -1,6 +1,6 @@
+import { IconPlus } from '@andrsrxn/icons'
 import { cn } from '../../lib/utils/theme'
 import { labelVariants, type LabelProps } from './typography/label'
-import { IconPlus } from '../icons'
 import { Text, type TextProps } from './typography/text'
 import { Accordion as AccordionPrimitive } from '@base-ui/react/accordion'
 
@@ -55,6 +55,7 @@ export const AccordionTrigger = ({
       )}
       {...props}>
       {children}
+
       <IconPlus className='size-icon-responsive text-brand duration-base transition-transform group-data-open/accordion-trigger:rotate-135' />
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
