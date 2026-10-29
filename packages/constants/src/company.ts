@@ -1,4 +1,3 @@
-
 export const COMPANY = {
   name: 'andrsrxn/ui',
   fullName: 'andrsrxn/ui',

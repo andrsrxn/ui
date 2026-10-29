@@ -8,7 +8,9 @@
     "./media": "./src/media.ts",
     "./preferences": "./src/preferences.ts"
   },
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "peerDependencies": {
     "typescript": "^7"
   }

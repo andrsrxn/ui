@@ -11,7 +11,8 @@ export default defineMain({
     '@storybook/addon-docs',
   ],
   typescript: {
-    reactDocgen: 'react-docgen',    reactDocgenTypescriptOptions: {
+    reactDocgen: 'react-docgen',
+    reactDocgenTypescriptOptions: {
       shouldExtractLiteralValuesFromEnum: true,
       shouldExtractValuesFromUnion: true,
       shouldRemoveUndefinedFromOptional: true,

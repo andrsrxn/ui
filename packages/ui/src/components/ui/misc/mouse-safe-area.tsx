@@ -7,9 +7,7 @@ import { getMouseSafeAreaPoints } from '../../../lib/utils/mouse'
  *
  * @returns An SVG wrapper to cover the area between the mouse cursor and the sub-menu, to allow moving cursor to lower parts of sub-menu without the sub-menu disappearing.
  */
-export const MouseSafeArea = (props: {
-  parentRef: React.RefObject<HTMLDivElement | null>
-}) => {
+export const MouseSafeArea = (props: { parentRef: React.RefObject<HTMLDivElement | null> }) => {
   const {
     x = 0,
     y = 0,
@@ -21,14 +19,11 @@ export const MouseSafeArea = (props: {
   const points = getMouseSafeAreaPoints(positions)
 
   return (
-    <svg
-      aria-hidden="true"
-      className="pointer-events-none fixed inset-0 z-50 h-full w-full"
-    >
+    <svg aria-hidden='true' className='pointer-events-none fixed inset-0 z-50 h-full w-full'>
       <polygon
-        data-testid="mouse-safe-area"
+        data-testid='mouse-safe-area'
         points={points}
-        className="pointer-events-auto fill-transparent"
+        className='pointer-events-auto fill-transparent'
       />
     </svg>
   )

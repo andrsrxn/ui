@@ -87,7 +87,6 @@
         "useUniqueElementIds": "off"
       },
       "style": {
-        
         "useConsistentArrowReturn": "off",
         "noHexColors": "off",
         "useGlobalThis": "off",

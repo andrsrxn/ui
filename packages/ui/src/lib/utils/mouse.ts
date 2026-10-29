@@ -44,14 +44,7 @@ export const getMouseSafeAreaClipPath = ({ x, y, h, mouseX, mouseY }: MousePosit
       }%, 100% 100%)`
 
 /** Get SVG polygon points for mouse safe area */
-export const getMouseSafeAreaPoints = ({
-  x,
-  y,
-  h,
-  w,
-  mouseX,
-  mouseY,
-}: MousePositions) => {
+export const getMouseSafeAreaPoints = ({ x, y, h, w, mouseX, mouseY }: MousePositions) => {
   const isRight = mouseX > x
   const targetX = isRight ? x + w : x
   return `${mouseX},${mouseY} ${targetX},${y} ${targetX},${y + h}`

@@ -26,7 +26,6 @@ export const Image = ({
     <img
       src={src}
       alt={alt}
-      // TODO:
       onLoad={() => setLoaded(true)}
       className={cn('shrink-0', className)}
       decoding={decoding}

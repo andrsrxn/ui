@@ -59,9 +59,8 @@ export const Decorative = meta.story({
   render: () => <Button loading>Creating...</Button>,
 })
 
-
 export const Class = meta.story({
   args: {
-    className: 'custom'
+    className: 'custom',
   },
 })
