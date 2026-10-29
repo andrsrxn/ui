@@ -1,5 +1,5 @@
 <div align='center'>
-<img src="./packages/ui/assets/symbol.svg" alt="andrsrxn/ui symbol" width="64" height="64" />
+<img src="./packages/ui/assets/brand/symbol.svg" alt="andrsrxn/ui symbol" width="64" height="64" />
 
 # andrsrxn/ui
 
