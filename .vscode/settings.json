@@ -1,0 +1,33 @@
+{
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never",
+    "source.organizeImports.biome": "explicit",
+    "source.removeUnusedImports": "explicit",
+    "source.removeUnused.ts": "never",
+    "source.fixAll.biome": "explicit"
+  },
+  "css.lint.unknownProperties": "ignore",
+  "css.lint.unknownAtRules": "ignore",
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["(?<=cva\\([\\s\\S]*?)[\"']([^\"']+)[\"']"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    "class:\\s*?[\"'`]([^\"'`]*).*?,",
+    "className:\\s*?[\"'`]([^\"'`]*).*?,"
+  ],
+  "[css]": {
+    "editor.suggest.insertMode": "replace"
+  },
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "tailwindCSS.files.exclude": [
+    "**/.git/**",
+    "**/node_modules/**",
+    "**/.hg/**",
+    "**/.svn/**",
+    "**/*.md",
+    "**/*.mdx"
+  ]
+}

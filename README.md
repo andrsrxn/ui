@@ -1,32 +1,15 @@
-<img src="https://res.cloudinary.com/dq5nfyajn/image/upload/v1781545765/symbol_p9zdmn.svg" alt="andrsrxn/ui symbol" width="64" height="64" />
+<div align='center'>
+<img src="./packages/ui/assets/symbol.svg" alt="andrsrxn/ui symbol" width="64" height="64" />
 
 # andrsrxn/ui
 
-Opinionated design system and component library for React
+[![Project license](https://shieldcn.dev/github/andrsrxn/icons/license/andrsrxn/icons?variant=secondary&size=xs)](https://github.com/andrsrxn/icons/blob/main/packages/icons/LICENSE)
+![Project country badge](https://shieldcn.dev/flag/gt.svg?size=xs)
 
-## Features
+Opinionated design system and UI component library for React.
+<br />
+Modern, smooth, accessible, and easy to use.
 
-- **Components**: Buttons, inputs, cards, modals, and more.
-- **TypeScript**: Built with TypeScript for type safety.
-- **Tailwind CSS**: Styled with Tailwind CSS for easy customization.
-- **Storybook**: Interactive component playground.
+</div>
 
-## Installation
-
-```bash
-pnpm add @andrsrxn/ui
-```
-
-## Usage
-
-```tsx
-import { Button } from '@andrsrxn/ui/button'
-
-export function App() {
-  return (
-    <div className='flex h-screen w-full items-center justify-center'>
-      <Button variant='primary'>Click me</Button>
-    </div>
-  )
-}
-```
+> Still under development, available soon!

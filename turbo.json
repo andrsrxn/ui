@@ -1,0 +1,71 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "globalDependencies": [".env"],
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**", "!.next/dev/**", "out/**", "dist/**", "build/**"]
+    },
+    "lint": {
+      "inputs": ["$TURBO_DEFAULT$", "$TURBO_ROOT$/biome.json"]
+    },
+    "lint:check": {
+      "inputs": ["$TURBO_DEFAULT$", "$TURBO_ROOT$/biome.json"]
+    },
+    "type:check": {
+      "dependsOn": ["^build"]
+    },
+    "test": {
+      "persistent": true,
+      "cache": false
+    },
+    "format": {
+      "cache": false,
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "$TURBO_ROOT$/.prettierrc",
+        "$TURBO_ROOT$/.prettierignore",
+        "$TURBO_ROOT$/.editorconfig"
+      ]
+    },
+    "format:check": {
+      "cache": false,
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "$TURBO_ROOT$/.prettierrc",
+        "$TURBO_ROOT$/.prettierignore",
+        "$TURBO_ROOT$/.editorconfig"
+      ]
+    },
+    "test:check": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "dev:demo": {
+      "cache": false,
+      "persistent": true
+    },
+    "start": {
+      "cache": false,
+      "persistent": true
+    },
+    "dep:check": {
+      "cache": false
+    },
+    "react:check": {
+      "cache": false
+    },
+    "attw": {
+      "cache": false,
+      "outputs": []
+    },
+    "publint": {
+      "cache": false,
+      "outputs": []
+    }
+  }
+}

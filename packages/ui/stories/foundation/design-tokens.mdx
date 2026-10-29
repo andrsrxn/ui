@@ -1,0 +1,30 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title='Foundations/Design tokens' />
+
+# Design Tokens guide
+
+The design system leverages Tailwind CSS v4 and a highly structured CSS variable token system (`styles.css`). Never use raw CSS values or arbitrary brackets for spacing, colors, or typography.
+
+## Token architecture and creation
+
+When creating or maintaining CSS variable tokens in `styles.css`, adhere to the following strict naming conventions and structural patterns.
+
+- **The "base" starting point:** Never use the word `default` or `normal` to establish the primary value of a scale. Always use `base`.
+  - **Correct:** `border-base`, `ease-base`, `text-body-base`, `duration-base`, `radius-base`.
+  - **Incorrect:** `border-default`, `ease-normal`, `radius-md`.
+- **Scale references:** When a token represents a progression without a natural "base" starting point (such as breakpoints or structural containers), use standard t-shirt sizes (`xs`, `sm`, `md`, `lg`, `xl`).
+- **Naming structure:** Tokens must follow a predictable, segmented taxonomy: `--{property}-{context}-{modifier}-{state}`.
+  - **Property:** What it affects (`background`, `text`, `border`).
+  - **Context:** The role it plays (`surface`, `brand`, `info`, `input`)
+  - **State (optional):** The interaction phase (`hover`, `active`). Focus is typically handled by ring utilities.
+    - **Correct:** `--background-surface-alt-hover`
+    - **Incorrect:** `--background-hover-surface-alt`
+- **State modifiers:** Interaction states must cascade logically. We use `-hover` and `-active`. We do not define `-disabled` color states; disabled states are managed universally via the `--opacity-disabled` utility.
+- **Emphasis modifiers:** To express visual hierarchy within the same semantic family, use `-subtlest`, `-subtle`, and `-bold` rather than creating arbitrary numbered steps.
+  - **Correct:** `--background-brand-subtlest`, `--background-brand`, `--background-brand-bold`
+  - **Incorrect:** `--background-brand-light`, `--background-brand-dark`
+- **Primitive and semantic abstraction:**
+  - **Primitives (`:root`):** Static values that don't match tailwind naming convention or semantic roles such as colors or typography scales. These are raw values and should almost never be consumed directly by UI components. This avoids a two-step process when adding new token values.
+    - **Exception:** The radiuses are defined at primitives level to validate squircle support so it adapts the values.
+  - **Semantics (`.light` / `.dark`):** Dynamic values mapped to context-aware roles. Only semantic tokens should be exported to Tailwind utilities.

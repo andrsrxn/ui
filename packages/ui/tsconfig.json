@@ -1,0 +1,18 @@
+{
+  "extends": "@andrsrxn/ts-config/react",
+  "compilerOptions": {
+    "types": ["vite/client", "node"],
+    "tsBuildInfoFile": "./.tsbuildinfo"
+  },
+  "include": [
+    "src",
+    "tsdown.config.ts",
+    "stories",
+    "__tests__",
+    ".storybook",
+    "demo",
+    "vitest.d.ts",
+    "vitest.setup.ts"
+  ],
+  "exclude": ["node_modules", "dist", ".turbo"]
+}

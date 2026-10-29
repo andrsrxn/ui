@@ -1,5 +1,12 @@
-dist
+.editorconfig
+**/dist
+**/out
 pnpm-lock.yaml
-node_modules
-.next
 .agents
+.github
+CHANGELOG.md
+**/.next
+**/.turbo
+.turbo
+node_modules
+**/node_modules
